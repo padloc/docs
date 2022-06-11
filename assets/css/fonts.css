@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Nunito Light"), local("Nunito-Light"), url(../fonts/Nunito-Light.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Nunito Regular"), local("Nunito-Regular"), url(../fonts/Nunito-Regular.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Nunito SemiBold"), local("Nunito-SemiBold"), url(../fonts/Nunito-SemiBold.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Nunito Bold"), local("Nunito-Bold"), url(../fonts/Nunito-Bold.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/fontawesome/fa-light-300.woff2") format("woff2"),
+        url("../fonts/fontawesome/fa-light-300.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src: url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"),
+        url("../fonts/fontawesome/fa-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"),
+        url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype");
+}

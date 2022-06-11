@@ -1,7 +1,7 @@
-@import "./fontawesome/css/light.css";
-@import "./fontawesome/css/regular.css";
-@import "./fontawesome/css/semibold.css";
-@import "./fontawesome/css/bold.css";
+@import "../fonts/fontawesome/css/light.css";
+@import "../fonts/fontawesome/css/regular.css";
+@import "../fonts/fontawesome/css/semibold.css";
+@import "../fonts/fontawesome/css/bold.css";
 
 .fa,
 i {

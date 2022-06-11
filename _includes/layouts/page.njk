@@ -5,31 +5,48 @@ layout: layouts/base.njk
 <style>
     .main-layout {
         display: grid;
-        grid-template-columns: 20em 1fr;
+        grid-template-columns: 20em minmax(0, 1fr);
         grid-template-rows: auto auto auto;
         grid-template-areas:
             "header header"
-            "nav main "
+            "nav main"
             "footer footer";
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     header {
         grid-area: header;
     }
 
-    nav {
+    .main-layout > nav {
+        grid-area: nav;
         align-self: start;
         position: sticky;
         top: 0;
     }
 
-    footer {
+    .main-layout > nav li ul {
+        border-left: dashed 1px var(--color-shade-2);
+    }
+
+    .main-layout > nav a[aria-current="page"] {
+        background: var(--color-highlight);
+        color: var(--color-bg);
+    }
+
+    .main-layout > main {
+        grid-area: main;
+    }
+
+    .main-layout > footer {
         grid-area: footer;
     }
 </style>
 
 <div class="main-layout">
-    <header>
+    <header class="padded">
         <div>Padloc</div>
 
         <nav>
@@ -40,7 +57,7 @@ layout: layouts/base.njk
         </nav>
     </header>
 
-    {% include 'components/nav.njk' %}
+    <nav class="padded">{% include 'components/nav.njk' %}</nav>
 
     <main>
         <article>

@@ -1,0 +1,49 @@
+html {
+    --spacing: 0.5em;
+    --font-family: "Nunito", sans-serif;
+
+    --color-black: #444;
+    --color-white: #fff;
+    --color-fg: var(--color-black);
+    --color-bg: var(--color-white);
+    --max-inner-width: 1200px;
+    --color-subtle: rgba(0, 0, 0, 0.3);
+
+    --red: #db2828;
+    --orange: #f2711c;
+    --yellow: #fbbd08;
+    --olive: #b5cc18;
+    --green: #21ba45;
+    --teal: #00b5ad;
+    --blue: #2185d0;
+    --violet: #6435c9;
+    --purple: #a333c8;
+    --pink: #e03997;
+    --brown: #a5673f;
+    --grey: #767676;
+    --black: #1b1c1d;
+    --aqua: #1cd0bf;
+
+    --red-bg: #ffe8e6;
+    --orange-bg: #ffedde;
+    --yellow-bg: #fff8db;
+    --olive-bg: #fbfdef;
+    --green-bg: #e5f9e7;
+    --teal-bg: #e1f7f7;
+    --blue-bg: #dff0ff;
+    --violet-bg: #eae7ff;
+    --purple-bg: #f6e7ff;
+    --pink-bg: #ffe3fb;
+    --brown-bg: #f1e2d3;
+    --aqua-bg: #c8fdf8;
+    --grey-bg: #f1f1f1;
+
+    --color-highlight: var(--blue);
+    --color-highlight-bg: var(--teal);
+
+    --color-shade-1: rgba(0, 0, 0, 0.05);
+    --color-shade-2: rgba(0, 0, 0, 0.1);
+    --color-shade-3: rgba(0, 0, 0, 0.15);
+    --color-shade-4: rgba(0, 0, 0, 0.2);
+    --color-shade-5: rgba(0, 0, 0, 0.25);
+}

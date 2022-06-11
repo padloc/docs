@@ -1,15 +1,15 @@
 {% set navPages = collections.all | eleventyNavigation("/manual") %}<!-- -->
 
 {% macro renderTOCItem(item) -%}<!-- -->
-<li>
-    <a href="#{{ item.id }}">
+<li class="vertically-half-margined">
+    <a href="#{{ item.id }}" class="padded rounded block hover-bg">
         <span>
             {{ item.title }}
         </span>
     </a>
 
     {%- if item.children.length -%}
-    <ul>
+    <ul class="small left-margined left-padded">
         {%- for child in item.children %}{{
             renderTOCItem(child)
         }}
@@ -23,17 +23,21 @@
 
 {% set isActive = page.url | startsWith(entry.url) %}
 
-<li>
-    <a aria-current="{% if entry.url == page.url %}page{% else %}false{% endif %}" href="{{ entry.url | url }}">
+<li class="vertically-half-margined">
+    <a
+        aria-current="{% if entry.url == page.url %}page{% else %}false{% endif %}"
+        href="{{ entry.url | url }}"
+        class="padded rounded block hover-bg"
+    >
         <i class="{{ entry.icon or 'scroll' }}"></i>
         <span>
             {{ entry.title }}
         </span>
     </a>
 
-    <div role="none" {% if not isActive %}hidden{% endif %}>
+    <div role="none" {% if not isActive %}hidden{% endif %} class="left-margined">
         {%- if entry.children.length -%}
-        <ul>
+        <ul class="small left-margined left-padded">
             {%- for child in entry.children %}
             {{
                 renderNavListItem(child)
@@ -41,7 +45,7 @@
             {% endfor -%}
         </ul>
         {%- else -%}<!-- -->
-        <ul>
+        <ul class="small left-margined left-padded">
             {% for item in (content | toc) %}
             {{
                 renderTOCItem(item)
@@ -53,11 +57,9 @@
 </li>
 {%- endmacro %}
 
-<nav>
-    <ul>
-        {%- for entry in navPages %}{{
-            renderNavListItem(entry)
-        }}
-        {%- endfor -%}
-    </ul>
-</nav>
+<ul>
+    {%- for entry in navPages %}{{
+        renderNavListItem(entry)
+    }}
+    {%- endfor -%}
+</ul>

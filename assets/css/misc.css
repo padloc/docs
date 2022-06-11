@@ -1,0 +1,8 @@
+.rounded {
+    border-radius: 0.5em;
+}
+
+.hover-bg:hover {
+    background: var(--color-shade-1);
+}
+
