@@ -35,6 +35,28 @@ module.exports = (config) => {
             html` <figure>${content} ${caption ? html`<figcaption>${caption}</figcaption>` : ""}</figure> `
     );
 
+    config.addNunjucksShortcode("relref", (ref) => ref);
+    config.addNunjucksShortcode("icon", (icon) => html`<i class="${icon}"></i>`);
+    config.addNunjucksShortcode("param", (param) => html`<strong>[REPLACE_ME ${param}]</strong>`);
+    config.addNunjucksShortcode("br", () => html`<br />`);
+    config.addNunjucksShortcode(
+        "iframe",
+        ({ src, width, height }) => html`
+            <iframe
+                src="${src}"
+                width="${width}"
+                height="${height}"
+                frameborder="0"
+                webkitallowfullscreen="true"
+                mozallowfullscreen="true"
+                allowfullscreen
+            ></iframe>
+        `
+    );
+    config.addPairedNunjucksShortcode("note", (content) => content);
+    config.addPairedNunjucksShortcode("blockquote", (content) => html`<blockquote>${content}</blockquote>`);
+    config.addPairedNunjucksShortcode("colored", (content, color) => html`<span class="${color}">${content}</span>`);
+
     config.addFilter("jsonify", (val) => JSON.stringify(val, null, 4));
     config.addFilter("startsWith", (str = "", searchString = "") => str.startsWith(searchString));
     config.addFilter("toc", getTOC);
