@@ -1,0 +1,63 @@
+{% set navPages = collections.all | eleventyNavigation("/manual") %}<!-- -->
+
+{% macro renderTOCItem(item) -%}<!-- -->
+<li>
+    <a href="#{{ item.id }}">
+        <span>
+            {{ item.title }}
+        </span>
+    </a>
+
+    {%- if item.children.length -%}
+    <ul>
+        {%- for child in item.children %}{{
+            renderTOCItem(child)
+        }}
+        {% endfor -%}
+    </ul>
+    {% endif %}
+</li>
+{%- endmacro %}<!-- -->
+
+{% macro renderNavListItem(entry) -%}<!-- -->
+
+{% set isActive = page.url | startsWith(entry.url) %}
+
+<li>
+    <a aria-current="{% if entry.url == page.url %}page{% else %}false{% endif %}" href="{{ entry.url | url }}">
+        <i class="{{ entry.icon or 'scroll' }}"></i>
+        <span>
+            {{ entry.title }}
+        </span>
+    </a>
+
+    <div role="none" {% if not isActive %}hidden{% endif %}>
+        {%- if entry.children.length -%}
+        <ul>
+            {%- for child in entry.children %}
+            {{
+                renderNavListItem(child)
+            }}
+            {% endfor -%}
+        </ul>
+        {%- else -%}<!-- -->
+        <ul>
+            {% for item in (content | toc) %}
+            {{
+                renderTOCItem(item)
+            }}
+            {% endfor -%}<!-- -->
+        </ul>
+        {%- endif -%}
+    </div>
+</li>
+{%- endmacro %}
+
+<nav>
+    <ul>
+        {%- for entry in navPages %}{{
+            renderNavListItem(entry)
+        }}
+        {%- endfor -%}
+    </ul>
+</nav>

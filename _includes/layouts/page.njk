@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+---
+
+<style>
+    .main-layout {
+        display: grid;
+        grid-template-columns: 20em 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header header"
+            "nav main "
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        align-self: start;
+        position: sticky;
+        top: 0;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+</style>
+
+<div class="main-layout">
+    <header>
+        <div>Padloc</div>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/manual">Manual</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% include 'components/nav.njk' %}
+
+    <main>
+        <article>
+            <h1>{{ title }}</h1>
+            {{ content | safe }}
+        </article>
+    </main>
+
+    <footer></footer>
+</div>

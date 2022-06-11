@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title or metadata.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="/img/logo.png" />
+
+        <link rel="stylesheet" href="/assets/css/base.css" />
+        <link rel="stylesheet" href="/assets/css/fonts.css" />
+        <link rel="stylesheet" href="/assets/css/icons.css" />
+    </head>
+    <body>
+        {{ content | safe }}
+    </body>
+</html>
