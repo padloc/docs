@@ -6,3 +6,111 @@
     background: var(--color-shade-1);
 }
 
+a:not(.unstyled) {
+    --bg-h: 1px;
+    color: var(--color-highlight);
+    background: linear-gradient(0deg, currentColor, currentColor) no-repeat right bottom / 0 var(--bg-h);
+    display: inline-block;
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+    transition: background-size 350ms, transform 350ms;
+}
+
+a:not(.unstyled):where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    transform: translate(0, -2px);
+}
+
+.red {
+    --color-highlight: var(--red);
+}
+
+.orange {
+    --color-highlight: var(--orange);
+}
+
+.yellow {
+    --color-highlight: var(--yellow);
+}
+
+.olive {
+    --color-highlight: var(--olive);
+}
+
+.green {
+    --color-highlight: var(--green);
+}
+
+.teal {
+    --color-highlight: var(--teal);
+}
+
+.blue {
+    --color-highlight: var(--blue);
+}
+
+.violet {
+    --color-highlight: var(--violet);
+}
+
+.purple {
+    --color-highlight: var(--purple);
+}
+
+.pink {
+    --color-highlight: var(--pink);
+}
+
+.brown {
+    --color-highlight: var(--brown);
+}
+
+.grey {
+    --color-highlight: var(--grey);
+}
+
+.black {
+    --color-highlight: var(--black);
+}
+
+.aqua {
+    --color-highlight: var(--aqua);
+}
+
+.white {
+    --color-highlight: var(--white);
+}
+
+.highlighted {
+    color: var(--color-highlight);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.subtle {
+    opacity: 0.8;
+}
+
+.faded {
+    opacity: 0.5;
+}
+
+@supports (-webkit-text-stroke: 1px var(--orange)) {
+    h1 {
+        -webkit-text-stroke: 1px var(--orange);
+        -webkit-text-fill-color: white;
+        text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
+        transition: text-shadow 0.5s;
+    }
+
+    h1:hover {
+        text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
+    }
+}

@@ -1,33 +1,34 @@
 {% set navPages = collections.all | eleventyNavigation("/manual") %}<!-- -->
 
 {% macro renderTOCItem(item) -%}<!-- -->
-<li class="vertically-half-margined">
-    <a href="#{{ item.id }}" class="padded rounded block hover-bg">
+<li>
+    <a href="#{{ item.id }}" class="unstyled padded rounded block hover-bg" data-level="{{ item.level }}">
         <span>
             {{ item.title | safe }}
         </span>
     </a>
 
     {%- if item.children.length -%}
-    <ul class="small left-margined left-padded">
+    <ol class="unstyled small">
         {%- for child in item.children %}{{
             renderTOCItem(child)
         }}
         {% endfor -%}
-    </ul>
+    </ol>
     {% endif %}
 </li>
 {%- endmacro %}<!-- -->
 
 {% macro renderNavListItem(entry) -%}<!-- -->
 
-{% set isActive = page.url | startsWith(entry.url) %}
+{% set isActive = page.url | startsWith(entry.url) %}<!-- -->
+{% set isCurrent = entry.url == page.url %}<!-- -->
 
-<li class="vertically-half-margined">
+<li>
     <a
-        aria-current="{% if entry.url == page.url %}page{% else %}false{% endif %}"
+        aria-current="{% if isCurrent %}page{% endif %}"
         href="{{ entry.url | url }}"
-        class="padded rounded block hover-bg"
+        class="unstyled padded rounded block hover-bg"
     >
         <i class="{{ entry.icon or 'scroll' }}"></i>
         <span>
@@ -36,30 +37,96 @@
     </a>
 
     <div role="none" {% if not isActive %}hidden{% endif %} class="left-margined">
+        {%- if isCurrent -%}<!-- -->
+        <ol class="unstyled small table-of-contents">
+            {% for item in (content | toc) %}
+            {{
+                renderTOCItem(item)
+            }}
+            {% endfor -%}<!-- -->
+        </ol>
+        {%- endif -%}<!-- -->
+
         {%- if entry.children.length -%}
-        <ul class="small left-margined left-padded">
+        <ul class="unstyled small">
             {%- for child in entry.children %}
             {{
                 renderNavListItem(child)
             }}
             {% endfor -%}
         </ul>
-        {%- else -%}<!-- -->
-        <ul class="small left-margined left-padded">
-            {% for item in (content | toc) %}
-            {{
-                renderTOCItem(item)
-            }}
-            {% endfor -%}<!-- -->
-        </ul>
         {%- endif -%}
     </div>
 </li>
 {%- endmacro %}
 
-<ul>
+<ul class="unstyled">
     {%- for entry in navPages %}{{
         renderNavListItem(entry)
     }}
     {%- endfor -%}
 </ul>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>

@@ -1,65 +1,51 @@
 ---
 title: Introduction
 weight: 1
+icon: scroll
 ---
 
-{% figure caption="Seem familiar?" %} \
-{% blockquote %} {% colored "blue" %} \
-**Me**: Hi Reddit, I'd like to see some pictures of cute kittens please!
-{% endcolored %} \
-{% br %} \
-{% colored "red" %} **Reddit**: Your session has expired. Please log in again!
-{% endcolored %} \
-{% br %} \
-{% colored "blue" %} **Me**: Sure thing! Wait, what's my password again? It had
-my pets name I think? And probably my birthday? A I think I got it.
-{% endcolored %} {% br %} \
-{% colored "red" %} **Reddit**: Incorrect username or password. Please try again!{% endcolored %}
-{% br %} \
-{% colored "blue" %} **Me**: Hm. Ok maybe it was my mothers
-birtday?{% endcolored %} \
-{% br %} \
-{% colored "red" %} \
-**Reddit**: Incorrect username or password. Please try again!{% endcolored %} \
-{% br %} \
-{% colored "blue" %} \
-**Me**: Damnit. Ah, I think I added a '\$' at the end. Or was it a '\*'? I
-remember something about a special character being required...{% endcolored %} \
-{% br %} \
-{% colored "red" %} \
-**Reddit**: Incorrect username or password. Please try again!{% endcolored %} \
-{% br %} \
-{% colored "blue" %} \
-**Me**: Ok, I give up. Reddit, I feel terrible for asking but can you please
-send me a new password?{% endcolored %} \
-{% br %} \
-{% colored "red" %} \
-**Reddit**: Sure thing. Please enter your email address.{% endcolored %} \
-{% br %} \
-{% colored "blue" %} \
-**Me**: I can do that! Here you go.{% endcolored %} \
-{% br %} \
-{% colored "red" %} \
-**Reddit**: No user found with this email address.{% endcolored %} \
-{% br %} \
-{% colored "blue" %} \
-**Me**: Gahhh. Maybe I used my Hotmail address? But I haven't used that one in
-ages. Oh well, it's worth a shot...{% endcolored %} \
-{% br %} \
-{% colored "red" %} \
-**Reddit**: An email has been sent to **iheartkittens\@hotmail.com**. Please follow
-the instructions enclosed in the email.{% endcolored %} \
-{% br %} \
-{% colored "blue" %} \
-**Me**: Thank god... Ok lets check my Hotmail account. {% endcolored %} \
-{% br %} \
-{% colored purple %} \
-**Hotmail**: Hi there! Please enter your username and password.{% endcolored %} {% br %}
-\
-{% colored "blue" %} \
-**Me**: Sure thing! Wait... {% endcolored %} \
-{% endblockquote %} \
-{% endfigure %}
+## The Problem
+
+Have you ever experienced something like this? 👇
+
+<blockquote>
+    <span class="blue highlighted"><strong>Me</strong>: Hi Reddit, I'd like to see some pictures of cute kittens please!</span>  
+    <br>
+    <span class="red highlighted"><strong>Reddit</strong>: Your session has expired. Please log in again!</span>
+    <br>
+    <span class="blue highlighted">Sure thing! Wait, what's my password again? It had my pets name I think? And probably my birthday? A I think I got it.</span>
+    <br>
+    <span class="red highlighted"><strong>Reddit</strong>: Incorrect username or password. Please try again!</span>
+    <br>
+    <span class="blue highlighted"><strong>Me</strong>: Hm. Ok maybe it was my mothers birthday?</span>
+    <br>
+    <span class="red highlighted"><strong>Reddit</strong>: Incorrect username or password. Please
+try again!</span>
+    <br>
+    <span class="blue highlighted"><strong>Me</strong>: Damnit. Ah, I think I added a '\$' at the end. Or was it a '\*'? I remember something about a special character being required...</span>
+    <br>
+    <span class="red highlighted"><strong>Reddit</strong>: Incorrect username or password. Please try
+again!</span>
+    <br>
+    <span class="blue highlighted"><strong>Me</strong>: Ok, I give up. Reddit, I feel terrible for asking but can you please send me a new password?</span>
+    <br>
+    <span class="red highlighted"><strong>Reddit</strong>: Sure thing. Please enter your email address.</span>
+    <br>
+    <span class="blue highlighted"><strong>Me</strong>: I can do that! Here you go.</span>
+    <br>
+    <span class="red highlighted"><strong>Reddit</strong>: No user found with this email address.</span>
+    <br>
+    <span class="blue highlighted"><strong>Me</strong>: Gahhh. Maybe I used my Hotmail address? But I haven't used
+that one in ages. Oh well, it's worth a shot...</span>
+    <br>
+    <span class="red highlighted"><strong>Reddit</strong>: An email has been sent to<strong>iheartkittens\@hotmail.com</strong>. Please follow the instructions enclosed in the email.</span>
+    <br>
+    <span class="blue highlighted"><strong>Me</strong>: Thank god... Ok lets check my Hotmail account. </span>
+    <br>
+    <span class="purple highlighted"><strong>Hotmail</strong>: Hi there! Please enter your username and password.</span>
+    <br>
+    <span class="blue highlighted"><strong>Me</strong>: Sure thing! Wait... </span>
+</blockquote>
 
 We've all been there. There is just so many accounts, passwords and other
 information to keep track of it seems impossible not get confused and

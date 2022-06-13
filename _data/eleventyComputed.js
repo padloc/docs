@@ -25,7 +25,7 @@ module.exports = {
             // If no specific parent specified, try to automatically use fallback
             return data.parent || parent;
         },
-        order: (data) => data.order,
+        order: (data) => data.order || data.weight,
         icon: (data) => data.icon,
     },
 };

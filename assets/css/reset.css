@@ -44,8 +44,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
 li,
 fieldset,
 form,
@@ -99,9 +97,14 @@ a {
     text-decoration: none;
 }
 
-ol,
-ul {
+ol.unstyled,
+ul.unstyled {
     list-style: none;
+    margin: unset;
+    padding: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    scrollbar-width: thin;
 }
 
 table {
@@ -148,3 +151,8 @@ input:invalid {
 input:-internal-autofill-selected {
     all: unset;
 }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

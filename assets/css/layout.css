@@ -271,6 +271,10 @@
     --grid-gap: var(--spacing);
 }
 
+.double-spacing.grid {
+    --grid-gap: calc(2 * var(--spacing));
+}
+
 .scrolling,
 .scroller {
     overflow: auto !important;
@@ -338,10 +342,30 @@
     word-break: break-all;
 }
 
-.large {
-    font-size: 1.1em;
+.micro {
+    font-size: var(--font-size-micro);
+}
+
+.tiny {
+    font-size: var(--font-size-tiny);
 }
 
 .small {
-    font-size: 0.9em;
+    font-size: var(--font-size-small);
+}
+
+.large {
+    font-size: var(--font-size-large);
+}
+
+.big {
+    font-size: var(--font-size-big);
+}
+
+.huge {
+    font-size: var(--font-size-huge);
+}
+
+.giant {
+    font-size: var(--font-size-giant);
 }

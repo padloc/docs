@@ -1,0 +1,11 @@
+{% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+
+<nav class="small">
+    <ul class="unstyled horizontal spacing center-aligning layout">
+        {% for crumb in breadcrumbs %}
+        <li>
+            <a href="{{ crumb.url }}"><i class="{{ crumb.icon }}"></i> {{ crumb.title }}</a> /
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

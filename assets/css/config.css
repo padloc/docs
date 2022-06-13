@@ -46,4 +46,12 @@ html {
     --color-shade-3: rgba(0, 0, 0, 0.15);
     --color-shade-4: rgba(0, 0, 0, 0.2);
     --color-shade-5: rgba(0, 0, 0, 0.25);
+
+    --font-size-micro: 0.6em;
+    --font-size-tiny: 0.7em;
+    --font-size-small: 0.85em;
+    --font-size-large: 1.2em;
+    --font-size-big: 1.5em;
+    --font-size-huge: 2em;
+    --font-size-giant: 3em;
 }

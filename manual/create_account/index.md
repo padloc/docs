@@ -12,11 +12,12 @@ login at this point. Instead, click on **Sign Up Now**.
 
 ## Step 1: Enter your name and email address
 
-### Step 1.1: This is a sub level
-
 First, you'll be asked for an **email address** and your **name**.
 
-{% figure caption="Test" %} {% img src="signup_start.png" %} {% endfigure %}
+<figure>
+    <img src="signup_start.png">
+    <figcaption>Start by entering your email address and name.</figcaption>
+</figure>
 
 Your **email address** is used as a username for logging into your account, as
 well as as the standard delivery method for 2-factor authentication. We'll also
@@ -24,10 +25,6 @@ use this address to send you important updates about your account, organizations
 you are a member of and various other things. For more information about how we
 handle your email and other personal information, please refer to our
 [privacy policy](/privacy).
-
-### Step 1.2: This is a sub level
-
-#### Step 1.2.1: Sub sub!
 
 You may also enter a **display name** that will tell us how you'd like to be
 referred to. This is especially useful in case you join any organizations (like
@@ -47,7 +44,10 @@ provided field and click **Continue**.
 > Note that email may take a few minutes before it shows up in your mailbox. You
 > may also want to check your spam folder!
 
-{% img src="signup_verify.png" %}
+<figure>
+    <img src="signup_verify.png">
+    <figcaption>Confirm your email address by entering the confirmation code we'll send you.</figcaption>
+</figure>
 
 ## Step 3: Choose your master password
 
@@ -69,7 +69,10 @@ This passphrase may not look particularly secure, but we assure you it is likely
 much better than anything you would come up by yourself (no offense) and it
 certainly is a lot easier to remember than a string of random characters!
 
-{% img src="signup_master_password.png" %}
+<figure>
+    <img src="signup_master_password.png">
+    <figcaption>Coming up with a good password is hard, but we've got you covered.</figcaption>
+</figure>
 
 Don't like your suggested password? No problem! You can shuffle through more
 random phrases by clicking **Try Another One** until you find one you like (the
@@ -82,14 +85,21 @@ generated. You can even choose a different language or increase the number of
 words used (4 words should be good enough for most personal uses but if you want
 to be safe, choosing 5, 6 or 7 words will make your password even more secure).
 
-{% img src="signup_generate_password.png" %}
+<figure>
+    <img src="signup_generate_password.png">
+    <figcaption>The password generator will give you a lot more control over what output is produced.</figcaption>
+</figure>
 
 Once you've chosen your master password, all that is left to do is to confirm it
 by repeating it in the field below (peeking is allowed). Aaand that's it! You're
 now all set to start using Padloc!
 
-> **Important**: As mentioned above, we don't keep a copy of your master
-> password anywhere and we won't be able to recover it if you forget it! To be
-> safe, we recommend writing it down on a piece of paper and storing it
-> somewhere save, at least until you've safely memorized it. **Don't store your
-> master password digitally in any form and don't tell it to anybody else!**
+<blockquote class="red">
+
+**Important**: As mentioned above, we don't keep a copy of your master password
+anywhere and we won't be able to recover it if you forget it! To be safe, we
+recommend writing it down on a piece of paper and storing it somewhere save, at
+least until you've safely memorized it. **Don't store your master password
+digitally in any form and don't tell it to anybody else!**
+
+</blockquote>
