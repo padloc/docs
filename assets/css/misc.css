@@ -101,16 +101,3 @@ a:not(.unstyled):where(:hover, :focus-visible) {
 .faded {
     opacity: 0.5;
 }
-
-@supports (-webkit-text-stroke: 1px var(--orange)) {
-    h1 {
-        -webkit-text-stroke: 1px var(--orange);
-        -webkit-text-fill-color: white;
-        text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
-        transition: text-shadow 0.5s;
-    }
-
-    h1:hover {
-        text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
-    }
-}

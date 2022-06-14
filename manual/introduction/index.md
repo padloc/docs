@@ -13,7 +13,7 @@ Have you ever experienced something like this? 👇
     <br>
     <span class="red highlighted"><strong>Reddit</strong>: Your session has expired. Please log in again!</span>
     <br>
-    <span class="blue highlighted">Sure thing! Wait, what's my password again? It had my pets name I think? And probably my birthday? A I think I got it.</span>
+    <span class="blue highlighted"><strong>Me</strong>: Sure thing! Wait, what's my password again? It had my pets name I think? And probably my birthday? A I think I got it.</span>
     <br>
     <span class="red highlighted"><strong>Reddit</strong>: Incorrect username or password. Please try again!</span>
     <br>
@@ -22,7 +22,7 @@ Have you ever experienced something like this? 👇
     <span class="red highlighted"><strong>Reddit</strong>: Incorrect username or password. Please
 try again!</span>
     <br>
-    <span class="blue highlighted"><strong>Me</strong>: Damnit. Ah, I think I added a '\$' at the end. Or was it a '\*'? I remember something about a special character being required...</span>
+    <span class="blue highlighted"><strong>Me</strong>: Damnit. Ah, I think I added a '$' at the end. Or was it a '*'? I remember something about a special character being required...</span>
     <br>
     <span class="red highlighted"><strong>Reddit</strong>: Incorrect username or password. Please try
 again!</span>
@@ -38,7 +38,7 @@ again!</span>
     <span class="blue highlighted"><strong>Me</strong>: Gahhh. Maybe I used my Hotmail address? But I haven't used
 that one in ages. Oh well, it's worth a shot...</span>
     <br>
-    <span class="red highlighted"><strong>Reddit</strong>: An email has been sent to<strong>iheartkittens\@hotmail.com</strong>. Please follow the instructions enclosed in the email.</span>
+    <span class="red highlighted"><strong>Reddit</strong>: An email has been sent to <strong>iheartkittens@hotmail.com</strong>. Please follow the instructions enclosed in the email.</span>
     <br>
     <span class="blue highlighted"><strong>Me</strong>: Thank god... Ok lets check my Hotmail account. </span>
     <br>

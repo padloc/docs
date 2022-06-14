@@ -1,0 +1,59 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 18em minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    grid-gap: 1em;
+}
+
+.main-layout > .side-nav {
+    grid-area: nav;
+    align-self: start;
+    position: sticky;
+    top: 0;
+}
+
+.main-layout > main {
+    grid-area: main;
+}
+
+.main-layout > footer {
+    grid-area: footer;
+}
+
+main > .child-pages {
+    margin: 1em 0;
+}
+
+article > h1 {
+    -webkit-text-stroke: 1px var(--orange);
+    -webkit-text-fill-color: white;
+    text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
+    transition: text-shadow 0.5s;
+}
+
+article:hover > h1 {
+    text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
+}
+
+.child-pages a {
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--orange);
+    -webkit-text-fill-color: white;
+    text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
+    transition: all 0.3s;
+    border: dashed var(--color-shade-2) 1px;
+}
+
+.child-pages a:hover {
+    text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
+    border: solid 1px var(--orange);
+    box-shadow: var(--orange) 1px 1px 0 1px, var(--purple) 2px 2px 0 1px, var(--blue) 3px 3px 0 1px,
+        var(--green) 4px 4px 0 1px;
+}

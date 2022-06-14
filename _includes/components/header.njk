@@ -1,0 +1,26 @@
+<header class="double-padded center-aligning spacing wrapping horizontal layout top-header">
+    <a href="/" class="unstyled center-aligning spacing horizontal layout">
+        <img src="/assets/img/logo-light.svg" style="height: 2.5em" />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class="stretch"></div>
+
+    <nav class="small">
+        <ul class="unstyled center-aligning double-spacing horizontal layout">
+            <li>
+                <a
+                    href="/manual"
+                    aria-current="{% if page.url | startsWith('/manual') %}page{% else %}false{% endif %}"
+                >
+                    <i class="book"></i> User Manual
+                </a>
+            </li>
+            <li>
+                <a href="/docs" aria-current="{% if page.url | startsWith('/docs') %}page{% else %}false{% endif %}">
+                    <i class="code"></i> Technical Docs
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

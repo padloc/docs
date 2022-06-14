@@ -60,12 +60,14 @@
 </li>
 {%- endmacro %}
 
-<ul class="unstyled">
-    {%- for entry in navPages %}{{
-        renderNavListItem(entry)
-    }}
-    {%- endfor -%}
-</ul>
+<nav class="padded side-nav">
+    <ul class="unstyled">
+        {%- for entry in navPages %}{{
+            renderNavListItem(entry)
+        }}
+        {%- endfor -%}
+    </ul>
+</nav>
 
 <script>
     window.addEventListener("load", () => {

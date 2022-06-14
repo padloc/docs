@@ -2,133 +2,10 @@
 layout: layouts/base.njk
 ---
 
-<style>
-    .main-layout {
-        display: grid;
-        grid-template-columns: 18em minmax(0, 1fr);
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "header header"
-            "nav main"
-            "footer footer";
-        width: 100%;
-        max-width: 60em;
-        margin: 0 auto;
-        grid-gap: 1em;
-    }
-
-    .main-layout header {
-        grid-area: header;
-    }
-
-    .main-layout header nav a {
-        padding: 0.5em 0.8em;
-    }
-
-    .main-layout header nav a[aria-current="page"] {
-        background: var(--color-highlight);
-        color: var(--color-bg);
-        border-radius: 0.5em;
-    }
-
-    .main-layout > nav {
-        grid-area: nav;
-        align-self: start;
-        position: sticky;
-        top: 0;
-    }
-
-    .main-layout > nav li ul,
-    .main-layout > nav li ol {
-        border-left: dashed 1px var(--color-shade-2);
-        margin-left: 0.6em;
-        padding-left: 0.5em;
-    }
-
-    .main-layout > nav a[aria-current="page"] {
-        color: var(--color-highlight);
-        font-weight: bold;
-    }
-
-    .main-layout > nav .table-of-contents a {
-        position: relative;
-    }
-
-    .main-layout > nav .table-of-contents a[aria-current]::before {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 2px;
-        background: var(--color-highlight);
-        position: absolute;
-        top: 0;
-        left: -0.62em;
-        border-radius: 2px;
-    }
-
-    .main-layout > main {
-        grid-area: main;
-    }
-
-    .main-layout > footer {
-        grid-area: footer;
-    }
-
-    main > .child-pages {
-        margin: 1em 0;
-    }
-
-    @supports (-webkit-text-stroke: 1px var(--orange)) {
-        .child-pages a {
-            font-weight: bold;
-            -webkit-text-stroke: 1px var(--orange);
-            -webkit-text-fill-color: white;
-            text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
-            transition: all 0.3s;
-            border: dashed var(--color-shade-2) 1px;
-        }
-
-        .child-pages a:hover {
-            text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
-            border: solid 1px var(--orange);
-            box-shadow: var(--orange) 1px 1px 0 1px, var(--purple) 2px 2px 0 1px, var(--blue) 3px 3px 0 1px,
-                var(--green) 4px 4px 0 1px;
-        }
-    }
-</style>
-
 <div class="main-layout">
-    <header class="double-padded center-aligning spacing wrapping horizontal layout">
-        <a href="/" class="unstyled center-aligning spacing horizontal layout">
-            <img src="/assets/img/logo-light.svg" style="height: 2.5em" />
-            <span class="small semibold subtle">Docs & Resources</span>
-        </a>
+    {% include "components/header.njk" %}<!-- -->
 
-        <div class="stretch"></div>
-
-        <nav class="small">
-            <ul class="unstyled center-aligning double-spacing horizontal layout">
-                <li>
-                    <a
-                        href="/manual"
-                        aria-current="{% if page.url | startsWith('/manual') %}page{% else %}false{% endif %}"
-                    >
-                        <i class="book"></i> User Manual
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="/docs"
-                        aria-current="{% if page.url | startsWith('/docs') %}page{% else %}false{% endif %}"
-                    >
-                        <i class="code"></i> Technical Docs
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <nav class="padded">{% include "components/nav.njk" %}</nav>
+    {% include "components/side-nav.njk" %}<!-- -->
 
     <main class="animation-reveal-children">
         {% include "components/breadcrumbs.njk" %}
@@ -159,5 +36,5 @@ layout: layouts/base.njk
         {% endif %}
     </main>
 
-    <footer></footer>
+    {% include "components/footer.njk" %}
 </div>
