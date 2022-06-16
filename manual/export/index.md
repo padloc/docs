@@ -4,11 +4,7 @@ icon: file-export
 aliases:
     - /guides/export/
 weight: 8
-anchors:
-    - hash: encrypted-export
-      title: Encrypted Export
-    - hash: comma-separated-values-csv
-      title: Comma-Separated Values
+description: How to create backups or export your data from Padloc.
 ---
 
 ## Encrypted Export

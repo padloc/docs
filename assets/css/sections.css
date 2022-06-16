@@ -1,0 +1,56 @@
+.sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    width: 100%;
+    max-width: 50em;
+    grid-gap: 1em;
+}
+
+.section {
+    border: dashed var(--color-shade-2) 1px;
+    transition: all 0.3s;
+    border-radius: 0.5em;
+    padding: 1.8em 1.5em 1.5em 1.5em;
+    transform-origin: 100% 100%;
+}
+
+.section:hover {
+    border: solid 1px var(--orange);
+    box-shadow: var(--orange) 1px 1px 0 0, var(--purple) 2px 2px 0 1px, var(--blue) 4px 4px 0 1px,
+        var(--green) 6px 6px 0 1px;
+    transform: scale(1.02);
+}
+
+.section .description {
+    margin-top: 1em;
+}
+
+.section:not(:hover) .description {
+    opacity: 0.8;
+}
+
+.section > * {
+    transition: all 0.3s;
+}
+
+.section h2 {
+    display: block;
+    margin: 0;
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--orange);
+    -webkit-text-fill-color: var(--color-bg);
+    text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
+    transition: all 0.3s;
+}
+
+.section:hover h2 {
+    text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
+}
+
+.section > .section-items {
+    --grid-column-width: 20em;
+    max-width: 41em;
+    margin: 0.5em auto 0 auto;
+}

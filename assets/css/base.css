@@ -5,6 +5,7 @@ body {
     font-family: var(--font-family);
     color: var(--color-fg);
     line-height: 1.2em;
+    background: var(--color-bg);
 }
 
 body,
@@ -50,7 +51,7 @@ h3,
 h4,
 h5 {
     line-height: 1.2em;
-    margin: var(--spacing) 0;
+    margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
 }
 
 h2:not(:first-child),
@@ -73,6 +74,10 @@ blockquote {
     margin-left: -0.5em;
 }
 
+input {
+    background: transparent;
+}
+
 input:not(.unstyled) {
     padding: 0.5em;
     border: solid 1px var(--color-shade-2);
@@ -84,7 +89,7 @@ input:focus {
 }
 
 figure {
-    margin: 1em -1em;
+    margin: 2em -1em;
     text-align: center;
 }
 

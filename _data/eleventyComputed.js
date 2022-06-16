@@ -27,5 +27,6 @@ module.exports = {
         },
         order: (data) => data.order || data.weight,
         icon: (data) => data.icon,
+        description: (data) => data.description,
     },
 };

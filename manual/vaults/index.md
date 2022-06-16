@@ -2,25 +2,7 @@
 title: Vaults & Vault Items
 weight: 3
 icon: cubes
-anchors:
-    - hash: creating-vault-items
-      title: Creating Vault Items
-    - hash: editing-vault-items
-      title: Editing Vault Items
-    - hash: generating-passwords
-      title: Generating Passwords
-    - hash: deleting-items
-      title: Deleting Items
-    - hash: moving-items-between-vaults
-      title: Moving Items Between Vaults
-    - hash: tags
-      title: Tags
-    - hash: favorites
-      title: Favorites
-    - hash: attachments
-      title: Attachments
-    - hash: creating-new-vaults
-      title: Creating New Vaults
+description: Everything you need to know about Vaults and Vault Items
 ---
 
 Vaults are where all your data is stored within Padloc. You can imagine them as

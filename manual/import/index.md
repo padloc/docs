@@ -4,11 +4,7 @@ weight: 7
 icon: file-import
 aliases:
     - /guides/import/
-anchors:
-    - hash: from-csv
-      title: From CSV
-    - hash: from-padloc-export
-      title: From Padloc Export
+description: How to import data from CSV files and other formats.
 ---
 
 Padloc provides an easy way to import data from other applications. Supported

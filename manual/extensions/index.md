@@ -2,15 +2,7 @@
 title: Browser Extensions
 weight: 9
 icon: browser
-anchors:
-    - hash: getting-started
-      title: Getting Started
-    - hash: browsing-editing--more
-      title: Browsing, Editing & More
-    - hash: website-matching
-      title: Website Matching
-    - hash: filling-form-elements
-      title: Filling Form Elements
+description: Everything you need to know about the Padloc browser extensions.
 ---
 
 The Padloc browser extension is a convenient and secure way to access your data

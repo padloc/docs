@@ -1,4 +1,4 @@
-html {
+body {
     --spacing: 0.5em;
     --font-family: "Nunito", sans-serif;
 
@@ -6,7 +6,6 @@ html {
     --color-white: #fff;
     --color-fg: var(--color-black);
     --color-bg: var(--color-white);
-    --max-inner-width: 1200px;
     --color-subtle: rgba(0, 0, 0, 0.3);
 
     --red: #db2828;
@@ -24,22 +23,7 @@ html {
     --black: #1b1c1d;
     --aqua: #1cd0bf;
 
-    --red-bg: #ffe8e6;
-    --orange-bg: #ffedde;
-    --yellow-bg: #fff8db;
-    --olive-bg: #fbfdef;
-    --green-bg: #e5f9e7;
-    --teal-bg: #e1f7f7;
-    --blue-bg: #dff0ff;
-    --violet-bg: #eae7ff;
-    --purple-bg: #f6e7ff;
-    --pink-bg: #ffe3fb;
-    --brown-bg: #f1e2d3;
-    --aqua-bg: #c8fdf8;
-    --grey-bg: #f1f1f1;
-
     --color-highlight: var(--blue);
-    --color-highlight-bg: var(--teal);
 
     --color-shade-1: rgba(0, 0, 0, 0.05);
     --color-shade-2: rgba(0, 0, 0, 0.1);
@@ -54,4 +38,30 @@ html {
     --font-size-big: 1.5em;
     --font-size-huge: 2em;
     --font-size-giant: 3em;
+}
+
+body.theme-dark {
+    --color-bg: var(--color-black);
+    --color-fg: var(--color-white);
+    --color-subtle: rgba(255, 255, 255, 0.3);
+
+    --color-shade-1: rgba(255, 255, 255, 0.05);
+    --color-shade-2: rgba(255, 255, 255, 0.1);
+    --color-shade-3: rgba(255, 255, 255, 0.15);
+    --color-shade-4: rgba(255, 255, 255, 0.2);
+    --color-shade-5: rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not(.theme-light) {
+        --color-bg: var(--color-black);
+        --color-fg: var(--color-white);
+        --color-subtle: rgba(255, 255, 255, 0.3);
+
+        --color-shade-1: rgba(255, 255, 255, 0.05);
+        --color-shade-2: rgba(255, 255, 255, 0.1);
+        --color-shade-3: rgba(255, 255, 255, 0.15);
+        --color-shade-4: rgba(255, 255, 255, 0.2);
+        --color-shade-5: rgba(255, 255, 255, 0.25);
+    }
 }

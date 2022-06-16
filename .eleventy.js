@@ -60,6 +60,12 @@ module.exports = (config) => {
     config.addFilter("jsonify", (val) => JSON.stringify(val, null, 4));
     config.addFilter("startsWith", (str = "", searchString = "") => str.startsWith(searchString));
     config.addFilter("toc", getTOC);
+    config.addFilter("nextInSection", function (items) {
+        return items.find((item) => item.order === this.ctx.eleventyNavigation.order + 1);
+    });
+    config.addFilter("prevInSection", function (items) {
+        return items.find((item) => item.order === this.ctx.eleventyNavigation.order - 1);
+    });
 
     return {
         markdownTemplateEngine: "njk",

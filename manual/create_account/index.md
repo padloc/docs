@@ -2,13 +2,14 @@
 title: Creating An Account
 weight: 2
 icon: user-plus
+description: Creating a Padloc account is simple and takes only a few moments...
 ---
 
 Creating a Padloc account is simple and takes only a few moments. To get
 started, you can either open the Padloc web app by going to
-https://web.padloc.app or by downloading and installing the app. The first thing
-you'll see is a login screen. Since you don't have an account yet, you can't
-login at this point. Instead, click on **Sign Up Now**.
+[web.padloc.app](https://web.padloc.app) or by downloading and installing the
+app. The first thing you'll see is a login screen. Since you don't have an
+account yet, you can't login at this point. Instead, click on **Sign Up Now**.
 
 ## Step 1: Enter your name and email address
 

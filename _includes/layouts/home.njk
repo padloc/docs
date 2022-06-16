@@ -2,54 +2,18 @@
 layout: layouts/base.njk
 ---
 
-{% macro renderSection(url, title, icon, description) -%}<!-- -->
+<div class="vertical layout fill-vertically">
+    <main class="double-padded centering vertical layout stretch">
+        <div class="fit-horizontally animation-reveal-children animation-fast">
+            <header class="double-margined centering vertical layout" style="grid-column: -1/1">
+                <img src="/assets/img/logo-light.svg" class="logo" alt="Padloc Logo" />
+                <div class="logo-subtitle">{{ title }}</div>
+                {% include "components/search.njk" %}
+            </header>
 
-{% set children = collections.all | eleventyNavigation(url) %}<!-- -->
+            {% include "components/sections.njk" %}
+        </div>
+    </main>
 
-<div class="section fill">
-    <a href="{{ url }}" class="unstyled title"><i class="{{ icon }}"></i> {{ title }}</a>
-    <div class="double-margined text-centering">
-        {{ description }}
-    </div>
-    <ul class="unstyled section-items spacing grid">
-        {% for item in children %}
-        <li class="half-margined">
-            <a href="{{ item.url }}">
-                <i class="{{ item.icon }}"></i>
-                {{ item.title }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+    {% include "components/footer.njk" %}
 </div>
-{%- endmacro %}
-
-<main class="double-padded centering vertical layout fill-vertically">
-    <div class="double-spacing horizontal sections animation-reveal-children">
-        <header class="margined centering vertical layout" style="grid-column: -1/1">
-            <img src="assets/img/logo-light.svg" class="logo" />
-            <div class="logo-subtitle">Docs & Resources</div>
-            <form action="https://google.com/search" method="get" class="search-wrapper">
-                <input type="hidden" name="q" value="site:{{ metadata.url }}" />
-                <i class="search horizontally-margined"></i>
-                <input class="unstyled" type="search" name="q" autocomplete="off" required placeholder="Search..." />
-                <button type="submit"><i class="arrow-right"></i></button>
-            </form>
-        </header>
-        <div>
-            {{ renderSection("/manual", "User Manual", "book", "You just want to learn how to use the Padloc app.") }}
-        </div>
-        <div>
-            {{
-                renderSection(
-                    "/docs",
-                    "Technical Docs",
-                    "code",
-                    "You'd like to contribute to the project or host Padloc yourself."
-                )
-            }}
-        </div>
-    </div>
-</main>
-
-<footer></footer>

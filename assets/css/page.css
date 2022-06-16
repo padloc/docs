@@ -33,7 +33,7 @@ main > .child-pages {
 
 article > h1 {
     -webkit-text-stroke: 1px var(--orange);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: var(--color-bg);
     text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
     transition: text-shadow 0.5s;
 }
@@ -42,18 +42,68 @@ article:hover > h1 {
     text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
 }
 
-.child-pages a {
-    font-weight: bold;
-    -webkit-text-stroke: 1px var(--orange);
-    -webkit-text-fill-color: white;
-    text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
-    transition: all 0.3s;
-    border: dashed var(--color-shade-2) 1px;
+.prev-next {
+    --grid-column-width: 15em;
 }
 
-.child-pages a:hover {
-    text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
+.prev-next a {
+    display: block;
+    border: dashed var(--color-shade-2) 1px;
+    transition: all 0.3s;
+    border-radius: 0.5em;
+    transform-origin: 100% 100%;
+    padding: 1em;
+}
+
+.prev-next a:hover {
     border: solid 1px var(--orange);
-    box-shadow: var(--orange) 1px 1px 0 1px, var(--purple) 2px 2px 0 1px, var(--blue) 3px 3px 0 1px,
-        var(--green) 4px 4px 0 1px;
+    box-shadow: var(--orange) 1px 1px 0 0, var(--purple) 2px 2px 0 1px, var(--blue) 4px 4px 0 1px,
+        var(--green) 6px 6px 0 1px;
+    transform: scale(1.02);
+}
+
+.prev-next h2 {
+    margin: 0;
+    display: block;
+    line-height: 1.2em;
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--orange);
+    -webkit-text-fill-color: var(--color-bg);
+    text-shadow: var(--orange) 0px 0px, var(--purple) 0px 0px, var(--blue) 0px 0px, var(--green) 0px 0px;
+    transition: all 0.3s;
+}
+
+.prev-next a:hover h2 {
+    text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
+}
+
+.prev-next .description {
+    transition: all 0.3s;
+}
+
+.prev-next a:not(:hover) .description {
+    opacity: 0.5;
+}
+
+@media (max-width: 60em) {
+    .main-layout {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        width: 100%;
+        max-width: 60em;
+        margin: 0 auto;
+        grid-gap: 1em;
+    }
+
+    .side-nav {
+        display: none;
+    }
+
+    .main-layout main {
+        padding: 1em;
+    }
 }

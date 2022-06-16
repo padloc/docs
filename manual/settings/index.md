@@ -2,19 +2,7 @@
 title: Settings
 weight: 6
 icon: cog
-anchors:
-    - hash: changing-your-display-name
-      title: Changing Your Display Name
-    - hash: logging-out
-      title: Logging Out
-    - hash: changing-your-master-password
-      title: Changing Your Master Password
-    - hash: auto-lock
-      title: Auto Lock
-    - hash: managing-your-subscription
-      title: Managing Your Subscription
-    - hash: deleting-your-account
-      title: Deleting Your Account
+description: A tour of the various features hidden under Settings.
 ---
 
 The **Settings** screen contains options for managing your account, your

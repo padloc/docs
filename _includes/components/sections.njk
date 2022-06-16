@@ -1,0 +1,38 @@
+{% macro renderSection(section) -%}<!-- -->
+
+{% set children = collections.all | eleventyNavigation(section.key) %}<!-- -->
+
+<li class="section fill">
+    <a href="{{ section.url }}" class="unstyled">
+        <h2><i class="{{ section.icon }}"></i> {{ section.title }}</h2>
+    </a>
+    <div class="description">
+        {{ section.description }}
+    </div>
+    {% if children.length %}
+    <ul class="unstyled section-items spacing grid">
+        {% for item in children %}
+        <li class="half-margined">
+            <a href="{{ item.url }}">
+                <i class="{{ item.icon }}"></i>
+                {{ item.title }}
+            </a>
+            {#
+            <div class="horizontally-margined top-margined horizontally-padded small description">
+                {{ item.description }}
+            </div>
+            #}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>
+{%- endmacro %} {% set sections = collections.all | eleventyNavigation(eleventyNavigation.key) %}<!-- -->
+
+<ul class="unstyled sections animation-reveal-children animation-fast">
+    {% for section in sections %}
+    {{
+        renderSection(section)
+    }}
+    {% endfor %}
+</ul>

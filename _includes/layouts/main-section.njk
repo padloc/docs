@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "components/header.njk" %}
+
+<style>
+    h1 {
+        display: block;
+        margin: 0.5em;
+        text-align: center;
+        font-size: var(--font-size-giant);
+        line-height: 1.2em;
+        font-weight: bold;
+        -webkit-text-stroke: 1px var(--orange);
+        -webkit-text-fill-color: var(--color-bg);
+        text-shadow: var(--orange) 1px 1px, var(--purple) 2px 2px, var(--blue) 3px 3px, var(--green) 4px 4px;
+    }
+</style>
+
+<main class="double-padded centering vertical layout fill-vertically">
+    <div class="fit-horizontally animation-reveal-children animation-fast">
+        <div class="double-margined centering vertical layout" style="grid-column: -1/1">
+            <h1><i class="{{ icon }}"></i> {{ title }}</h1>
+            {% include "components/search.njk" %}
+        </div>
+
+        {% include "components/sections.njk" %}
+    </div>
+</main>
+
+{% include "components/footer.njk" %}

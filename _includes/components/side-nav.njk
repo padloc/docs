@@ -61,6 +61,8 @@
 {%- endmacro %}
 
 <nav class="padded side-nav">
+    <div class="double-margined small">{% include "components/search.njk" %}</div>
+
     <ul class="unstyled">
         {%- for entry in navPages %}{{
             renderNavListItem(entry)

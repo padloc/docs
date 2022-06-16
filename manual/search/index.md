@@ -2,6 +2,7 @@
 title: Searching & Filtering
 weight: 5
 icon: search
+description: Tips & Tricks on how to quickly find what you're looking for.
 ---
 
 Searching and filtering is is easily one of the most overlooked aspects of a

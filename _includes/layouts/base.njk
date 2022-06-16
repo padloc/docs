@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ metadata.language }}">
     <head>
         <title>{{ title or metadata.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="{{ description or metadata.description }}" />
         <link rel="shortcut icon" type="image/png" href="/img/logo.png" />
 
         <link rel="stylesheet" href="/assets/css/config.css" />
@@ -17,6 +18,7 @@
         <link rel="stylesheet" href="/assets/css/header.css" />
         <link rel="stylesheet" href="/assets/css/home.css" />
         <link rel="stylesheet" href="/assets/css/page.css" />
+        <link rel="stylesheet" href="/assets/css/sections.css" />
     </head>
     <body>
         {{ content | safe }}

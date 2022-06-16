@@ -2,6 +2,7 @@
 title: Introduction
 weight: 1
 icon: scroll
+description: A few brief words about Padloc and password managers in general.
 ---
 
 ## The Problem
@@ -48,7 +49,7 @@ that one in ages. Oh well, it's worth a shot...</span>
 </blockquote>
 
 We've all been there. There is just so many accounts, passwords and other
-information to keep track of it seems impossible not get confused and
+information to keep track of it seems impossible to not get confused and
 overwhelmed. And to make things worse, every website and app has their own
 arbitrary rules for passwords and usernames that not only make each signup an
 annoying chore but end up making each password even harder to remember. This

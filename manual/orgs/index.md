@@ -2,27 +2,8 @@
 title: Organizations & Shared Vaults
 weight: 4
 icon: users
-anchors:
-    - hash: creating-an-organization
-      title: Creating An Organization
-    - hash: managing-members
-      title: Managing Members
-    - hash: shared-vaults
-      title: Shared Vaults
-    - hash: assigning-permissions
-      title: Assigning Permissions
-    - hash: groups
-      title: Groups
-    - hash: renaming-your-organization
-      title: Renaming Your Organization
-    - hash: managing-your-subscription
-      title: Managing Your Subscription
-    - hash: updating-billing-info
-      title: Updating Billing Info
-    - hash: rotating-cryptographic-keys
-      title: Rotating Cryptographic Keys
-    - hash: deleting-an-organization
-      title: Deleting An Organization
+description:
+    How to create and manage organizations and share data via shared vaults.
 ---
 
 Organizations are a great way to organize, manage and share data between Padloc
