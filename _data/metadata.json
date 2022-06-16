@@ -2,5 +2,7 @@
     "title": "Padloc Docs & Resources",
     "url": "https://padloc.app/",
     "language": "en",
-    "description": "Docs and Resources for the Padloc password manager."
+    "description": "Docs and Resources for the Padloc password manager.",
+    "termsOfService": "https://padloc.app/tos",
+    "privaceyPolicy": "https://padloc.app/privacy"
 }

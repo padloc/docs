@@ -2,7 +2,7 @@ body {
     --spacing: 0.5em;
     --font-family: "Nunito", sans-serif;
 
-    --color-black: #444;
+    --color-black: #333;
     --color-white: #fff;
     --color-fg: var(--color-black);
     --color-bg: var(--color-white);

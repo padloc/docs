@@ -7,7 +7,7 @@ layout: layouts/base.njk
 <style>
     h1 {
         display: block;
-        margin: 0.5em;
+        margin-bottom: 0;
         text-align: center;
         font-size: var(--font-size-giant);
         line-height: 1.2em;
@@ -22,6 +22,7 @@ layout: layouts/base.njk
     <div class="fit-horizontally animation-reveal-children animation-fast">
         <div class="double-margined centering vertical layout" style="grid-column: -1/1">
             <h1><i class="{{ icon }}"></i> {{ title }}</h1>
+            <div class="double-margined subtle">{{ description }}</div>
             {% include "components/search.njk" %}
         </div>
 

@@ -101,3 +101,23 @@ a:not(.unstyled):where(:hover, :focus-visible) {
 .faded {
     opacity: 0.5;
 }
+
+.button {
+    display: inline-block;
+    padding: 0.15em 0.5em;
+    background: var(--color-shade-1);
+    font-weight: 600;
+    border-radius: 0.3em;
+    font-size: var(--font-size-small);
+}
+
+.button.highlighted {
+    background: var(--color-highlight);
+    color: var(--color-white);
+}
+
+.button.ghost {
+    background: transparent;
+    border: solid 1px var(--color-shade-2);
+    box-sizing: border-box;
+}

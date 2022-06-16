@@ -1,6 +1,6 @@
 <form action="https://google.com/search" method="get" class="search-wrapper horizontal center-aligning layout">
     <input type="hidden" name="q" value="site:{{ metadata.url }}" />
-    <input type="hidden" name="q" value="inurl:{{ page.url }}" />
+    {# <input type="hidden" name="q" value="inurl:{{ page.url }}" /> #}
     <i class="search horizontally-margined"></i>
     <input class="unstyled stretch" type="search" name="q" autocomplete="off" required placeholder="Search..." />
     <button type="submit" title="Submit"><i class="arrow-right"></i></button>
