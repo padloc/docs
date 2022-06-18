@@ -9,6 +9,7 @@
 a:not(.unstyled) {
     --bg-h: 1px;
     color: var(--color-highlight);
+    font-weight: 600;
     background: linear-gradient(0deg, currentColor, currentColor) no-repeat right bottom / 0 var(--bg-h);
     display: inline-block;
     padding-bottom: 1px;
