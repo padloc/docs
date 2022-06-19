@@ -61,7 +61,7 @@ Notice that you can also choose which Vault to save the item to. We only have
 one Vault at this point so that one will have to do (to learn how to create new
 Vaults and share them with others, check out
 [Organizations & Shared Vaults](../orgs)). Let's select **Website / App** and
-see where that get us. Click <span class="button highlighted">Create</span> to
+see where that get's us. Click <span class="button highlighted">Create</span> to
 continue.
 
 <figure>
@@ -231,8 +231,8 @@ Tags are a simple but powerful way to organize items by type, areas of use or
 any other criteria you can come up with. This not only provides additional
 context but also makes item more discoverable (even across multiple vaults). To
 add a tag to an item, enter [edit mode](#editing-vault-items) and click on the
-\*Add Tag\*\* input and start typing. Hit enter or click on one of the suggested
-tags to add it.
+<span class="ghost button"><i class="plus"></i> Add Tag</span> input and start
+typing. Hit enter or click on one of the suggested tags to add it.
 
 <figure>
     <img src="tags_1_desktop.png" />

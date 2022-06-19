@@ -14,92 +14,163 @@ fine-grained control of who can access, edit and share certain information.
 Padloc achieves this without requiring you to explicitly trust our servers, your
 network provider or anyone who might be listening in on the connection. If you
 want to learn more about how we make sure that your data is only visible to the
-people it is meant for, check out our [security
-whitepaper]({% param "security_whitepaper_url" %}).
+people it is meant for, check out our
+[security white-paper](../../docs/security).
 
 ## Creating an organization
 
-To create an organization, select {% icon "plus" %} **New Organization** from
-the main menu. You'll be given the option between the **Family**, **Team** and
-**Business** plans, which vary in a few key aspects. For demonstration purposes
-we'll be choosing the **Team** plan. Pick whatever plans seems right for you and
-don't worry, all plans have a 30 day trial period so you can give it a test ride
-without having to provide any billing info.
+To create an organization, click the <span class="button"><i class="plus"></i>
+New Organization</span> button in the **main menu**. You'll be given the option
+between the **Family**, **Team** and **Business** plans, which vary in a few key
+aspects. For demonstration purposes we'll be choosing the **Team** plan. Pick
+whatever plans seems right for you and don't worry, all plans have a 30 day
+trial period so you can give it a test ride without having to pay anything.
 
-{% figure caption="Choose whatever plan seems right for you. Don't worry, they're all free for the first 30 days!" %}
-{% img src="create_org_team.png" %} {% endfigure %}
+<figure>
+    <img src="create_org_1_desktop.png">
+    <figcaption>Choose whatever plan seems right for you. Don't worry, they're all free for the first 30 days!</figcaption>
+</figure>
 
-Upon successfully creating your organization, Padloc will take you to the
-organizations management page. To get you started it will also have created a
-"Main" vault and, if you have selected the **Team** or **Business** plan, a
-Group called "Everyone".
+Upon successfully upgrading to the **Family**, **Team** or **Business** plan,
+Padloc will automatically create the organization for you, which should show up
+in the main menu as "Family", "My Team" or "My Business", depending on which
+plan you chose. If it doesn't show up right away, try clicking the
+<span class="button"><i class="refresh"></i></span> button at the bottom of the
+main menu.
 
-## Managing Members
+> <i class="info-circle"></i> Don't worry, you're not stuck with the default
+> organization name! You can change it anytime in the
+> [organization settings](#renaming-your-organization)!
+
+## Members
+
+Organization Members are verified Padloc users that can be assigned to
+[Groups](#groups) and given access to shared [Vaults](#vaults). You can view and
+manage your organization's members in the **Members Page**, which you can get to
+by clicking on the organization name in the main menu (right below
+"Organizations"), then selecting
+<span class="button"><i class="people-group"></i> Members</span>.
+
+### Roles
+
+There are three different roles members can fill in an organization.
+
+-   The **owner** is the user who created the organization and is the only one
+    who can add, suspend and un-suspend members, appoint admins and change the
+    organization's settings.
+-   **Admins** can create groups and vaults and assign read and write
+    permissions for vaults.
+-   **Regular members** don't have any permissions other than the read and write
+    permissions assigned to them for specific vaults either directly or through
+    groups.
 
 ### Adding New Members
 
 Adding a new member is a multi-step process establishing a cryptographic
 handshake that will allow both the new member and the organization to verify
 each others identities and safely encrypt data in a way that will allow all all
-authorized parties to access it simultaneously. To invite a new member to the
-organization, go to the **Members** tab of the organizations management page and
-click the button labeled {% icon "plus" %} **Invite New Members**. Then enter
-the email address of the person you'd like to invite and click submit. To invite
-multiple people at once, type in all their email address, separated by a comma
-or space.
+authorized parties to access it simultaneously.
 
-{% figure caption="Invite new members by entering their email address and clicking Submit." %}
+> **<i class="info-circle"></i> Note**: You have to be the organization's owner
+> to add or remove members.
 
-<div class="img-grid">
-   {% img src="org_add_member_1.png" %}
-   {% img src="org_add_member_2.png" %}
-</div>
-{% endfigure %}
+#### Step 1: Send Invite
 
-Once you've created an invite, it will show up in the **Members** tab. As a
-security precaution, invites are only valid for 12 hours so make sure you
-complete the process before then. The recipient of the invite will receive an
-email asking them to accept the invite. Following the embedded link will bring
-up a confirmation dialog. (If they don't have a Padloc account yet, they'll have
-to go through the [signup process]({% relref "create_account" %}) first).
+Before you can add a person to your organization, you have to send them an
+invite first. The invite will be sent by email, and accepting it will require a
+confirmation code (more about that below).
 
-{% figure caption="Invitees will have to enter a confirmation code that you'll have to communicate to the directly." %}
-{% img src="confirm_invite.png" %} {% endfigure %}
+To send an invite to join your organization, first go the the
+<span class="button"><i class="people-group"></i> Members</span> page, then
+click on the <span class="button"><i class="plus"></i></span> button in the top.
 
-This point they will have to enter a confirmation code, which is the same
+You'll be presented with a dialog where you can now enter the email address of
+the person you'd like to invite. To invite multiple people at once, type in all
+their email address, separated by a comma or space.
+
+<figure>
+    <img src="invites_1_desktop.png">
+    <figcaption>Invite new members by entering their email address and clicking Submit.</figcaption>
+</figure>
+
+Once you've created an invite, it will show up under
+<span class="button"><i class="envelope"></i> Invites</span>. Select the invite
+to view the invite status and, most importantly, the **confirmation code**. Each
+invite comes with unique confirmation code that the invitee will have to enter
+correctly in order to accept the invite, so make sure to inform them of their
+code via text message, phone call or in person.
+
+<blockquote class="orange">
+    <i class="info-circle"></i> As a security precaution, <strong>invites are only valid for 12 hours</strong> so
+    make sure you complete the process before then.
+</blockquote>
+
+<figure>
+    <img src="invites_2_desktop.png">
+    <figcaption>The confirmation code is required to accept the invite and needs to be communicated separately.</figcaption>
+</figure>
+
+#### Step 2: Accept The Invite
+
+The recipient of the invite will receive an email asking them to accept the
+invite. Following the embedded link will bring up a confirmation dialog. (If
+they don't have a Padloc account yet, they'll have to go through the
+[signup process](../create_account/) first).
+
+<figure>
+    <img src="invites_3_desktop.png">
+    <figcaption>Invitees will have to enter a confirmation code that you'll have to communicate to the directly.</figcaption>
+</figure>
+
+At this point they will have to enter a confirmation code, which is the same
 alphanumeric code displayed on your end. As mentioned before, organizations and
 shared vaults are designed in a way that do not require explicitly trusting
-whoever is hosting the server (in this case, us). The confirmation code plays an
-important part in this as it is never send to the server in plain text and only
-visible to you, the organization owner. You will have to communicate this code
-to the invitee directly. We recommend using a channel other than email, like a
-text message, in person or by phone, but how you do this is up to you.
+whoever is hosting the server (in this case, us). **The confirmation code plays
+an important part in this as it is never send to the server in plain text and is
+only visible to the organization owner, who has to communicate this code to the
+invitee directly.** We recommend using a channel other than email, like a text
+message, in person or by phone, but how you do this is up to you.
+
+#### Step 3: Confirm Membership
 
 Once they have entered the correct code and accepted the invite, you'll be
-notified by email. All that is left to do then is to confirm their membership by
-clicking {% icon "user-plus" %} **Add Member** and choosing which groups and
-vaults they have access to (more about groups and managing vault access below).
+notified by email. All that is left to do then is to confirm their membership!
+In order to do that, go to the <span class="button"><i class="envelope"></i>
+Invites</span> page, then click <span class="button"><i class="user-plus"></i>
+Add Member</span>.
 
-{% figure caption="After they have accepted the invite, you can confirm their membership and define their permissions." %}
+<figure>
+    <img src="invites_4_desktop.png">
+    <figcaption>
+        Once the invitee has entered the correct code and accepted the invite,
+        all that is left to do then is to confirm their membership!
+    </figcaption>
+</figure>
 
-<div class="img-grid">
-   {% img src="complete_invite.png" %}
-   {% img src="org_edit_member.png" %}
-</div>
-{% endfigure %}
+#### Step 4: Adjust Role and Permissions
+
+You've successfully added a new member to your organization, but they won't have
+access to any vaults yet. You can now add them to [Groups](#groups), give them
+permissions to access certain [Vaults](#shared-vaults) or adjust their
+[role](#member-roles).
 
 ### Deleting Members
 
-To delete an organization member, select them from the list in the **Members**
-tab, then click the {% icon "ellipsis-h" %} button in the top right and select
-**Delete** in the subsequent dialog.
+To delete an organization member, select them from the list in the
+<span class="button"><i class="people-group"></i> Members</span> page, then
+click the <span class="button"><i class="ellipsis-h"></i></span> button in the
+top right and select <span class="button"><i class="trash"></i> Delete</span>.
 
 When a Padloc user is removed from an organization, they automatically lose
-access to all of the organization's vaults. **Note however that vault data may
-still be stored locally on any devices they had used to log into their account
-and there is now way to be sure they haven't copied some of the data in some
-other way, so may want to take measures to account for this, like changing any
-passwords they had access to.**
+access to all of the organization's vaults.
+
+<blockquote class="orange">
+    <i class="exclamation-triangle"></i> Even after removing access to a vault, the
+    data may still be stored offline on on some of their devices and there is now
+    way to be sure they haven't copied some of the data in
+    some other way, so may want to take measures to account for this, like changing
+    any passwords they had access to.
+</blockquote>
 
 ### Suspending and Un-suspending Members
 
@@ -107,99 +178,164 @@ Suspended members retain their assigned permissions and group memberships but
 can no longer utilize their permissions, meaning they will not receive any
 updates to vault data or be able to make any changes themselves.
 
-Members will automatically be suspended if they recover their account after
-losing their master password or when the organization's cryptographic keys are
-rotated, in which case all organization members will be suspended except the
-organization owner.
+You can **suspend** an organization member by selecting them from the list in
+the <span class="button"><i class="people-group"></i> Members</span> page, then
+clicking the <span class="button"><i class="ellipsis-h"></i></span> button in
+the top right and selecting <span class="button"><i class="ban"></i>
+Suspend</span>.
 
-You can manually suspend an organization member by selecting them from the list
-in the **Members** tab, then clicking the {% icon "ellipsis-h" %} button in the
-top right and selecting **Suspend** in the subsequent dialog.
+To **un-suspend** a member, simply select
+<span class="button"><i class="user-check"></i> Unsuspend</span> from the same
+menu. You will then have to reconfirm their membership by undergoing the same
+process you did when a [adding them](#adding-new-members).
 
-To un-suspend a member, select them from the list in the **Members** tab and
-click **Unsuspend**. You will then have to reconfirm their membership by
-undergoing the same process you did when a [adding them](#adding-new-members).
+> <i class="info-circle"></i> Members will automatically be suspended if they
+> recover their account after losing their master password or when the
+> organization's cryptographic keys are rotated, in which case all organization
+> members will be suspended except the organization owner.
 
-### Roles
+### Make Someone an Admin
 
-There are three different roles members can fill in an organization.
+To **make someone an admin**, first select an organization member by selecting
+them from the list in the <span
+class="button"><i class="people-group"></i> Members</span> page, then click the
+<span class="button"><i
+class="ellipsis-h"></i></span> button in the top right and select
+<span class="button"><i class="ban"></i> Make Admin</span>.
 
-The **owner** is the user who created the organization and is the only one who
-can add, suspend and un-suspend members, appoint admins and change the
-organization's settings.
+To **remove someones admin privileges**, simply select
+<span class="button"><i class="user-times"></i> Remove Member</span> from the
+same menu.
 
-**Admins** can create groups and vaults and assign read and write permissions
-for vaults. To make someone an admin, select them from the **Members** tab, then
-click the {% icon "ellipsis-h" %} icon and select **Make Admin**. The reverse
-can be done by following the same steps but instead selecting **Remove Admin**.
+### Transfer Ownership
 
-**Regular members** don't have any permissions other than the read and write
-permissions assigned to them for specific vaults either directly or through
-groups.
+To **transfer ownership to a another user**, first select an organization member
+by selecting them from the list in the <span
+class="button"><i class="people-group"></i> Members</span> page, then click the
+<span class="button"><i
+class="ellipsis-h"></i></span> button in the top right and select
+<span class="button"><i class="user-crown"></i> Make Owner</span>. Your own role
+will be changed to **Admin**.
 
-## Shared Vaults
+<blockquote class="orange">
+    <strong><i class="info-circle"></i> Please note:</strong> Transferring
+    organization ownership does <strong>not</strong> transfer any billing information. Instead,
+    the previous owners' plan will automatically downgraded to <strong>Premium</strong> and the
+    organization will be frozen until the new owner upgrades to the appropriate
+    plan.
+</blockquote>
 
-Your organization's vaults is where all your data is stored and are designed to
-share information among certain members. By default every organization comes
-with a **Main** vault. This vault is merely created for your convenience and
-doesn't serve any special purpose, but it may be a good place to store data all
-or most of your organization's members should have access to. You can add more
-vaults to organize your data into more specific segments for more fine-grained
-control over who has access to what data. For example you could have a vault
-that contains all your finance and accounting related data, one with all your
-social media accounts and so on. To create a new vault, navigate to the
-**Vaults** tab and click the button labeled {% icon "plus" %} **New Vault**.
+## Vaults
 
-{% figure caption="When you create a new Vault, you can choose a vault name and define permissions." %}
-{% img src="create_vault.png" %} {% endfigure %}
+As mentioned in the [previous article](../vaults/), **Vaults are like secure
+folders that can hold a number of data entries, or "Vault Items"**. However
+unlike your personal Vault, an organization's Vaults are designed to share
+information between multiple Padloc users!
+
+By default every organization comes with a **Main** vault. This vault is merely
+created for your convenience and doesn't serve any special purpose, but it may
+be a good place to store data all or most of your organization's members should
+have access to. You can add more vaults to organize your data into more specific
+segments for more fine-grained control over who has access to what data. For
+example you could have a vault that contains all your finance and accounting
+related data, one with all your social media accounts and so on.
+
+You can view and manage your organization's vaults in the **Vaults Page**, which
+you can get to by clicking on the organization name in the main menu (right
+below "Organizations"), then selecting
+<span class="button"><i class="cubes"></i> Vaults</span>.
+
+### Creating Vaults
+
+To create a new vault, navigate to the
+<span class="button"><i class="cubes"></i> Vaults</span> page and click
+<span class="button"><i class="plus"></i></span> button on the top.
+
+<figure>
+    <img src="create_vault_1_desktop.png">
+    <figcaption>When you create a new Vault, you can choose a vault name and define permissions.</figcaption>
+</figure>
 
 Enter the name of your new vault in the input on the top. You can also define
 who can read and/or edit vault data by assigning permissions to organization
 members directly or indirectly through groups (more about this in the
-[Managing Permissions](#managin-permissions) section). To add the vault to your
-organization, click **Save**.
+[Managing Access](#managing-access) section). To add the vault to your
+organization, click <span class="button">Save</span>.
 
-You can edit the name and permissions for a vault in the same way by selecting
-it from the list in the **Vaults** tab.
+### Editing Vaults
 
-To delete a vault and all the data contained within it simply click the
-{% icon "trash-alt" %} icon in the top right corner.
+You can edit an existing Vault by selecting it from the
+<span class="button"><i class="cubes"></i> Vaults</span> page and simply making
+the desired changes. Don't forget to hit
+<span class="highlighted button">Save</span> to save your changes!
 
-## Assigning Permissions
+### Deleting Vaults
+
+To delete a Vault, go to the <span class="button"><i class="cubes"></i>
+Vaults</span> page and select the desired Vault from the list. Then click the
+<span class="button"><i class="ellipsis-h"></i></span> button and select
+<span class="button"><i class="ellipsis-h"></i> Delete</span>. You'll have to
+confirm you choice by entering the word "DELETE" and hitting
+<span class="red highlighted button">Delete</span>.
+
+<blockquote class="orange">
+    <strong><i class="exclamation-triangle"></i> Warning:</strong> Deleting
+    Vaults is permanent, and destroys all data saved within.
+</blockquote>
+
+### Managing Access
 
 Organizations have a simple yet powerful permissions system that allows you to
 define who can read, edit and manage vaults. Read and write permissions can be
 assigned to members directly or indirectly through groups.
 
-### Via the Members tab
+#### Assigning Individual Members
 
-In the **Members** tab, select the member you'd like to assign permissions to.
-Then under **Vaults,** simply adjust the **read** and **write** permissions for
-each vault. Click **Save** to commit the changes.
+One way to grant a member access to a given vault is to assign them
+individually. To do this, first select the desired vault from the
+<span class="button"><i class="cubes"></i> Vaults</span> page, then click the
+<span class="button"><i class="plus"></i></span> button in the top right corner
+of the box labeled "Members". After you've added them, you can also decide
+whether you want to give them write access by toggling the
+<span class="button"><i class="pencil-alt"></i> <i class="toggle-on"></i></span>
+button on (write access) or off (read-only).
 
-From here, you can also select which groups this person should be part of. As
-you may have guessed, adding an organization member to a group will give them
-all the permissions assigned to that group. To learn more about who to create
-and manage groups, check out the [Groups](#groups) section.
+To remove a member's access to a Vault, move your mouse over them (or tap on
+them if you're on mobile) and click the
+<span class="button"><i class="times"></i></span> button.
 
-### Via the Vaults tab
+Don't forget to hit <span class="highlighted button">Save</span> to save your
+changes!
 
-In the **Vaults** tab, select the vault you'd like to assign permissions for.
-Then simply adjust the **read** and **write** permissions for each member and
-group. Click **Save** to commit the changes.
+<figure>
+    <img src="manage_vault_access_1_desktop.png">
+    <figcaption>
+        To assign a new member to a Vault, click the <span class="button"><i class="plus"></i></span> button and select the desired member from the list.
+    </figcaption>
+</figure>
 
-{% figure caption="Vault permissions can be assigned via the Vaults or the Members tab." %}
+#### Assigning Groups
 
-<div class="img-grid">
-   {% img src="org_edit_member.png" %}
-   {% img src="create_vault.png" %}
-</div>
-{% endfigure %}
+Assigning Vault access to each organization member individually might work well
+for small organizations, but for organizations with many members,
+[Groups](#groups) are a more efficient way to manage permissions.
+
+Adding Groups to a Vault works exactly the same as
+[assigning individual members](#assigning-individual-members). Simply click the
+<span class="button"><i class="plus"></i></span> button in the top right corner
+of the box labeled "Groups". Same as with individual members, Groups can have
+write or read-only access, which you can determine by toggling the
+<span class="button"><i class="pencil-alt"></i> <i class="toggle-on"></i></span>
+button on (write access) or off (read-only).
+
+To remove a Groups's access to a Vault, move your mouse over it (or tap on it if
+you're on mobile) and click the
+<span class="button"><i class="times"></i></span> button.
+
+Don't forget to hit <span class="highlighted button">Save</span> to save your
+changes!
 
 ## Groups
-
-{% note %} This feature is only available in the **Team** and **Business**
-plans. {% endnote %}
 
 Groups are a great way to organize your company or team into certain segments
 based on their job description, level of clearance or any other criteria you may
@@ -207,69 +343,75 @@ come up with. For example, your groups could reflect the departments in your
 company, like **Management**, **Accounting**, **Engineering** etc, but how you
 use them is ultimately up to you.
 
+> **<i class="info-circle"></i> Note:** This feature is only available in the
+> **Team** and **Business** plans.
+
 Just like regular organization members, groups can be assigned read and write
 permissions to a certain subset of the organization's vaults, which are then
 transferred to all of the members within the group. Vault permissions are
 additive, which means that an organization member has the read or write
 permission to a certain vault if they are part of **any** group that has that
 permission **or** that permission is assigned to them directly (see
-[Assigning Permissions](#assigning-permissions)).
+[Managing Access](#managing-access)).
 
 By default, every organization comes with the **Everyone** group. This group is
 merely created for your convenience and doesn't serve any special purpose. Feel
-free to repurpose or delete it.
+free to repurpose or [delete](#deleting-groups) it.
 
-To create a new group, navigate to the **Groups** tab and click the button
-labeled {% icon "plus" %} **New Group**. Enter the group's name into the input
-element on the top and select the which organization members should be part of
-this group, then click **Save** to create it.
+You can view and manage your organization's Groups in the **Groups Page**, which
+you can get to by clicking on the organization name in the main menu (right
+below "Organizations"), then selecting
+<span class="button"><i class="users-rectangle"></i> Groups</span>.
 
-Editing groups works in much the same way. Simply select the group from the
-list, make your changes and click **Save**.
+### Creating Groups
 
-{% figure caption="To edit a group, simply go to the Groups tab and select it from the list." %}
-{% img src="org_edit_group.png" %} {% endfigure %}
+To create a new Group, go to the
+<span class="button"><i class="users-rectangle"></i> Groups</span> page and
+click the <span class="button"><i class="plus"></i></span> button on the top.
+now you can enter the group's name select the which organization members should
+be part of this group.
 
-To delete a group, select it from the list in the **Groups** tab, then click the
-{% icon "trash-alt" %} icon in the top right corner of the dialog. Naturally,
-deleting a group will also remove all permissions assigned through that group.
+Here you can also define which Vaults this group should have access to. This
+works exactly the same way as described [here](#assigning-groups), only in
+reverse.
+
+Click <span class="highlighted button">Save</span> to create the new Group.
+
+### Editing Groups
+
+You can edit an existing Group by selecting it from the
+<span class="button"><i class="users-rectangle"></i> Groups</span> page and
+simply making the desired changes. Don't forget to hit
+<span class="highlighted button">Save</span> to save your changes!
+
+### Deleting Groups
+
+To delete a Group, go to the
+<span class="button"><i class="users-rectangle"></i> Groups</span> page and
+select the desired Group from the list. Then click the
+<span class="button"><i class="ellipsis-h"></i></span> button and select
+<span class="button"><i class="ellipsis-h"></i> Delete</span>.
+
+### Duplicating Groups
+
+Sometimes you may want to create a new Group that is similar to an existing
+Group, but with only a few changes. In this case it might be quicker to
+**duplicate** a Group instead of creating a completely new one.
+
+To duplicate a Group, go to the
+<span class="button"><i class="users-rectangle"></i> Groups</span> page and
+select the desired Group from the list. Then click the
+<span class="button"><i class="ellipsis-h"></i></span> button and select
+<span class="button"><i class="clone"></i> Duplicate</span>. This will create a
+new Group with the same assigned Members and Vaults. You'll be taken straight to
+the duplicate group where you can now make your adjustments.
 
 ## Renaming Your Organization
 
-To change your organization's name, navigate to the **Settings** tab and click
-the button labeled **Change Organization Name**. Then simply enter the new name
-and click **Save**.
-
-## Managing Your Subscription
-
-Your organization's subscription status and billing info can be found in the
-**Settings** tab. The **Subscription** section shows your current plan, your
-annual subscription fee and your organization's usage and quota for
-{% icon "users" %} **Members**, {% icon "users-cog" %} **Groups**,
-{% icon "cubes" %} **Vaults** and {% icon "box-open" %} **File Storage**.
-
-To update your subscription, click the {% icon "pencil-alt" %} icon to the right
-of the name of your current subscription plan and select **Update Plan**. From
-here you can update the number of seats or switch to a different plan by
-clicking on the {% icon "pencil-alt" %} icon.
-
-To cancel your subscription, again click the {% icon "pencil-alt" %} icon to the
-right of the name of your current subscription plan and select **Cancel
-Subscription**. Your subscription will then
-
-{% figure caption="You can edit your organization's subscription and billing info from the Settings tab." %}
-
-<div class="img-grid">
-   {% img src="org_settings_1.png" %}
-   {% img src="org_edit_subscription.png" %}
-</div>
-{% endfigure %}
-
-## Updating Billing Info
-
-You billing info can also be updated from the **Settings** tab. Simply click the
-{% icon "pencil-alt" %} icon in the **Billing Info** section, then make the
-desired changes and click **Save**.
+To change your organization's name, navigate to the organization's
+<span class="button"><i class="gear"></i>Settings</span> page and click the
+button labeled <span class="button">Change Organization Name</span>. Then simply
+enter the new name and click <span class="highlighted button">Save</span>.
 
 ## Rotating Cryptographic Keys
 
@@ -282,8 +424,10 @@ To ensure the integrity of the cryptographic contracts that protect all
 communication between organization members, it is important that these keys
 remain secret to anyone but the organization owner. Should you as the
 organization owner have any reason to believe that your Padloc account may have
-been compromised in any way, you can generate a new set of keys via the **Rotate
-Cryptographic Keys** option in the **Settings** tab.
+been compromised in any way, you can generate a new set of keys via the
+<span class="button">Rotate Cryptographic Keys</span> option in the
+organization's <span class="button"><i class="Settings"></i> Settings</span>
+page.
 
 After rotating your organization's cryptographic keys, all the organization's
 members except the owner will be suspended and will have to be reconfirmed (see
@@ -291,13 +435,19 @@ members except the owner will be suspended and will have to be reconfirmed (see
 
 ## Deleting An Organization
 
-{% note %} **Note:** Deleting an organization will **not** delete the accounts
-of its members - they will merely loose access to all data owned by it. The
-private vaults of the organization's members are also not affected.
-{% endnote %}
+> **<i class="info-round"></i> Note:** Deleting an organization will **not**
+> delete the accounts of its members - they will merely loose access to all data
+> owned by it. The private vaults of the organization's members are also not
+> affected.
 
-To delete an organization, click the button labeled **Delete Organization** at
-the very bottom of the settings tab, then type out the word "DELETE" to confirm
-your choice. **Deleting an organization will cancel any active subscriptions and
-permanently erase all the organization's data from Padloc, including all shared
-vaults owned by it. This action is not reversible!**
+To delete an organization, click the button labeled
+<span class="red highlighted button">Delete Organization</span> at the very
+bottom of the settings tab, then type out the word "DELETE" to confirm your
+choice.
+
+<blockquote class="red">
+    <strong><i class="exclamation-triangle"></i> Warning:</strong> Deleting an
+    organization will cancel any active subscriptions and permanently
+    erase all the organization's data from Padloc, including all shared vaults owned
+    by it. **This action is not reversible!**
+</blockquote>

@@ -105,7 +105,8 @@ a:not(.unstyled):where(:hover, :focus-visible) {
 
 .button {
     display: inline-block;
-    padding: 0.15em 0.5em;
+    padding: 0.1em 0.5em;
+    margin: -0.1em 0;
     background: var(--color-shade-1);
     font-weight: 600;
     border-radius: 0.3em;

@@ -1,3 +1,8 @@
+nav.side-nav {
+    max-height: calc(100vh);
+    overflow: auto;
+}
+
 nav.side-nav li ul,
 nav.side-nav li ol {
     border-left: dashed 1px var(--color-shade-2);
