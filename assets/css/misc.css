@@ -107,7 +107,7 @@ a:not(.unstyled):where(:hover, :focus-visible) {
     display: inline-block;
     padding: 0.1em 0.5em;
     margin: -0.1em 0;
-    background: var(--color-shade-1);
+    background: var(--color-shade-2);
     font-weight: 600;
     border-radius: 0.3em;
     font-size: var(--font-size-small);
@@ -122,4 +122,15 @@ a:not(.unstyled):where(:hover, :focus-visible) {
     background: transparent;
     border: solid 1px var(--color-shade-2);
     box-sizing: border-box;
+}
+
+.key {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    margin: -0.1em 0;
+    background: var(--color-shade-2);
+    font-weight: 600;
+    border-radius: 0.3em;
+    font-size: var(--font-size-small);
+    box-shadow: inset var(--color-shade-2) 0 -2px 0 0px;
 }

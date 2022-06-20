@@ -15,72 +15,79 @@ a couple of ways to quickly find what you need.
 ## Filtering By Vaults
 
 By default, Padloc displays all of your items in one list. If you want to see
-only the items in a specific vault, simply select it from the main menu, or pick
-it from the dropdown in the header of the list view.
+only the items in a specific vault, simply select it from the main menu.
+
+> **<i class="info-circle"></i> Tip:** On smaller screen sizes the main menu
+> might not be visible by default. In that case you can bring up the main menu
+> by clicking the header in the list view!
 
 To learn more about how to create and manage shared vaults, check out the
-[Organizations & Shared Vaults]({% relref "help/manual/orgs" %}) section of the
-manual!
+[Organizations & Shared Vaults](../orgs) section of the manual!
 
-{% figure caption="You can filter items by vaults, tags, favorites, or attachments." %}
-{% img src="filtering.png" %} {% endfigure %}
+<figure>
+    <img src="filtering_1_desktop.png">
+    <figcaption>You can filter items by vaults, tags, favorites, or attachments.</figcaption>
+</figure>
 
 ## Filtering By Tags
 
-[Tags]({% relref "help/manual/vaults#tags" %}) are a simple but powerful way to
-organize items by type, areas of use or any other criteria you can come up with.
-They also allow you to quickly discover items you have previously tagged! To
-list all items with a given tag, simply select it from the main menu, or pick it
-from the dropdown in the header of the list view.
+[Tags](../vaults#tags) are a simple but powerful way to organize items by type,
+areas of use or any other criteria you can come up with. They also allow you to
+quickly discover items you have previously tagged! To list all items with a
+given tag, simply select it from the main menu under
+<span class="button"><i class="tags"></i> Tags</span>.
 
-You can learn more about how to create and manage tags in the [Vaults & Vault
-Items]({% relref "help/manual/vaults#tags" %}) section of the manual!
+You can learn more about how to create and manage tags in the
+[Vaults & Vault Items](../vaults#tags) section of the manual!
 
 ## Favorites
 
 Your favorites are vault items that you use a lot or are especially important to
-you form some other reason.
-[favorites]({% relref "help/manual/vaults#favorites" %}). To list all you
-favorite vault items simply select the **Favorites** option from the main menu,
-or pick it from the dropdown in the header of the list view. Want to know how to
-add a vault item to your favorites? Check out the [Vaults & Vault
-Items]({% relref "help/manual/vaults#favorites" %}) section of the manual!
+you form some other reason. [favorites](../vaults#favorites). To list all you
+favorite vault items simply select the <span class="button"><i class="star"></i>
+Favorites</span> option from the main menu. Want to know how to add a vault item
+to your favorites? Check out the [Vaults & Vault Items](../vaults#favorites)
+section of the manual!
 
 ## Recently Used Items
 
 For most users, it is non uncommon to only have a handful of password that are
 actually needed day-to-day. Wouldn't it be great to have a convenient way of
 listing these items with a single click? Why yes of course, and Padloc let's you
-do just that. To list all you favorite vault items simply select the **Recently
-Used** option from the main menu, or pick it from the dropdown in the header of
-the list view.
+do just that. To list all you favorite vault items simply select the
+<span class="button"><i class="clock"></i> Recently Used</span> option from the
+main menu, or pick it from the dropdown in the header of the list view.
 
 ## Attachments
 
 Need to find that one document you stored in Padloc a while ago but forgot how
 you named it? Listing only the vault items that have attachments will make the
-search much easier! To do this, simply select the **Attachments** option from
+search much easier! To do this, simply select the
+<span class="button"><i class="paperclip"></i> Attachments</span> option from
 the main menu or pick it from the dropdown in the header of the list view.
 
-To learn more about how to attach files to vault items, check out the [Vaults &
-Vault Items]({% relref "help/manual/vaults#attachments" %}) section of the
-manual!
+To learn more about how to attach files to vault items, check out the
+[Vaults & Vault Items](../vaults#attachments) section of the manual!
 
 ## Searching
 
 Last but not least, the free search is probably the simplest and most powerful
-tool to quickly find what you need. Simply click the {% icon "search" %} icon
-and type away! Usually a couple of key strokes will narrow down the list enough
-to spot what you're looking for. If you want to narrow down the search further,
-you can also combine your search with one of the filters mention above!
+tool to quickly find what you need. Simply click the
+<span class="button"><i class="search"></i></span> button and type away! Usually
+a couple of key strokes will narrow down the list enough to spot what you're
+looking for!
 
-{% note %} **Protip**: You can also use the following keyboard shortcuts to
-start searching:
+> **<i class="info-circle"></i>** For simplicity's sake, the full search always
+> searches **all** your items, regardless of whether you had a filter applied
+> when you started searching. Canceling the search will bring you right back to
+> where you started though.
 
--   **⌘ + F**: Search in current context/filter (selected vault, tag etc.)
--   **⌘ + ⇧ + F**: Search all items, ignoring any filters
+<figure>
+    <img src="filtering_2_desktop.png">
+    <figcaption>Searching is usually the fastest way to find what you need.</figcaption>
+</figure>
 
-{% endnote %}
-
-{% figure caption="Searching is usually the fastest way to find what you need." %}
-{% img src="searching.png" %} {% endfigure %}
+> **<i class="lightbulb-on"></i> Protip**: For those who like keyboard
+> shortcuts: You can also use <span class="key">⌘</span> +
+> <span class="key">F</span> to jump straight into the search input! Press
+> <span class="key">Esc</span> to cancel the search.
