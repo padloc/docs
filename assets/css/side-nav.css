@@ -6,7 +6,7 @@ nav.side-nav {
 nav.side-nav li ul,
 nav.side-nav li ol {
     border-left: dashed 1px var(--color-shade-2);
-    margin-left: 0.6em;
+    margin-left: 1.1em;
     padding-left: 0.5em;
 }
 

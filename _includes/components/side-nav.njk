@@ -36,7 +36,7 @@
         </span>
     </a>
 
-    <div role="none" {% if not isActive %}hidden{% endif %} class="left-margined">
+    <div role="none" {% if not isActive %}hidden{% endif %}>
         {%- if isCurrent -%}<!-- -->
         <ol class="unstyled small table-of-contents">
             {% for item in (content | toc) %}

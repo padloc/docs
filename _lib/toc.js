@@ -25,7 +25,7 @@ function getItems(headers) {
 }
 
 function getTOC(content) {
-    const matches = content.matchAll(/\<(?<tag>h2|h3|h4) .*id="(?<id>.+?)".*\>(?<title>.+?)\<\/\k<tag>\>/gi);
+    const matches = content.matchAll(/\<(?<tag>h2|h3|h4) .*id="(?<id>.+?)".*?\>(?<title>.+?)\<\/\k<tag>\>/gi);
     const headers = [...matches].map(({ groups: { tag, id, title } }) => ({
         tag,
         id,
