@@ -123,3 +123,19 @@ button {
 button:hover {
     background: var(--color-shade-1);
 }
+
+code {
+    font-family: monospace;
+    background: var(--color-shade-1);
+    border-radius: 0.5em;
+    border: solid 1px var(--color-shade-1);
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+pre > code {
+    margin: 1em -1em;
+    padding: 1em;
+    display: block;
+    overflow: auto;
+}

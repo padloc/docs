@@ -25,6 +25,7 @@ module.exports = {
             // If no specific parent specified, try to automatically use fallback
             return data.parent || parent;
         },
+        section: (data) => data.page.url.split("/")[1],
         order: (data) => data.order || data.weight,
         icon: (data) => data.icon,
         description: (data) => data.description,

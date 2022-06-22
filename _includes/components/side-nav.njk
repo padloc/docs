@@ -1,4 +1,6 @@
-{% set navPages = collections.all | eleventyNavigation("/manual") %}<!-- -->
+{{ eleventyNavigation.section | log }}
+
+{% set navPages = collections.all | eleventyNavigation("/" + eleventyNavigation.section) %}<!-- -->
 
 {% macro renderTOCItem(item) -%}<!-- -->
 <li>
