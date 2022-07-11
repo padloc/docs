@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="main-layout">
+    {% include "components/header.njk" %}<!-- -->
+
+    {% include "components/side-nav.njk" %}<!-- -->
+
+    <main class="animation-reveal-children">
+        {% include "components/breadcrumbs.njk" %}
+
+        <article>
+            <h1>
+                <i class="{{ icon }}"> </i>
+                {{ title }}
+            </h1>
+
+            <h2>Desktop</h2>
+
+            <ul class="unstyled">
+                {% for download in downloads %} {% if download.type == "desktop" %}
+                <li class="margined">
+                    <a href="{{ download.url }}">
+                        <i class="fab fa-{{ download.icon }}"></i>
+                        {{ download.title }}
+                        <span class="small subtle">v{{ download.version }}</span>
+                    </a>
+                </li>
+                {% endif %} {% endfor %}
+            </ul>
+
+            <h2>Mobile</h2>
+
+            {% for download in downloads %} {% if download.type == "mobile" %}
+            <ul class="unstyled">
+                <li class="margined">
+                    <a href="{{ download.url }}">
+                        <i class="fab fa-{{ download.icon }}"></i>
+                        {{ download.title }}
+                        <span class="small subtle">v{{ download.version }}</span>
+                    </a>
+                </li>
+            </ul>
+            {% endif %} {% endfor %}
+
+            <h2>Browser Extensions</h2>
+
+            {% for download in downloads %} {% if download.type == "extension" %}
+            <ul class="unstyled">
+                <li class="margined">
+                    <a href="{{ download.url }}">
+                        <i class="fab fa-{{ download.icon }}"></i>
+                        {{ download.title }}
+                        <span class="small subtle">v{{ download.version }}</span>
+                    </a>
+                </li>
+            </ul>
+            {% endif %} {% endfor %}
+        </article>
+    </main>
+
+    {% include "components/footer.njk" %}
+</div>

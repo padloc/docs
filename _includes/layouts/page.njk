@@ -9,6 +9,7 @@ layout: layouts/base.njk
 
     <main class="animation-reveal-children">
         {% include "components/breadcrumbs.njk" %}
+
         <article>
             <h1>
                 <i class="{{ icon }}"> </i>
@@ -17,9 +18,25 @@ layout: layouts/base.njk
             {{ content | safe }}
         </article>
 
+        <div class="spacer"></div>
+
         {% set prev = collections.all | eleventyNavigation(eleventyNavigation.parent) | prevInSection %}<!-- -->
         {% set next = collections.all | eleventyNavigation(eleventyNavigation.parent) | nextInSection %}<!-- -->
 
+        {% set children = collections.all | eleventyNavigation(eleventyNavigation.key) %}<!-- -->
+
+        {% if children.length %}
+        <ul class="unstyled spacing vertical layout">
+            {% for item in children %}
+            <li class="margined">
+                <a href="{{ item.url }}"> <i class="{{ item.icon or 'scroll' }}"></i> {{ item.title }} </a>
+                <div class="subtle small top-margined">{{ item.description }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}<!-- -->
+
+        {% if not hidePrevNext %}
         <div class="spacer"></div>
 
         <div class="double-margined prev-next double-spacing grid">
@@ -46,24 +63,7 @@ layout: layouts/base.njk
                 {% endif %}
             </div>
         </div>
-
-        {# {% set children = collections.all | eleventyNavigation(eleventyNavigation.key) %}<!-- -->
-
-        {% if children.length %}
-        <ul class="unstyled child-pages double-spacing grid">
-            {% for item in children %}
-            <li>
-                <a
-                    href="{{ item.url }}"
-                    class="unstyled text-centering fill rounded double-padded centering vertical layout"
-                >
-                    <i class="huge {{ item.icon }}"></i>
-                    <div class="top-margined">{{ item.title }}</div>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %} #}
+        {% endif %}
     </main>
 
     {% include "components/footer.njk" %}

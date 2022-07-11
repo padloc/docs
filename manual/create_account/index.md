@@ -45,7 +45,7 @@ provided field and click <span class="button highlighted">Submit</span>.
     <figcaption>Confirm your email address by entering the confirmation code we'll send you.</figcaption>
 </figure>
 
-## Step 3: Accept Terms of Service
+## Step 2: Accept Terms of Service
 
 Tick the checkbox labeled **_<i class="square-check"></i> I have read and agree
 to the [Terms of Service]({{ metadata.termsOfService }})_**.

@@ -4,5 +4,6 @@
     "language": "en",
     "description": "Docs and Resources for the Padloc password manager.",
     "termsOfService": "https://padloc.app/tos",
-    "privaceyPolicy": "https://padloc.app/privacy"
+    "privaceyPolicy": "https://padloc.app/privacy",
+    "blogUrl": "https://padloc.app/blog"
 }

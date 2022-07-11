@@ -1,6 +1,6 @@
 ---
 title: Security Whitepaper
-order: 2
+order: 4
 icon: lock
 ---
 

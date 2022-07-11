@@ -2,6 +2,6 @@
 title: Downloads
 order: 5
 icon: download
-layout: layouts/main-section.njk
+layout: layouts/downloads.njk
 description: App downloads for Windows, MacOS, iOS, Android and more!
 ---

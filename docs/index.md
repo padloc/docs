@@ -2,7 +2,7 @@
 title: Technical Docs
 order: 2
 icon: code
-layout: layouts/main-section.njk
+hidePrevNext: true
 description:
     Technical docs and guides for those wanting to contribute or host Padloc
     themselves.

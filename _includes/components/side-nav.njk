@@ -1,19 +1,16 @@
-{{ eleventyNavigation.section | log }}
+{% set navPages = collections.all | eleventyNavigation("/") %}<!-- -->
+{% set maxDepth = maxDepth or 4 %}<!-- -->
 
-{% set navPages = collections.all | eleventyNavigation("/" + eleventyNavigation.section) %}<!-- -->
-
-{% macro renderTOCItem(item) -%}<!-- -->
+{% macro renderTOCItem(item, depth=0) -%}<!-- -->
 <li>
     <a href="#{{ item.id }}" class="unstyled padded rounded block hover-bg" data-level="{{ item.level }}">
-        <span>
-            {{ item.title | safe }}
-        </span>
+        <span> {{ item.title | safe }}</span>
     </a>
 
-    {%- if item.children.length -%}
-    <ol class="unstyled small">
+    {%- if item.children.length and depth <= maxDepth -%}
+    <ol class="unstyled">
         {%- for child in item.children %}{{
-            renderTOCItem(child)
+            renderTOCItem(child, depth=depth+1)
         }}
         {% endfor -%}
     </ol>
@@ -21,7 +18,7 @@
 </li>
 {%- endmacro %}<!-- -->
 
-{% macro renderNavListItem(entry) -%}<!-- -->
+{% macro renderNavListItem(entry, depth=0) -%}<!-- -->
 
 {% set isActive = page.url | startsWith(entry.url) %}<!-- -->
 {% set isCurrent = entry.url == page.url %}<!-- -->
@@ -38,33 +35,33 @@
         </span>
     </a>
 
-    <div role="none" {% if not isActive %}hidden{% endif %}>
+    {% if isActive and depth <= maxDepth %}
+    <div role="none">
         {%- if isCurrent -%}<!-- -->
-        <ol class="unstyled small table-of-contents">
+        <ol class="unstyled table-of-contents">
             {% for item in (content | toc) %}
             {{
-                renderTOCItem(item)
+                renderTOCItem(item, depth=depth+1)
             }}
             {% endfor -%}<!-- -->
         </ol>
         {%- endif -%}<!-- -->
 
         {%- if entry.children.length -%}
-        <ul class="unstyled small">
+        <ul class="unstyled">
             {%- for child in entry.children %}
             {{
-                renderNavListItem(child)
+                renderNavListItem(child, depth=depth+1)
             }}
             {% endfor -%}
         </ul>
         {%- endif -%}
     </div>
+    {% endif %}
 </li>
 {%- endmacro %}
 
 <nav class="padded side-nav">
-    <div class="double-margined small">{% include "components/search.njk" %}</div>
-
     <ul class="unstyled">
         {%- for entry in navPages %}{{
             renderNavListItem(entry)
