@@ -1,0 +1,14 @@
+header.top-header {
+    grid-area: header;
+}
+
+header.top-header nav a {
+    padding: 0.5em 0.8em;
+}
+
+header.top-header nav a[aria-current="page"] {
+    background: var(--color-highlight);
+    color: var(--color-bg);
+    border-radius: 0.5em;
+    font-weight: 600;
+}

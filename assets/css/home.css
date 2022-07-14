@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+
+.logo {
+    height: 4em;
+}
+
+.logo-subtitle {
+    margin: -0.5em 0 2em 0;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.search-wrapper {
+    border: solid 1px var(--color-shade-2);
+    padding: 0.25em;
+    border-radius: 0.5em;
+}
+
+.search-wrapper:focus-within {
+    border-color: var(--color-highlight);
+}

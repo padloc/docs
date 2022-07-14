@@ -1,0 +1,37 @@
+nav.side-nav {
+    max-height: calc(100vh);
+    overflow: auto;
+}
+
+nav.side-nav li ul,
+nav.side-nav li ol {
+    border-left: dashed 1px var(--color-shade-2);
+    margin-left: 1.1em;
+    padding-left: 0.5em;
+    font-size: 0.9em;
+}
+
+nav.side-nav a[aria-current="page"] {
+    color: var(--color-highlight);
+    font-weight: bold;
+}
+
+nav.side-nav .table-of-contents a {
+    position: relative;
+}
+
+nav.side-nav .table-of-contents a[aria-current]::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background: var(--color-highlight);
+    position: absolute;
+    top: 0;
+    left: -0.62em;
+    border-radius: 2px;
+}
+
+nav.side-nav .table-of-contents a:not([aria-current]) + ol {
+    display: none;
+}
