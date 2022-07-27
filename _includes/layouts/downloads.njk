@@ -16,7 +16,7 @@ layout: layouts/base.njk
                 {{ title }}
             </h1>
 
-            <h2>Desktop</h2>
+            <h2><i class="laptop"></i> Desktop</h2>
 
             <ul class="unstyled">
                 {% for download in downloads %} {% if download.type == "desktop" %}
@@ -30,7 +30,7 @@ layout: layouts/base.njk
                 {% endif %} {% endfor %}
             </ul>
 
-            <h2>Mobile</h2>
+            <h2><i class="mobile"></i> Mobile</h2>
 
             {% for download in downloads %} {% if download.type == "mobile" %}
             <ul class="unstyled">
@@ -44,7 +44,7 @@ layout: layouts/base.njk
             </ul>
             {% endif %} {% endfor %}
 
-            <h2>Browser Extensions</h2>
+            <h2><i class="browser"></i> Browser Extensions</h2>
 
             {% for download in downloads %} {% if download.type == "extension" %}
             <ul class="unstyled">
