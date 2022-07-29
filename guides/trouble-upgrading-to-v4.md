@@ -1,7 +1,8 @@
 ---
 title: Trouble upgrading to Padloc 4
 icon: triangle-exclamation
-description: Solutions when you're experiencing problems after upgrading to Padloc 4
+description:
+    Solutions when you're experiencing problems after upgrading to Padloc 4
 ---
 
 Upgrading to Padloc 4 should be easy and painless, but in some situations,
@@ -11,19 +12,14 @@ things can get tricky.
 > your password nor manually delete items or vaults, no data should ever be
 > lost.
 
-The main issues arise from the fact that Padloc 3 can't show data from Padloc 4,
-thus when you upgrade an account, you can no longer use older versions of
-Padloc. This will usually manifest as missing vaults or missing items.
+The main issues arise from the fact that Padloc 3 cannot deal with vault data
+once it has been accessed from Padloc 4, thus when you upgrade an account, you
+can no longer use older versions of Padloc. This will usually manifest as
+missing vaults or missing items.
 
-While you should be able to find and download Padloc 4 for all your devices
-[in our latest release at GitHub](https://github.com/padloc/padloc/releases/latest)
-or [our downloads page](https://docs.padloc.app/downloads), it's likely that for
-iOS it won't work and you'll have to wait for the Apple's App Store to publish
-it (it's been in review for a couple of days now).
-
-An alternative is to visit [the web app](https://web.padloc.app) even in your
-mobile browser and "Add to Home screen" to have the app and data available on
-the go.
+Therefore, please make sure to update all of your apps to the latest version.
+You can find the latest releases on our [downloads page](../downloads/).
+Alternatively, you can always use the [web app](https://web.padloc.app).
 
 If there's any data missing on Padloc 4 and you have shared vaults, it's likely
 because someone on your shared vault is using a Padloc 3 app version, and you
