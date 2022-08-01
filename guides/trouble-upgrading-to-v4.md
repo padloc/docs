@@ -17,9 +17,13 @@ once it has been accessed from Padloc 4, thus when you upgrade an account, you
 can no longer use older versions of Padloc. This will usually manifest as
 missing vaults or missing items.
 
-Therefore, please make sure to update all of your apps to the latest version.
-You can find the latest releases on our [downloads page](../downloads/).
+**Therefore, please make sure to update all of your apps to the latest version.
+You can find the latest releases on our [downloads page](../downloads/)**.
 Alternatively, you can always use the [web app](https://web.padloc.app).
+
+> **Note:** For technical reasons, the v4 update can not be installed via the
+> auto-update functionality. Please download the latest version manually from
+> our [downloads page](../downloads/).
 
 If there's any data missing on Padloc 4 and you have shared vaults, it's likely
 because someone on your shared vault is using a Padloc 3 app version, and you
