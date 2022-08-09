@@ -1,18 +1,18 @@
 {
-    "name": "padloc-site-new",
+    "name": "padloc-docs",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "build": "npx @11ty/eleventy",
-        "serve": "npx @11ty/eleventy --serve --port=9090"
+        "start": "npx @11ty/eleventy --serve --port=9090"
     },
     "author": "",
-    "license": "ISC",
+    "license": "AGPLv3",
     "devDependencies": {
-        "@11ty/eleventy": "^1.0.1",
-        "@11ty/eleventy-navigation": "^0.3.3",
-        "markdown-it": "^13.0.1",
-        "markdown-it-anchor": "^8.6.4"
+        "@11ty/eleventy": "1.0.1",
+        "@11ty/eleventy-navigation": "0.3.3",
+        "markdown-it": "13.0.1",
+        "markdown-it-anchor": "8.6.4"
     }
 }
