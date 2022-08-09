@@ -64,6 +64,6 @@ browser or webview process and using strings to extract known secrets,
 
 #### Solutions
 
-- Secure physical access to your device
+- Secure physical and remote access to your device
 - Make sure your swap space is encrypted
 - Prefer to use the native apps that aren't based on Electron
