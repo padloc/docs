@@ -29,9 +29,9 @@ secrets in the process memory itself.
 While this is common and generally accepted, we want to make sure it's
 understood by our customers, for the sake of transparency.
 
-> **NOTE:** The finding below is only relevant for the browser version and
-> electron apps. Other versions aren't affected as they use separate processes
-> and APIs to access memory.
+> **NOTE:** The finding below is only relevant for the browser, Electron, and
+> Tauri apps. Other versions aren't affected as they use separate processes and
+> APIs to access memory.
 
 With a simple test which involved taking memory dumps (`procdump`) of the
 browser or webview process and using strings to extract known secrets,
@@ -66,4 +66,4 @@ browser or webview process and using strings to extract known secrets,
 
 - Secure physical and remote access to your device
 - Make sure your swap space is encrypted
-- Prefer to use the native apps that aren't based on Electron
+- Prefer to use the apps that aren't based on Electron or Tauri
