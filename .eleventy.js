@@ -1,6 +1,34 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const { minify: cleanHtml } = require("html-minifier-terser");
 const { getTOC } = require("./_lib/toc");
+
+async function minifyHtml(source, output_path) {
+    if (!output_path.endsWith(".html")) return source;
+
+    const result = await cleanHtml(source, {
+        collapseBooleanAttributes: true,
+        collapseWhitespace: false,
+        collapseInlineTagWhitespace: false,
+        continueOnParseError: true,
+        decodeEntities: true,
+        keepClosingSlash: true,
+        minifyCSS: true,
+        quoteCharacter: `"`,
+        removeComments: true,
+        removeAttributeQuotes: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        sortAttributes: true,
+        sortClassName: true,
+        useShortDoctype: true
+    });
+
+    console.log(`MINIFY ${output_path}`, source.length, `→`, result.length, `(${((1 - (result.length / source.length)) * 100).toFixed(2)}% reduction)`);
+
+    return result;
+}
 
 module.exports = (config) => {
     function outdent(str) {
@@ -66,6 +94,8 @@ module.exports = (config) => {
     config.addFilter("prevInSection", function (items) {
         return items.find((item) => item.order === this.ctx.eleventyNavigation.order - 1);
     });
+
+    config.addTransform("htmlmin", minifyHtml);
 
     return {
         markdownTemplateEngine: "njk",

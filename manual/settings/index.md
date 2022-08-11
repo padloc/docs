@@ -32,8 +32,8 @@ name, simply enter the updated name, then click
 
 To log out of your Padloc account, go to the [account settings](#account), then
 click the button labeled <span
-class="button">Log Out</span>. This will delete all your locally stored data and
-bring you back to the login screen.
+class="button">Log Out</span>. This will delete
+all your locally stored data and bring you back to the login screen.
 
 ### Deleting Your Account
 
@@ -46,8 +46,9 @@ bring you back to the login screen.
 
 To delete your Padloc account, go to the [account settings](#account), then
 click the button labeled <span
-class="button">Delete Account</span>. You'll have to enter your master password,
-then confirm your choice by typing out the word "DELETE" and hitting
+class="button">Delete Account</span>. You'll have
+to enter your master password, then confirm your choice by typing out the word
+"DELETE" and hitting
 <span class="red highlighted button">Delete</span>.
 
 ## <i class="lock"></i> Security
@@ -70,9 +71,10 @@ and MFA methods, and more.
 
 To change your master password, go to the [security settings](#security), then
 click the button labeled <span
-class="button">Change Master Password</span>. After entering your current
-password, enter your new password and confirm it by retyping it in the input
-below. To confirm the change, click <span class="highlighted button">OK</span>.
+class="button">Change Master Password</span>.
+After entering your current password, enter your new password and confirm it by
+retyping it in the input below. To confirm the change, click
+<span class="highlighted button">OK</span>.
 
 ### Auto Lock
 
@@ -82,6 +84,9 @@ app). To enable or disable the feature, simply toggle the button labeled
 <span class="button">Lock Automatically <i class="toggle-on"></i></span>. To
 adjust the duration after which the app should auto-lock, drag the slider right
 below the button.
+
+You can read more about
+[the security about locking and unlocking here](/manual/locking-and-unlocking/).
 
 ## <i class="tv-retro"></i> Display
 
@@ -133,16 +138,16 @@ an explicit button.
 Padloc provides an easy way to import data from other applications. Supported
 formats are:
 
--   **Comma Separated Values
-    ([CSV](https://en.wikipedia.org/wiki/Comma-separated_values))** - Many
-    applications support exporting data in this format, and Padloc provides a
-    powerful import assistant that should allow you to import data from pretty
-    much anywhere that allows exporting to CSV.
+- **Comma Separated Values
+  ([CSV](https://en.wikipedia.org/wiki/Comma-separated_values))** - Many
+  applications support exporting data in this format, and Padloc provides a
+  powerful import assistant that should allow you to import data from pretty
+  much anywhere that allows exporting to CSV.
 
--   **Encrypted Padloc Export** - Lastly, Padloc has its own, encrypted export
-    format which naturally is supported and recognized automatically. Encrypted
-    Padloc Exports are protected by a password which you'll have to provide
-    during the import process.
+- **Encrypted Padloc Export** - Lastly, Padloc has its own, encrypted export
+  format which naturally is supported and recognized automatically. Encrypted
+  Padloc Exports are protected by a password which you'll have to provide during
+  the import process.
 
 Here is how to import data into Padloc:
 
