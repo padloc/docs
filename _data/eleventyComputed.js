@@ -29,5 +29,6 @@ module.exports = {
         order: (data) => data.order || data.weight,
         icon: (data) => data.icon,
         description: (data) => data.description,
+        date: (data) => data.date || data.page.date || new Date(),
     },
 };
