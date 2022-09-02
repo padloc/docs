@@ -9,7 +9,7 @@ async function minifyHtml(source, output_path) {
     const result = await cleanHtml(source, {
         collapseBooleanAttributes: true,
         collapseWhitespace: false,
-        collapseInlineTagWhitespace: false,
+        collapseInlineTagWhitespace: true,
         continueOnParseError: true,
         decodeEntities: true,
         keepClosingSlash: true,
