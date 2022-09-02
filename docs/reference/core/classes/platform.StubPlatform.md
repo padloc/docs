@@ -28,7 +28,7 @@ interface. Useful for testing
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[biometricKeyStore](../interfaces/platform.Platform.md#biometrickeystore)
+[Platform](../../interfaces/platform.Platform).[biometricKeyStore](../interfaces/platform.Platform#biometrickeystore)
 
 #### Defined in
 
@@ -42,7 +42,7 @@ interface. Useful for testing
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[crypto](../interfaces/platform.Platform.md#crypto)
+[Platform](../../interfaces/platform.Platform).[crypto](../interfaces/platform.Platform#crypto)
 
 #### Defined in
 
@@ -57,7 +57,7 @@ interface. Useful for testing
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[platformAuthType](../interfaces/platform.Platform.md#platformauthtype)
+[Platform](../../interfaces/platform.Platform).[platformAuthType](../interfaces/platform.Platform#platformauthtype)
 
 #### Defined in
 
@@ -71,7 +71,7 @@ interface. Useful for testing
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[storage](../interfaces/platform.Platform.md#storage)
+[Platform](../../interfaces/platform.Platform).[storage](../interfaces/platform.Platform#storage)
 
 #### Defined in
 
@@ -89,7 +89,7 @@ interface. Useful for testing
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[supportedAuthTypes](../interfaces/platform.Platform.md#supportedauthtypes)
+[Platform](../../interfaces/platform.Platform).[supportedAuthTypes](../interfaces/platform.Platform#supportedauthtypes)
 
 #### Defined in
 
@@ -100,10 +100,10 @@ interface. Useful for testing
 ### completeAuthRequest
 
 ▸ **completeAuthRequest**(`_req`): `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](container.PBES2Container.md) ; `provisioning`:
-[`AccountProvisioning`](provisioning.AccountProvisioning) ; `token`: `string`
+[`PBES2Container`](../container.PBES2Container) ; `provisioning`:
+[`AccountProvisioning`](../provisioning.AccountProvisioning) ; `token`: `string`
 }\>
 
 #### Parameters
@@ -115,15 +115,15 @@ interface. Useful for testing
 #### Returns
 
 `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](container.PBES2Container.md) ; `provisioning`:
-[`AccountProvisioning`](provisioning.AccountProvisioning) ; `token`: `string`
+[`PBES2Container`](../container.PBES2Container) ; `provisioning`:
+[`AccountProvisioning`](../provisioning.AccountProvisioning) ; `token`: `string`
 }\>
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[completeAuthRequest](../interfaces/platform.Platform.md#completeauthrequest)
+[Platform](../../interfaces/platform.Platform).[completeAuthRequest](../interfaces/platform.Platform#completeauthrequest)
 
 #### Defined in
 
@@ -149,7 +149,7 @@ interface. Useful for testing
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[composeEmail](../interfaces/platform.Platform.md#composeemail)
+[Platform](../../interfaces/platform.Platform).[composeEmail](../interfaces/platform.Platform#composeemail)
 
 #### Defined in
 
@@ -169,7 +169,7 @@ Retrieves the current text from the system clipboard
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[getClipboard](../interfaces/platform.Platform.md#getclipboard)
+[Platform](../../interfaces/platform.Platform).[getClipboard](../interfaces/platform.Platform#getclipboard)
 
 #### Defined in
 
@@ -189,7 +189,7 @@ Get information about the current device
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[getDeviceInfo](../interfaces/platform.Platform.md#getdeviceinfo)
+[Platform](../../interfaces/platform.Platform).[getDeviceInfo](../interfaces/platform.Platform#getdeviceinfo)
 
 #### Defined in
 
@@ -213,7 +213,7 @@ Get information about the current device
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[getPlatformAuthToken](../interfaces/platform.Platform.md#getplatformauthtoken)
+[Platform](../../interfaces/platform.Platform).[getPlatformAuthToken](../interfaces/platform.Platform#getplatformauthtoken)
 
 #### Defined in
 
@@ -237,7 +237,7 @@ Get information about the current device
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[openExternalUrl](../interfaces/platform.Platform.md#openexternalurl)
+[Platform](../../interfaces/platform.Platform).[openExternalUrl](../interfaces/platform.Platform#openexternalurl)
 
 #### Defined in
 
@@ -265,7 +265,7 @@ Get information about the current device
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[registerAuthenticator](../interfaces/platform.Platform.md#registerauthenticator)
+[Platform](../../interfaces/platform.Platform).[registerAuthenticator](../interfaces/platform.Platform#registerauthenticator)
 
 #### Defined in
 
@@ -289,7 +289,7 @@ Get information about the current device
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[registerPlatformAuthenticator](../interfaces/platform.Platform.md#registerplatformauthenticator)
+[Platform](../../interfaces/platform.Platform).[registerPlatformAuthenticator](../interfaces/platform.Platform#registerplatformauthenticator)
 
 #### Defined in
 
@@ -315,7 +315,7 @@ Get information about the current device
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[saveFile](../interfaces/platform.Platform.md#savefile)
+[Platform](../../interfaces/platform.Platform).[saveFile](../interfaces/platform.Platform#savefile)
 
 #### Defined in
 
@@ -333,7 +333,7 @@ Get information about the current device
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[scanQR](../interfaces/platform.Platform.md#scanqr)
+[Platform](../../interfaces/platform.Platform).[scanQR](../interfaces/platform.Platform#scanqr)
 
 #### Defined in
 
@@ -359,7 +359,7 @@ Copies the given `text` to the system clipboard
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[setClipboard](../interfaces/platform.Platform.md#setclipboard)
+[Platform](../../interfaces/platform.Platform).[setClipboard](../interfaces/platform.Platform#setclipboard)
 
 #### Defined in
 
@@ -389,7 +389,7 @@ Copies the given `text` to the system clipboard
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[startAuthRequest](../interfaces/platform.Platform.md#startauthrequest)
+[Platform](../../interfaces/platform.Platform).[startAuthRequest](../interfaces/platform.Platform#startauthrequest)
 
 #### Defined in
 
@@ -407,7 +407,7 @@ Copies the given `text` to the system clipboard
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[stopScanQR](../interfaces/platform.Platform.md#stopscanqr)
+[Platform](../../interfaces/platform.Platform).[stopScanQR](../interfaces/platform.Platform#stopscanqr)
 
 #### Defined in
 
@@ -425,7 +425,7 @@ Copies the given `text` to the system clipboard
 
 #### Implementation of
 
-[Platform](../../interfaces/platform.Platform).[supportsPlatformAuthenticator](../interfaces/platform.Platform.md#supportsplatformauthenticator)
+[Platform](../../interfaces/platform.Platform).[supportsPlatformAuthenticator](../interfaces/platform.Platform#supportsplatformauthenticator)
 
 #### Defined in
 

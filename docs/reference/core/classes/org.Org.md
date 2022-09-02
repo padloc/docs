@@ -21,11 +21,11 @@ Before being added to an organization, members need to go throug a key exchange
 procedure designed to allow verification of organization and member details by
 both parties. See [Invite](../invite.Invite) class for details.
 
-The [privateKey](org.Org.md#privatekey) and [invitesKey](org.Org.md#inviteskey)
+The [privateKey](../org.Org#privatekey) and [invitesKey](../org.Org#inviteskey)
 properties are considered secret and are only accessible to members with the
-[OrgRole.Owner](../enums/org.OrgRole.md#owner) role. To protect this information
-from unauthorized access, [Org](../org.Org.md) extends the
-[SharedContainer](container.SharedContainer) class, encrypting this data at
+[OrgRole.Owner](../enums/org.OrgRole#owner) role. To protect this information
+from unauthorized access, [Org](../org.Org) extends the
+[SharedContainer](../container.SharedContainer) class, encrypting this data at
 rest.
 
 #### Organization Structure
@@ -72,7 +72,7 @@ rest.
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[constructor](container.SharedContainer.md#constructor)
+[SharedContainer](../container.SharedContainer).[constructor](../container.SharedContainer#constructor)
 
 ## Properties
 
@@ -81,11 +81,11 @@ rest.
 • `Protected` `Optional` **\_key**: `Uint8Array`
 
 The key used for encryption. Sub classes must set this property in the
-[unlock](org.Org.md#unlock) method.
+[unlock](../org.Org#unlock) method.
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[\_key](container.SharedContainer.md#_key)
+[SharedContainer](../container.SharedContainer).[\_key](../container.SharedContainer#_key)
 
 #### Defined in
 
@@ -104,7 +104,7 @@ Storable.\_propertySerializationOptions
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[\_propertySerializationOptions](container.SharedContainer.md#_propertyserializationoptions)
+[SharedContainer](../container.SharedContainer).[\_propertySerializationOptions](../container.SharedContainer#_propertyserializationoptions)
 
 #### Defined in
 
@@ -120,7 +120,7 @@ The ids and encrypted keys of all accessors
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[accessors](container.SharedContainer.md#accessors)
+[SharedContainer](../container.SharedContainer).[accessors](../container.SharedContainer#accessors)
 
 #### Defined in
 
@@ -158,7 +158,7 @@ Encrypted data
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[encryptedData](container.SharedContainer.md#encrypteddata)
+[SharedContainer](../container.SharedContainer).[encryptedData](../container.SharedContainer#encrypteddata)
 
 #### Defined in
 
@@ -174,7 +174,7 @@ Parameters used for encryption of content data
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[encryptionParams](container.SharedContainer.md#encryptionparams)
+[SharedContainer](../container.SharedContainer).[encryptionParams](../container.SharedContainer#encryptionparams)
 
 #### Defined in
 
@@ -245,7 +245,7 @@ Parameters used to wrap the shared encryption key
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[keyParams](container.SharedContainer.md#keyparams)
+[SharedContainer](../container.SharedContainer).[keyParams](../container.SharedContainer#keyparams)
 
 #### Defined in
 
@@ -270,12 +270,12 @@ Array of organization members
 • **minMemberUpdated**: `Date`
 
 Minimum accepted update time for organization members. Any members with a
-[OrgMember.updated](org.OrgMember.md#updated) value lower than this should be
+[OrgMember.updated](../org.OrgMember#updated) value lower than this should be
 considered invalid.
 
 In order to prevent an attacker from rolling back this value, all clients should
 verify that updated organization object always have a
-[Org.minMemberUpdated](org.Org.md#minmemberupdated) value equal to or higher
+[Org.minMemberUpdated](../org.Org#minmemberupdated) value equal to or higher
 than the previous one.
 
 #### Defined in
@@ -453,7 +453,7 @@ Storable.\_fromRaw
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[\_fromRaw](container.SharedContainer.md#_fromraw)
+[SharedContainer](../container.SharedContainer).[\_fromRaw](../container.SharedContainer#_fromraw)
 
 #### Defined in
 
@@ -467,7 +467,7 @@ Storable.\_fromRaw
 
 Transform this object into a raw javascript object used for serialization. The
 default implementation simply copies all iterable properties not included in the
-[[exlude]] array and calls [toRaw](org.Org.md#toraw) on any properties that are
+[[exlude]] array and calls [toRaw](../org.Org#toraw) on any properties that are
 themselfes instances of [Serializable](../encoding.Serializable). This method
 should be overwritten by subclasses if certain properties require special
 treatment.
@@ -488,7 +488,7 @@ Storable.\_toRaw
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[\_toRaw](container.SharedContainer.md#_toraw)
+[SharedContainer](../container.SharedContainer).[\_toRaw](../container.SharedContainer#_toraw)
 
 #### Defined in
 
@@ -592,7 +592,7 @@ Storable.clone
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[clone](container.SharedContainer.md#clone)
+[SharedContainer](../container.SharedContainer).[clone](../container.SharedContainer#clone)
 
 #### Defined in
 
@@ -622,7 +622,7 @@ Storable.fromBytes
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[fromBytes](container.SharedContainer.md#frombytes)
+[SharedContainer](../container.SharedContainer).[fromBytes](../container.SharedContainer#frombytes)
 
 #### Defined in
 
@@ -652,7 +652,7 @@ Storable.fromJSON
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[fromJSON](container.SharedContainer.md#fromjson)
+[SharedContainer](../container.SharedContainer).[fromJSON](../container.SharedContainer#fromjson)
 
 #### Defined in
 
@@ -665,12 +665,12 @@ Storable.fromJSON
 ▸ **fromRaw**(`raw`): [`Org`](../org.Org)
 
 Restores propertiers from a raw object of the same form generated by
-[toRaw](org.Org.md#toraw). The base implementation blindly copies over values
+[toRaw](../org.Org#toraw). The base implementation blindly copies over values
 from the raw object via `Object.assign` so subclasses should explictly process
 any propertyies that need special treatment.
 
 Also takes are of validation and "upgrading" in case the raw object has an old
-version. Use the protected [\_fromRaw](org.Org.md#_fromraw) method to implement
+version. Use the protected [\_fromRaw](../org.Org#_fromraw) method to implement
 subclass-specific behavior.
 
 #### Parameters
@@ -689,7 +689,7 @@ Storable.fromRaw
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[fromRaw](container.SharedContainer.md#fromraw)
+[SharedContainer](../container.SharedContainer).[fromRaw](../container.SharedContainer#fromraw)
 
 #### Defined in
 
@@ -701,8 +701,8 @@ Storable.fromRaw
 
 ▸ **generateKeys**(): `Promise`<`void`\>
 
-Generates a new [publicKey](org.Org.md#publickey),
-[privateKey](org.Org.md#privatekey) and [invitesKey](org.Org.md#inviteskey) and
+Generates a new [publicKey](../org.Org#publickey),
+[privateKey](../org.Org#privatekey) and [invitesKey](../org.Org#inviteskey) and
 encrypts the latter two
 
 #### Returns
@@ -752,7 +752,7 @@ require unlocking the container first.
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[getData](container.SharedContainer.md#getdata)
+[SharedContainer](../container.SharedContainer).[getData](../container.SharedContainer#getdata)
 
 #### Defined in
 
@@ -786,7 +786,7 @@ Get group with the given `name`
 
 ▸ **getGroupsForMember**(`__namedParameters`): [`Group`](../org.Group)[]
 
-Get all [Group](../org.Group.md)s the given [Account](account.Account) is a
+Get all [Group](../org.Group)s the given [Account](../account.Account) is a
 member of
 
 #### Parameters
@@ -856,8 +856,8 @@ Get the invite with the given `id`
 ▸ **getMember**(`__namedParameters`): `undefined` \|
 [`OrgMember`](../org.OrgMember)
 
-Get the [OrgMember](../org.OrgMember.md) object for this
-[Account](account.Account)
+Get the [OrgMember](../org.OrgMember) object for this
+[Account](../account.Account)
 
 #### Parameters
 
@@ -949,8 +949,8 @@ Get all vaults the given member has access to
 
 ▸ **initialize**(`account`): `Promise`<`void`\>
 
-Initializes the organization, generating [publicKey](org.Org.md#publickey),
-[privateKey](org.Org.md#privatekey), and [invitesKey](org.Org.md#inviteskey) and
+Initializes the organization, generating [publicKey](../org.Org#publickey),
+[privateKey](../org.Org#privatekey), and [invitesKey](../org.Org#inviteskey) and
 adding the given `account` as the organization owner.
 
 #### Parameters
@@ -974,7 +974,7 @@ adding the given `account` as the organization owner.
 ▸ **isAdmin**(`m`): `boolean`
 
 Whether the given [Account](../account.Account) is an
-[OrgRole.Admin](../enums/org.OrgRole.md#admin)
+[OrgRole.Admin](../enums/org.OrgRole#admin)
 
 #### Parameters
 
@@ -1021,7 +1021,7 @@ Whether the given [Account](../account.Account) is an organization member
 ▸ **isOwner**(`__namedParameters`): `boolean`
 
 Whether the given [Account](../account.Account) is an
-[OrgRole.Owner](../enums/org.OrgRole.md#owner)
+[OrgRole.Owner](../enums/org.OrgRole#owner)
 
 #### Parameters
 
@@ -1068,7 +1068,7 @@ Whether the given [Account](../account.Account) is currently suspended
 ▸ **lock**(): `void`
 
 Locks the container, removing the possibility to extract the plain text data via
-[getData](org.Org.md#getdata) until the container is unlocked again. Subclasses
+[getData](../org.Org#getdata) until the container is unlocked again. Subclasses
 extending this class must take care to delete any keys or other sensitive data
 that may have been stored temporarily after unlocking the container.
 
@@ -1078,7 +1078,7 @@ that may have been stored temporarily after unlocking the container.
 
 #### Overrides
 
-[SharedContainer](../container.SharedContainer).[lock](container.SharedContainer.md#lock)
+[SharedContainer](../container.SharedContainer).[lock](../container.SharedContainer#lock)
 
 #### Defined in
 
@@ -1195,7 +1195,7 @@ Encrypts the provided `data` and stores it in the container
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[setData](container.SharedContainer.md#setdata)
+[SharedContainer](../container.SharedContainer).[setData](../container.SharedContainer#setdata)
 
 #### Defined in
 
@@ -1242,7 +1242,7 @@ Storable.toBytes
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[toBytes](container.SharedContainer.md#tobytes)
+[SharedContainer](../container.SharedContainer).[toBytes](../container.SharedContainer#tobytes)
 
 #### Defined in
 
@@ -1266,7 +1266,7 @@ Storable.toJSON
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[toJSON](container.SharedContainer.md#tojson)
+[SharedContainer](../container.SharedContainer).[toJSON](../container.SharedContainer#tojson)
 
 #### Defined in
 
@@ -1280,7 +1280,7 @@ Storable.toJSON
 
 Creates a raw javascript object representation of the class, which can be used
 for storage or data transmission. Also handles "downgrading" to previous
-versions. Use [\_toRaw](org.Org.md#_toraw) for subclass-specific behavior.
+versions. Use [\_toRaw](../org.Org#_toraw) for subclass-specific behavior.
 
 #### Parameters
 
@@ -1298,7 +1298,7 @@ Storable.toRaw
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[toRaw](container.SharedContainer.md#toraw)
+[SharedContainer](../container.SharedContainer).[toRaw](../container.SharedContainer#toraw)
 
 #### Defined in
 
@@ -1325,7 +1325,7 @@ Storable.toRaw
 ▸ **unlock**(`account`): `Promise`<`void`\>
 
 "Unlocks" the organization, granting access to the organizations
-[privateKey](org.Org.md#privatekey) and [invitesKey](org.Org.md#inviteskey)
+[privateKey](../org.Org#privatekey) and [invitesKey](../org.Org#inviteskey)
 properties.
 
 #### Parameters
@@ -1340,7 +1340,7 @@ properties.
 
 #### Overrides
 
-[SharedContainer](../container.SharedContainer).[unlock](container.SharedContainer.md#unlock)
+[SharedContainer](../container.SharedContainer).[unlock](../container.SharedContainer#unlock)
 
 #### Defined in
 
@@ -1368,7 +1368,7 @@ be unlocked first.
 
 #### Inherited from
 
-[SharedContainer](../container.SharedContainer).[updateAccessors](container.SharedContainer.md#updateaccessors)
+[SharedContainer](../container.SharedContainer).[updateAccessors](../container.SharedContainer#updateaccessors)
 
 #### Defined in
 
@@ -1394,7 +1394,7 @@ Storable.validate
 
 #### Overrides
 
-[SharedContainer](../container.SharedContainer).[validate](container.SharedContainer.md#validate)
+[SharedContainer](../container.SharedContainer).[validate](../container.SharedContainer#validate)
 
 #### Defined in
 

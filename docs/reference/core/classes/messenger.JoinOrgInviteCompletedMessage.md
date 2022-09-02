@@ -29,7 +29,7 @@ slug: "messenger.JoinOrgInviteCompletedMessage"
 
 #### Inherited from
 
-[Message](../messenger.Message).[constructor](messenger.Message.md#constructor)
+[Message](../messenger.Message).[constructor](../messenger.Message#constructor)
 
 #### Defined in
 
@@ -50,7 +50,7 @@ slug: "messenger.JoinOrgInviteCompletedMessage"
 
 #### Inherited from
 
-[Message](../messenger.Message).[data](messenger.Message.md#data)
+[Message](../messenger.Message).[data](../messenger.Message#data)
 
 ---
 
@@ -62,7 +62,7 @@ Template name
 
 #### Overrides
 
-[Message](../messenger.Message).[template](messenger.Message.md#template)
+[Message](../messenger.Message).[template](../messenger.Message#template)
 
 #### Defined in
 

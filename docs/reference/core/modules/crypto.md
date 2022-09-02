@@ -64,8 +64,8 @@ slug: "crypto"
 
 ### SymmetricKey
 
-Ƭ **SymmetricKey**: [`AESKey`](crypto.md#aeskey) \|
-[`HMACKey`](crypto.md#hmackey)
+Ƭ **SymmetricKey**: [`AESKey`](../crypto#aeskey) \|
+[`HMACKey`](../crypto#hmackey)
 
 #### Defined in
 

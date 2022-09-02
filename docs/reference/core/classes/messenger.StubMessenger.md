@@ -26,7 +26,7 @@ interface. Simply stores messages in memory. Useful for testing purposes.
 • **messages**: { `message`: [`Message`](../messenger.Message)<`any`\> ;
 `recipient`: `string` }[] = `[]`
 
-An array of messages passed to the [send](messenger.StubMessenger.md#send)
+An array of messages passed to the [send](../messenger.StubMessenger#send)
 method. Sorted from most recent to oldest.
 
 #### Defined in
@@ -67,7 +67,7 @@ Sends a message to a given address
 
 | Name | Type                                                         |
 | :--- | :----------------------------------------------------------- |
-| `T`  | extends [`MessageData`](../modules/messenger.md#messagedata) |
+| `T`  | extends [`MessageData`](../modules/messenger#messagedata) |
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Sends a message to a given address
 
 #### Implementation of
 
-[Messenger](../../interfaces/messenger.Messenger).[send](../interfaces/messenger.Messenger.md#send)
+[Messenger](../../interfaces/messenger.Messenger).[send](../interfaces/messenger.Messenger#send)
 
 #### Defined in
 

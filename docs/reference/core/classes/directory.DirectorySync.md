@@ -72,7 +72,7 @@ slug: "directory.DirectorySync"
 
 #### Implementation of
 
-[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[groupCreated](../interfaces/directory.DirectorySubscriber.md#groupcreated)
+[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[groupCreated](../interfaces/directory.DirectorySubscriber#groupcreated)
 
 #### Defined in
 
@@ -97,7 +97,7 @@ slug: "directory.DirectorySync"
 
 #### Implementation of
 
-[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[groupDeleted](../interfaces/directory.DirectorySubscriber.md#groupdeleted)
+[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[groupDeleted](../interfaces/directory.DirectorySubscriber#groupdeleted)
 
 #### Defined in
 
@@ -123,7 +123,7 @@ slug: "directory.DirectorySync"
 
 #### Implementation of
 
-[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[groupUpdated](../interfaces/directory.DirectorySubscriber.md#groupupdated)
+[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[groupUpdated](../interfaces/directory.DirectorySubscriber#groupupdated)
 
 #### Defined in
 
@@ -148,7 +148,7 @@ slug: "directory.DirectorySync"
 
 #### Implementation of
 
-[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[userCreated](../interfaces/directory.DirectorySubscriber.md#usercreated)
+[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[userCreated](../interfaces/directory.DirectorySubscriber#usercreated)
 
 #### Defined in
 
@@ -173,7 +173,7 @@ slug: "directory.DirectorySync"
 
 #### Implementation of
 
-[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[userDeleted](../interfaces/directory.DirectorySubscriber.md#userdeleted)
+[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[userDeleted](../interfaces/directory.DirectorySubscriber#userdeleted)
 
 #### Defined in
 
@@ -199,7 +199,7 @@ slug: "directory.DirectorySync"
 
 #### Implementation of
 
-[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[userUpdated](../interfaces/directory.DirectorySubscriber.md#userupdated)
+[DirectorySubscriber](../../interfaces/directory.DirectorySubscriber).[userUpdated](../interfaces/directory.DirectorySubscriber#userupdated)
 
 #### Defined in
 

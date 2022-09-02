@@ -6,9 +6,9 @@ slug: "client.ClientState"
 
 [client](../../modules/client).ClientState
 
-Client state, keeping track of [session](client.ClientState.md#session),
-[account](client.ClientState.md#account) and
-[device](client.ClientState.md#device) info
+Client state, keeping track of [session](../client.ClientState#session),
+[account](../client.ClientState#account) and
+[device](../client.ClientState#device) info
 
 ## Properties
 

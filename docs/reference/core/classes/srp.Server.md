@@ -50,7 +50,7 @@ slug: "srp.Server"
 • `get` **B**(): `null` \| `Uint8Array`
 
 Server-side random initializer, available after calling
-[initialize](srp.Server.md#initialize)
+[initialize](../srp.Server#initialize)
 
 #### Returns
 
@@ -67,7 +67,7 @@ Server-side random initializer, available after calling
 • `get` **K**(): `null` \| `Uint8Array`
 
 Common session key, available after calling
-[initialize](srp.Server.md#initialize) and [setA](srp.Server.md#seta)
+[initialize](../srp.Server#initialize) and [setA](../srp.Server#seta)
 
 #### Returns
 
@@ -84,7 +84,7 @@ Common session key, available after calling
 • `get` **M1**(): `null` \| `Uint8Array`
 
 First value used to verify a successful key exchange, available after calling
-[initialize](srp.Server.md#initialize) and [setA](srp.Server.md#seta)
+[initialize](../srp.Server#initialize) and [setA](../srp.Server#seta)
 
 #### Returns
 
@@ -101,7 +101,7 @@ First value used to verify a successful key exchange, available after calling
 • `get` **M2**(): `null` \| `Uint8Array`
 
 Second value used to verify a successful key exchange, available after calling
-[initialize](srp.Server.md#initialize) and [setA](srp.Server.md#seta)
+[initialize](../srp.Server#initialize) and [setA](../srp.Server#seta)
 
 #### Returns
 
@@ -131,7 +131,7 @@ Second value used to verify a successful key exchange, available after calling
 
 ▸ **initialize**(`v`): `Promise`<`void`\>
 
-Initialize server using the given verfifier `v`. Generates [B](srp.Server.md#b).
+Initialize server using the given verfifier `v`. Generates [B](../srp.Server#b).
 
 #### Parameters
 
@@ -153,9 +153,9 @@ Initialize server using the given verfifier `v`. Generates [B](srp.Server.md#b).
 
 ▸ **setA**(`A`): `Promise`<`void`\>
 
-Apply [Client.A](srp.Client.md#a) value, calculating [K](srp.Server.md#k),
-[M1](srp.Server.md#m1) and [M2](srp.Server.md#m2). Should only be called after
-[initialize](srp.Server.md#initialize) has been called.
+Apply [Client.A](../srp.Client#a) value, calculating [K](../srp.Server#k),
+[M1](../srp.Server#m1) and [M2](../srp.Server#m2). Should only be called after
+[initialize](../srp.Server#initialize) has been called.
 
 #### Parameters
 

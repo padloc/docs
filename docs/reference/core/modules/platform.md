@@ -20,9 +20,9 @@ slug: "platform"
 ### authenticate
 
 ▸ **authenticate**(`opts`): `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](../classes/container.PBES2Container.md) ; `provisioning`:
+[`PBES2Container`](../classes/container.PBES2Container) ; `provisioning`:
 [`AccountProvisioning`](../classes/provisioning.AccountProvisioning) ; `token`:
 `string` }\>
 
@@ -40,9 +40,9 @@ slug: "platform"
 #### Returns
 
 `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](../classes/container.PBES2Container.md) ; `provisioning`:
+[`PBES2Container`](../classes/container.PBES2Container) ; `provisioning`:
 [`AccountProvisioning`](../classes/provisioning.AccountProvisioning) ; `token`:
 `string` }\>
 
@@ -55,9 +55,9 @@ slug: "platform"
 ### completeAuthRequest
 
 ▸ **completeAuthRequest**(`req`): `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](../classes/container.PBES2Container.md) ; `provisioning`:
+[`PBES2Container`](../classes/container.PBES2Container) ; `provisioning`:
 [`AccountProvisioning`](../classes/provisioning.AccountProvisioning) ; `token`:
 `string` }\>
 
@@ -70,9 +70,9 @@ slug: "platform"
 #### Returns
 
 `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](../classes/container.PBES2Container.md) ; `provisioning`:
+[`PBES2Container`](../classes/container.PBES2Container) ; `provisioning`:
 [`AccountProvisioning`](../classes/provisioning.AccountProvisioning) ; `token`:
 `string` }\>
 

@@ -7,11 +7,11 @@ slug: "invite.Invite"
 [invite](../../modules/invite).Invite
 
 The `Invite` class encapsules most of the logic and information necessary to
-perform a key exchange between an [Org](../org.Org.md) and
-[Account](account.Account) before adding the [Account](../account.Account) as a
+perform a key exchange between an [Org](../org.Org) and
+[Account](../account.Account) before adding the [Account](../account.Account) as a
 member. A secret HMAC key is used to sign and verify the public keys of both
 invitee and organization. This key is derived from a
-[secret](invite.Invite.md#secret), which needs to be communicated between the
+[secret](../invite.Invite#secret), which needs to be communicated between the
 organization owner and invitee directly.
 
 The invite flow generally works as follows:
@@ -22,7 +22,7 @@ The invite flow generally works as follows:
 const invite = new Invite("bob@example.com", "add_member");
 
 // Generates random secret and signs organization details
-await invite.intialize(org, orgOwnerAccount);
+await invite.intialize(../org, orgOwnerAccount);
 
 console.log("invite secret: ", invite.secret);
 
@@ -33,7 +33,7 @@ console.log("invite secret: ", invite.secret);
 
 // Verifies organization info and signs own public key
 
-const success = await invite.accept(inviteeAccount, secret);
+const success = await invite.accept(../inviteeAccount, secret);
 
 if (!success) {
     throw "Verification failed! Incorrect secret?";
@@ -51,7 +51,7 @@ if (!(await invite.verifyInvitee())) {
 }
 
 // DONE!
-await org.addOrUpdateMember(invite.invitee);
+await org.addOrUpdateMember(../invite.invitee);
 ```
 
 ## Hierarchy
@@ -71,11 +71,11 @@ await org.addOrUpdateMember(invite.invitee);
 | Name      | Type                                                  | Default value |
 | :-------- | :---------------------------------------------------- | :------------ |
 | `email`   | `string`                                              | `""`          |
-| `purpose` | [`InvitePurpose`](../modules/invite.md#invitepurpose) | `"join_org"`  |
+| `purpose` | [`InvitePurpose`](../modules/invite#invitepurpose) | `"join_org"`  |
 
 #### Overrides
 
-[SimpleContainer](../container.SimpleContainer).[constructor](container.SimpleContainer.md#constructor)
+[SimpleContainer](../container.SimpleContainer).[constructor](../container.SimpleContainer#constructor)
 
 #### Defined in
 
@@ -88,11 +88,11 @@ await org.addOrUpdateMember(invite.invitee);
 • `Protected` `Optional` **\_key**: `Uint8Array`
 
 The key used for encryption. Sub classes must set this property in the
-[unlock](invite.Invite.md#unlock) method.
+[unlock](../invite.Invite#unlock) method.
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[\_key](container.SimpleContainer.md#_key)
+[SimpleContainer](../container.SimpleContainer).[\_key](../container.SimpleContainer#_key)
 
 #### Defined in
 
@@ -107,7 +107,7 @@ The key used for encryption. Sub classes must set this property in the
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[\_propertySerializationOptions](container.SimpleContainer.md#_propertyserializationoptions)
+[SimpleContainer](../container.SimpleContainer).[\_propertySerializationOptions](../container.SimpleContainer#_propertyserializationoptions)
 
 #### Defined in
 
@@ -161,7 +161,7 @@ Encrypted data
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[encryptedData](container.SimpleContainer.md#encrypteddata)
+[SimpleContainer](../container.SimpleContainer).[encryptedData](../container.SimpleContainer#encrypteddata)
 
 #### Defined in
 
@@ -177,7 +177,7 @@ Parameters used for encryption of content data
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[encryptionParams](container.SimpleContainer.md#encryptionparams)
+[SimpleContainer](../container.SimpleContainer).[encryptionParams](../container.SimpleContainer#encryptionparams)
 
 #### Defined in
 
@@ -190,7 +190,7 @@ Parameters used for encryption of content data
 • **expires**: `Date`
 
 Expiration time used to limit invite procedure to a certain time window. This
-property is also stored in [encryptedData](invite.Invite.md#encrypteddata) along
+property is also stored in [encryptedData](../invite.Invite#encrypteddata) along
 with the invite secret to prevent tempering.
 
 #### Defined in
@@ -259,7 +259,7 @@ initialization
 
 ### purpose
 
-• **purpose**: [`InvitePurpose`](../modules/invite.md#invitepurpose) =
+• **purpose**: [`InvitePurpose`](../modules/invite#invitepurpose) =
 `"join_org"`
 
 ---
@@ -269,7 +269,7 @@ initialization
 • **signingKeyParams**: [`PBKDF2Params`](../crypto.PBKDF2Params)
 
 Key derivation paramaters used for deriving the HMAC signing key from
-[secret](invite.Invite.md#secret).
+[secret](../invite.Invite#secret).
 
 #### Defined in
 
@@ -409,7 +409,7 @@ properties that require special treatment
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[\_fromRaw](container.SimpleContainer.md#_fromraw)
+[SimpleContainer](../container.SimpleContainer).[\_fromRaw](../container.SimpleContainer#_fromraw)
 
 #### Defined in
 
@@ -457,7 +457,7 @@ properties that require special treatment
 
 Transform this object into a raw javascript object used for serialization. The
 default implementation simply copies all iterable properties not included in the
-[[exlude]] array and calls [toRaw](invite.Invite.md#toraw) on any properties
+[[exlude]] array and calls [toRaw](../invite.Invite#toraw) on any properties
 that are themselfes instances of [Serializable](../encoding.Serializable). This
 method should be overwritten by subclasses if certain properties require special
 treatment.
@@ -474,7 +474,7 @@ treatment.
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[\_toRaw](container.SimpleContainer.md#_toraw)
+[SimpleContainer](../container.SimpleContainer).[\_toRaw](../container.SimpleContainer#_toraw)
 
 #### Defined in
 
@@ -540,7 +540,7 @@ Creates a deep clone of the object
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[clone](container.SimpleContainer.md#clone)
+[SimpleContainer](../container.SimpleContainer).[clone](../container.SimpleContainer#clone)
 
 #### Defined in
 
@@ -566,7 +566,7 @@ Deserializes the object from a byte array
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[fromBytes](container.SimpleContainer.md#frombytes)
+[SimpleContainer](../container.SimpleContainer).[fromBytes](../container.SimpleContainer#frombytes)
 
 #### Defined in
 
@@ -592,7 +592,7 @@ Deserializes the object from a JSON string
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[fromJSON](container.SimpleContainer.md#fromjson)
+[SimpleContainer](../container.SimpleContainer).[fromJSON](../container.SimpleContainer#fromjson)
 
 #### Defined in
 
@@ -605,12 +605,12 @@ Deserializes the object from a JSON string
 ▸ **fromRaw**(`raw`): [`Invite`](../invite.Invite)
 
 Restores propertiers from a raw object of the same form generated by
-[toRaw](invite.Invite.md#toraw). The base implementation blindly copies over
+[toRaw](../invite.Invite#toraw). The base implementation blindly copies over
 values from the raw object via `Object.assign` so subclasses should explictly
 process any propertyies that need special treatment.
 
 Also takes are of validation and "upgrading" in case the raw object has an old
-version. Use the protected [\_fromRaw](invite.Invite.md#_fromraw) method to
+version. Use the protected [\_fromRaw](../invite.Invite#_fromraw) method to
 implement subclass-specific behavior.
 
 #### Parameters
@@ -625,7 +625,7 @@ implement subclass-specific behavior.
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[fromRaw](container.SimpleContainer.md#fromraw)
+[SimpleContainer](../container.SimpleContainer).[fromRaw](../container.SimpleContainer#fromraw)
 
 #### Defined in
 
@@ -646,7 +646,7 @@ require unlocking the container first.
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[getData](container.SimpleContainer.md#getdata)
+[SimpleContainer](../container.SimpleContainer).[getData](../container.SimpleContainer#getdata)
 
 #### Defined in
 
@@ -658,8 +658,8 @@ require unlocking the container first.
 
 ▸ **initialize**(`org`, `invitor`, `duration?`): `Promise`<`void`\>
 
-Initializes the invite by generating a random [secret](invite.Invite.md#secret)
-and [id](invite.Invite.md#id) and signing and storing the organization details.
+Initializes the invite by generating a random [secret](../invite.Invite#secret)
+and [id](../invite.Invite#id) and signing and storing the organization details.
 
 #### Parameters
 
@@ -684,7 +684,7 @@ and [id](invite.Invite.md#id) and signing and storing the organization details.
 ▸ **lock**(): `void`
 
 Locks the container, removing the possibility to extract the plain text data via
-[getData](invite.Invite.md#getdata) until the container is unlocked again.
+[getData](../invite.Invite#getdata) until the container is unlocked again.
 Subclasses extending this class must take care to delete any keys or other
 sensitive data that may have been stored temporarily after unlocking the
 container.
@@ -695,7 +695,7 @@ container.
 
 #### Overrides
 
-[SimpleContainer](../container.SimpleContainer).[lock](container.SimpleContainer.md#lock)
+[SimpleContainer](../container.SimpleContainer).[lock](../container.SimpleContainer#lock)
 
 #### Defined in
 
@@ -721,7 +721,7 @@ Encrypts the provided `data` and stores it in the container
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[setData](container.SimpleContainer.md#setdata)
+[SimpleContainer](../container.SimpleContainer).[setData](../container.SimpleContainer#setdata)
 
 #### Defined in
 
@@ -741,7 +741,7 @@ Returns a serialization of the object in form of a byte array
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[toBytes](container.SimpleContainer.md#tobytes)
+[SimpleContainer](../container.SimpleContainer).[toBytes](../container.SimpleContainer#tobytes)
 
 #### Defined in
 
@@ -761,7 +761,7 @@ Returns a JSON serialization of the object
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[toJSON](container.SimpleContainer.md#tojson)
+[SimpleContainer](../container.SimpleContainer).[toJSON](../container.SimpleContainer#tojson)
 
 #### Defined in
 
@@ -775,7 +775,7 @@ Returns a JSON serialization of the object
 
 Creates a raw javascript object representation of the class, which can be used
 for storage or data transmission. Also handles "downgrading" to previous
-versions. Use [\_toRaw](invite.Invite.md#_toraw) for subclass-specific behavior.
+versions. Use [\_toRaw](../invite.Invite#_toraw) for subclass-specific behavior.
 
 #### Parameters
 
@@ -789,7 +789,7 @@ versions. Use [\_toRaw](invite.Invite.md#_toraw) for subclass-specific behavior.
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[toRaw](container.SimpleContainer.md#toraw)
+[SimpleContainer](../container.SimpleContainer).[toRaw](../container.SimpleContainer#toraw)
 
 #### Defined in
 
@@ -802,8 +802,8 @@ versions. Use [\_toRaw](invite.Invite.md#_toraw) for subclass-specific behavior.
 ▸ **unlock**(`key`): `Promise`<`void`\>
 
 "Unlocks" the invite with the dedicated key (owned by the respective
-[Org](../org.Org)). This grants access to the [secret](invite.Invite.md#secret)
-property and verfies that [expires](invite.Invite.md#expires) has not been
+[Org](../org.Org)). This grants access to the [secret](../invite.Invite#secret)
+property and verfies that [expires](../invite.Invite#expires) has not been
 tempered with.
 
 #### Parameters
@@ -818,7 +818,7 @@ tempered with.
 
 #### Overrides
 
-[SimpleContainer](../container.SimpleContainer).[unlock](container.SimpleContainer.md#unlock)
+[SimpleContainer](../container.SimpleContainer).[unlock](../container.SimpleContainer#unlock)
 
 #### Defined in
 
@@ -840,7 +840,7 @@ method based on their class structure.
 
 #### Inherited from
 
-[SimpleContainer](../container.SimpleContainer).[validate](container.SimpleContainer.md#validate)
+[SimpleContainer](../container.SimpleContainer).[validate](../container.SimpleContainer#validate)
 
 #### Defined in
 

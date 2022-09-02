@@ -45,7 +45,7 @@ Decrypts `data` with `key` using the cipher and parameters specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[decrypt](../interfaces/crypto.CryptoProvider.md#decrypt)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[decrypt](../interfaces/crypto.CryptoProvider#decrypt)
 
 #### Defined in
 
@@ -67,7 +67,7 @@ Decrypts `data` with `key` using the cipher and parameters specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[decrypt](../interfaces/crypto.CryptoProvider.md#decrypt)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[decrypt](../interfaces/crypto.CryptoProvider#decrypt)
 
 #### Defined in
 
@@ -96,7 +96,7 @@ password.
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[deriveKey](../interfaces/crypto.CryptoProvider.md#derivekey)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[deriveKey](../interfaces/crypto.CryptoProvider#derivekey)
 
 #### Defined in
 
@@ -124,7 +124,7 @@ Encrypts `data` with `key` using the cipher and parameters specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[encrypt](../interfaces/crypto.CryptoProvider.md#encrypt)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[encrypt](../interfaces/crypto.CryptoProvider#encrypt)
 
 #### Defined in
 
@@ -146,7 +146,7 @@ Encrypts `data` with `key` using the cipher and parameters specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[encrypt](../interfaces/crypto.CryptoProvider.md#encrypt)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[encrypt](../interfaces/crypto.CryptoProvider#encrypt)
 
 #### Defined in
 
@@ -172,7 +172,7 @@ Creates a fingerprint from a given rsa public key
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[fingerprint](../interfaces/crypto.CryptoProvider.md#fingerprint)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[fingerprint](../interfaces/crypto.CryptoProvider#fingerprint)
 
 #### Defined in
 
@@ -198,7 +198,7 @@ Generates a random key or key pair for the algorithm specified in **params**
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[generateKey](../interfaces/crypto.CryptoProvider.md#generatekey)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[generateKey](../interfaces/crypto.CryptoProvider#generatekey)
 
 #### Defined in
 
@@ -219,7 +219,7 @@ Generates a random key or key pair for the algorithm specified in **params**
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[generateKey](../interfaces/crypto.CryptoProvider.md#generatekey)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[generateKey](../interfaces/crypto.CryptoProvider#generatekey)
 
 #### Defined in
 
@@ -239,7 +239,7 @@ Generates a random key or key pair for the algorithm specified in **params**
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[generateKey](../interfaces/crypto.CryptoProvider.md#generatekey)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[generateKey](../interfaces/crypto.CryptoProvider#generatekey)
 
 #### Defined in
 
@@ -268,7 +268,7 @@ Creates a digest of the provided **input** using the algorithm specified in
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[hash](../interfaces/crypto.CryptoProvider.md#hash)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[hash](../interfaces/crypto.CryptoProvider#hash)
 
 #### Defined in
 
@@ -294,7 +294,7 @@ Generates an Array of `n` random bytes
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[randomBytes](../interfaces/crypto.CryptoProvider.md#randombytes)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[randomBytes](../interfaces/crypto.CryptoProvider#randombytes)
 
 #### Defined in
 
@@ -323,7 +323,7 @@ specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[sign](../interfaces/crypto.CryptoProvider.md#sign)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[sign](../interfaces/crypto.CryptoProvider#sign)
 
 #### Defined in
 
@@ -345,7 +345,7 @@ specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[sign](../interfaces/crypto.CryptoProvider.md#sign)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[sign](../interfaces/crypto.CryptoProvider#sign)
 
 #### Defined in
 
@@ -373,7 +373,7 @@ attacker to guess one of the values
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[timingSafeEqual](../interfaces/crypto.CryptoProvider.md#timingsafeequal)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[timingSafeEqual](../interfaces/crypto.CryptoProvider#timingsafeequal)
 
 #### Defined in
 
@@ -403,7 +403,7 @@ specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[verify](../interfaces/crypto.CryptoProvider.md#verify)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[verify](../interfaces/crypto.CryptoProvider#verify)
 
 #### Defined in
 
@@ -426,7 +426,7 @@ specified in `params`
 
 #### Implementation of
 
-[CryptoProvider](../../interfaces/crypto.CryptoProvider).[verify](../interfaces/crypto.CryptoProvider.md#verify)
+[CryptoProvider](../../interfaces/crypto.CryptoProvider).[verify](../interfaces/crypto.CryptoProvider#verify)
 
 #### Defined in
 

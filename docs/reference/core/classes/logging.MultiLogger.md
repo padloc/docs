@@ -55,7 +55,7 @@ slug: "logging.MultiLogger"
 
 #### Implementation of
 
-[Logger](../../interfaces/logging.Logger).[log](../interfaces/logging.Logger.md#log)
+[Logger](../../interfaces/logging.Logger).[log](../interfaces/logging.Logger#log)
 
 #### Defined in
 

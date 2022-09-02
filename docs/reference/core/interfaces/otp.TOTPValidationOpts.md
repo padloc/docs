@@ -20,7 +20,7 @@ slug: "otp.TOTPValidationOpts"
 
 #### Inherited from
 
-[TOTPOpts](../otp.TOTPOpts).[digits](otp.TOTPOpts.md#digits)
+[TOTPOpts](../otp.TOTPOpts).[digits](../otp.TOTPOpts#digits)
 
 #### Defined in
 
@@ -34,7 +34,7 @@ slug: "otp.TOTPValidationOpts"
 
 #### Inherited from
 
-[TOTPOpts](../otp.TOTPOpts).[hash](otp.TOTPOpts.md#hash)
+[TOTPOpts](../otp.TOTPOpts).[hash](../otp.TOTPOpts#hash)
 
 #### Defined in
 
@@ -48,7 +48,7 @@ slug: "otp.TOTPValidationOpts"
 
 #### Inherited from
 
-[TOTPOpts](../otp.TOTPOpts).[interval](otp.TOTPOpts.md#interval)
+[TOTPOpts](../otp.TOTPOpts).[interval](../otp.TOTPOpts#interval)
 
 #### Defined in
 

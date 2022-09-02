@@ -30,7 +30,7 @@ Deletes all data in this storage
 
 #### Implementation of
 
-[Storage](../../interfaces/storage.Storage).[clear](../interfaces/storage.Storage.md#clear)
+[Storage](../../interfaces/storage.Storage).[clear](../interfaces/storage.Storage#clear)
 
 #### Defined in
 
@@ -62,7 +62,7 @@ Deletes an object
 
 #### Implementation of
 
-[Storage](../../interfaces/storage.Storage).[delete](../interfaces/storage.Storage.md#delete)
+[Storage](../../interfaces/storage.Storage).[delete](../interfaces/storage.Storage#delete)
 
 #### Defined in
 
@@ -86,7 +86,7 @@ Retrieves an object of type `T` based on its `id`
 
 | Name   | Type                                                                            |
 | :----- | :------------------------------------------------------------------------------ |
-| `_cls` | `T` \| [`StorableConstructor`](../modules/storage.md#storableconstructor)<`T`\> |
+| `_cls` | `T` \| [`StorableConstructor`](../modules/storage#storableconstructor)<`T`\> |
 | `_id`  | `string`                                                                        |
 
 #### Returns
@@ -95,7 +95,7 @@ Retrieves an object of type `T` based on its `id`
 
 #### Implementation of
 
-[Storage](../../interfaces/storage.Storage).[get](../interfaces/storage.Storage.md#get)
+[Storage](../../interfaces/storage.Storage).[get](../interfaces/storage.Storage#get)
 
 #### Defined in
 
@@ -119,7 +119,7 @@ Retrieves an object of type `T` based on its `id`
 
 | Name     | Type                                                                      |
 | :------- | :------------------------------------------------------------------------ |
-| `_cls`   | [`StorableConstructor`](../modules/storage.md#storableconstructor)<`T`\>  |
+| `_cls`   | [`StorableConstructor`](../modules/storage#storableconstructor)<`T`\>  |
 | `_opts?` | [`StorageListOptions`](../../interfaces/storage.StorageListOptions)<`T`\> |
 
 #### Returns
@@ -128,7 +128,7 @@ Retrieves an object of type `T` based on its `id`
 
 #### Implementation of
 
-[Storage](../../interfaces/storage.Storage).[list](../interfaces/storage.Storage.md#list)
+[Storage](../../interfaces/storage.Storage).[list](../interfaces/storage.Storage#list)
 
 #### Defined in
 
@@ -160,7 +160,7 @@ Saves an object to the storage
 
 #### Implementation of
 
-[Storage](../../interfaces/storage.Storage).[save](../interfaces/storage.Storage.md#save)
+[Storage](../../interfaces/storage.Storage).[save](../interfaces/storage.Storage#save)
 
 #### Defined in
 

@@ -52,7 +52,7 @@ High-level interface for the client side
 • `get` **A**(): `null` \| `Uint8Array`
 
 Client-side random initializer, available after calling
-[initialize](srp.Client.md#initialize)
+[initialize](../srp.Client#initialize)
 
 #### Returns
 
@@ -69,7 +69,7 @@ Client-side random initializer, available after calling
 • `get` **K**(): `null` \| `Uint8Array`
 
 Common session key, available after calling
-[initialize](srp.Client.md#initialize) and [setB](srp.Client.md#setb)
+[initialize](../srp.Client#initialize) and [setB](../srp.Client#setb)
 
 #### Returns
 
@@ -86,7 +86,7 @@ Common session key, available after calling
 • `get` **M1**(): `null` \| `Uint8Array`
 
 First value used to verify a successful key exchange, available after calling
-[initialize](srp.Client.md#initialize) and [setB](srp.Client.md#setb)
+[initialize](../srp.Client#initialize) and [setB](../srp.Client#setb)
 
 #### Returns
 
@@ -103,7 +103,7 @@ First value used to verify a successful key exchange, available after calling
 • `get` **M2**(): `null` \| `Uint8Array`
 
 Second value used to verify a successful key exchange, available after calling
-[initialize](srp.Client.md#initialize) and [setB](srp.Client.md#setb)
+[initialize](../srp.Client#initialize) and [setB](../srp.Client#setb)
 
 #### Returns
 
@@ -119,7 +119,7 @@ Second value used to verify a successful key exchange, available after calling
 
 • `get` **v**(): `null` \| `Uint8Array`
 
-Verifier value, available after calling [initialize](srp.Client.md#initialize)
+Verifier value, available after calling [initialize](../srp.Client#initialize)
 
 #### Returns
 
@@ -149,8 +149,8 @@ Verifier value, available after calling [initialize](srp.Client.md#initialize)
 
 ▸ **initialize**(`x`): `Promise`<`void`\>
 
-Initialize client using the given secret `x`, generating [v](srp.Client.md#v)
-and [A](srp.Client.md#a)
+Initialize client using the given secret `x`, generating [v](../srp.Client#v)
+and [A](../srp.Client#a)
 
 #### Parameters
 
@@ -172,9 +172,9 @@ and [A](srp.Client.md#a)
 
 ▸ **setB**(`B`): `Promise`<`void`\>
 
-Apply [Server.B](srp.Server.md#b) value, calculating [K](srp.Client.md#k),
-[M1](srp.Client.md#m1) and [M2](srp.Client.md#m2). Should only be called after
-[initialize](srp.Client.md#initialize) has been called.
+Apply [Server.B](../srp.Server#b) value, calculating [K](../srp.Client#k),
+[M1](../srp.Client#m1) and [M2](../srp.Client#m2). Should only be called after
+[initialize](../srp.Client#initialize) has been called.
 
 #### Parameters
 

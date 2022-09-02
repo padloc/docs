@@ -75,7 +75,7 @@ Retrieves an object of type `T` based on its `id`
 
 | Name  | Type                                                                            |
 | :---- | :------------------------------------------------------------------------------ |
-| `cls` | `T` \| [`StorableConstructor`](../modules/storage.md#storableconstructor)<`T`\> |
+| `cls` | `T` \| [`StorableConstructor`](../modules/storage#storableconstructor)<`T`\> |
 | `id`  | `string`                                                                        |
 
 #### Returns
@@ -104,7 +104,7 @@ Retrieves an object of type `T` based on its `id`
 
 | Name    | Type                                                                     |
 | :------ | :----------------------------------------------------------------------- |
-| `cls`   | [`StorableConstructor`](../modules/storage.md#storableconstructor)<`T`\> |
+| `cls`   | [`StorableConstructor`](../modules/storage#storableconstructor)<`T`\> |
 | `opts?` | [`StorageListOptions`](../storage.StorageListOptions)<`T`\>              |
 
 #### Returns

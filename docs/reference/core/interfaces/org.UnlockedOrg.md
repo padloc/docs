@@ -19,11 +19,11 @@ slug: "org.UnlockedOrg"
 • `Protected` `Optional` **\_key**: `Uint8Array`
 
 The key used for encryption. Sub classes must set this property in the
-[unlock](org.UnlockedOrg.md#unlock) method.
+[unlock](../org.UnlockedOrg#unlock) method.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[\_key](../classes/org.Org.md#_key)
+[Org](../../classes/org.Org).[\_key](../classes/org.Org#_key)
 
 #### Defined in
 
@@ -38,7 +38,7 @@ The key used for encryption. Sub classes must set this property in the
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[\_propertySerializationOptions](../classes/org.Org.md#_propertyserializationoptions)
+[Org](../../classes/org.Org).[\_propertySerializationOptions](../classes/org.Org#_propertyserializationoptions)
 
 #### Defined in
 
@@ -54,7 +54,7 @@ The ids and encrypted keys of all accessors
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[accessors](../classes/org.Org.md#accessors)
+[Org](../../classes/org.Org).[accessors](../classes/org.Org#accessors)
 
 #### Defined in
 
@@ -70,7 +70,7 @@ Creation date
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[created](../classes/org.Org.md#created)
+[Org](../../classes/org.Org).[created](../classes/org.Org#created)
 
 #### Defined in
 
@@ -85,7 +85,7 @@ Creation date
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[directory](../classes/org.Org.md#directory)
+[Org](../../classes/org.Org).[directory](../classes/org.Org#directory)
 
 #### Defined in
 
@@ -101,7 +101,7 @@ Encrypted data
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[encryptedData](../classes/org.Org.md#encrypteddata)
+[Org](../../classes/org.Org).[encryptedData](../classes/org.Org#encrypteddata)
 
 #### Defined in
 
@@ -118,7 +118,7 @@ Parameters used for encryption of content data
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[encryptionParams](../classes/org.Org.md#encryptionparams)
+[Org](../../classes/org.Org).[encryptionParams](../classes/org.Org#encryptionparams)
 
 #### Defined in
 
@@ -134,7 +134,7 @@ This organizations [Group](../../classes/org.Group)s.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[groups](../classes/org.Org.md#groups)
+[Org](../../classes/org.Org).[groups](../classes/org.Org#groups)
 
 #### Defined in
 
@@ -150,7 +150,7 @@ Unique identier
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[id](../classes/org.Org.md#id)
+[Org](../../classes/org.Org).[id](../classes/org.Org#id)
 
 #### Defined in
 
@@ -166,7 +166,7 @@ Pending [Invite](../../classes/invite.Invite)s
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[invites](../classes/org.Org.md#invites)
+[Org](../../classes/org.Org).[invites](../classes/org.Org#invites)
 
 #### Defined in
 
@@ -182,7 +182,7 @@ AES key used as encryption key for [Invite](../../classes/invite.Invite)s
 
 #### Overrides
 
-[Org](../../classes/org.Org).[invitesKey](../classes/org.Org.md#inviteskey)
+[Org](../../classes/org.Org).[invitesKey](../classes/org.Org#inviteskey)
 
 #### Defined in
 
@@ -199,7 +199,7 @@ Parameters used to wrap the shared encryption key
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[keyParams](../classes/org.Org.md#keyparams)
+[Org](../../classes/org.Org).[keyParams](../classes/org.Org#keyparams)
 
 #### Defined in
 
@@ -215,7 +215,7 @@ Array of organization members
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[members](../classes/org.Org.md#members)
+[Org](../../classes/org.Org).[members](../classes/org.Org#members)
 
 #### Defined in
 
@@ -228,17 +228,17 @@ Array of organization members
 • **minMemberUpdated**: `Date`
 
 Minimum accepted update time for organization members. Any members with a
-[OrgMember.updated](../classes/org.OrgMember.md#updated) value lower than this
+[OrgMember.updated](../classes/org.OrgMember#updated) value lower than this
 should be considered invalid.
 
 In order to prevent an attacker from rolling back this value, all clients should
 verify that updated organization object always have a
-[Org.minMemberUpdated](../classes/org.Org.md#minmemberupdated) value equal to or
+[Org.minMemberUpdated](../classes/org.Org#minmemberupdated) value equal to or
 higher than the previous one.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[minMemberUpdated](../classes/org.Org.md#minmemberupdated)
+[Org](../../classes/org.Org).[minMemberUpdated](../classes/org.Org#minmemberupdated)
 
 #### Defined in
 
@@ -254,7 +254,7 @@ Organization name
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[name](../classes/org.Org.md#name)
+[Org](../../classes/org.Org).[name](../classes/org.Org#name)
 
 #### Defined in
 
@@ -270,7 +270,7 @@ Private key used for signing member details
 
 #### Overrides
 
-[Org](../../classes/org.Org).[privateKey](../classes/org.Org.md#privatekey)
+[Org](../../classes/org.Org).[privateKey](../classes/org.Org#privatekey)
 
 #### Defined in
 
@@ -286,7 +286,7 @@ Public key used for verifying member signatures
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[publicKey](../classes/org.Org.md#publickey)
+[Org](../../classes/org.Org).[publicKey](../classes/org.Org#publickey)
 
 #### Defined in
 
@@ -303,7 +303,7 @@ between client and server
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[revision](../classes/org.Org.md#revision)
+[Org](../../classes/org.Org).[revision](../classes/org.Org#revision)
 
 #### Defined in
 
@@ -319,7 +319,7 @@ Parameters for creating member signatures
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[signingParams](../classes/org.Org.md#signingparams)
+[Org](../../classes/org.Org).[signingParams](../classes/org.Org#signingparams)
 
 #### Defined in
 
@@ -335,7 +335,7 @@ Last updated
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[updated](../classes/org.Org.md#updated)
+[Org](../../classes/org.Org).[updated](../classes/org.Org#updated)
 
 #### Defined in
 
@@ -352,7 +352,7 @@ Shared [Vault](../../classes/vault.Vault)s owned by this organization
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[vaults](../classes/org.Org.md#vaults)
+[Org](../../classes/org.Org).[vaults](../classes/org.Org#vaults)
 
 #### Defined in
 
@@ -440,7 +440,7 @@ properties that require special treatment
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[\_fromRaw](../classes/org.Org.md#_fromraw)
+[Org](../../classes/org.Org).[\_fromRaw](../classes/org.Org#_fromraw)
 
 #### Defined in
 
@@ -454,7 +454,7 @@ properties that require special treatment
 
 Transform this object into a raw javascript object used for serialization. The
 default implementation simply copies all iterable properties not included in the
-[[exlude]] array and calls [toRaw](org.UnlockedOrg.md#toraw) on any properties
+[[exlude]] array and calls [toRaw](../org.UnlockedOrg#toraw) on any properties
 that are themselfes instances of
 [Serializable](../../classes/encoding.Serializable). This method should be
 overwritten by subclasses if certain properties require special treatment.
@@ -471,7 +471,7 @@ overwritten by subclasses if certain properties require special treatment.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[\_toRaw](../classes/org.Org.md#_toraw)
+[Org](../../classes/org.Org).[\_toRaw](../classes/org.Org#_toraw)
 
 #### Defined in
 
@@ -505,7 +505,7 @@ id.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[addOrUpdateMember](../classes/org.Org.md#addorupdatemember)
+[Org](../../classes/org.Org).[addOrUpdateMember](../classes/org.Org#addorupdatemember)
 
 #### Defined in
 
@@ -534,7 +534,7 @@ Check whether the given `account` has read access to a `vault`
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[canRead](../classes/org.Org.md#canread)
+[Org](../../classes/org.Org).[canRead](../classes/org.Org#canread)
 
 #### Defined in
 
@@ -563,7 +563,7 @@ Check whether the given `account` has write access to a `vault`
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[canWrite](../classes/org.Org.md#canwrite)
+[Org](../../classes/org.Org).[canWrite](../classes/org.Org#canwrite)
 
 #### Defined in
 
@@ -583,7 +583,7 @@ Creates a deep clone of the object
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[clone](../classes/org.Org.md#clone)
+[Org](../../classes/org.Org).[clone](../classes/org.Org#clone)
 
 #### Defined in
 
@@ -609,7 +609,7 @@ Deserializes the object from a byte array
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[fromBytes](../classes/org.Org.md#frombytes)
+[Org](../../classes/org.Org).[fromBytes](../classes/org.Org#frombytes)
 
 #### Defined in
 
@@ -635,7 +635,7 @@ Deserializes the object from a JSON string
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[fromJSON](../classes/org.Org.md#fromjson)
+[Org](../../classes/org.Org).[fromJSON](../classes/org.Org#fromjson)
 
 #### Defined in
 
@@ -648,12 +648,12 @@ Deserializes the object from a JSON string
 ▸ **fromRaw**(`raw`): [`UnlockedOrg`](../org.UnlockedOrg)
 
 Restores propertiers from a raw object of the same form generated by
-[toRaw](org.UnlockedOrg.md#toraw). The base implementation blindly copies over
+[toRaw](../org.UnlockedOrg#toraw). The base implementation blindly copies over
 values from the raw object via `Object.assign` so subclasses should explictly
 process any propertyies that need special treatment.
 
 Also takes are of validation and "upgrading" in case the raw object has an old
-version. Use the protected [\_fromRaw](org.UnlockedOrg.md#_fromraw) method to
+version. Use the protected [\_fromRaw](../org.UnlockedOrg#_fromraw) method to
 implement subclass-specific behavior.
 
 #### Parameters
@@ -668,7 +668,7 @@ implement subclass-specific behavior.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[fromRaw](../classes/org.Org.md#fromraw)
+[Org](../../classes/org.Org).[fromRaw](../classes/org.Org#fromraw)
 
 #### Defined in
 
@@ -680,9 +680,9 @@ implement subclass-specific behavior.
 
 ▸ **generateKeys**(): `Promise`<`void`\>
 
-Generates a new [publicKey](org.UnlockedOrg.md#publickey),
-[privateKey](org.UnlockedOrg.md#privatekey) and
-[invitesKey](org.UnlockedOrg.md#inviteskey) and encrypts the latter two
+Generates a new [publicKey](../org.UnlockedOrg#publickey),
+[privateKey](../org.UnlockedOrg#privatekey) and
+[invitesKey](../org.UnlockedOrg#inviteskey) and encrypts the latter two
 
 #### Returns
 
@@ -690,7 +690,7 @@ Generates a new [publicKey](org.UnlockedOrg.md#publickey),
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[generateKeys](../classes/org.Org.md#generatekeys)
+[Org](../../classes/org.Org).[generateKeys](../classes/org.Org#generatekeys)
 
 #### Defined in
 
@@ -717,7 +717,7 @@ Get all membes that have acess to a given `vault`, either directly or through a
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getAccessors](../classes/org.Org.md#getaccessors)
+[Org](../../classes/org.Org).[getAccessors](../classes/org.Org#getaccessors)
 
 #### Defined in
 
@@ -738,7 +738,7 @@ require unlocking the container first.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getData](../classes/org.Org.md#getdata)
+[Org](../../classes/org.Org).[getData](../classes/org.Org#getdata)
 
 #### Defined in
 
@@ -764,7 +764,7 @@ Get group with the given `name`
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getGroup](../classes/org.Org.md#getgroup)
+[Org](../../classes/org.Org).[getGroup](../classes/org.Org#getgroup)
 
 #### Defined in
 
@@ -777,7 +777,7 @@ Get group with the given `name`
 ▸ **getGroupsForMember**(`__namedParameters`):
 [`Group`](../../classes/org.Group)[]
 
-Get all [Group](../../classes/org.Group.md)s the given
+Get all [Group](../../classes/org.Group)s the given
 [Account](../classes/account.Account) is a member of
 
 #### Parameters
@@ -793,7 +793,7 @@ Get all [Group](../../classes/org.Group.md)s the given
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getGroupsForMember](../classes/org.Org.md#getgroupsformember)
+[Org](../../classes/org.Org).[getGroupsForMember](../classes/org.Org#getgroupsformember)
 
 #### Defined in
 
@@ -821,7 +821,7 @@ Get all groups assigned to a given [Vault](../../classes/vault.Vault)
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getGroupsForVault](../classes/org.Org.md#getgroupsforvault)
+[Org](../../classes/org.Org).[getGroupsForVault](../classes/org.Org#getgroupsforvault)
 
 #### Defined in
 
@@ -847,7 +847,7 @@ Get the invite with the given `id`
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getInvite](../classes/org.Org.md#getinvite)
+[Org](../../classes/org.Org).[getInvite](../classes/org.Org#getinvite)
 
 #### Defined in
 
@@ -860,7 +860,7 @@ Get the invite with the given `id`
 ▸ **getMember**(`__namedParameters`): `undefined` \|
 [`OrgMember`](../../classes/org.OrgMember)
 
-Get the [OrgMember](../../classes/org.OrgMember.md) object for this
+Get the [OrgMember](../../classes/org.OrgMember) object for this
 [Account](../classes/account.Account)
 
 #### Parameters
@@ -875,7 +875,7 @@ Get the [OrgMember](../../classes/org.OrgMember.md) object for this
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getMember](../classes/org.Org.md#getmember)
+[Org](../../classes/org.Org).[getMember](../classes/org.Org#getmember)
 
 #### Defined in
 
@@ -901,7 +901,7 @@ Get all members of a given `group`
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getMembersForGroup](../classes/org.Org.md#getmembersforgroup)
+[Org](../../classes/org.Org).[getMembersForGroup](../classes/org.Org#getmembersforgroup)
 
 #### Defined in
 
@@ -929,7 +929,7 @@ Get all members directly assigned to a given [Vault](../../classes/vault.Vault)
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getMembersForVault](../classes/org.Org.md#getmembersforvault)
+[Org](../../classes/org.Org).[getMembersForVault](../classes/org.Org#getmembersforvault)
 
 #### Defined in
 
@@ -957,7 +957,7 @@ Get all vaults the given member has access to
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[getVaultsForMember](../classes/org.Org.md#getvaultsformember)
+[Org](../../classes/org.Org).[getVaultsForMember](../classes/org.Org#getvaultsformember)
 
 #### Defined in
 
@@ -970,9 +970,9 @@ Get all vaults the given member has access to
 ▸ **initialize**(`account`): `Promise`<`void`\>
 
 Initializes the organization, generating
-[publicKey](org.UnlockedOrg.md#publickey),
-[privateKey](org.UnlockedOrg.md#privatekey), and
-[invitesKey](org.UnlockedOrg.md#inviteskey) and adding the given `account` as
+[publicKey](../org.UnlockedOrg#publickey),
+[privateKey](../org.UnlockedOrg#privatekey), and
+[invitesKey](../org.UnlockedOrg#inviteskey) and adding the given `account` as
 the organization owner.
 
 #### Parameters
@@ -987,7 +987,7 @@ the organization owner.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[initialize](../classes/org.Org.md#initialize)
+[Org](../../classes/org.Org).[initialize](../classes/org.Org#initialize)
 
 #### Defined in
 
@@ -1000,7 +1000,7 @@ the organization owner.
 ▸ **isAdmin**(`m`): `boolean`
 
 Whether the given [Account](../../classes/account.Account) is an
-[OrgRole.Admin](../enums/org.OrgRole.md#admin)
+[OrgRole.Admin](../enums/org.OrgRole#admin)
 
 #### Parameters
 
@@ -1015,7 +1015,7 @@ Whether the given [Account](../../classes/account.Account) is an
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[isAdmin](../classes/org.Org.md#isadmin)
+[Org](../../classes/org.Org).[isAdmin](../classes/org.Org#isadmin)
 
 #### Defined in
 
@@ -1043,7 +1043,7 @@ member
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[isMember](../classes/org.Org.md#ismember)
+[Org](../../classes/org.Org).[isMember](../classes/org.Org#ismember)
 
 #### Defined in
 
@@ -1056,7 +1056,7 @@ member
 ▸ **isOwner**(`__namedParameters`): `boolean`
 
 Whether the given [Account](../../classes/account.Account) is an
-[OrgRole.Owner](../enums/org.OrgRole.md#owner)
+[OrgRole.Owner](../enums/org.OrgRole#owner)
 
 #### Parameters
 
@@ -1071,7 +1071,7 @@ Whether the given [Account](../../classes/account.Account) is an
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[isOwner](../classes/org.Org.md#isowner)
+[Org](../../classes/org.Org).[isOwner](../classes/org.Org#isowner)
 
 #### Defined in
 
@@ -1099,7 +1099,7 @@ suspended
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[isSuspended](../classes/org.Org.md#issuspended)
+[Org](../../classes/org.Org).[isSuspended](../classes/org.Org#issuspended)
 
 #### Defined in
 
@@ -1112,7 +1112,7 @@ suspended
 ▸ **lock**(): `void`
 
 Locks the container, removing the possibility to extract the plain text data via
-[getData](org.UnlockedOrg.md#getdata) until the container is unlocked again.
+[getData](../org.UnlockedOrg#getdata) until the container is unlocked again.
 Subclasses extending this class must take care to delete any keys or other
 sensitive data that may have been stored temporarily after unlocking the
 container.
@@ -1123,7 +1123,7 @@ container.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[lock](../classes/org.Org.md#lock)
+[Org](../../classes/org.Org).[lock](../classes/org.Org#lock)
 
 #### Defined in
 
@@ -1150,7 +1150,7 @@ Transfers organization ownership to a different member
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[makeOwner](../classes/org.Org.md#makeowner)
+[Org](../../classes/org.Org).[makeOwner](../classes/org.Org#makeowner)
 
 #### Defined in
 
@@ -1176,7 +1176,7 @@ Remove an invite
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[removeInvite](../classes/org.Org.md#removeinvite)
+[Org](../../classes/org.Org).[removeInvite](../classes/org.Org#removeinvite)
 
 #### Defined in
 
@@ -1204,7 +1204,7 @@ Removes a member from the organization
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[removeMember](../classes/org.Org.md#removemember)
+[Org](../../classes/org.Org).[removeMember](../classes/org.Org#removemember)
 
 #### Defined in
 
@@ -1230,7 +1230,7 @@ Regenerates all cryptographic keys and updates all member signatures
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[rotateKeys](../classes/org.Org.md#rotatekeys)
+[Org](../../classes/org.Org).[rotateKeys](../classes/org.Org#rotatekeys)
 
 #### Defined in
 
@@ -1256,7 +1256,7 @@ Encrypts the provided `data` and stores it in the container
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[setData](../classes/org.Org.md#setdata)
+[Org](../../classes/org.Org).[setData](../classes/org.Org#setdata)
 
 #### Defined in
 
@@ -1283,7 +1283,7 @@ verified later
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[sign](../classes/org.Org.md#sign)
+[Org](../../classes/org.Org).[sign](../classes/org.Org#sign)
 
 #### Defined in
 
@@ -1303,7 +1303,7 @@ Returns a serialization of the object in form of a byte array
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[toBytes](../classes/org.Org.md#tobytes)
+[Org](../../classes/org.Org).[toBytes](../classes/org.Org#tobytes)
 
 #### Defined in
 
@@ -1323,7 +1323,7 @@ Returns a JSON serialization of the object
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[toJSON](../classes/org.Org.md#tojson)
+[Org](../../classes/org.Org).[toJSON](../classes/org.Org#tojson)
 
 #### Defined in
 
@@ -1337,7 +1337,7 @@ Returns a JSON serialization of the object
 
 Creates a raw javascript object representation of the class, which can be used
 for storage or data transmission. Also handles "downgrading" to previous
-versions. Use [\_toRaw](org.UnlockedOrg.md#_toraw) for subclass-specific
+versions. Use [\_toRaw](../org.UnlockedOrg#_toraw) for subclass-specific
 behavior.
 
 #### Parameters
@@ -1352,7 +1352,7 @@ behavior.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[toRaw](../classes/org.Org.md#toraw)
+[Org](../../classes/org.Org).[toRaw](../classes/org.Org#toraw)
 
 #### Defined in
 
@@ -1370,7 +1370,7 @@ behavior.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[toString](../classes/org.Org.md#tostring)
+[Org](../../classes/org.Org).[toString](../classes/org.Org#tostring)
 
 #### Defined in
 
@@ -1383,8 +1383,8 @@ behavior.
 ▸ **unlock**(`account`): `Promise`<`void`\>
 
 "Unlocks" the organization, granting access to the organizations
-[privateKey](org.UnlockedOrg.md#privatekey) and
-[invitesKey](org.UnlockedOrg.md#inviteskey) properties.
+[privateKey](../org.UnlockedOrg#privatekey) and
+[invitesKey](../org.UnlockedOrg#inviteskey) properties.
 
 #### Parameters
 
@@ -1398,7 +1398,7 @@ behavior.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[unlock](../classes/org.Org.md#unlock)
+[Org](../../classes/org.Org).[unlock](../classes/org.Org#unlock)
 
 #### Defined in
 
@@ -1426,7 +1426,7 @@ be unlocked first.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[updateAccessors](../classes/org.Org.md#updateaccessors)
+[Org](../../classes/org.Org).[updateAccessors](../classes/org.Org#updateaccessors)
 
 #### Defined in
 
@@ -1448,7 +1448,7 @@ method based on their class structure.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[validate](../classes/org.Org.md#validate)
+[Org](../../classes/org.Org).[validate](../classes/org.Org#validate)
 
 #### Defined in
 
@@ -1475,7 +1475,7 @@ verification fails.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[verify](../classes/org.Org.md#verify)
+[Org](../../classes/org.Org).[verify](../classes/org.Org#verify)
 
 #### Defined in
 
@@ -1501,7 +1501,7 @@ Verify all provided `members`, throws if verification fails for any of them.
 
 #### Inherited from
 
-[Org](../../classes/org.Org).[verifyAll](../classes/org.Org.md#verifyall)
+[Org](../../classes/org.Org).[verifyAll](../classes/org.Org#verifyall)
 
 #### Defined in
 

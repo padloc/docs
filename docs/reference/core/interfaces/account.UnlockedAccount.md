@@ -19,11 +19,11 @@ slug: "account.UnlockedAccount"
 • `Protected` `Optional` **\_key**: `Uint8Array`
 
 The key used for encryption. Sub classes must set this property in the
-[unlock](account.UnlockedAccount.md#unlock) method.
+[unlock](../account.UnlockedAccount#unlock) method.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[\_key](../classes/account.Account.md#_key)
+[Account](../../classes/account.Account).[\_key](../classes/account.Account#_key)
 
 #### Defined in
 
@@ -38,7 +38,7 @@ The key used for encryption. Sub classes must set this property in the
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[\_propertySerializationOptions](../classes/account.Account.md#_propertyserializationoptions)
+[Account](../../classes/account.Account).[\_propertySerializationOptions](../classes/account.Account#_propertyserializationoptions)
 
 #### Defined in
 
@@ -54,7 +54,7 @@ When the account was created
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[created](../classes/account.Account.md#created)
+[Account](../../classes/account.Account).[created](../classes/account.Account#created)
 
 #### Defined in
 
@@ -70,7 +70,7 @@ The users email address
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[email](../classes/account.Account.md#email)
+[Account](../../classes/account.Account).[email](../classes/account.Account#email)
 
 #### Defined in
 
@@ -86,7 +86,7 @@ Encrypted data
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[encryptedData](../classes/account.Account.md#encrypteddata)
+[Account](../../classes/account.Account).[encryptedData](../classes/account.Account#encrypteddata)
 
 #### Defined in
 
@@ -103,7 +103,7 @@ Parameters used for encryption of content data
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[encryptionParams](../classes/account.Account.md#encryptionparams)
+[Account](../../classes/account.Account).[encryptionParams](../classes/account.Account#encryptionparams)
 
 #### Defined in
 
@@ -117,7 +117,7 @@ Parameters used for encryption of content data
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[favorites](../classes/account.Account.md#favorites)
+[Account](../../classes/account.Account).[favorites](../classes/account.Account#favorites)
 
 #### Defined in
 
@@ -133,7 +133,7 @@ Unique account ID
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[id](../classes/account.Account.md#id)
+[Account](../../classes/account.Account).[id](../classes/account.Account#id)
 
 #### Defined in
 
@@ -149,7 +149,7 @@ Parameters used for key derivation
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[keyParams](../classes/account.Account.md#keyparams)
+[Account](../../classes/account.Account).[keyParams](../classes/account.Account#keyparams)
 
 #### Defined in
 
@@ -173,7 +173,7 @@ ID of the accounts main or "private" [Vault](../../classes/vault.Vault).
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[mainVault](../classes/account.Account.md#mainvault)
+[Account](../../classes/account.Account).[mainVault](../classes/account.Account#mainvault)
 
 #### Defined in
 
@@ -189,7 +189,7 @@ The users display name
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[name](../classes/account.Account.md#name)
+[Account](../../classes/account.Account).[name](../classes/account.Account#name)
 
 #### Defined in
 
@@ -205,7 +205,7 @@ All organizations this account is a member of
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[orgs](../classes/account.Account.md#orgs)
+[Account](../../classes/account.Account).[orgs](../classes/account.Account#orgs)
 
 #### Defined in
 
@@ -221,7 +221,7 @@ The accounts private key
 
 #### Overrides
 
-[Account](../../classes/account.Account).[privateKey](../classes/account.Account.md#privatekey)
+[Account](../../classes/account.Account).[privateKey](../classes/account.Account#privatekey)
 
 #### Defined in
 
@@ -237,7 +237,7 @@ The accounts public key
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[publicKey](../classes/account.Account.md#publickey)
+[Account](../../classes/account.Account).[publicKey](../classes/account.Account#publickey)
 
 #### Defined in
 
@@ -254,7 +254,7 @@ between client and server
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[revision](../classes/account.Account.md#revision)
+[Account](../../classes/account.Account).[revision](../classes/account.Account#revision)
 
 #### Defined in
 
@@ -273,7 +273,7 @@ transmitted in plain text
 
 #### Overrides
 
-[Account](../../classes/account.Account).[signingKey](../classes/account.Account.md#signingkey)
+[Account](../../classes/account.Account).[signingKey](../classes/account.Account#signingkey)
 
 #### Defined in
 
@@ -289,7 +289,7 @@ when the account was last updated
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[updated](../classes/account.Account.md#updated)
+[Account](../../classes/account.Account).[updated](../classes/account.Account#updated)
 
 #### Defined in
 
@@ -398,7 +398,7 @@ properties that require special treatment
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[\_fromRaw](../classes/account.Account.md#_fromraw)
+[Account](../../classes/account.Account).[\_fromRaw](../classes/account.Account#_fromraw)
 
 #### Defined in
 
@@ -412,7 +412,7 @@ properties that require special treatment
 
 Transform this object into a raw javascript object used for serialization. The
 default implementation simply copies all iterable properties not included in the
-[[exlude]] array and calls [toRaw](account.UnlockedAccount.md#toraw) on any
+[[exlude]] array and calls [toRaw](../account.UnlockedAccount#toraw) on any
 properties that are themselfes instances of
 [Serializable](../../classes/encoding.Serializable). This method should be
 overwritten by subclasses if certain properties require special treatment.
@@ -429,7 +429,7 @@ overwritten by subclasses if certain properties require special treatment.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[\_toRaw](../classes/account.Account.md#_toraw)
+[Account](../../classes/account.Account).[\_toRaw](../classes/account.Account#_toraw)
 
 #### Defined in
 
@@ -449,7 +449,7 @@ Creates a deep clone of the object
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[clone](../classes/account.Account.md#clone)
+[Account](../../classes/account.Account).[clone](../classes/account.Account#clone)
 
 #### Defined in
 
@@ -473,7 +473,7 @@ Creates a deep clone of the object
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[copySecrets](../classes/account.Account.md#copysecrets)
+[Account](../../classes/account.Account).[copySecrets](../classes/account.Account#copysecrets)
 
 #### Defined in
 
@@ -499,7 +499,7 @@ Deserializes the object from a byte array
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[fromBytes](../classes/account.Account.md#frombytes)
+[Account](../../classes/account.Account).[fromBytes](../classes/account.Account#frombytes)
 
 #### Defined in
 
@@ -525,7 +525,7 @@ Deserializes the object from a JSON string
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[fromJSON](../classes/account.Account.md#fromjson)
+[Account](../../classes/account.Account).[fromJSON](../classes/account.Account#fromjson)
 
 #### Defined in
 
@@ -538,12 +538,12 @@ Deserializes the object from a JSON string
 ▸ **fromRaw**(`raw`): [`UnlockedAccount`](../account.UnlockedAccount)
 
 Restores propertiers from a raw object of the same form generated by
-[toRaw](account.UnlockedAccount.md#toraw). The base implementation blindly
+[toRaw](../account.UnlockedAccount#toraw). The base implementation blindly
 copies over values from the raw object via `Object.assign` so subclasses should
 explictly process any propertyies that need special treatment.
 
 Also takes are of validation and "upgrading" in case the raw object has an old
-version. Use the protected [\_fromRaw](account.UnlockedAccount.md#_fromraw)
+version. Use the protected [\_fromRaw](../account.UnlockedAccount#_fromraw)
 method to implement subclass-specific behavior.
 
 #### Parameters
@@ -558,7 +558,7 @@ method to implement subclass-specific behavior.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[fromRaw](../classes/account.Account.md#fromraw)
+[Account](../../classes/account.Account).[fromRaw](../classes/account.Account#fromraw)
 
 #### Defined in
 
@@ -579,7 +579,7 @@ require unlocking the container first.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[getData](../classes/account.Account.md#getdata)
+[Account](../../classes/account.Account).[getData](../classes/account.Account#getdata)
 
 #### Defined in
 
@@ -591,10 +591,10 @@ require unlocking the container first.
 
 ▸ **initialize**(`password`): `Promise`<`void`\>
 
-Generates the accounts [privateKey](account.UnlockedAccount.md#privatekey),
-[publicKey](account.UnlockedAccount.md#publickey) and
-[signingKey](account.UnlockedAccount.md#signingkey) and encrypts
-[privateKey](account.UnlockedAccount.md#privatekey) and [[singingKey]] using the
+Generates the accounts [privateKey](../account.UnlockedAccount#privatekey),
+[publicKey](../account.UnlockedAccount#publickey) and
+[signingKey](../account.UnlockedAccount#signingkey) and encrypts
+[privateKey](../account.UnlockedAccount#privatekey) and [[singingKey]] using the
 master password.
 
 #### Parameters
@@ -609,7 +609,7 @@ master password.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[initialize](../classes/account.Account.md#initialize)
+[Account](../../classes/account.Account).[initialize](../classes/account.Account#initialize)
 
 #### Defined in
 
@@ -629,7 +629,7 @@ master password.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[lock](../classes/account.Account.md#lock)
+[Account](../../classes/account.Account).[lock](../classes/account.Account#lock)
 
 #### Defined in
 
@@ -655,7 +655,7 @@ Encrypts the provided `data` and stores it in the container
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[setData](../classes/account.Account.md#setdata)
+[Account](../../classes/account.Account).[setData](../classes/account.Account#setdata)
 
 #### Defined in
 
@@ -668,8 +668,8 @@ Encrypts the provided `data` and stores it in the container
 ▸ **setPassword**(`password`): `Promise`<`void`\>
 
 Updates the master password by reencrypting the
-[privateKey](account.UnlockedAccount.md#privatekey) and
-[signingKey](account.UnlockedAccount.md#signingkey) properties
+[privateKey](../account.UnlockedAccount#privatekey) and
+[signingKey](../account.UnlockedAccount#signingkey) properties
 
 #### Parameters
 
@@ -683,7 +683,7 @@ Updates the master password by reencrypting the
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[setPassword](../classes/account.Account.md#setpassword)
+[Account](../../classes/account.Account).[setPassword](../classes/account.Account#setpassword)
 
 #### Defined in
 
@@ -712,7 +712,7 @@ public key
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[signOrg](../classes/account.Account.md#signorg)
+[Account](../../classes/account.Account).[signOrg](../classes/account.Account#signorg)
 
 #### Defined in
 
@@ -732,7 +732,7 @@ Returns a serialization of the object in form of a byte array
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[toBytes](../classes/account.Account.md#tobytes)
+[Account](../../classes/account.Account).[toBytes](../classes/account.Account#tobytes)
 
 #### Defined in
 
@@ -752,7 +752,7 @@ Returns a JSON serialization of the object
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[toJSON](../classes/account.Account.md#tojson)
+[Account](../../classes/account.Account).[toJSON](../classes/account.Account#tojson)
 
 #### Defined in
 
@@ -766,7 +766,7 @@ Returns a JSON serialization of the object
 
 Creates a raw javascript object representation of the class, which can be used
 for storage or data transmission. Also handles "downgrading" to previous
-versions. Use [\_toRaw](account.UnlockedAccount.md#_toraw) for subclass-specific
+versions. Use [\_toRaw](../account.UnlockedAccount#_toraw) for subclass-specific
 behavior.
 
 #### Parameters
@@ -781,7 +781,7 @@ behavior.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[toRaw](../classes/account.Account.md#toraw)
+[Account](../../classes/account.Account).[toRaw](../classes/account.Account#toraw)
 
 #### Defined in
 
@@ -799,7 +799,7 @@ behavior.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[toString](../classes/account.Account.md#tostring)
+[Account](../../classes/account.Account).[toString](../classes/account.Account#tostring)
 
 #### Defined in
 
@@ -824,7 +824,7 @@ behavior.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[toggleFavorite](../classes/account.Account.md#togglefavorite)
+[Account](../../classes/account.Account).[toggleFavorite](../classes/account.Account#togglefavorite)
 
 #### Defined in
 
@@ -837,9 +837,9 @@ behavior.
 ▸ **unlock**(`password`): `Promise`<`void`\>
 
 "Unlocks" the account by decrypting and extracting
-[privateKey](account.UnlockedAccount.md#privatekey) and
-[signingKey](account.UnlockedAccount.md#signingkey) from
-[encryptedData](account.UnlockedAccount.md#encrypteddata)
+[privateKey](../account.UnlockedAccount#privatekey) and
+[signingKey](../account.UnlockedAccount#signingkey) from
+[encryptedData](../account.UnlockedAccount#encrypteddata)
 
 #### Parameters
 
@@ -853,7 +853,7 @@ behavior.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[unlock](../classes/account.Account.md#unlock)
+[Account](../../classes/account.Account).[unlock](../classes/account.Account#unlock)
 
 #### Defined in
 
@@ -880,7 +880,7 @@ deriving it fro the master password
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[unlockWithMasterKey](../classes/account.Account.md#unlockwithmasterkey)
+[Account](../../classes/account.Account).[unlockWithMasterKey](../classes/account.Account#unlockwithmasterkey)
 
 #### Defined in
 
@@ -902,7 +902,7 @@ method based on their class structure.
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[validate](../classes/account.Account.md#validate)
+[Account](../../classes/account.Account).[validate](../classes/account.Account#validate)
 
 #### Defined in
 
@@ -915,7 +915,7 @@ method based on their class structure.
 ▸ **verifyOrg**(`org`): `Promise`<`void`\>
 
 Verifies an organizations id an public key, using the signature stored in the
-[Member](../enums/org.OrgRole.md#member) object associated with the account.
+[Member](../enums/org.OrgRole#member) object associated with the account.
 
 #### Parameters
 
@@ -929,7 +929,7 @@ Verifies an organizations id an public key, using the signature stored in the
 
 #### Inherited from
 
-[Account](../../classes/account.Account).[verifyOrg](../classes/account.Account.md#verifyorg)
+[Account](../../classes/account.Account).[verifyOrg](../classes/account.Account#verifyorg)
 
 #### Defined in
 

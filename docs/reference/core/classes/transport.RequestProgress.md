@@ -20,7 +20,7 @@ slug: "transport.RequestProgress"
 
 #### Inherited from
 
-[EventEmitter](../event_target.EventEmitter).[constructor](event_target.EventEmitter.md#constructor)
+[EventEmitter](../event_target.EventEmitter).[constructor](../event_target.EventEmitter#constructor)
 
 ## Properties
 
@@ -225,7 +225,7 @@ slug: "transport.RequestProgress"
 | Name        | Type                                              |
 | :---------- | :------------------------------------------------ |
 | `eventName` | `string`                                          |
-| `listener`  | [`Listener`](../modules/event_target.md#listener) |
+| `listener`  | [`Listener`](../modules/event_target#listener) |
 
 #### Returns
 
@@ -233,7 +233,7 @@ slug: "transport.RequestProgress"
 
 #### Inherited from
 
-[EventEmitter](../event_target.EventEmitter).[addEventListener](event_target.EventEmitter.md#addeventlistener)
+[EventEmitter](../event_target.EventEmitter).[addEventListener](../event_target.EventEmitter#addeventlistener)
 
 #### Defined in
 
@@ -272,7 +272,7 @@ slug: "transport.RequestProgress"
 
 #### Inherited from
 
-[EventEmitter](../event_target.EventEmitter).[dispatch](event_target.EventEmitter.md#dispatch)
+[EventEmitter](../event_target.EventEmitter).[dispatch](../event_target.EventEmitter#dispatch)
 
 #### Defined in
 
@@ -296,7 +296,7 @@ slug: "transport.RequestProgress"
 
 #### Inherited from
 
-[EventEmitter](../event_target.EventEmitter).[dispatchEvent](event_target.EventEmitter.md#dispatchevent)
+[EventEmitter](../event_target.EventEmitter).[dispatchEvent](../event_target.EventEmitter#dispatchevent)
 
 #### Defined in
 
@@ -313,7 +313,7 @@ slug: "transport.RequestProgress"
 | Name        | Type                                              |
 | :---------- | :------------------------------------------------ |
 | `eventName` | `string`                                          |
-| `listener`  | [`Listener`](../modules/event_target.md#listener) |
+| `listener`  | [`Listener`](../modules/event_target#listener) |
 
 #### Returns
 
@@ -321,7 +321,7 @@ slug: "transport.RequestProgress"
 
 #### Inherited from
 
-[EventEmitter](../event_target.EventEmitter).[removeEventListener](event_target.EventEmitter.md#removeeventlistener)
+[EventEmitter](../event_target.EventEmitter).[removeEventListener](../event_target.EventEmitter#removeeventlistener)
 
 #### Defined in
 

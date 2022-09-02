@@ -7,14 +7,14 @@ slug: "randomart.Fingerprint"
 [randomart](../../modules/randomart).Fingerprint
 
 Represents a "fingerprint" visualization of a certain
-[height](randomart.Fingerprint.md#height) and
-[width](randomart.Fingerprint.md#width), the
-[values](randomart.Fingerprint.md#values) property contains the raw values
+[height](../randomart.Fingerprint#height) and
+[width](../randomart.Fingerprint#width), the
+[values](../randomart.Fingerprint#values) property contains the raw values
 generated using the
 [drunken bishop](http://www.dirk-loss.de/sshvis/drunken_bishop.pdf) while
-[symbols](randomart.Fingerprint.md#symbols) represents the same values by
+[symbols](../randomart.Fingerprint#symbols) represents the same values by
 mapping the on the symbols defined in
-[Options.symbols](randomart.Options.md#symbols).
+[Options.symbols](../randomart.Options#symbols).
 
 ## Properties
 

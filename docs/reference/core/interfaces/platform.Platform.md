@@ -68,9 +68,9 @@ Generic interface for various platform APIs
 ### completeAuthRequest
 
 ▸ **completeAuthRequest**(`req`): `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](../classes/container.PBES2Container.md) ; `provisioning`:
+[`PBES2Container`](../classes/container.PBES2Container) ; `provisioning`:
 [`AccountProvisioning`](../classes/provisioning.AccountProvisioning) ; `token`:
 `string` }\>
 
@@ -83,9 +83,9 @@ Generic interface for various platform APIs
 #### Returns
 
 `Promise`<{ `accountStatus`:
-[`AccountStatus`](../../enums/auth.AccountStatus.md) ; `deviceTrusted`:
+[`AccountStatus`](../../enums/auth.AccountStatus) ; `deviceTrusted`:
 `boolean` ; `email`: `string` ; `legacyData?`:
-[`PBES2Container`](../classes/container.PBES2Container.md) ; `provisioning`:
+[`PBES2Container`](../classes/container.PBES2Container) ; `provisioning`:
 [`AccountProvisioning`](../classes/provisioning.AccountProvisioning) ; `token`:
 `string` }\>
 
