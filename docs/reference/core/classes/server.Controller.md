@@ -29,7 +29,7 @@ Controller class for processing api requests
 
 #### Overrides
 
-[API](../api.API).[constructor](api.API.md#constructor)
+[API](../api.API).[constructor](../api.API#constructor)
 
 #### Defined in
 
@@ -49,7 +49,7 @@ Controller class for processing api requests
 
 #### Inherited from
 
-[API](../api.API).[handlerDefinitions](api.API.md#handlerdefinitions)
+[API](../api.API).[handlerDefinitions](../api.API#handlerdefinitions)
 
 #### Defined in
 
@@ -313,7 +313,7 @@ Accept an [Invite](../invite.Invite)
 
 #### Overrides
 
-[API](../api.API).[acceptInvite](api.API.md#acceptinvite)
+[API](../api.API).[acceptInvite](../api.API#acceptinvite)
 
 #### Defined in
 
@@ -359,7 +359,7 @@ Accept an [Invite](../invite.Invite)
 
 #### Overrides
 
-[API](../api.API).[completeAuthRequest](api.API.md#completeauthrequest)
+[API](../api.API).[completeAuthRequest](../api.API#completeauthrequest)
 
 #### Defined in
 
@@ -387,7 +387,7 @@ future request
 
 #### Overrides
 
-[API](../api.API).[completeCreateSession](api.API.md#completecreatesession)
+[API](../api.API).[completeCreateSession](../api.API#completecreatesession)
 
 #### Defined in
 
@@ -412,7 +412,7 @@ future request
 
 #### Overrides
 
-[API](../api.API).[completeRegisterAuthenticator](api.API.md#completeregisterauthenticator)
+[API](../api.API).[completeRegisterAuthenticator](../api.API#completeregisterauthenticator)
 
 #### Defined in
 
@@ -439,7 +439,7 @@ Create a new [Account](../account.Account)
 
 #### Overrides
 
-[API](../api.API).[createAccount](api.API.md#createaccount)
+[API](../api.API).[createAccount](../api.API#createaccount)
 
 #### Defined in
 
@@ -463,7 +463,7 @@ Create a new [Account](../account.Account)
 
 #### Overrides
 
-[API](../api.API).[createAttachment](api.API.md#createattachment)
+[API](../api.API).[createAttachment](../api.API#createattachment)
 
 #### Defined in
 
@@ -488,7 +488,7 @@ Create a new [Account](../account.Account)
 
 #### Overrides
 
-[API](../api.API).[createKeyStoreEntry](api.API.md#createkeystoreentry)
+[API](../api.API).[createKeyStoreEntry](../api.API#createkeystoreentry)
 
 #### Defined in
 
@@ -514,7 +514,7 @@ Create a new [Org](../org.Org)
 
 #### Overrides
 
-[API](../api.API).[createOrg](api.API.md#createorg)
+[API](../api.API).[createOrg](../api.API#createorg)
 
 #### Defined in
 
@@ -540,7 +540,7 @@ Create a new vault
 
 #### Overrides
 
-[API](../api.API).[createVault](api.API.md#createvault)
+[API](../api.API).[createVault](../api.API#createvault)
 
 #### Defined in
 
@@ -560,7 +560,7 @@ Delete current account
 
 #### Overrides
 
-[API](../api.API).[deleteAccount](api.API.md#deleteaccount)
+[API](../api.API).[deleteAccount](../api.API#deleteaccount)
 
 #### Defined in
 
@@ -584,7 +584,7 @@ Delete current account
 
 #### Overrides
 
-[API](../api.API).[deleteAttachment](api.API.md#deleteattachment)
+[API](../api.API).[deleteAttachment](../api.API#deleteattachment)
 
 #### Defined in
 
@@ -608,7 +608,7 @@ Delete current account
 
 #### Overrides
 
-[API](../api.API).[deleteAuthenticator](api.API.md#deleteauthenticator)
+[API](../api.API).[deleteAuthenticator](../api.API#deleteauthenticator)
 
 #### Defined in
 
@@ -632,7 +632,7 @@ Delete current account
 
 #### Overrides
 
-[API](../api.API).[deleteKeyStoreEntry](api.API.md#deletekeystoreentry)
+[API](../api.API).[deleteKeyStoreEntry](../api.API#deletekeystoreentry)
 
 #### Defined in
 
@@ -650,7 +650,7 @@ Delete current account
 
 #### Overrides
 
-[API](../api.API).[deleteLegacyAccount](api.API.md#deletelegacyaccount)
+[API](../api.API).[deleteLegacyAccount](../api.API#deletelegacyaccount)
 
 #### Defined in
 
@@ -674,7 +674,7 @@ Delete current account
 
 #### Overrides
 
-[API](../api.API).[deleteOrg](api.API.md#deleteorg)
+[API](../api.API).[deleteOrg](../api.API#deleteorg)
 
 #### Defined in
 
@@ -700,7 +700,7 @@ Delete the [Vault](../vault.Vault) with the given `id`
 
 #### Overrides
 
-[API](../api.API).[deleteVault](api.API.md#deletevault)
+[API](../api.API).[deleteVault](../api.API#deletevault)
 
 #### Defined in
 
@@ -720,7 +720,7 @@ Get the [Account](../account.Account) associated with the current session
 
 #### Overrides
 
-[API](../api.API).[getAccount](api.API.md#getaccount)
+[API](../api.API).[getAccount](../api.API#getaccount)
 
 #### Defined in
 
@@ -745,7 +745,7 @@ Get the [Account](../account.Account) associated with the current session
 
 #### Overrides
 
-[API](../api.API).[getAttachment](api.API.md#getattachment)
+[API](../api.API).[getAttachment](../api.API#getattachment)
 
 #### Defined in
 
@@ -765,7 +765,7 @@ Get the [AuthInfo](../api.AuthInfo) for the current account
 
 #### Overrides
 
-[API](../api.API).[getAuthInfo](api.API.md#getauthinfo)
+[API](../api.API).[getAuthInfo](../api.API#getauthinfo)
 
 #### Defined in
 
@@ -791,7 +791,7 @@ Get an [Invite](../invite.Invite).
 
 #### Overrides
 
-[API](../api.API).[getInvite](api.API.md#getinvite)
+[API](../api.API).[getInvite](../api.API#getinvite)
 
 #### Defined in
 
@@ -816,7 +816,7 @@ Get an [Invite](../invite.Invite).
 
 #### Overrides
 
-[API](../api.API).[getKeyStoreEntry](api.API.md#getkeystoreentry)
+[API](../api.API).[getKeyStoreEntry](../api.API#getkeystoreentry)
 
 #### Defined in
 
@@ -841,7 +841,7 @@ Get an [Invite](../invite.Invite).
 
 #### Overrides
 
-[API](../api.API).[getLegacyData](api.API.md#getlegacydata)
+[API](../api.API).[getLegacyData](../api.API#getlegacydata)
 
 #### Defined in
 
@@ -867,7 +867,7 @@ Get the [Org](../org.Org) for a given `id`.
 
 #### Overrides
 
-[API](../api.API).[getOrg](api.API.md#getorg)
+[API](../api.API).[getOrg](../api.API#getorg)
 
 #### Defined in
 
@@ -893,7 +893,7 @@ Get the [Vault](../vault.Vault) with the given `id`
 
 #### Overrides
 
-[API](../api.API).[getVault](api.API.md#getvault)
+[API](../api.API).[getVault](../api.API#getvault)
 
 #### Defined in
 
@@ -961,7 +961,7 @@ Initiate account recovery
 
 #### Overrides
 
-[API](../api.API).[recoverAccount](api.API.md#recoveraccount)
+[API](../api.API).[recoverAccount](../api.API#recoveraccount)
 
 #### Defined in
 
@@ -985,7 +985,7 @@ Initiate account recovery
 
 #### Overrides
 
-[API](../api.API).[removeTrustedDevice](api.API.md#removetrusteddevice)
+[API](../api.API).[removeTrustedDevice](../api.API#removetrusteddevice)
 
 #### Defined in
 
@@ -1012,7 +1012,7 @@ authenticated with it
 
 #### Overrides
 
-[API](../api.API).[revokeSession](api.API.md#revokesession)
+[API](../api.API).[revokeSession](../api.API#revokesession)
 
 #### Defined in
 
@@ -1037,7 +1037,7 @@ authenticated with it
 
 #### Overrides
 
-[API](../api.API).[startAuthRequest](api.API.md#startauthrequest)
+[API](../api.API).[startAuthRequest](../api.API#startauthrequest)
 
 #### Defined in
 
@@ -1065,7 +1065,7 @@ authentication params which are required for proceeding with [[createSession]].
 
 #### Overrides
 
-[API](../api.API).[startCreateSession](api.API.md#startcreatesession)
+[API](../api.API).[startCreateSession](../api.API#startcreatesession)
 
 #### Defined in
 
@@ -1090,7 +1090,7 @@ authentication params which are required for proceeding with [[createSession]].
 
 #### Overrides
 
-[API](../api.API).[startRegisterAuthenticator](api.API.md#startregisterauthenticator)
+[API](../api.API).[startRegisterAuthenticator](../api.API#startregisterauthenticator)
 
 #### Defined in
 
@@ -1117,7 +1117,7 @@ Update the [Account](../account.Account) associated with the current session.
 
 #### Overrides
 
-[API](../api.API).[updateAccount](api.API.md#updateaccount)
+[API](../api.API).[updateAccount](../api.API#updateaccount)
 
 #### Defined in
 
@@ -1144,7 +1144,7 @@ case a users master password has changed.
 
 #### Overrides
 
-[API](../api.API).[updateAuth](api.API.md#updateauth)
+[API](../api.API).[updateAuth](../api.API#updateauth)
 
 #### Defined in
 
@@ -1190,7 +1190,7 @@ Updates a given [Org](../org.Org)
 
 #### Overrides
 
-[API](../api.API).[updateOrg](api.API.md#updateorg)
+[API](../api.API).[updateOrg](../api.API#updateorg)
 
 #### Defined in
 
@@ -1216,7 +1216,7 @@ Update the given [Vault](../vault.Vault)
 
 #### Overrides
 
-[API](../api.API).[updateVault](api.API.md#updatevault)
+[API](../api.API).[updateVault](../api.API#updatevault)
 
 #### Defined in
 

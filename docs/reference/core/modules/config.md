@@ -43,7 +43,7 @@ Generic type representing the constructor of a class extending
 
 | Name     | Type                                                                                                          | Default value |
 | :------- | :------------------------------------------------------------------------------------------------------------ | :------------ |
-| `type`   | `"string"` \| `"number"` \| `"boolean"` \| `"string[]"` \| [`ConfigConstructor`](config.md#configconstructor) | `"string"`    |
+| `type`   | `"string"` \| `"number"` \| `"boolean"` \| `"string[]"` \| [`ConfigConstructor`](../config#configconstructor) | `"string"`    |
 | `secret` | `boolean`                                                                                                     | `false`       |
 
 #### Returns

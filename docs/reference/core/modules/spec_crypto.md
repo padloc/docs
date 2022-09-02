@@ -8,7 +8,7 @@ slug: "spec_crypto"
 
 ### cryptoProviderSpec
 
-▸ **cryptoProviderSpec**(`provider`): [`Spec`](spec_spec.md#spec)
+▸ **cryptoProviderSpec**(`provider`): [`Spec`](../spec_spec#spec)
 
 #### Parameters
 
@@ -18,7 +18,7 @@ slug: "spec_crypto"
 
 #### Returns
 
-[`Spec`](spec_spec.md#spec)
+[`Spec`](../spec_spec#spec)
 
 #### Defined in
 

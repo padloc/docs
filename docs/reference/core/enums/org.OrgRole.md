@@ -27,7 +27,7 @@ Organization admin. Can manage groups and vaults.
 • **Member**
 
 Basic organization member. Can read public organization data and read/write
-certain [Vault](../../classes/vault.Vault.md)s they have been assigned to
+certain [Vault](../../classes/vault.Vault)s they have been assigned to
 directly or via [Group](../classes/org.Group)s.
 
 #### Defined in
@@ -41,8 +41,8 @@ directly or via [Group](../classes/org.Group)s.
 • **Owner**
 
 Organization owner. Can manage members, groups and vaults. Owners have access to
-the secret [Org.privateKey](../classes/org.Org.md#privatekey) and
-[Org.invitesKey](../classes/org.Org.md#inviteskey) properties.
+the secret [Org.privateKey](../classes/org.Org#privatekey) and
+[Org.invitesKey](../classes/org.Org#inviteskey) properties.
 
 #### Defined in
 

@@ -25,7 +25,7 @@ Sends a message to a given address
 
 | Name | Type                                                         |
 | :--- | :----------------------------------------------------------- |
-| `T`  | extends [`MessageData`](../modules/messenger.md#messagedata) |
+| `T`  | extends [`MessageData`](../modules/messenger#messagedata) |
 
 #### Parameters
 

@@ -21,7 +21,7 @@ slug: "event_target.EventTarget"
 | Name        | Type                                              |
 | :---------- | :------------------------------------------------ |
 | `eventName` | `string`                                          |
-| `listener`  | [`Listener`](../modules/event_target.md#listener) |
+| `listener`  | [`Listener`](../modules/event_target#listener) |
 
 #### Returns
 
@@ -42,7 +42,7 @@ slug: "event_target.EventTarget"
 | Name        | Type                                              |
 | :---------- | :------------------------------------------------ |
 | `eventName` | `string`                                          |
-| `listener`  | [`Listener`](../modules/event_target.md#listener) |
+| `listener`  | [`Listener`](../modules/event_target#listener) |
 
 #### Returns
 

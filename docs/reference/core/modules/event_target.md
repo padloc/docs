@@ -17,7 +17,7 @@ slug: "event_target"
 
 ### Listener
 
-Ƭ **Listener**: (`e`: [`Event`](../../interfaces/event_target.Event.md)) =>
+Ƭ **Listener**: (`e`: [`Event`](../../interfaces/event_target.Event)) =>
 `void` \| { `handle`: (`e`: [`Event`](../interfaces/event_target.Event)) =>
 `void` }
 

@@ -66,7 +66,7 @@ slug: "auth_public_key.PublicKeyAuthClient"
 
 #### Implementation of
 
-[AuthClient](../../interfaces/auth.AuthClient).[prepareAuthentication](../interfaces/auth.AuthClient.md#prepareauthentication)
+[AuthClient](../../interfaces/auth.AuthClient).[prepareAuthentication](../interfaces/auth.AuthClient#prepareauthentication)
 
 #### Defined in
 
@@ -92,7 +92,7 @@ slug: "auth_public_key.PublicKeyAuthClient"
 
 #### Implementation of
 
-[AuthClient](../../interfaces/auth.AuthClient).[prepareRegistration](../interfaces/auth.AuthClient.md#prepareregistration)
+[AuthClient](../../interfaces/auth.AuthClient).[prepareRegistration](../interfaces/auth.AuthClient#prepareregistration)
 
 #### Defined in
 
@@ -116,7 +116,7 @@ slug: "auth_public_key.PublicKeyAuthClient"
 
 #### Implementation of
 
-[AuthClient](../../interfaces/auth.AuthClient).[supportsType](../interfaces/auth.AuthClient.md#supportstype)
+[AuthClient](../../interfaces/auth.AuthClient).[supportsType](../interfaces/auth.AuthClient#supportstype)
 
 #### Defined in
 

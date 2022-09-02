@@ -36,7 +36,7 @@ slug: "provisioning.StubProvisioner"
 
 #### Implementation of
 
-[Provisioner](../../interfaces/provisioning.Provisioner).[accountDeleted](../interfaces/provisioning.Provisioner.md#accountdeleted)
+[Provisioner](../../interfaces/provisioning.Provisioner).[accountDeleted](../interfaces/provisioning.Provisioner#accountdeleted)
 
 #### Defined in
 
@@ -63,7 +63,7 @@ slug: "provisioning.StubProvisioner"
 
 #### Implementation of
 
-[Provisioner](../../interfaces/provisioning.Provisioner).[getProvisioning](../interfaces/provisioning.Provisioner.md#getprovisioning)
+[Provisioner](../../interfaces/provisioning.Provisioner).[getProvisioning](../interfaces/provisioning.Provisioner#getprovisioning)
 
 #### Defined in
 
@@ -87,7 +87,7 @@ slug: "provisioning.StubProvisioner"
 
 #### Implementation of
 
-[Provisioner](../../interfaces/provisioning.Provisioner).[orgDeleted](../interfaces/provisioning.Provisioner.md#orgdeleted)
+[Provisioner](../../interfaces/provisioning.Provisioner).[orgDeleted](../interfaces/provisioning.Provisioner#orgdeleted)
 
 #### Defined in
 
@@ -118,7 +118,7 @@ slug: "provisioning.StubProvisioner"
 
 #### Implementation of
 
-[Provisioner](../../interfaces/provisioning.Provisioner).[orgOwnerChanged](../interfaces/provisioning.Provisioner.md#orgownerchanged)
+[Provisioner](../../interfaces/provisioning.Provisioner).[orgOwnerChanged](../interfaces/provisioning.Provisioner#orgownerchanged)
 
 #### Defined in
 

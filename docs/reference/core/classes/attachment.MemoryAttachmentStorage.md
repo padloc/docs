@@ -46,7 +46,7 @@ slug: "attachment.MemoryAttachmentStorage"
 
 #### Implementation of
 
-[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[delete](../interfaces/attachment.AttachmentStorage.md#delete)
+[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[delete](../interfaces/attachment.AttachmentStorage#delete)
 
 #### Defined in
 
@@ -70,7 +70,7 @@ slug: "attachment.MemoryAttachmentStorage"
 
 #### Implementation of
 
-[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[deleteAll](../interfaces/attachment.AttachmentStorage.md#deleteall)
+[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[deleteAll](../interfaces/attachment.AttachmentStorage#deleteall)
 
 #### Defined in
 
@@ -95,7 +95,7 @@ slug: "attachment.MemoryAttachmentStorage"
 
 #### Implementation of
 
-[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[get](../interfaces/attachment.AttachmentStorage.md#get)
+[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[get](../interfaces/attachment.AttachmentStorage#get)
 
 #### Defined in
 
@@ -119,7 +119,7 @@ slug: "attachment.MemoryAttachmentStorage"
 
 #### Implementation of
 
-[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[getUsage](../interfaces/attachment.AttachmentStorage.md#getusage)
+[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[getUsage](../interfaces/attachment.AttachmentStorage#getusage)
 
 #### Defined in
 
@@ -143,7 +143,7 @@ slug: "attachment.MemoryAttachmentStorage"
 
 #### Implementation of
 
-[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[put](../interfaces/attachment.AttachmentStorage.md#put)
+[AttachmentStorage](../../interfaces/attachment.AttachmentStorage).[put](../interfaces/attachment.AttachmentStorage#put)
 
 #### Defined in
 

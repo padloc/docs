@@ -37,7 +37,7 @@ Sends a message to a given address
 
 #### Implementation of
 
-[Messenger](../../interfaces/messenger.Messenger).[send](../interfaces/messenger.Messenger.md#send)
+[Messenger](../../interfaces/messenger.Messenger).[send](../interfaces/messenger.Messenger#send)
 
 #### Defined in
 

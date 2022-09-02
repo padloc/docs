@@ -73,7 +73,7 @@ slug: "auth_email.EmailAuthServer"
 
 #### Implementation of
 
-[AuthServer](../../interfaces/auth.AuthServer).[activateAuthenticator](../interfaces/auth.AuthServer.md#activateauthenticator)
+[AuthServer](../../interfaces/auth.AuthServer).[activateAuthenticator](../interfaces/auth.AuthServer#activateauthenticator)
 
 #### Defined in
 
@@ -100,7 +100,7 @@ message.title }\>
 
 #### Implementation of
 
-[AuthServer](../../interfaces/auth.AuthServer).[initAuthRequest](../interfaces/auth.AuthServer.md#initauthrequest)
+[AuthServer](../../interfaces/auth.AuthServer).[initAuthRequest](../interfaces/auth.AuthServer#initauthrequest)
 
 #### Defined in
 
@@ -130,7 +130,7 @@ message.title }\>
 
 #### Implementation of
 
-[AuthServer](../../interfaces/auth.AuthServer).[initAuthenticator](../interfaces/auth.AuthServer.md#initauthenticator)
+[AuthServer](../../interfaces/auth.AuthServer).[initAuthenticator](../interfaces/auth.AuthServer#initauthenticator)
 
 #### Defined in
 
@@ -154,7 +154,7 @@ message.title }\>
 
 #### Implementation of
 
-[AuthServer](../../interfaces/auth.AuthServer).[supportsType](../interfaces/auth.AuthServer.md#supportstype)
+[AuthServer](../../interfaces/auth.AuthServer).[supportsType](../interfaces/auth.AuthServer#supportstype)
 
 #### Defined in
 
@@ -182,7 +182,7 @@ message.title }\>
 
 #### Implementation of
 
-[AuthServer](../../interfaces/auth.AuthServer).[verifyAuthRequest](../interfaces/auth.AuthServer.md#verifyauthrequest)
+[AuthServer](../../interfaces/auth.AuthServer).[verifyAuthRequest](../interfaces/auth.AuthServer#verifyauthrequest)
 
 #### Defined in
 

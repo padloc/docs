@@ -7,8 +7,8 @@ slug: "server.Server"
 [server](../../modules/server).Server
 
 The Padloc server acts as a central repository for
-[Account](../account.Account.md)s, [Org](org.Org)s and
-[Vault](../vault.Vault.md)s. [Server](server.Server) handles authentication,
+[Account](../account.Account)s, [Org](../org.Org)s and
+[Vault](../vault.Vault)s. [Server](../server.Server) handles authentication,
 enforces user privileges and acts as a mediator for key exchange between
 clients.
 

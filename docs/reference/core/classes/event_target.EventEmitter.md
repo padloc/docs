@@ -27,7 +27,7 @@ slug: "event_target.EventEmitter"
 ### \_listeners
 
 • `Private` **\_listeners**: `Map`<`string`,
-`Set`<[`Listener`](../modules/event_target.md#listener)\>\>
+`Set`<[`Listener`](../modules/event_target#listener)\>\>
 
 #### Defined in
 
@@ -44,7 +44,7 @@ slug: "event_target.EventEmitter"
 | Name        | Type                                              |
 | :---------- | :------------------------------------------------ |
 | `eventName` | `string`                                          |
-| `listener`  | [`Listener`](../modules/event_target.md#listener) |
+| `listener`  | [`Listener`](../modules/event_target#listener) |
 
 #### Returns
 
@@ -52,7 +52,7 @@ slug: "event_target.EventEmitter"
 
 #### Implementation of
 
-[EventTarget](../../interfaces/event_target.EventTarget).[addEventListener](../interfaces/event_target.EventTarget.md#addeventlistener)
+[EventTarget](../../interfaces/event_target.EventTarget).[addEventListener](../interfaces/event_target.EventTarget#addeventlistener)
 
 #### Defined in
 
@@ -110,7 +110,7 @@ slug: "event_target.EventEmitter"
 | Name        | Type                                              |
 | :---------- | :------------------------------------------------ |
 | `eventName` | `string`                                          |
-| `listener`  | [`Listener`](../modules/event_target.md#listener) |
+| `listener`  | [`Listener`](../modules/event_target#listener) |
 
 #### Returns
 
@@ -118,7 +118,7 @@ slug: "event_target.EventEmitter"
 
 #### Implementation of
 
-[EventTarget](../../interfaces/event_target.EventTarget).[removeEventListener](../interfaces/event_target.EventTarget.md#removeeventlistener)
+[EventTarget](../../interfaces/event_target.EventTarget).[removeEventListener](../interfaces/event_target.EventTarget#removeeventlistener)
 
 #### Defined in
 

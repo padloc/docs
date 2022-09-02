@@ -121,7 +121,7 @@ Guesses the most appropriate field type based on field name and value
 
 ### normalizeTag
 
-▸ **normalizeTag**(`tag`): [`Tag`](item.md#tag)
+▸ **normalizeTag**(`tag`): [`Tag`](../item#tag)
 
 Normalizes a tag value by removing invalid characters
 
@@ -133,7 +133,7 @@ Normalizes a tag value by removing invalid characters
 
 #### Returns
 
-[`Tag`](item.md#tag)
+[`Tag`](../item#tag)
 
 #### Defined in
 

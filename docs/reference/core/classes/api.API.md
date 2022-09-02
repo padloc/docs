@@ -7,7 +7,7 @@ slug: "api.API"
 [api](../../modules/api).API
 
 Transport-agnostic interface defining communication between
-[Client](../client.Client.md) and [Server](server.Server) instances.
+[Client](../client.Client) and [Server](../server.Server) instances.
 
 ## Hierarchy
 
@@ -38,7 +38,7 @@ Transport-agnostic interface defining communication between
 ### acceptInvite
 
 ▸ **acceptInvite**(`_invite`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 Accept an [Invite](../invite.Invite)
 
@@ -54,7 +54,7 @@ Requires the authenticated account to be the recipient of the invite.
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -65,7 +65,7 @@ Requires the authenticated account to be the recipient of the invite.
 ### completeAuthRequest
 
 ▸ **completeAuthRequest**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`CompleteAuthRequestResponse`](api.CompleteAuthRequestResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`CompleteAuthRequestResponse`](../api.CompleteAuthRequestResponse)\>
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Requires the authenticated account to be the recipient of the invite.
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`CompleteAuthRequestResponse`](api.CompleteAuthRequestResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`CompleteAuthRequestResponse`](../api.CompleteAuthRequestResponse)\>
 
 #### Defined in
 
@@ -86,7 +86,7 @@ Requires the authenticated account to be the recipient of the invite.
 ### completeCreateSession
 
 ▸ **completeCreateSession**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Session`](session.Session)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Session`](../session.Session)\>
 
 Create new [Session](../session.Session) which can be used to authenticate
 future request
@@ -99,7 +99,7 @@ future request
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Session`](session.Session)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Session`](../session.Session)\>
 
 #### Defined in
 
@@ -110,7 +110,7 @@ future request
 ### completeRegisterAuthenticator
 
 ▸ **completeRegisterAuthenticator**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`CompleteRegisterMFAuthenticatorResponse`](api.CompleteRegisterMFAuthenticatorResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`CompleteRegisterMFAuthenticatorResponse`](../api.CompleteRegisterMFAuthenticatorResponse)\>
 
 #### Parameters
 
@@ -120,7 +120,7 @@ future request
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`CompleteRegisterMFAuthenticatorResponse`](api.CompleteRegisterMFAuthenticatorResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`CompleteRegisterMFAuthenticatorResponse`](../api.CompleteRegisterMFAuthenticatorResponse)\>
 
 #### Defined in
 
@@ -131,7 +131,7 @@ future request
 ### createAccount
 
 ▸ **createAccount**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 Create a new [Account](../account.Account)
 
@@ -143,7 +143,7 @@ Create a new [Account](../account.Account)
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 #### Defined in
 
@@ -154,7 +154,7 @@ Create a new [Account](../account.Account)
 ### createAttachment
 
 ▸ **createAttachment**(`_attachment`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`string`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`string`\>
 
 #### Parameters
 
@@ -164,7 +164,7 @@ Create a new [Account](../account.Account)
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`string`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`string`\>
 
 #### Defined in
 
@@ -175,7 +175,7 @@ Create a new [Account](../account.Account)
 ### createKeyStoreEntry
 
 ▸ **createKeyStoreEntry**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`KeyStoreEntry`](key_store.KeyStoreEntry)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`KeyStoreEntry`](../key_store.KeyStoreEntry)\>
 
 #### Parameters
 
@@ -185,7 +185,7 @@ Create a new [Account](../account.Account)
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`KeyStoreEntry`](key_store.KeyStoreEntry)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`KeyStoreEntry`](../key_store.KeyStoreEntry)\>
 
 #### Defined in
 
@@ -196,7 +196,7 @@ Create a new [Account](../account.Account)
 ### createOrg
 
 ▸ **createOrg**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Org`](org.Org)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Org`](../org.Org)\>
 
 Create a new [Org](../org.Org)
 
@@ -210,7 +210,7 @@ Create a new [Org](../org.Org)
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Org`](org.Org)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Org`](../org.Org)\>
 
 #### Defined in
 
@@ -221,13 +221,13 @@ Create a new [Org](../org.Org)
 ### createVault
 
 ▸ **createVault**(`_vault`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Vault`](vault.Vault)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Vault`](../vault.Vault)\>
 
 Create a new vault
 
 **`authentication_required`**
 
-Requires the [OrgRole.Admin](../enums/org.OrgRole.md#admin) role on the
+Requires the [OrgRole.Admin](../enums/org.OrgRole#admin) role on the
 associated organization
 
 #### Parameters
@@ -238,7 +238,7 @@ associated organization
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Vault`](vault.Vault)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Vault`](../vault.Vault)\>
 
 #### Defined in
 
@@ -249,13 +249,13 @@ associated organization
 ### deleteAccount
 
 ▸ **deleteAccount**():
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 Delete current account
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -266,7 +266,7 @@ Delete current account
 ### deleteAttachment
 
 ▸ **deleteAttachment**(`_attachment`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Parameters
 
@@ -276,7 +276,7 @@ Delete current account
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -287,7 +287,7 @@ Delete current account
 ### deleteAuthenticator
 
 ▸ **deleteAuthenticator**(`_id`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Parameters
 
@@ -297,7 +297,7 @@ Delete current account
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -328,11 +328,11 @@ Delete current account
 ### deleteLegacyAccount
 
 ▸ **deleteLegacyAccount**():
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -343,7 +343,7 @@ Delete current account
 ### deleteOrg
 
 ▸ **deleteOrg**(`_id`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Parameters
 
@@ -353,7 +353,7 @@ Delete current account
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -364,13 +364,13 @@ Delete current account
 ### deleteVault
 
 ▸ **deleteVault**(`_id`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 Delete the [Vault](../vault.Vault) with the given `id`
 
 **`authentication_required`**
 
-Requires at least the [OrgRole.Admin](../enums/org.OrgRole.md#admin) role on the
+Requires at least the [OrgRole.Admin](../enums/org.OrgRole#admin) role on the
 organization the vault belongs to. Private vaults cannot be deleted.
 
 #### Parameters
@@ -381,7 +381,7 @@ organization the vault belongs to. Private vaults cannot be deleted.
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -392,7 +392,7 @@ organization the vault belongs to. Private vaults cannot be deleted.
 ### getAccount
 
 ▸ **getAccount**():
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 Get the [Account](../account.Account) associated with the current session
 
@@ -400,7 +400,7 @@ Get the [Account](../account.Account) associated with the current session
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 #### Defined in
 
@@ -411,7 +411,7 @@ Get the [Account](../account.Account) associated with the current session
 ### getAttachment
 
 ▸ **getAttachment**(`_attachment`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Attachment`](attachment.Attachment)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Attachment`](../attachment.Attachment)\>
 
 #### Parameters
 
@@ -421,7 +421,7 @@ Get the [Account](../account.Account) associated with the current session
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Attachment`](attachment.Attachment)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Attachment`](../attachment.Attachment)\>
 
 #### Defined in
 
@@ -448,14 +448,14 @@ Get the [AuthInfo](../api.AuthInfo) for the current account
 ### getInvite
 
 ▸ **getInvite**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Invite`](invite.Invite)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Invite`](../invite.Invite)\>
 
 Get an [Invite](../invite.Invite).
 
 **`authentication_required`**
 
 Requires the authenticated account to either be an
-[OrgRole.Owner](../enums/org.OrgRole.md#owner) of the associated organization or
+[OrgRole.Owner](../enums/org.OrgRole#owner) of the associated organization or
 the recipient of the invite.
 
 #### Parameters
@@ -466,7 +466,7 @@ the recipient of the invite.
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Invite`](invite.Invite)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Invite`](../invite.Invite)\>
 
 #### Defined in
 
@@ -498,7 +498,7 @@ the recipient of the invite.
 ### getLegacyData
 
 ▸ **getLegacyData**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`PBES2Container`](container.PBES2Container)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`PBES2Container`](../container.PBES2Container)\>
 
 #### Parameters
 
@@ -508,7 +508,7 @@ the recipient of the invite.
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`PBES2Container`](container.PBES2Container)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`PBES2Container`](../container.PBES2Container)\>
 
 #### Defined in
 
@@ -519,7 +519,7 @@ the recipient of the invite.
 ### getOrg
 
 ▸ **getOrg**(`_id`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Org`](org.Org)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Org`](../org.Org)\>
 
 Get the [Org](../org.Org) for a given `id`.
 
@@ -535,7 +535,7 @@ Requires the authenticated account to be a member of the given organization
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Org`](org.Org)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Org`](../org.Org)\>
 
 #### Defined in
 
@@ -546,7 +546,7 @@ Requires the authenticated account to be a member of the given organization
 ### getVault
 
 ▸ **getVault**(`_id`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Vault`](vault.Vault)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Vault`](../vault.Vault)\>
 
 Get the [Vault](../vault.Vault) with the given `id`
 
@@ -564,7 +564,7 @@ Otherwise, only access to the accounts private vault is allowed.
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Vault`](vault.Vault)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Vault`](../vault.Vault)\>
 
 #### Defined in
 
@@ -575,7 +575,7 @@ Otherwise, only access to the accounts private vault is allowed.
 ### recoverAccount
 
 ▸ **recoverAccount**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 Initiate account recovery
 
@@ -587,7 +587,7 @@ Initiate account recovery
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 #### Defined in
 
@@ -598,7 +598,7 @@ Initiate account recovery
 ### removeTrustedDevice
 
 ▸ **removeTrustedDevice**(`_id`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Parameters
 
@@ -608,7 +608,7 @@ Initiate account recovery
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -619,7 +619,7 @@ Initiate account recovery
 ### revokeSession
 
 ▸ **revokeSession**(`_id`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 Revoke a [Session](../session.Session), effectively logging out any client
 authenticated with it
@@ -632,7 +632,7 @@ authenticated with it
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -643,7 +643,7 @@ authenticated with it
 ### startAuthRequest
 
 ▸ **startAuthRequest**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`StartAuthRequestResponse`](api.StartAuthRequestResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`StartAuthRequestResponse`](../api.StartAuthRequestResponse)\>
 
 #### Parameters
 
@@ -653,7 +653,7 @@ authenticated with it
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`StartAuthRequestResponse`](api.StartAuthRequestResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`StartAuthRequestResponse`](../api.StartAuthRequestResponse)\>
 
 #### Defined in
 
@@ -664,7 +664,7 @@ authenticated with it
 ### startCreateSession
 
 ▸ **startCreateSession**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`StartCreateSessionResponse`](api.StartCreateSessionResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`StartCreateSessionResponse`](../api.StartCreateSessionResponse)\>
 
 Initiate the login procedure for a given account by requesting the
 authentication params which are required for proceeding with [[createSession]].
@@ -677,7 +677,7 @@ authentication params which are required for proceeding with [[createSession]].
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`StartCreateSessionResponse`](api.StartCreateSessionResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`StartCreateSessionResponse`](../api.StartCreateSessionResponse)\>
 
 #### Defined in
 
@@ -688,7 +688,7 @@ authentication params which are required for proceeding with [[createSession]].
 ### startRegisterAuthenticator
 
 ▸ **startRegisterAuthenticator**(`_params`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`StartRegisterAuthenticatorResponse`](api.StartRegisterAuthenticatorResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`StartRegisterAuthenticatorResponse`](../api.StartRegisterAuthenticatorResponse)\>
 
 #### Parameters
 
@@ -698,7 +698,7 @@ authentication params which are required for proceeding with [[createSession]].
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`StartRegisterAuthenticatorResponse`](api.StartRegisterAuthenticatorResponse)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`StartRegisterAuthenticatorResponse`](../api.StartRegisterAuthenticatorResponse)\>
 
 #### Defined in
 
@@ -709,7 +709,7 @@ authentication params which are required for proceeding with [[createSession]].
 ### updateAccount
 
 ▸ **updateAccount**(`_account`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 Update the [Account](../account.Account) associated with the current session.
 
@@ -723,7 +723,7 @@ Update the [Account](../account.Account) associated with the current session.
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Account`](account.Account)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Account`](../account.Account)\>
 
 #### Defined in
 
@@ -734,7 +734,7 @@ Update the [Account](../account.Account) associated with the current session.
 ### updateAuth
 
 ▸ **updateAuth**(`_params`):
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 Update the authentication params stored on the server. This is usually used in
 case a users master password has changed.
@@ -747,7 +747,7 @@ case a users master password has changed.
 
 #### Returns
 
-[`PromiseWithProgress`](../modules/api.md#promisewithprogress)<`void`\>
+[`PromiseWithProgress`](../modules/api#promisewithprogress)<`void`\>
 
 #### Defined in
 
@@ -758,15 +758,15 @@ case a users master password has changed.
 ### updateOrg
 
 ▸ **updateOrg**(`_org`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Org`](org.Org)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Org`](../org.Org)\>
 
 Updates a given [Org](../org.Org)
 
 **`authentication_required`**
 
 Updating members, organization name or pubic/private keys requires the
-[OrgRole.Owner](../enums/org.OrgRole.md#owner) role, while any other changes
-require the [OrgRole.Admin](../enums/org.OrgRole.md#admin) role.
+[OrgRole.Owner](../enums/org.OrgRole#owner) role, while any other changes
+require the [OrgRole.Admin](../enums/org.OrgRole#admin) role.
 
 #### Parameters
 
@@ -776,7 +776,7 @@ require the [OrgRole.Admin](../enums/org.OrgRole.md#admin) role.
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Org`](org.Org)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Org`](../org.Org)\>
 
 #### Defined in
 
@@ -787,7 +787,7 @@ require the [OrgRole.Admin](../enums/org.OrgRole.md#admin) role.
 ### updateVault
 
 ▸ **updateVault**(`_vault`):
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Vault`](vault.Vault)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Vault`](../vault.Vault)\>
 
 Update the given [Vault](../vault.Vault)
 
@@ -806,7 +806,7 @@ vault is allowed.
 
 #### Returns
 
-[`PromiseWithProgress`](../../modules/api.md#promisewithprogress)<[`Vault`](vault.Vault)\>
+[`PromiseWithProgress`](../../modules/api#promisewithprogress)<[`Vault`](../vault.Vault)\>
 
 #### Defined in
 

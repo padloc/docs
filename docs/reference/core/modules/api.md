@@ -59,8 +59,8 @@ Decorator for defining request handler methods
 
 | Name     | Type                                                                                                   |
 | :------- | :----------------------------------------------------------------------------------------------------- |
-| `input`  | `undefined` \| [`SerializableConstructor`](encoding.md#serializableconstructor) \| `StringConstructor` |
-| `output` | `undefined` \| [`SerializableConstructor`](encoding.md#serializableconstructor) \| `StringConstructor` |
+| `input`  | `undefined` \| [`SerializableConstructor`](../encoding#serializableconstructor) \| `StringConstructor` |
+| `output` | `undefined` \| [`SerializableConstructor`](../encoding#serializableconstructor) \| `StringConstructor` |
 
 #### Returns
 

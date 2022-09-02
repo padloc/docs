@@ -6,7 +6,7 @@ slug: "transport.Receiver"
 
 [transport](../../modules/transport).Receiver
 
-Generic interface for receiving [Request](../../classes/transport.Request.md)s
+Generic interface for receiving [Request](../../classes/transport.Request)s
 and processing them into a [Response](../classes/transport.Response)
 
 ## Methods
@@ -19,7 +19,7 @@ and processing them into a [Response](../classes/transport.Response)
 
 | Name      | Type                                                                                                                |
 | :-------- | :------------------------------------------------------------------------------------------------------------------ |
-| `handler` | (`req`: [`Request`](../../classes/transport.Request.md)) => `Promise`<[`Response`](../classes/transport.Response)\> |
+| `handler` | (`req`: [`Request`](../../classes/transport.Request)) => `Promise`<[`Response`](../classes/transport.Response)\> |
 
 #### Returns
 

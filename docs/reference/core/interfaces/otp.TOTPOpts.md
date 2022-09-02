@@ -22,7 +22,7 @@ slug: "otp.TOTPOpts"
 
 #### Inherited from
 
-[HOTPOpts](../otp.HOTPOpts).[digits](otp.HOTPOpts.md#digits)
+[HOTPOpts](../otp.HOTPOpts).[digits](../otp.HOTPOpts#digits)
 
 #### Defined in
 
@@ -36,7 +36,7 @@ slug: "otp.TOTPOpts"
 
 #### Inherited from
 
-[HOTPOpts](../otp.HOTPOpts).[hash](otp.HOTPOpts.md#hash)
+[HOTPOpts](../otp.HOTPOpts).[hash](../otp.HOTPOpts#hash)
 
 #### Defined in
 

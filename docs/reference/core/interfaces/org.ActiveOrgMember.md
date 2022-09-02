@@ -21,7 +21,7 @@ slug: "org.ActiveOrgMember"
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[\_propertySerializationOptions](../classes/org.OrgMember.md#_propertyserializationoptions)
+[OrgMember](../../classes/org.OrgMember).[\_propertySerializationOptions](../classes/org.OrgMember#_propertyserializationoptions)
 
 #### Defined in
 
@@ -37,7 +37,7 @@ id of the corresponding [Account](../../classes/account.Account)
 
 #### Overrides
 
-[OrgMember](../../classes/org.OrgMember).[accountId](../classes/org.OrgMember.md#accountid)
+[OrgMember](../../classes/org.OrgMember).[accountId](../classes/org.OrgMember#accountid)
 
 #### Defined in
 
@@ -53,7 +53,7 @@ email address of the corresponding [Account](../../classes/account.Account)
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[email](../classes/org.OrgMember.md#email)
+[OrgMember](../../classes/org.OrgMember).[email](../classes/org.OrgMember#email)
 
 #### Defined in
 
@@ -67,7 +67,7 @@ email address of the corresponding [Account](../../classes/account.Account)
 
 #### Overrides
 
-[OrgMember](../../classes/org.OrgMember).[id](../classes/org.OrgMember.md#id)
+[OrgMember](../../classes/org.OrgMember).[id](../classes/org.OrgMember#id)
 
 #### Defined in
 
@@ -83,7 +83,7 @@ name of the corresponding [Account](../../classes/account.Account)
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[name](../classes/org.OrgMember.md#name)
+[OrgMember](../../classes/org.OrgMember).[name](../classes/org.OrgMember#name)
 
 #### Defined in
 
@@ -95,12 +95,12 @@ name of the corresponding [Account](../../classes/account.Account)
 
 • **orgSignature**: `Uint8Array`
 
-signature used by the member to verify [Org.id](../classes/org.Org.md#id) and
+signature used by the member to verify [Org.id](../classes/org.Org#id) and
 [[Org.publickey]] of the organization
 
 #### Overrides
 
-[OrgMember](../../classes/org.OrgMember).[orgSignature](../classes/org.OrgMember.md#orgsignature)
+[OrgMember](../../classes/org.OrgMember).[orgSignature](../classes/org.OrgMember#orgsignature)
 
 #### Defined in
 
@@ -116,7 +116,7 @@ public key of the corresponding [Account](../../classes/account.Account)
 
 #### Overrides
 
-[OrgMember](../../classes/org.OrgMember).[publicKey](../classes/org.OrgMember.md#publickey)
+[OrgMember](../../classes/org.OrgMember).[publicKey](../classes/org.OrgMember#publickey)
 
 #### Defined in
 
@@ -132,7 +132,7 @@ the members organization role
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[role](../classes/org.OrgMember.md#role)
+[OrgMember](../../classes/org.OrgMember).[role](../classes/org.OrgMember#role)
 
 #### Defined in
 
@@ -144,13 +144,13 @@ the members organization role
 
 • **signature**: `Uint8Array`
 
-signature used by other members to verify [id](org.ActiveOrgMember.md#id),
-[email](org.ActiveOrgMember.md#email) and
-[publicKey](org.ActiveOrgMember.md#publickey)
+signature used by other members to verify [id](../org.ActiveOrgMember#id),
+[email](../org.ActiveOrgMember#email) and
+[publicKey](../org.ActiveOrgMember#publickey)
 
 #### Overrides
 
-[OrgMember](../../classes/org.OrgMember).[signature](../classes/org.OrgMember.md#signature)
+[OrgMember](../../classes/org.OrgMember).[signature](../classes/org.OrgMember#signature)
 
 #### Defined in
 
@@ -160,11 +160,11 @@ signature used by other members to verify [id](org.ActiveOrgMember.md#id),
 
 ### status
 
-• **status**: [`Active`](../enums/org.OrgMemberStatus.md#active)
+• **status**: [`Active`](../enums/org.OrgMemberStatus#active)
 
 #### Overrides
 
-[OrgMember](../../classes/org.OrgMember).[status](../classes/org.OrgMember.md#status)
+[OrgMember](../../classes/org.OrgMember).[status](../classes/org.OrgMember#status)
 
 #### Defined in
 
@@ -180,7 +180,7 @@ time the member was last updated
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[updated](../classes/org.OrgMember.md#updated)
+[OrgMember](../../classes/org.OrgMember).[updated](../classes/org.OrgMember#updated)
 
 #### Defined in
 
@@ -196,7 +196,7 @@ vaults assigned to this member
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[vaults](../classes/org.OrgMember.md#vaults)
+[OrgMember](../../classes/org.OrgMember).[vaults](../classes/org.OrgMember#vaults)
 
 #### Defined in
 
@@ -246,7 +246,7 @@ properties that require special treatment
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[\_fromRaw](../classes/org.OrgMember.md#_fromraw)
+[OrgMember](../../classes/org.OrgMember).[\_fromRaw](../classes/org.OrgMember#_fromraw)
 
 #### Defined in
 
@@ -260,7 +260,7 @@ properties that require special treatment
 
 Transform this object into a raw javascript object used for serialization. The
 default implementation simply copies all iterable properties not included in the
-[[exlude]] array and calls [toRaw](org.ActiveOrgMember.md#toraw) on any
+[[exlude]] array and calls [toRaw](../org.ActiveOrgMember#toraw) on any
 properties that are themselfes instances of
 [Serializable](../../classes/encoding.Serializable). This method should be
 overwritten by subclasses if certain properties require special treatment.
@@ -277,7 +277,7 @@ overwritten by subclasses if certain properties require special treatment.
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[\_toRaw](../classes/org.OrgMember.md#_toraw)
+[OrgMember](../../classes/org.OrgMember).[\_toRaw](../classes/org.OrgMember#_toraw)
 
 #### Defined in
 
@@ -297,7 +297,7 @@ Creates a deep clone of the object
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[clone](../classes/org.OrgMember.md#clone)
+[OrgMember](../../classes/org.OrgMember).[clone](../classes/org.OrgMember#clone)
 
 #### Defined in
 
@@ -323,7 +323,7 @@ Deserializes the object from a byte array
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[fromBytes](../classes/org.OrgMember.md#frombytes)
+[OrgMember](../../classes/org.OrgMember).[fromBytes](../classes/org.OrgMember#frombytes)
 
 #### Defined in
 
@@ -349,7 +349,7 @@ Deserializes the object from a JSON string
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[fromJSON](../classes/org.OrgMember.md#fromjson)
+[OrgMember](../../classes/org.OrgMember).[fromJSON](../classes/org.OrgMember#fromjson)
 
 #### Defined in
 
@@ -362,12 +362,12 @@ Deserializes the object from a JSON string
 ▸ **fromRaw**(`raw`): [`ActiveOrgMember`](../org.ActiveOrgMember)
 
 Restores propertiers from a raw object of the same form generated by
-[toRaw](org.ActiveOrgMember.md#toraw). The base implementation blindly copies
+[toRaw](../org.ActiveOrgMember#toraw). The base implementation blindly copies
 over values from the raw object via `Object.assign` so subclasses should
 explictly process any propertyies that need special treatment.
 
 Also takes are of validation and "upgrading" in case the raw object has an old
-version. Use the protected [\_fromRaw](org.ActiveOrgMember.md#_fromraw) method
+version. Use the protected [\_fromRaw](../org.ActiveOrgMember#_fromraw) method
 to implement subclass-specific behavior.
 
 #### Parameters
@@ -382,7 +382,7 @@ to implement subclass-specific behavior.
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[fromRaw](../classes/org.OrgMember.md#fromraw)
+[OrgMember](../../classes/org.OrgMember).[fromRaw](../classes/org.OrgMember#fromraw)
 
 #### Defined in
 
@@ -402,7 +402,7 @@ Returns a serialization of the object in form of a byte array
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[toBytes](../classes/org.OrgMember.md#tobytes)
+[OrgMember](../../classes/org.OrgMember).[toBytes](../classes/org.OrgMember#tobytes)
 
 #### Defined in
 
@@ -422,7 +422,7 @@ Returns a JSON serialization of the object
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[toJSON](../classes/org.OrgMember.md#tojson)
+[OrgMember](../../classes/org.OrgMember).[toJSON](../classes/org.OrgMember#tojson)
 
 #### Defined in
 
@@ -436,7 +436,7 @@ Returns a JSON serialization of the object
 
 Creates a raw javascript object representation of the class, which can be used
 for storage or data transmission. Also handles "downgrading" to previous
-versions. Use [\_toRaw](org.ActiveOrgMember.md#_toraw) for subclass-specific
+versions. Use [\_toRaw](../org.ActiveOrgMember#_toraw) for subclass-specific
 behavior.
 
 #### Parameters
@@ -451,7 +451,7 @@ behavior.
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[toRaw](../classes/org.OrgMember.md#toraw)
+[OrgMember](../../classes/org.OrgMember).[toRaw](../classes/org.OrgMember#toraw)
 
 #### Defined in
 
@@ -473,7 +473,7 @@ method based on their class structure.
 
 #### Inherited from
 
-[OrgMember](../../classes/org.OrgMember).[validate](../classes/org.OrgMember.md#validate)
+[OrgMember](../../classes/org.OrgMember).[validate](../classes/org.OrgMember#validate)
 
 #### Defined in
 

@@ -12,7 +12,7 @@ A message to be sent to a user
 
 | Name | Type                                                         |
 | :--- | :----------------------------------------------------------- |
-| `T`  | extends [`MessageData`](../modules/messenger.md#messagedata) |
+| `T`  | extends [`MessageData`](../modules/messenger#messagedata) |
 
 ## Hierarchy
 
@@ -38,7 +38,7 @@ A message to be sent to a user
 
 | Name | Type                                                         |
 | :--- | :----------------------------------------------------------- |
-| `T`  | extends [`MessageData`](../modules/messenger.md#messagedata) |
+| `T`  | extends [`MessageData`](../modules/messenger#messagedata) |
 
 #### Parameters
 

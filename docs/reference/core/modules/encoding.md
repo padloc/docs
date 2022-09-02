@@ -16,19 +16,19 @@ slug: "encoding"
 
 ### base32ToBytes
 
-Re-exports [base32ToBytes](base32.md#base32tobytes)
+Re-exports [base32ToBytes](base32#base32tobytes)
 
 ---
 
 ### bytesToBase32
 
-Re-exports [bytesToBase32](base32.md#bytestobase32)
+Re-exports [bytesToBase32](base32#bytestobase32)
 
 ---
 
 ### isBase64
 
-Re-exports [isBase64](base64.md#isbase64)
+Re-exports [isBase64](base64#isbase64)
 
 ## Type Aliases
 
@@ -175,7 +175,7 @@ Decorator for defining request handler methods
 
 | Name          | Type                                                             |
 | :------------ | :--------------------------------------------------------------- |
-| `cls`         | [`SerializableConstructor`](encoding.md#serializableconstructor) |
+| `cls`         | [`SerializableConstructor`](../encoding#serializableconstructor) |
 | `toProperty?` | `string`                                                         |
 
 #### Returns

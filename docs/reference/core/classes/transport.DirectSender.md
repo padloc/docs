@@ -49,7 +49,7 @@ same process
 
 #### Implementation of
 
-[Sender](../../interfaces/transport.Sender).[send](../interfaces/transport.Sender.md#send)
+[Sender](../../interfaces/transport.Sender).[send](../interfaces/transport.Sender#send)
 
 #### Defined in
 

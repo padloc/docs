@@ -9,8 +9,8 @@ slug: "app.App"
 The `App` class is _the_ user-facing top level component encapsulating all
 functionality of the Padloc client app. It is responsible for managing state,
 client-side persistence and synchronization with the [Server](../server.Server)
-and exposes methods for manipulating a users [Account](../account.Account.md),
-[Org](org.Org)anizations and [Vault](../vault.Vault)s.
+and exposes methods for manipulating a users [Account](../account.Account),
+[Org](../org.Org)anizations and [Vault](../vault.Vault)s.
 
 [App](../app.App) is completely platform-agnostic and can be used in any
 environment capable of running JavaScript. It does however rely on
@@ -43,12 +43,12 @@ Persistent storage is provided by an implementation of the
 
 ### Data Transport
 
-The [Sender](../../interfaces/transport.Sender.md) interface handles
-communication with the [Server](server.Server) instance through a RPC
-[Request](../transport.Request.md)-[Response](transport.Response) cycle. The
+The [Sender](../../interfaces/transport.Sender) interface handles
+communication with the [Server](../server.Server) instance through a RPC
+[Request](../transport.Request)-[Response](../transport.Response) cycle. The
 implementation provided should match the
-[Receiver](../../interfaces/transport.Receiver.md) implementation used in the
-[Server](server.Server) instance.
+[Receiver](../../interfaces/transport.Receiver) implementation used in the
+[Server](../server.Server) instance.
 
 ### Initialization Example
 
@@ -174,7 +174,7 @@ Promise that is resolved when the app has been fully loaded
 
 ▸ (...`args`): `void`
 
-Notifies all subscribers of a [state](app.App.md#state) change
+Notifies all subscribers of a [state](../app.App#state) change
 
 ##### Parameters
 
@@ -234,12 +234,12 @@ Current account
 
 ### auditedItems
 
-• `get` **auditedItems**(): { `item`: [`VaultItem`](../item.VaultItem.md) ;
-`vault`: [`Vault`](vault.Vault) }[]
+• `get` **auditedItems**(): { `item`: [`VaultItem`](../item.VaultItem) ;
+`vault`: [`Vault`](../vault.Vault) }[]
 
 #### Returns
 
-{ `item`: [`VaultItem`](../item.VaultItem.md) ; `vault`: [`Vault`](vault.Vault)
+{ `item`: [`VaultItem`](../item.VaultItem) ; `vault`: [`Vault`](../vault.Vault)
 }[]
 
 #### Defined in
@@ -696,7 +696,7 @@ Create a new [Invite](../invite.Invite)
 | :------------------ | :---------------------------------------------------- |
 | `__namedParameters` | [`Org`](../org.Org)                                   |
 | `emails`            | `string`[]                                            |
-| `purpose?`          | [`InvitePurpose`](../modules/invite.md#invitepurpose) |
+| `purpose?`          | [`InvitePurpose`](../modules/invite#invitepurpose) |
 
 #### Returns
 
@@ -808,7 +808,7 @@ Create a new [Vault](../vault.Vault)
 | Name     | Type                                                                                         |
 | :------- | :------------------------------------------------------------------------------------------- |
 | `itemId` | `string`                                                                                     |
-| `att`    | [`Attachment`](../attachment.Attachment.md) \| [`AttachmentInfo`](attachment.AttachmentInfo) |
+| `att`    | [`Attachment`](../attachment.Attachment) \| [`AttachmentInfo`](../attachment.AttachmentInfo) |
 
 #### Returns
 
@@ -931,8 +931,8 @@ Delete [Vault](../vault.Vault)
 
 ▸ **fetchAccount**(): `Promise`<`void`\>
 
-Fetches the users [Account](../account.Account.md) info from the
-[Server](server.Server)
+Fetches the users [Account](../account.Account) info from the
+[Server](../server.Server)
 
 #### Returns
 
@@ -948,8 +948,8 @@ Fetches the users [Account](../account.Account.md) info from the
 
 ▸ **fetchAuthInfo**(): `Promise`<`void`\>
 
-Fetches the users [Account](../account.Account.md) info from the
-[Server](server.Server)
+Fetches the users [Account](../account.Account) info from the
+[Server](../server.Server)
 
 #### Returns
 
@@ -1095,10 +1095,10 @@ Get an [Invite](../invite.Invite) based on the organization id and invite id.
 
 ### getItem
 
-▸ **getItem**(`id`): `null` \| { `item`: [`VaultItem`](../item.VaultItem.md) ;
-`vault`: [`Vault`](vault.Vault) }
+▸ **getItem**(`id`): `null` \| { `item`: [`VaultItem`](../item.VaultItem) ;
+`vault`: [`Vault`](../vault.Vault) }
 
-Get the [VaultItem](../item.VaultItem.md) and [Vault](vault.Vault) for the given
+Get the [VaultItem](../item.VaultItem) and [Vault](../vault.Vault) for the given
 item `id`
 
 #### Parameters
@@ -1109,8 +1109,8 @@ item `id`
 
 #### Returns
 
-`null` \| { `item`: [`VaultItem`](../item.VaultItem.md) ; `vault`:
-[`Vault`](vault.Vault) }
+`null` \| { `item`: [`VaultItem`](../item.VaultItem) ; `vault`:
+[`Vault`](../vault.Vault) }
 
 #### Defined in
 
@@ -1120,8 +1120,8 @@ item `id`
 
 ### getItemsForHost
 
-▸ **getItemsForHost**(`host`): { `item`: [`VaultItem`](../item.VaultItem.md) ;
-`vault`: [`Vault`](vault.Vault) }[]
+▸ **getItemsForHost**(`host`): { `item`: [`VaultItem`](../item.VaultItem) ;
+`vault`: [`Vault`](../vault.Vault) }[]
 
 #### Parameters
 
@@ -1131,7 +1131,7 @@ item `id`
 
 #### Returns
 
-{ `item`: [`VaultItem`](../item.VaultItem.md) ; `vault`: [`Vault`](vault.Vault)
+{ `item`: [`VaultItem`](../item.VaultItem) ; `vault`: [`Vault`](../vault.Vault)
 }[]
 
 #### Defined in
@@ -1142,8 +1142,8 @@ item `id`
 
 ### getItemsForUrl
 
-▸ **getItemsForUrl**(`url`): { `item`: [`VaultItem`](../item.VaultItem.md) ;
-`vault`: [`Vault`](vault.Vault) }[]
+▸ **getItemsForUrl**(`url`): { `item`: [`VaultItem`](../item.VaultItem) ;
+`vault`: [`Vault`](../vault.Vault) }[]
 
 #### Parameters
 
@@ -1153,7 +1153,7 @@ item `id`
 
 #### Returns
 
-{ `item`: [`VaultItem`](../item.VaultItem.md) ; `vault`: [`Vault`](vault.Vault)
+{ `item`: [`VaultItem`](../item.VaultItem) ; `vault`: [`Vault`](../vault.Vault)
 }[]
 
 #### Defined in
@@ -1347,9 +1347,9 @@ Locks the app and wipes all sensitive information from memory.
 ▸ **login**(`email`, `password`, `verify?`, `addTrustedDevice?`):
 `Promise`<`void`\>
 
-Log in user, creating a new [Session](../session.Session.md), loading
-[Account](account.Account) info and fetching all of the users
-[Org](../org.Org.md)anizations and [Vault](vault.Vault)s.
+Log in user, creating a new [Session](../session.Session), loading
+[Account](../account.Account) info and fetching all of the users
+[Org](../org.Org)anizations and [Vault](../vault.Vault)s.
 
 #### Parameters
 
@@ -1656,7 +1656,7 @@ Update application settings
 
 ▸ **setState**(`state`): `void`
 
-Updates the app [state](app.App.md#state)
+Updates the app [state](../app.App#state)
 
 #### Parameters
 
@@ -1729,7 +1729,7 @@ Creates a new Padloc [Account](../account.Account) and signs in the user.
 
 ▸ **subscribe**(`fn`): () => `void`
 
-Notifies of changes to the app [state](app.App.md#state) via the provided
+Notifies of changes to the app [state](../app.App#state) via the provided
 function
 
 #### Parameters
@@ -1925,7 +1925,7 @@ Unlocks the current [Account](../account.Account) and all available [[Vaults]].
 ▸ **unsubscribe**(`fn`): `void`
 
 Unsubscribes a function previously subscribed through
-[subscribe](app.App.md#subscribe).
+[subscribe](../app.App#subscribe).
 
 #### Parameters
 
@@ -2049,7 +2049,7 @@ attachments
 ▸ **updateMember**(`org`, `__namedParameters`, `__namedParameters`):
 `Promise`<[`OrgMember`](../org.OrgMember)\>
 
-Update a members assigned [Vault](../vault.Vault.md)s, [Group](org.Group.md)s
+Update a members assigned [Vault](../vault.Vault)s, [Group](../org.Group)s
 and [OrgRole](../enums/org.OrgRole).
 
 #### Parameters
