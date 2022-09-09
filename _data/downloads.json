@@ -3,98 +3,98 @@
         "title": "Padloc for Mac",
         "type": "desktop",
         "icon": "apple",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_macos_tauri_x64.dmg",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_macos_tauri_x64.dmg",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Mac (Electron)",
         "type": "desktop",
         "icon": "apple",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_macos_electron_x64.dmg",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_macos_electron_x64.dmg",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Mac (M1/M2, Electron)",
         "type": "desktop",
         "icon": "apple",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_macos_electron_arm64.dmg",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_macos_electron_arm64.dmg",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Windows",
         "type": "desktop",
         "icon": "windows",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_windows_tauri_x64.msi",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_windows_tauri_x64.msi",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Windows (Electron)",
         "type": "desktop",
         "icon": "windows",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_windows_electron_x64.exe",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_windows_electron_x64.exe",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Linux (amd64, AppImage)",
         "type": "desktop",
         "icon": "linux",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_linux_tauri_amd64.AppImage",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_linux_tauri_amd64.AppImage",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Linux (amd64, Deb Package)",
         "type": "desktop",
         "icon": "linux",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_linux_tauri_amd64.deb",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_linux_tauri_amd64.deb",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Linux (x86_64, Electron, AppImage)",
         "type": "desktop",
         "icon": "linux",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_linux_electron_x86_64.AppImage",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_linux_electron_x86_64.AppImage",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Linux (amd64, Electron, Snap)",
         "type": "desktop",
         "icon": "linux",
         "url": "https://snapcraft.io/padloc",
-        "version": "4.0.2"
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Linux (x86_64, Electron, Flatpack)",
         "type": "desktop",
         "icon": "linux",
-        "url": "https://github.com/padloc/padloc/releases/download/v4.0.2/padloc_4.0.2_linux_electron_x86_64.flatpak",
-        "version": "4.0.2"
+        "url": "https://github.com/padloc/padloc/releases/download/v4.1.0/padloc_4.1.0_linux_electron_x86_64.flatpak",
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for iOS",
         "type": "mobile",
         "icon": "apple",
         "url": "https://itunes.apple.com/app/id1478877043",
-        "version": "4.0.2"
+        "version": "4.1.0"
     },
     {
         "title": "Padloc for Android",
         "type": "mobile",
         "icon": "android",
         "url": "https://play.google.com/store/apps/details?id=app.padloc",
-        "version": "4.0.2"
+        "version": "4.1.0"
     },
     {
         "title": "Google Chrome",
         "type": "extension",
         "icon": "chrome",
         "url": "https://chrome.google.com/webstore/detail/padloc/bjpblhcipjjiobljnniifeoaapgdflnc",
-        "version": "4.0.2"
+        "version": "4.1.0"
     },
     {
         "title": "Firefox",
         "type": "extension",
         "icon": "firefox",
         "url": "https://addons.mozilla.org/en-US/firefox/addon/padloc/",
-        "version": "4.0.2"
+        "version": "4.1.0"
     }
 ]
