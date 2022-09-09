@@ -30,7 +30,7 @@ because someone on your shared vault is using a Padloc 3 app version, and you
 can [temporarily look at legacy v3 web app](https://v3.padloc.app) to retrieve
 the data (that is a backup before the upgrade, and is not synchronized).
 
-Please make sure everyone is only using Padloc 4 and if there's​​ any data still
+Please make sure everyone is only using Padloc 4 and if there's any data still
 missing after that, you should be able to export the missing vaults from Padloc
 3 into Padloc 4.
 

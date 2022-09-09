@@ -241,8 +241,8 @@ typing. Hit enter or click on one of the suggested tags to add it.
 
 You can add as many tags to an item as you want. Once a tag has been added to
 any item, it will show up in the menu under "Tags". For more info on how to
-filter items by tags an other criteria, check out the [Searching &
-Filtering]({% relref "search" %}) section of the manual.
+filter items by tags an other criteria, check out the
+[Searching & Filtering](../search) section of the manual.
 
 ## Favorites
 
@@ -253,6 +253,59 @@ show up under **Favorites** in the main menu and will be highlighted in the list
 view. To remove an item from your favorites, simply click the
 <span class="button"><i class="star"></i></span> button again.
 
+## Expiration Period
+
+Many services and companies require a password to be changed in regular
+intervals. But even if it's not a requirement, rotating your passwords regularly
+is generally not a bad idea! By adding an **expiration period** to your vault
+item, you can let Padloc remind you when it's time to update it!
+
+To **add an expiration period**, simply click
+<span class="button"><i class="plus"></i> Add Expiration</span> inside the
+section titled <strong><i class="hourglass-clock"></i> Expiration</strong>. You
+can then enter the number of days after which the item should expire. Click
+<span class="highlighted button">Save</span> to complete the process.
+
+Once you've added an expiration period, Padloc will monitor the number of days
+since the item has been updated. If the defined number of days is exceeded, your
+item will show up in the Security Report under "Expired Items" until you update
+it or remove the expiration period.
+
+**Removing an expiration period** is as simple as adding one, simply enter
+[edit mode](#editing-vault-items) and then click
+<span class="button"><i class="circle-minus"></i> Remove Expiration</span>
+inside the section titled <strong><i class="hourglass-clock"></i>
+Expiration</strong>. Click <span class="highlighted button">Save</span> to
+complete the process.
+
+## Item History
+
+Whenever you update a vault item, Padloc will automatically keep a record of the
+previous version for you. This can be a life saver in some situations, like when
+you've accidentally edited the wrong item, or when you've already updated a
+password in Padloc and then the website asks your for the old password before
+entering the new one 😅.
+
+Padloc's **vault item history** feature allows you to view those older versions
+of your item, and even allows you to restore your vault item to that version!
+
+You can find a list of history entries under the section titled
+**<i class="rectangle-history"></i> History**. To display a history entry,
+simply select it by clicking on it. This will bring up a dialog where you can
+see the items contents as they were at the indicated time.
+
+> <i class="info-circle bold"></i> Padloc stores a **maximum of 10 history
+> entries** for each item. Once that number is reached, older history entries
+> will be discarded as new ones are created.
+
+To **restore a vault item to a specific version**, simply select it from the
+list and click <span class="highlighted button">Restore</span>.
+
+<figure>
+    <img src="item_history_1_desktop.png" alt="Screenshot of item history feature." />
+    <figcaption>With the item history feature, you can view and restore previous versions of a vault item.</figcaption>
+</figure>
+
 ## Attachments
 
 Fields allow you store all kinds of text-based information within your vault
@@ -261,8 +314,9 @@ information is stored within **pdf documents**, **spreadsheets**, **photos** and
 all kinds of other files. Attachments allow you to securely store those
 documents alongside your vault items.
 
-> <i class="info-circle"></i> Adding Attachments is one of the advanced features
-> only available in the **Premium**, **Family**, **Team** or **Business** plans.
+> <i class="info-circle bold"></i> Adding Attachments is one of the advanced
+> features only available in the **Premium**, **Family**, **Team** or
+> **Business** plans.
 
 To attach a file to a vault item, simply click the area below
 <i class="paperclip"></i> **Attachments** and the select the file you which to
@@ -270,9 +324,9 @@ attach to the item. Once you've picked the file, you'll be take to the upload
 dialog where you can change the attachment name. Click
 <span class="highlighted button">Upload</span> to complete the process.
 
-> <i class="info-circle"></i> You can store any kind of file within Padloc as
-> long as it is within the **5 MB** size limit and you can add as many as many
-> attachments as you want!
+> <i class="info-circle bold"></i> You can store any kind of file within Padloc
+> as long as it is within the **5 MB** size limit and you can add as many as
+> many attachments as you want!
 
 <figure>
     <img src="attachments_1_desktop.png" >
