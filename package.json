@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "build": "npx @11ty/eleventy",
-        "start": "npx @11ty/eleventy --serve --port=9090"
+        "start": "npx @11ty/eleventy --serve --port=9090",
+        "update-downloads-urls": "node _lib/update-downloads-urls.js $1"
     },
     "author": "",
     "license": "AGPLv3",
