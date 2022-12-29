@@ -10,5 +10,7 @@ apps, so you don't even have to trust us!
 You can see
 [some up-to-date guides using Docker here](https://github.com/padloc/padloc/tree/main/docs/examples/hosting/docker).
 
+And if you want to build your own apps, you can see [some up-to-date guides on how to do that here](https://github.com/padloc/padloc/tree/main/docs/examples/hosting/app).
+
 If you have any questions, please don't hesitate to contact us at
 [support@padloc.app](mailto:support@padloc.app)!
