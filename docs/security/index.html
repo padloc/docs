@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Security Whitepaper</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Docs and Resources for the Padloc password manager." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img alt="Padloc Logo" src=/assets/img/logo-light.svg style=height:2.5em />
+        <span class="small subtle semibold">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="horizontally-margined search"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            Reference
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=server></i>
+        <span>
+            Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/apps/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=laptop-mobile></i>
+        <span>
+            Web & Desktop & Mobile Apps
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/development/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=person-digging></i>
+        <span>
+            Development
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/security/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=lock></i>
+        <span>
+            Security Whitepaper
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#security-principles class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Security Principles</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#simplicity class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Simplicity</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#transparency class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Transparency</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#no-trust-required class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> No Trust Required</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#encryption class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Encryption</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#simple-symmetric-encryption class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Simple Symmetric Encryption</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#encryption-1 class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Encryption</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#decryption class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Decryption</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+        
+<li>
+    <a href=#password-based-encryption class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Password-Based Encryption</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#encryption-2 class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Encryption</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#decryption-1 class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Decryption</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+        
+<li>
+    <a href=#shared-key-encryption class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Shared-Key Encryption</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#encryption-3 class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Encryption</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#decryption-2 class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Decryption</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#client-server-architecture-and-the-zero-trust-principle class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Client-Server Architecture And The Zero-Trust Principle</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#the-account-object-and-master-password class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> The Account Object And Master Password</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#vaults class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Vaults</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#organizations-and-shared-vaults class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Organizations And Shared Vaults</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#vault-access-management class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Vault Access Management</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#metadata-and-cryptographic-keys class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Metadata And Cryptographic Keys</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#public-key-exchange-and-verification class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Public Key Exchange And Verification</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#trustless-server-mediated-key-exchange class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Trustless Server-Mediated Key Exchange</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#adding-members class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Adding Members</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#verifying-members class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Verifying Members</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#organization-roles-and-privileges class="unstyled block hover-bg padded rounded" data-level=4>
+        <span> Organization Roles and Privileges</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#authentication-and-data-transfer class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Authentication And Data Transfer</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#user-signup class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> User Signup</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#session-negotiation class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Session Negotiation</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#request-authentication class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Request Authentication</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#notes class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Notes</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#possible-attack-vectors-and-mitigations class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Possible Attack Vectors and Mitigations</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#man-in-the-middle-attacks class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Man-In-The-Middle Attacks</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#phishing class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Phishing</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#guessing-master-passwords class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Guessing Master Passwords</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#user-enumeration class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> User Enumeration</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#password-spraying class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Password Spraying</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#denial-of-service class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Denial Of Service</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#compromised-server class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Compromised Server</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#cryptographic-algorithms-and-configurations class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Cryptographic Algorithms And Configurations</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#symmetric-encryption class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Symmetric Encryption</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#asymmetric-encryption class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Asymmetric Encryption</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#symmetric-signature-schemes class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Symmetric Signature Schemes</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#asymmetric-signature-schems class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Asymmetric Signature Schems</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#password-based-key-derivation class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Password-Based Key Derivation</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+        </ol></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/ ><i class=code></i> Technical Docs</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=lock> </i>
+                Security Whitepaper
+            </h1>
+            <p>This document provides a high level overview of the security design and
+architecture of the <strong>Padloc</strong> application.</p>
+<h2 id=security-principles tabindex=-1>Security Principles</h2>
+<h3 id=simplicity tabindex=-1>Simplicity</h3>
+<p>While the secure processing, storage and sharing of sensitive data necessarily
+involves a certain degree of complexity, Padloc tries to hide this complexity
+from the end user as much as possible. In other words, users should be able to
+use the application securely without understanding (or even being aware of) the
+underlying security principles. At the same time, the applications inner
+workings and security mechanisms should be easily verifiable by those who have
+the technical knowledge to do so, which brings us to...</p>
+<h3 id=transparency tabindex=-1>Transparency</h3>
+<p>It is a widely know fact among security experts that
+<a href=https://en.wikipedia.org/wiki/security_through_obscurity>Security through Obscurity</a>
+is not only ineffective, but can in fact be harmful if used to cover up
+otherwise sloppy security practices. We believe that full transparency is not
+only the best foundation for trust, but also allows us and other independent
+reviewers to discover and fix any potential security flaws and efficiently as
+quickly as possible.</p>
+<h3 id=no-trust-required tabindex=-1>No Trust Required</h3>
+<p>While Padlocs open source nature is helpful in uncovering unintended
+vulnerabilities in the source code, it is, by itself, insufficient for verifying
+that the code actually deployed in production is not altered in a way that may
+compromise the security of the application either intentionally or
+unintentionally. This is why we take additional steps to make sure that some
+parts of the architecture can in fact be verified in production, while others do
+not need to be verified by design (see
+<a href=#possible-attach-vectors-and-mitigations>Possible Attack-Vectors And Mitigations</a>).
+This means that unlike other products, Padloc does not require explicit trust
+between the end user and the host.</p>
+<h2 id=encryption tabindex=-1>Encryption</h2>
+<p>Robust data encryption is the foundation of Padlocs security architecture.
+Padloc utilizes three basic encryption schemes.</p>
+<h3 id=simple-symmetric-encryption tabindex=-1>Simple Symmetric Encryption</h3>
+<p>This is the most basic encryption scheme used in Padloc. Simple encryption
+employs a symmetric cipher to encrypt the provided data with a randomly
+generated key. The encrypted data, along with the encryption parameters needed
+for decryption, is stored in a container object, which can then be stored or
+transmitted securely. Padloc currently uses the AES cipher in GCM mode, but
+other options may be added in the future.</p>
+<h4 id=encryption-1 tabindex=-1>Encryption</h4>
+<ol>
+<li>Choose a random encryption key <code>k</code></li>
+<li>Choose a random initialization vector <code>iv</code> and additional data <code>a</code> (for
+authenticated encryption modes)</li>
+<li>Generate the encrypted data <code>c = AES_encrypt(k, p, iv, a)</code> from the plain
+text <code>p</code></li>
+<li>Store <code>c</code>, <code>iv</code> and <code>a</code> in the container <code>C</code></li>
+</ol>
+<pre><code>                 ┌───────────┐                 ┏━━━━━━━━━━━━━━━━┓
+   =========     │           │                 ┃Simple Container┃       ╔═══════════╗
+   == key ==─────┘           ▼                 ┃                ┃       ║ encrypted ║
+   =========            ┌─────────┐            ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃       ╚═══════════╝
+                        │ encrypt │            ┃   encryption  │┃       ┌ ─ ─ ─ ─ ─ ┐
+                  ┌────▶│  (AES)  │────────────▶│  parameters   ┃           plain
+                  │     └─────────┘            ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃       └ ─ ─ ─ ─ ─ ┘
+==============    │          │                 ┃╔══════════════╗┃       =============
+= plain text =────┘          └─────────────────▶║encrypted data║┃       = ephemeral =
+==============                                 ┃╚══════════════╝┃       =============
+                                               ┗━━━━━━━━━━━━━━━━┛
+</code></pre>
+<h4 id=decryption tabindex=-1>Decryption</h4>
+<ol>
+<li>Let <code>k</code> be the key used for encryption.</li>
+<li>Retrieve <code>iv</code>, <code>a</code> and <code>c</code> from <code>C</code></li>
+<li>Generate the plain text <code>p = AES_decrypt(k, c, iv, a)</code></li>
+</ol>
+<h3 id=password-based-encryption tabindex=-1>Password-Based Encryption</h3>
+<p>In the password-based encryption scheme (based on the
+<a href=https://tools.ietf.org/html/rfc2898#section-6.2>PBES2 standard</a>) an encryption
+key is derived from a user password using the
+<a href=https://en.wikipedia.org/wiki/PBKDF2>PBKDF2</a> key derivation function.</p>
+<h4 id=encryption-2 tabindex=-1>Encryption</h4>
+<ol>
+<li>Choose a password <code>p</code></li>
+<li>Choose an iteration count <code>i</code> and random salt <code>s</code></li>
+<li>Generate <code>k = PBDKF2(p, s, i)</code></li>
+<li>Choose a random initialization vector <code>iv</code> and additional data <code>a</code> (for
+authenticated encryption modes)</li>
+<li>Generate the encrypted data <code>c = AES_encrypt(k, p, iv, a)</code> from the plain
+text <code>p</code></li>
+<li>Store <code>s</code>, <code>i</code>, <code>c</code>, <code>iv</code> and <code>a</code> in the container <code>C</code></li>
+</ol>
+<pre><code> ============           ┌────────┐              ┏━━━━━━━━━━━━━━━━┓
+ = password =──────────▶│ PBKDF2 │───────┐      ┃ Password-Based ┃
+ ============           └────────┘       │      ┃   Container    ┃
+                             │           │      ┃                ┃
+                             │           │      ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃
+                             ▼           │      ┃     PBKDF2    │┃
+                         =========       └──────▶│  parameters   ┃
+                         == key ==              ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃
+                         =========              ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃
+                             │                  ┃   encryption  │┃
+                             ▼           ┌──────▶│  parameters   ┃
+                        ┌─────────┐      │      ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃
+==============          │ encrypt │      │      ┃╔══════════════╗┃
+= plain text =─────────▶│  (AES)  │──────┘┌─────▶║encrypted data║┃
+==============          └─────────┘       │     ┃╚══════════════╝┃
+                             │            │     ┗━━━━━━━━━━━━━━━━┛
+                             │            │
+                             └────────────┘
+</code></pre>
+<h4 id=decryption-1 tabindex=-1>Decryption</h4>
+<ol>
+<li>Let <code>p</code> be the password used for encryption</li>
+<li>Retrieve <code>s</code>, <code>i</code> from <code>C</code></li>
+<li>Generate <code>k = PBDKF2(p, s, i)</code></li>
+<li>Retrieve <code>iv</code>, <code>a</code> and <code>c</code> from <code>C</code></li>
+<li>Generate the plain text <code>p = AES_decrypt(k, c, iv, a)</code></li>
+</ol>
+<h3 id=shared-key-encryption tabindex=-1>Shared-Key Encryption</h3>
+<p>Shared-key encryption is used to securely share sensitive data between a number
+of independent accessors without the need for them to share a common password.
+This encryption scheme is loosely based on the
+<a href=https://tools.ietf.org/html/rfc7516>JSON Web Encryption</a> specification where a
+shared symmetric encryption key is individually encrypted with each accessors
+public key and stored alongside the encrypted data. Accessors can then access
+the data by using their private key to decrypt the AES encryption key which is
+in turn used to decrypt the original data.</p>
+<h4 id=encryption-3 tabindex=-1>Encryption</h4>
+<ol>
+<li>Generate a random encryption key <code>k</code></li>
+<li>Choose a random initialization vector <code>iv</code> and additional data <code>a</code> (for
+authenticated encryption modes)</li>
+<li>Generate the encrypted data <code>c = AES_encrypt(k, p, iv, a)</code> from the plain
+text <code>p</code></li>
+<li>Let <code>[A_1, A_2, ..., A_n], A_n = { id_n, pub_n }</code> be a number of desired
+accessors where <code>pub_n</code> is the accessors public key and <code>id_n</code> a unique
+identifier.</li>
+<li>For each accessor, generate <code>K_n = RSA_encrypt(pub_n, k)</code></li>
+<li>Store <code>c</code>, <code>iv</code>, <code>a</code>, and <code>K = [{ id_1, K_1}, ..., {id_n, K_n}]</code> in container
+<code>C</code></li>
+</ol>
+<pre><code>┏━━━━━━━━━━━━━━┓                ┌───────────────────────────────────────────────────────────┐
+┃  Accessor A  ┃                │                                                           │
+┃              ┃                ▼                ┏━━━━━━━━━━━━━━━━┓                         │
+┃┌ ─ ─ ─ ─ ─ ─ ┃           ┌─────────┐           ┃Shared Container┃   ==============        │
+┃  public key │─────┐      │ encrypt │           ┃                ┃   = plain text =        │
+┃└ ─ ─ ─ ─ ─ ─ ┃    └─────▶│  (RSA)  │─────┐     ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃   ==============        │
+┃╔════════════╗┃           └─────────┘     │     ┃   encrypted   │┃          │              │
+┃║private key ║┃                           └─────▶│   key (A)     ┃          ▼              │
+┃╚════════════╝┃                                 ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃     ┌─────────┐         │
+┗━━━━━━━━━━━━━━┛                                 ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃     │ encrypt │     =========
+                                                 ┃   encrypted   │┃ ┌───│  (AES)  │◀────== key ==
+                                           ┌─────▶│   key (B)     ┃ │   └─────────┘     =========
+                                           │     ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃ │        │              │
+┏━━━━━━━━━━━━━━┓                           │     ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃ │        │              │
+┃  Accessor B  ┃                           │     ┃   encryption  │┃ │        │              │
+┃              ┃                           │     ┃│  parameters   ◀─┘        │              │
+┃┌ ─ ─ ─ ─ ─ ─ ┃           ┌─────────┐     │     ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃          │              │
+┃  public key │─────┐      │ encrypt │     │     ┃╔══════════════╗┃          │              │
+┃└ ─ ─ ─ ─ ─ ─ ┃    └─────▶│  (RSA)  │─────┘     ┃║encrypted data║◀──────────┘              │
+┃╔════════════╗┃           └─────────┘           ┃╚══════════════╝┃                         │
+┃║private key ║┃                ▲                ┗━━━━━━━━━━━━━━━━┛                         │
+┃╚════════════╝┃                │                                                           │
+┗━━━━━━━━━━━━━━┛                └───────────────────────────────────────────────────────────┘
+</code></pre>
+<h4 id=decryption-2 tabindex=-1>Decryption</h4>
+<ol>
+<li>Let <code>id_n</code>, <code>priv_n</code> be the id and private key of one of the accessors used
+during encryption.</li>
+<li>Retrieve <code>K</code> from <code>C</code>, find the encrypted key <code>K_n</code> for <code>id_n</code>.</li>
+<li>Generate <code>k = RSA_decrypt(priv_n, K_n)</code></li>
+<li>Retrieve <code>iv</code>, <code>a</code> and <code>c</code> from <code>C</code></li>
+<li>Generate the plain text <code>p = AES_decrypt(k, c, iv, a)</code></li>
+</ol>
+<pre><code>                                   ┌─────────┐
+┏━━━━━━━━━━━━━━┓                   │ decrypt │                  ┏━━━━━━━━━━━━━━━━┓
+┃  Accessor A  ┃        ┌─────────▶│  (RSA)  │◀────────┐        ┃Shared Container┃
+┃              ┃        │          └─────────┘         │        ┃                ┃
+┃┌ ─ ─ ─ ─ ─ ─ ┃        │               │              │        ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃
+┃  public key │┃        │               │              │        ┃   encrypted   │┃
+┃└ ─ ─ ─ ─ ─ ─ ┃        │    =========  │              └─────────│   key (A)     ┃
+┃╔════════════╗┃        │    == key ==◀─┘                       ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃
+┃║private key ║─────────┘    =========        ┌───────────┐     ┃┌ ─ ─ ─ ─ ─ ─ ─ ┃
+┃╚════════════╝┃                 │            │           │     ┃   encryption  │┃
+┗━━━━━━━━━━━━━━┛                 │            ▼           └──────│  parameters   ┃
+                                 │       ┌─────────┐            ┃ ─ ─ ─ ─ ─ ─ ─ ┘┃
+                                 │       │ decrypt │            ┃╔══════════════╗┃
+                                 └──────▶│  (AES)  │◀────────────║encrypted data║┃
+                                         └─────────┘            ┃╚══════════════╝┃
+                                              │                 ┗━━━━━━━━━━━━━━━━┛
+                                              ▼
+                                       ==============
+                                       = plain text =
+                                       ==============
+</code></pre>
+<h2 id=client-server-architecture-and-the-zero-trust-principle tabindex=-1>Client-Server Architecture And The Zero-Trust Principle</h2>
+<p>[[TODO]]</p>
+<h2 id=the-account-object-and-master-password tabindex=-1>The Account Object And Master Password</h2>
+<p>The <strong>Account</strong> object represents an individual Padloc user and is central to
+Padlocs encryption and authentication mechanisms. Each <strong>Account</strong> holds the
+following information:</p>
+<ul>
+<li>The user's <strong>email address</strong> is not only used as a communication channel
+but, more importantly, serves as a unique, human-verifiable identifier for
+each Padloc user.</li>
+<li>A RSA <strong>private key</strong> and <strong>public key</strong> pair is used in places where a user
+needs to be granted access to data protected via the
+<a href=#shared-key-encryption>Shared-Key Encryption Scheme</a>.</li>
+<li>A HMAC key used for signing and verifing organization details (see
+<a href=#adding-members>Organizations And Shared Vaults / Adding Members</a></li>
+<li>A unique, immutable id</li>
+<li>A (display) name</li>
+</ul>
+<p>The Accounts <strong>private key</strong> and <strong>organization signing key</strong> are considered
+secret and should only ever be accessible to the Account owner themselves. They
+are therefore encrypted at rest using the
+<a href=#password-based-encryption>Password-Based Encryption Scheme</a> with the users
+<a href=#the-master-password><strong>Master Password</strong></a> serving as the secret passphrase.</p>
+<pre><code>                                 ┏━━━━━━━━━━━━━━━━━━━━━┓
+                                 ┃       Account       ┃        ╔═══════════╗
+                                 ┃                     ┃        ║ encrypted ║
+                                 ┃ ┌ ─ ┐┌ ─ ─ ┐┌ ─ ─ ┐ ┃        ╚═══════════╝
+                                 ┃  id   name   email  ┃        ┌ ─ ─ ─ ─ ─ ┐
+                                 ┃ └ ─ ┘└ ─ ─ ┘└ ─ ─ ┘ ┃            plain
+===================              ┃ ┌ ─ ─ ─ ─ ─ ─ ─ ─ ┐ ┃        └ ─ ─ ─ ─ ─ ┘
+= Master Password =───────┐      ┃     public key      ┃        =============
+===================       │      ┃ └ ─ ─ ─ ─ ─ ─ ─ ─ ┘ ┃        = ephemeral =
+                          │      ┃ ╔═════════════════╗ ┃        =============
+                      decrypts   ┃ ║ ┌─────────────┐ ║ ┃
+                          │      ┃ ║ │ private key │ ║ ┃
+                          │      ┃ ║ └─────────────┘ ║ ┃
+                          └───────▶║ ┌─────────────┐ ║ ┃
+                                 ┃ ║ │ signing key │ ║ ┃
+                                 ┃ ║ └─────────────┘ ║ ┃
+                                 ┃ ╚═════════════════╝ ┃
+                                 ┗━━━━━━━━━━━━━━━━━━━━━┛
+</code></pre>
+<h2 id=vaults tabindex=-1>Vaults</h2>
+<p>A password managers core functionality is the secure storage of sensitive data
+like passwords, credit card details and or any other kind or data a user may
+want to protect from prying eyes. In Padloc, this data is stored within
+so-called <strong>Vaults</strong>.</p>
+<p>A Vault is basically a container object that employs the
+<a href=#shared-key-encryption>Shared-Key Encryption Scheme</a> to encrypt and store
+sensitive data in a way that makes it accessible to only a number of specific
+users, represented by their corresponding <strong>Account</strong> objects.</p>
+<pre><code>┏━━━━━━━━━━━━━━━┓                 ┏━━━━━━━━━━━━━━┓
+┃    Account    ┃                 ┃    Vault     ┃
+┃               ┃                 ┃              ┃
+┃ ┌ ─ ─ ─ ─ ─ ┐ ┃                 ┃ ╔══════════╗ ┃
+┃  public key  ──────encrypts──────▶║vault data║ ┃
+┃ └ ─ ─ ─ ─ ─ ┘ ┃                 ┃ ╚══════════╝ ┃
+┃ ╔═══════════╗ ┃                 ┃       ▲      ┃
+┃ ║private key║──────decrypts─────────────┘      ┃
+┃ ╚═══════════╝ ┃                 ┃              ┃
+┗━━━━━━━━━━━━━━━┛                 ┗━━━━━━━━━━━━━━┛
+</code></pre>
+<p>Each Padloc user owns a private vault to which only they have access. In
+addition to this, <strong>Shared Vaults</strong> can be used to share sensitive data between
+multiple members within an <strong>Organization</strong>. For more details on this, see the
+<a href=#organizations-and-shared-vaults>Organizations And Shared Vaults</a> section.</p>
+<h2 id=organizations-and-shared-vaults tabindex=-1>Organizations And Shared Vaults</h2>
+<p><strong>Shared Vaults</strong> can be used to securely share sensitive data between multiple
+users. These vaults are provisioned and managed as part of <strong>Organizations</strong>,
+which deal with permission management as well as public key and identity
+verification.</p>
+<h3 id=vault-access-management tabindex=-1>Vault Access Management</h3>
+<p>The previous sections describe how Vault data can be shared securely between
+multiple known accounts. An additional challenge lies in deciding who shall have
+access to a given vault as well as obtaining and verifying each accessors public
+key before encryption.</p>
+<p>The organisation structure depicted below determines which member shall have
+access to a given vault. Members can either be assigned to a <strong>Vault</strong> directly
+or indirectly via a <strong>Group</strong>.</p>
+<pre><code>┌──────────────┐            ┌──────────────┐            ┌──────────────┐
+│              │           ╱│              │╲           │              │
+│   Account    │┼─────────○─│  Membership  │──┼────────┼│ Organization │
+│              │           ╲│              │╱           │              │
+└──────────────┘            └───┬──────┬───┘            └──────────────┘
+                               ╲│╱    ╲│╱                       ┼
+                                ○      ○                        ○
+                                │      │                       ╱│╲
+                                │      │                ┌──────────────┐
+                                │      │               ╱│              │
+                                │      └──────────────○─│    Group     │
+                                │                      ╲│              │
+                                ○                       └──────────────┘
+                               ╱│╲                             ╲│╱
+                        ┌──────────────┐                        ○
+                        │              │╲                       │
+                        │ Shared Vault │─○──────────────────────┘
+                        │              │╱
+                        └──────────────┘
+</code></pre>
+<p>Every time a <strong>Vault</strong> participant encrypts the vault data, they perform the
+following steps:</p>
+<ol>
+<li>Determine accessors based on organization structure.</li>
+<li>Verify each accessor's identity and public key (see
+<a href=#verifying-members>Verifying Members</a>)</li>
+<li>Encrypt the data using the steps outlined in
+<a href=#shared-key-encryption>Shared-Key Encryption</a></li>
+</ol>
+<p>Each participating member can now access the Vault data using their own private
+key.</p>
+<h3 id=metadata-and-cryptographic-keys tabindex=-1>Metadata And Cryptographic Keys</h3>
+<p>In addition to Group and Member data, <strong>Organizations</strong> also hold the following
+information:</p>
+<ul>
+<li>The organization <strong>id</strong> is a random, unique identier assigned to it by the
+server</li>
+<li>The organization <strong>name</strong> is chosen by the organization owner and is mainly
+used for display purposes</li>
+<li>A RSA <strong>public key</strong> and <strong>private key</strong> pair that is used to sign and
+verify public keys and identifying information of its members. See
+<a href=#adding-members>Signing Member Information</a> and
+<a href=#verifying-members>Verifying Members</a> for details.</li>
+<li>An AES key (in the following called "<strong>invites key</strong>") used to encrypt the
+invite verification code during
+<a href=#trustless-server-mediated-key-exchange>key exchange</a></li>
+</ul>
+<p>The organization's <strong>private key</strong> and <strong>invites key</strong> are considered secret and
+need therefore be encrypted at rest. For this, the organization acts as a
+<a href=#shared-key-encryption>Shared Crypto Container</a> with the
+<a href=#owner>organization owners</a> acting as accessors.</p>
+<pre><code>┏━━━━━━━━━━━━━━━┓                ┏━━━━━━━━━━━━━━━━━━━━┓
+┃ Organization  ┃                ┃    Organization    ┃
+┃     Owner     ┃                ┃                    ┃
+┃               ┃                ┃  ╔═══════════════╗ ┃
+┃ ┌ ─ ─ ─ ─ ─ ┐ ┃                ┃  ║┌─────────────┐║ ┃
+┃  public key  ──────encrypts──────▶║│ private key │║ ┃
+┃ └ ─ ─ ─ ─ ─ ┘ ┃                ┃  ║└─────────────┘║ ┃
+┃ ╔═══════════╗ ┃                ┃  ║┌─────────────┐║ ┃
+┃ ║private key║──────decrypts──────▶║│ invites key │║ ┃
+┃ ╚═══════════╝ ┃                ┃  ║└─────────────┘║ ┃
+┗━━━━━━━━━━━━━━━┛                ┃  ╚═══════════════╝ ┃
+                                 ┗━━━━━━━━━━━━━━━━━━━━┛
+</code></pre>
+<h3 id=public-key-exchange-and-verification tabindex=-1>Public Key Exchange And Verification</h3>
+<p>As with all cryptographic schemes that involve public-key encryption, a major
+challenge when dealing with shared vaults is securely exchanging and verifying
+the public keys and associated identities of all involved parties. This
+undertaking is complicated further by the fact that, although all communication
+and data transfer is generally mediated by a central server, Padlocs
+<a href=#no-trust-required>Zero-Trust Principle</a> requires that this server (or any
+party potentially listening in on the connection) is never in the position to
+directly access any sensitive data or trick a participant into granting them
+access either directly or indirectly.</p>
+<p>Instead of exchanging keys between all organization members directly, Padloc
+uses a simple verification chain where the public keys and identfying
+information of all members are signed and verified with a dedicated RSA key pair
+owned by the organization (see
+<a href=#metadata-and-cryptographic-keys>Metadata and Cryptographic Keys</a>). The
+corresponding public key must in turn be signed and verified by each member
+using their individual, dedicated HMAC key.</p>
+<h4 id=trustless-server-mediated-key-exchange tabindex=-1>Trustless Server-Mediated Key Exchange</h4>
+<p>Before a new member can be added to an Organization, a key exchange has to take
+place between the organization (represented by the organization owner) and the
+new member. The key exchange is performed as follows:</p>
+<ol>
+<li>The <strong>organization owner <code>O</code></strong> chooses a <strong>random passphrase <code>p</code></strong>, a
+<strong>random salt <code>s</code></strong> and an <strong>iteration count <code>i</code></strong> as well as a random,
+unique exchange id.</li>
+<li><strong><code>p</code></strong>, <strong><code>s</code></strong> and <strong><code>i</code></strong> are used to generate the <strong>HMAC key
+<code>x = PBKDF2(p, s, i)</code></strong>.</li>
+<li><strong><code>O</code></strong> signs the <strong>organizations public key <code>pub_o</code></strong> with <strong><code>x</code></strong>:
+<strong><code>sig_o = HMAC(x, pub_o)</code></strong></li>
+<li><strong><code>O</code></strong> sends <strong><code>s</code></strong>, <strong><code>i</code></strong>, <strong><code>pub_o</code></strong> and <strong><code>sig_o</code></strong> to the server
+<strong><code>S</code></strong>, along with the exchange id and the recipients email address.</li>
+<li>The server stores the received values and sends the invitation link (which
+includes the exchange id) to <strong><code>I</code></strong> via email.</li>
+<li><strong><code>I</code></strong> uses the exchange id to request <strong><code>s</code></strong>, <strong><code>i</code></strong>, <strong><code>pub_o</code></strong> and
+<strong><code>sig_o</code></strong> from <strong><code>S</code></strong>.</li>
+<li><strong><code>I</code></strong> requests <strong><code>p</code></strong> from <strong><code>O</code></strong> via a separate (and optimally secure)
+channel of their choice. This can be in person, via phone or any by other
+means.</li>
+<li><strong><code>I</code></strong> generates <strong><code>x = PBKDF2(p, s, i)</code></strong> using the obtained information.</li>
+<li><strong><code>I</code></strong> verifies <strong><code>pub_o</code></strong> using <strong><code>x</code></strong> and <strong><code>sig_o</code></strong>.</li>
+<li>Upon successful verification, <strong><code>I</code></strong> signs their own <strong>public key <code>pub_i</code></strong>
+using <strong><code>x</code></strong>: <strong><code>sig_i = HMAC(x, pub_i)</code></strong></li>
+<li><strong><code>I</code></strong> sends <strong><code>pub_i</code></strong> and <strong><code>sig_i</code></strong> to <strong><code>S</code></strong>, which forwards them to
+<strong><code>O</code></strong>.</li>
+<li><strong><code>O</code></strong> verifies <strong><code>pub_i</code></strong> using <strong><code>sig_i</code></strong> and <strong><code>x</code></strong>.</li>
+</ol>
+<pre><code>                 ┌─────────────┐      ┌──────────┐      ┌───────────┐
+                 │Org Owner (O)│      │Server (S)│      │Invitee (I)│
+                 └──────┬──────┘      └────┬─────┘      └─────┬─────┘
+┌─────────────────────┐ │                  │                  │
+│p = [passphrase]     │ │ s, i, id, email, │                  │
+│s = [random salt]    │ │   pub_o, sig_o   │  id (via email)  │
+│i = [iteration count]│ │─────────────────▶│─────────────────▷│
+│x = PBKDF2(p,s,i)    │ │                  │                  │
+│pub_o = [public key] │ │                  │        id        │
+│sig_o = HMAC(x,pub_o)│ │                  │◀─────────────────│
+│id = [invite id]     │ │                  │      s, i,       │
+│email = [inv. email] │ │                  │   pub_o, sig_o   │
+└─────────────────────┘ │                  │─ ─ ─ ─ ─ ─ ─ ─ ─▶│
+                        │                  │                  │
+                        │                  │   p (in person)  │ ┌─────────────────────┐
+                        │────────────────────────────────────▷│ │pub_i = [public key] │
+                        │                  │                  │ │x = PBKDF2(p,s,i)    │
+    ┌─────────────────┐ │   pub_i, sig_i   │   pub_i, sig_i   │ │x => verify sig_o    │
+    │x => verify sig_i│ │◀─────────────────│◀─────────────────│ │sig_i = HMAC(x,pub_i)│
+    └─────────────────┘ │                  │                  │ └─────────────────────┘
+                        │                  │                  │
+                        │                  │                  │
+                        │                  │                  │
+                        ▼                  ▼                  ▼
+</code></pre>
+<h5 id=notes%3A tabindex=-1>Notes:</h5>
+<ul>
+<li>
+<p>In practice, the member's account id and email and the organization id are
+included in the respective signatures to protect these from tempering as
+well.</p>
+</li>
+<li>
+<p>Since <code>p</code> needs to be sufficiently short to be conveniently entered by hand,
+it can potentially be guessed by eavesdroppers which would allow them to
+successfully perform a man-in-the-middle attack by injecting their own
+public key. This is mitigated by using a sufficiently large iteration count
+<code>i</code> and invalidating key exchanges after a certain amount of time.</p>
+</li>
+<li>
+<p>Using a separate, direct communication channel for communicating the secret
+passphrase not only mitigates the risk of man-in-the-middle attacks but also
+means that the server <code>S</code> does not need to be explicitly trusted.
+Furthermore, the risk of phishing attacks by a third party (including a
+malicious server admin) is greatly reduced since a direct, personal
+interaction between the parties is required.</p>
+</li>
+<li>
+<p>Since some time may pass between steps <strong>1.</strong> and <strong>7.</strong>, <strong><code>p</code></strong> needs to
+be stored securely for later reference. This is done by encrypting it with a
+dedicated AES "invites key" which is only accessible to organization owners.
+(See <a href=#metadata-and-cryptographic-keys>Metadata and Cryptographic Keys</a>.</p>
+</li>
+</ul>
+<h4 id=adding-members tabindex=-1>Adding Members</h4>
+<p>Once the new member and organization have successfully exchanged public keys,
+these need to be stored in a way that allows both parties to be verify them
+later. The invitees public key (along with their identifying information) is
+signed by the organizations private key (only available to the organization
+owner) while the organizations public key is signed by the invitees own,
+dedicated HMAC key.</p>
+<pre><code>┏━━━━━━━━━━━━━━┓
+┃Member Account┃
+┃              ┃          ┌────────┐
+┃╔════════════╗┃          │  sign  │
+┃║signing key ║──────────▶│ (HMAC) │◀────┐
+┃╚════════════╝┃          └────────┘     │
+┃┌ ─ ─ ─ ─ ─ ─ ┃               │         │
+┃  public key │─────────────┐  │         │
+┃└ ─ ─ ─ ─ ─ ─ ┃            │  │         │
+┗━━━━━━━━━━━━━━┛            │  │         │
+                            │  │         │    ┏━━━━━━━━━━━━━━┓
+┏━━━━━━━━━━━━━━┓            │  │         │    ┃ Organization ┃
+┃  Membership  ┃            │  │         │    ┃              ┃
+┃              ┃            │  │         │    ┃┌ ─ ─ ─ ─ ─ ─ ┃
+┃┌ ─ ─ ─ ─ ─ ─ ┃            │  │         └─────  public key │┃
+┃ organization│┃            │  │              ┃└ ─ ─ ─ ─ ─ ─ ┃
+┃│ signature   ◀────────────│──┘              ┃╔════════════╗┃
+┃ ─ ─ ─ ─ ─ ─ ┘┃            ▼            ┌─────║private key ║┃
+┃┌ ─ ─ ─ ─ ─ ─ ┃          ┌────────┐     │    ┃╚════════════╝┃
+┃    member   │┃          │  sign  │     │    ┗━━━━━━━━━━━━━━┛
+┃│ signature   ◀──────────│ (RSA)  │◀────┘
+┃ ─ ─ ─ ─ ─ ─ ┘┃          └────────┘
+┗━━━━━━━━━━━━━━┛
+</code></pre>
+<h4 id=verifying-members tabindex=-1>Verifying Members</h4>
+<p>Using the signatures described in the previous section, an organization member
+can verify the public key of any other member as follows.</p>
+<ol>
+<li>Verify the organizations public key using the organization signature created
+with their own HMAC key</li>
+<li>Verify the other member's public key using the organization's public key.</li>
+</ol>
+<pre><code>┏━━━━━━━━━━━━━━┓                  ┏━━━━━━━━━━━━━━┓                 ┏━━━━━━━━━━━━━━┓
+┃  Account A   ┃                  ┃     Org      ┃                 ┃  Account B   ┃
+┃              ┃    ┌────────┐    ┃              ┃    ┌────────┐   ┃              ┃
+┃╔════════════╗┃    │ verify │    ┃┌ ─ ─ ─ ─ ─ ─ ┃    │ verify │   ┃┌ ─ ─ ─ ─ ─ ─ ┃
+┃║signing key ║────▶│ (HMAC) │◀────  public key │────▶│ (RSA)  │◀───  public key │┃
+┃╚════════════╝┃    └────────┘    ┃└ ─ ─ ─ ─ ─ ─ ┃    └────────┘   ┃└ ─ ─ ─ ─ ─ ─ ┃
+┗━━━━━━━━━━━━━━┛         ▲        ┃╔════════════╗┃         ▲       ┗━━━━━━━━━━━━━━┛
+                         │        ┃║private key ║┃         │       ┏━━━━━━━━━━━━━━┓
+┏━━━━━━━━━━━━━━┓         │        ┃╚════════════╝┃         │       ┃ Membership B ┃
+┃ Membership A ┃         │        ┗━━━━━━━━━━━━━━┛         │       ┃              ┃
+┃              ┃         │                                 │       ┃┌ ─ ─ ─ ─ ─ ─ ┃
+┃┌ ─ ─ ─ ─ ─ ─ ┃         │                                 │       ┃    member   │┃
+┃ organization│┃         │                                 └────────│ signature   ┃
+┃│ signature   ┣─────────┘                                         ┃ ─ ─ ─ ─ ─ ─ ┘┃
+┃ ─ ─ ─ ─ ─ ─ ┘┃                                                   ┗━━━━━━━━━━━━━━┛
+┗━━━━━━━━━━━━━━┛
+</code></pre>
+<h4 id=organization-roles-and-privileges tabindex=-1>Organization Roles and Privileges</h4>
+<p>There are three distinct organization roles: <strong>Owner</strong>, <strong>Admin</strong> and basic
+<strong>Member</strong>. Each role comes with a different set of privileges. Some privileges
+are enforced cryptographically while others are enforced solely by the server.</p>
+<h5 id=basic-member tabindex=-1>Basic Member</h5>
+<p>A basic organization member has the following privileges.</p>
+<ol>
+<li>Read the public data of other members, including id, email, public key and
+assigned vaults and groups.</li>
+<li>Read vault data of assigned vaults</li>
+<li>Update vault data of assigned vaults where write permissions have been
+granted explicitly</li>
+</ol>
+<p>All of these privileges are enforced by the server (e.g. a vaults encrypted data
+will only be provided to a member if they are assigned to that vault) while
+access to the plain text data stored in vaults is also restricted
+cryptographically through the encryption mechanism described in
+<a href=#vaults>Vaults</a>.</p>
+<h5 id=admin tabindex=-1>Admin</h5>
+<p>In addition to the privileges granted to basic members, admins also have the
+following privileges:</p>
+<ol>
+<li>Create and delete Vaults</li>
+<li>Assign vault access to groups and members directly</li>
+<li>Create, delete and manage groups</li>
+</ol>
+<h5 id=owner tabindex=-1>Owner</h5>
+<p>In addition to the privileges granted to basic members and admins, organization
+owners also have the following privileges:</p>
+<ol>
+<li>Add/remove organization members</li>
+<li>Update a members id, email, public key or role</li>
+<li>Update the organizations public/private key pair</li>
+</ol>
+<p>As described in a <a href=#adding-members>previous section</a>, adding a new member to
+the organization requires access to the organizations private key. As described
+in <a href=#metadata-and-cryptographic-keys>Metadata and Cryptographic Keys</a>, this
+access is restricted cryptographically to organization owners.</p>
+<h2 id=authentication-and-data-transfer tabindex=-1>Authentication And Data Transfer</h2>
+<p>Even though all sensitive information in <strong>padloc</strong> is end-to-end encrypted and
+theoretically secure even in case of an insecure connection or even a
+compromised server, <strong>padloc</strong> still uses a robust authentication scheme to
+limit access to user data, ensure payload integrity and enforce user
+permissions. A variation of the
+<a href=https://tools.ietf.org/html/rfc2945>Secure Remote Password</a> protocol is used
+to authenticate users and establish a secure connection between client and
+server without exposing the user's master password.</p>
+<h3 id=user-signup tabindex=-1>User Signup</h3>
+<p>Whenever a user creates a Padloc account, the following steps take place:</p>
+<ol>
+<li>Let <strong><code>u</code></strong> and <strong><code>p</code></strong> be the user's <strong>email address</strong> and <strong>master
+password</strong>, respectively.</li>
+<li>The <strong>client <code>C</code></strong> sends <strong><code>u</code></strong> to the server <strong><code>S</code></strong>.</li>
+<li>The server sends an email <strong>verification code <code>c</code></strong> to the user's email
+address.</li>
+<li><strong><code>C</code></strong> chooses a <strong>random salt <code>s</code></strong> and <strong>iteration count <code>i</code></strong></li>
+<li><strong><code>C</code></strong> generates <strong><code>x = PBKDF2(p, s, i)</code></strong> and the <strong>password verifier
+<code>v = v(x)</code></strong>*</li>
+<li><strong><code>C</code></strong> sends <strong><code>u</code></strong>, <strong><code>v</code></strong>, <strong><code>s</code></strong>, <strong><code>i</code></strong> and <strong><code>c</code></strong> to <strong><code>S</code></strong></li>
+<li><strong><code>S</code></strong> verifies <strong><code>c</code></strong> and, if successful, stores <strong><code>u</code></strong>, <strong><code>v</code></strong>, <strong><code>s</code></strong>
+and <strong><code>i</code></strong> for later use.</li>
+</ol>
+<p>The signup process is now complete and the stored values can be used to verify
+the users identity and to negotiate a common session key.</p>
+<pre><code>                  ┌──────────┐     ┌──────────┐
+                  │Client (C)│     │Server (S)│
+                  └─────┬────┘     └────┬─────┘
+  ┌───────────────────┐ │               │
+  │u = [email address]│ │       u       │
+  └───────────────────┘ │──────────────▶│ ┌───────────────────────┐
+                        │               │ │c = [verification code]│
+                        │               │ └───────────────────────┘
+┌─────────────────────┐ │ c (via email) │
+│p = [master password]│ │◁ ─ ─ ─ ─ ─ ─ ─│
+│s = [random salt]    │ │               │
+│i = [iteration count]│ │               │
+│x = PBKDF2(p,s,i)    │ │ u, v, s, i, c │ ┌───────────────────┐
+│v = v(x)*            │ │──────────────▶│ │=> verify c        │
+└─────────────────────┘ │               │ │=> store u, v, s, i│
+                        │               │ └───────────────────┘
+                        │               │
+                        ▼               ▼
+</code></pre>
+<h3 id=session-negotiation tabindex=-1>Session Negotiation</h3>
+<p>In order to "log into" an existing account, a common session key needs to be
+negotiated. This happens as follows:</p>
+<ol>
+<li>Let <strong><code>u</code></strong> and <strong><code>p</code></strong> be the users <strong>email address</strong> and <strong>master
+password</strong>, respectively.</li>
+<li>The client <strong><code>C</code></strong> generates the random values <strong><code>a</code></strong> and <strong><code>A</code></strong>*</li>
+<li><strong><code>C</code></strong> sends <strong><code>u</code></strong> and <strong><code>A</code></strong> to the Server <code>S</code>.</li>
+<li><strong><code>S</code></strong> looks up <strong><code>s</code></strong> and <strong><code>i</code></strong> based on <strong><code>u</code></strong> and generates the
+random values <strong><code>b</code></strong> and <strong><code>B</code></strong>*.</li>
+<li><strong><code>S</code></strong> sends <strong><code>s</code></strong>, <strong><code>i</code></strong> and <strong><code>B</code></strong> to <strong><code>C</code></strong>.</li>
+<li><strong><code>C</code></strong> generates <strong><code>x = PBKDF2(p, s, i)</code></strong>, <strong><code>K = K_client(x, a, B)</code></strong> and
+<strong><code>M = M(A, B, K)</code></strong>*.</li>
+<li><strong><code>C</code></strong> sends <strong><code>M</code></strong> to <strong><code>S</code></strong>.</li>
+<li><strong><code>S</code></strong> generates its own <strong><code>K' = K_server(v, b, A)</code></strong> and
+<strong><code>M' = M(A, B, K')</code></strong>*.</li>
+<li><strong><code>S</code></strong> verifies that <strong><code>M == M'</code></strong> and therefore <strong><code>K == K'</code></strong>. If
+verification fails, the session negotiation is aborted.</li>
+<li>If successful, <strong><code>S</code></strong> stores <strong><code>K</code></strong> under the session id <strong><code>sid</code></strong>.</li>
+<li><strong><code>S</code></strong> sends <strong><code>sid</code></strong> to <strong><code>C</code></strong>, which also stores it along with <strong><code>K</code></strong>
+for later use.</li>
+</ol>
+<p>Client and server now have a common and secret session key <strong><code>K</code></strong> which can be
+used for authenticating subsequent requests.</p>
+<pre><code>                    ┌──────────┐     ┌──────────┐
+                    │Client (C)│     │Server (S)│
+                    └─────┬────┘     └────┬─────┘
+    ┌───────────────────┐ │               │
+    │u = [email address]│ │     u, A      │
+    │a, A = [random*]   │ │──────────────▶│
+    └───────────────────┘ │               │ ┌────────────────┐
+                          │               │ │b, B = [random*]│
+┌───────────────────────┐ │    s, i, B    │ └────────────────┘
+│p = [master password]  │ │◁ ─ ─ ─ ─ ─ ─ ─│
+│x = PBKDF2(p,s,i)      │ │               │
+│K = K_client(x, a, B)* │ │               │
+│M = M(A, B, K)*        │ │       M       │ ┌───────────────────────┐
+└───────────────────────┘ │──────────────▶│ │K' = K_server(v, b, A)*│
+                          │               │ │M' = M(A, B, K')       │
+                          │               │ │=> verify M == M'      │
+        ┌───────────────┐ │      sid      │ │S = [session id]       │
+        │=> store sid, K│ │◀ ─ ─ ─ ─ ─ ─ ─│ │=> store sid, K        │
+        └───────────────┘ │               │ └───────────────────────┘
+                          │               │
+                          ▼               ▼
+</code></pre>
+<h3 id=request-authentication tabindex=-1>Request Authentication</h3>
+<p>Using the common session key <strong><code>K</code></strong> Client and Server can now authenticate each
+request as follows:</p>
+<ol>
+<li>Let <strong><code>sid</code></strong> and <strong><code>K</code></strong> be the previously negotiated session id and key.</li>
+<li>Let <strong><code>req</code></strong> be the intended request body and <strong><code>t1</code></strong> the time stamp at the
+time of the request.</li>
+<li><strong><code>C</code></strong> generates the signature <strong><code>sig1 = HMAC(K, sid|t1|req)</code></strong>.</li>
+<li><strong><code>C</code></strong> sends <strong><code>req</code></strong>, <strong><code>sid</code></strong>, <strong><code>t1</code></strong> and <strong><code>sig1</code></strong> to <strong><code>S</code></strong>.</li>
+<li><strong><code>S</code></strong> verifies <strong><code>req</code></strong>, <strong><code>sid</code></strong> and <strong><code>t1</code></strong> using <strong><code>sig1</code></strong>. If
+verification fails, or if <strong><code>t1</code></strong> is older than a predetermined maximum
+request age, the request is rejected.</li>
+<li>Let <strong><code>res</code></strong> be the response body and <strong><code>t2</code></strong> the time stamp at the time of
+the response.</li>
+<li><strong><code>S</code></strong> generates <strong><code>sig2 = HMAC(K, sid|t2|res)</code></strong>.</li>
+<li><strong><code>S</code></strong> sends <strong><code>res</code></strong>, <strong><code>t2</code></strong> and <strong><code>sig2</code></strong> to <strong><code>C</code></strong>.</li>
+<li><strong><code>C</code></strong> verifies <strong><code>res</code></strong>, <strong><code>sid</code></strong> and <strong><code>t2</code></strong> using <strong><code>sig2</code></strong>. If
+verification fails, or if <strong><code>t2</code></strong> is older than a predetermined maximum
+response age, the response is rejected.</li>
+</ol>
+<pre><code>                       ┌──────────┐     ┌──────────┐
+                       │Client (C)│     │Server (S)│
+                       └─────┬────┘     └────┬─────┘
+┌──────────────────────────┐ │               │
+│req = [request body]      │ │   req, sid,   │
+│t1 = [timestamp]          │ │   t1, sig1    │ ┌──────────────────────────┐
+│sig1 = HMAC(K, sid|t1|req)│ │──────────────▶│ │=> verify sig1            │
+└──────────────────────────┘ │               │ │res = [response body]     │
+                             │               │ │t2 = [timestamp]          │
+            ┌──────────────┐ │ res, t2, sig2 │ │sig2 = HMAC(K, sid|t2|res)│
+            │=> verify sig2│ │◁ ─ ─ ─ ─ ─ ─ ─│ └──────────────────────────┘
+            └──────────────┘ │               │
+                             │               │
+                             ▼               ▼
+</code></pre>
+<p><strong>*</strong> For details on how <strong><code>v</code></strong>, <strong><code>a</code></strong>, <strong><code>A</code></strong>, <strong><code>b</code></strong>, <strong><code>B</code></strong>, <strong><code>K</code></strong>
+and <strong><code>M</code></strong> are generated, refer to
+<a href=https://tools.ietf.org/html/rfc2945#section-3>the SRP specification</a></p>
+<h3 id=notes tabindex=-1>Notes</h3>
+<ul>
+<li>Even though <strong><code>v</code></strong> is based on <strong><code>p</code></strong>, it can not be used to guess the
+password in case someone eavesdrops on the connection or if the server is
+compromised. See
+<a href=https://tools.ietf.org/html/rfc2945#section-4>section 4 of the SRP specification</a>
+for details.</li>
+<li>The session key <strong><code>K</code></strong> cannot be sniffed out since it is never transmitted.
+It could theoretically be guessed from the request signature but with a key
+size of 256 bits this is not really feasible either.</li>
+<li>The salt and iteration count used for generating <strong><code>x</code></strong> as well as the
+resulting authentication key are completely independent of the corresponding
+values used for encrypting the accounts private key, even though the
+derivation scheme and base passphrase are the same.</li>
+<li>Request authentication works both ways. Not only can the server verify the
+users identity and knowledge of their master password, the client can also
+verify the identity of the server.</li>
+<li>The described authentication mechanism not only allows for identity
+verification, but also prevents tempering with the request/response body or
+timestamp.</li>
+<li>Rejecting request and responses older than a certain age mitigates the risk
+of replay attacks.</li>
+</ul>
+<h2 id=possible-attack-vectors-and-mitigations tabindex=-1>Possible Attack Vectors and Mitigations</h2>
+<p>This section covers various possible attack vectors and mitigation steps taken.</p>
+<h3 id=man-in-the-middle-attacks tabindex=-1>Man-In-The-Middle Attacks</h3>
+<p>A
+<a href=https://en.wikipedia.org/wiki/Man-in-the-middle_attack>man-in-the-middle attack</a>
+is an attack where the attacker secretly relays the communication between two
+parties in order to eavesdrop on the connection and/or temper with messages in
+transit.</p>
+<p>MITM attacks may be launched in a multitude of ways, and even with technlogies
+like TLS, it is very hard to completely rule out that other parties may be
+listening in on the connection or even trying to tamper with the messages
+exchanged. Therefore, steps should be taken not only to mitigate the risk of a
+successful MITM attack, but also to ensure that even in case of an insecure
+connection, an attacker may never get access to any sensitive information or
+compromise the security of the application in any other way.</p>
+<ul>
+<li>Communication between the Padloc client and server is always secured through
+<a href=https://en.wikipedia.org/wiki/Transport_Layer_Security>Transport Layer Security</a>.</li>
+<li>No sensitive information is ever transmitted in plain text.</li>
+<li>Transmitted data is protected from tampering through Padloc's strong
+<a href=#authentication-and-data-transfer>Authentication Mechanism</a>.</li>
+<li>Padloc's <a href=#trustless-server-mediated-key-exchange>Key Exchange Mechanism</a>
+is designed to be secure even over an untrusted connection.</li>
+</ul>
+<h3 id=phishing tabindex=-1>Phishing</h3>
+<p>With the addition of
+<a href=#organizations-and-shared-vaults>Organizations And Shared Vaults</a> in Padloc 3,
+phishing has become a potential attack vector as well. Attackers may try to lure
+Padloc users into sharing sensitive information by inviting them to misleadingly
+named organizations which can be mistaken for an employer or friend. Users could
+then accidentally share data within vaults assigned to them.</p>
+<p>However, the procedure for inviting and adding a new member to an organization
+is designed in a way that makes this very hard to accomplish, since it requires
+direct, personal coordination between both parties. See
+<a href=#trustless-server-mediated-key-exchange>Trustless Server-Mediated Key Exchange</a>
+for more details.</p>
+<h3 id=guessing-master-passwords tabindex=-1>Guessing Master Passwords</h3>
+<p>Padloc uses a combination of various
+<a href=#cryptographic-primitives-and-parameters>strong encryption algorithms</a> to
+protect all sensitive data and cryptographic keys both at rest and during
+transmission. The <strong>master password</strong> acts as a universal key for this
+encryption scheme.</p>
+<p>Master passwords are never stored anywhere and should only ever be known by the
+Padloc user themself. Unfortunately, since this means that in the majority of
+use cases the user will have to commit this password to memory, the "key space"
+of feasible passwords is relatively limited. Additionally, since master
+passwords are ultimately chosen by the user, no guarantee can be made to the
+strength or randomness of these passwords.</p>
+<p>This means that master password are a prime-target for guessing attacks of all
+sorts and steps should be taken to make these attacks either infeasible or, at a
+very minimum, too costly to be worthwhile.</p>
+<p>[[TODO]]</p>
+<h3 id=user-enumeration tabindex=-1>User Enumeration</h3>
+<p>[[TODO]]</p>
+<h3 id=password-spraying tabindex=-1>Password Spraying</h3>
+<p>[[TODO]]</p>
+<h3 id=denial-of-service tabindex=-1>Denial Of Service</h3>
+<p>[[TODO]]</p>
+<h3 id=compromised-server tabindex=-1>Compromised Server</h3>
+<p>[[TODO]]</p>
+<h2 id=cryptographic-algorithms-and-configurations tabindex=-1>Cryptographic Algorithms And Configurations</h2>
+<h3 id=symmetric-encryption tabindex=-1>Symmetric Encryption</h3>
+<p>For all symmetric encryption operations, the
+<a href=https://en.wikipedia.org/wiki/Advanced_Encryption_Standard>AES Cipher</a> is used
+in <a href=https://en.wikipedia.org/wiki/Galois/Counter_Mode>GCM mode</a> with a key size
+of <strong>256 bits</strong>.</p>
+<p><strong>Areas of use:</strong></p>
+<ul>
+<li><a href=#simple-symmetric-encryption>Simple Symmetric Encryption</a></li>
+<li><a href=#password-based-encryption>Password-Based Encryption</a></li>
+<li><a href=#shared-key-encryption>Shared-Key Encryption</a></li>
+</ul>
+<h3 id=asymmetric-encryption tabindex=-1>Asymmetric Encryption</h3>
+<p>For asymmetric encryption operations, the
+<a href=https://en.wikipedia.org/wiki/Optimal_asymmetric_encryption_padding>RSA-OAEP</a>
+algorithm is used with a <strong>modulus length</strong> of <strong>2048 bits</strong> and the
+<a href=https://en.wikipedia.org/wiki/SHA-2>SHA-256 hash function</a>.</p>
+<p><strong>Areas of use:</strong></p>
+<ul>
+<li><a href=#shared-key-encryption>Shared-Key Encryption</a></li>
+</ul>
+<h3 id=symmetric-signature-schemes tabindex=-1>Symmetric Signature Schemes</h3>
+<p>For symmetric signature creation and verification, the
+<a href=https://en.wikipedia.org/wiki/HMAC>HMAC</a> algorithm is used with a <strong>key
+length</strong> of <strong>256 bits</strong> and the
+<a href=https://en.wikipedia.org/wiki/SHA-2>SHA-256 hash function</a>.</p>
+<p><strong>Areas of use:</strong></p>
+<ul>
+<li><a href=#request-authentication>Request Authentication</a></li>
+<li><a href=#adding-members>Adding Members</a></li>
+<li><a href=#verying-members>Verifying Members</a></li>
+<li><a href=#trustless-server-mediated-key-exchange>Trustless Server-Mediated Key Exchange</a>.</li>
+</ul>
+<h3 id=asymmetric-signature-schems tabindex=-1>Asymmetric Signature Schems</h3>
+<p>For asymmetric signature creation and verification, the
+<a href=https://en.wikipedia.org/wiki/Probabilistic_signature_scheme>RSA-PSS</a>
+algorithm is used with a <strong>modulus length</strong> of <strong>2048 bits</strong>, a <strong>salt length</strong>
+of <strong>256 bits</strong> and the
+<a href=https://en.wikipedia.org/wiki/SHA-2>SHA-256 hash function</a>.</p>
+<p><strong>Areas of use:</strong></p>
+<ul>
+<li><a href=#adding-members>Adding Members</a></li>
+<li><a href=#verying-members>Verifying Members</a></li>
+</ul>
+<h3 id=password-based-key-derivation tabindex=-1>Password-Based Key Derivation</h3>
+<p>For password-based key derivation, the
+<a href=https://en.wikipedia.org/wiki/PBKDF2>PBKDF2</a> algorithm is used with the
+<a href=https://en.wikipedia.org/wiki/SHA-2>SHA-256 hash function</a> and a <strong>salt
+length</strong> of <strong>128 bits</strong>. The iteration count varies by area of use.</p>
+<p><strong>Areas of use:</strong></p>
+<ul>
+<li><a href=#password-based-encryption>Password-Based Encryption</a></li>
+<li><a href=#user-signup>User Signup</a></li>
+<li><a href=#session-negotiation>Session Negotiation</a></li>
+<li><a href=#trustless-server-mediated-key-exchange>Trustless Server-Mediated Key Exchange</a>.</li>
+</ul>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+                <a href=/docs/development/ class="unstyled fill">
+                    <div class="small subtle bottom-margined horizontally-padded text-left-aligning">
+                        <i class=arrow-left></i> Previous Article
+                    </div>
+                    <h2><i class=person-digging></i> Development</h2>
+                    <div class="small description top-margined"></div>
+                </a>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

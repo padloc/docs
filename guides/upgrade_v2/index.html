@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>How to upgrade from Padlock v2 to the new Padloc</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="A simple guide on how to upgrade from the legacy &#34;Padlock&#34; app to the new and improved Padloc." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img src=/assets/img/logo-light.svg alt="Padloc Logo" style=height:2.5em />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="horizontally-margined search"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/guides/biometric-unlock-is-not-supported/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=fingerprint></i>
+        <span>
+            Biometric unlock is not supported
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/guides/self-host/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=cloud-slash></i>
+        <span>
+            How to self-host Padloc
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/guides/trouble-upgrading-to-v4/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=triangle-exclamation></i>
+        <span>
+            Trouble upgrading to Padloc 4
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/guides/upgrade_v2/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=circle-up></i>
+        <span>
+            How to upgrade from Padlock v2 to the new Padloc
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#via-padlock-cloud class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Via Padlock Cloud</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#step-1%3A-make-sure-your-data-is-all-synced-up class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 1: Make sure your data is all synced up</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-2%3A-download%2Fstart-the-new-padloc-app class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 2: Download/Start the new Padloc app</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-3%3A-log-in-with-your-email-and-password class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 3: Log in with your email and password</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-4%3A-delete-your-padlock-cloud-account-(or-not) class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 4: Delete your Padlock Cloud account (or not)</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-5%3A-make-sure-you-have-the-latest-version-installed-on-all-your-devices class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 5: Make sure you have the latest version installed on all your devices</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-6.-enjoy-using-padloc-4 class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 6. Enjoy Using Padloc 4</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#through-export%2Fimport class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Through Export/Import</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#step-1%3A-export-your-data class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 1: Export Your Data</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-2%3A-download%2Fstart-padloc-4 class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 2: Download/Start Padloc 4</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-3%3A-create-a-padloc-4-account class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 3: Create A Padloc 4 Account</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-4%3A-import-your-data class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 4: Import Your Data</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-5%3A-make-sure-you-have-the-latest-version-installed-on-all-your-devices-1 class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 5: Make sure you have the latest version installed on all your devices</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#step-6.-enjoy-using-padloc-4-1 class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Step 6. Enjoy Using Padloc 4</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+        </ol></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/guides/ ><i class=signs-post></i> Guides & Recipes</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=circle-up> </i>
+                How to upgrade from Padlock v2 to the new Padloc
+            </h1>
+            <p>With the release of Padloc 3 we have made a major step forward in the
+development of our product, introducing powerful new features like shared
+vaults, two-factor authentication and more! Since the development of these new
+features required some major changes in Padloc's application architecture,
+automatically updating our existing apps would have been quite complicated,
+which is why we decided to release Padloc 3 as a new, separate app instead.
+Luckily, upgrading to the new Padloc is quite easy! Here is how to do it:</p>
+<blockquote>
+<p>At this point you may be asking yourself: "<strong>Wait, so which is it - 'Padlock'
+or 'Padloc'?</strong>". Well, the short answer is this: With the release of version
+3, we changed the name from 'Padlock' to 'Padloc', So while older versions may
+still have the "k" in the name, all the cool kids are calling it <strong>"Padloc"</strong>
+these days 😎! For more details, check out our
+<a href=https://padloc.app/blog/padloc-3-is-here.md>blog post about the Padloc 3 release</a>.</p>
+</blockquote>
+<h2 id=via-padlock-cloud tabindex=-1>Via Padlock Cloud</h2>
+<p>"Padlock Cloud" is the companion online service to the legacy v2 app, which
+allowed easily syncing data between multiple devices. If you are currently using
+Padlock Cloud to backup and synchronize your data, migrating your account is as
+simple as opening the new app and logging in with your existing email and
+password. If you've only used the app offline so far, you can either create a
+temporary Padlock Cloud account or
+<a href=#through-exportimport>use the export/import feature</a>.</p>
+<h3 id=step-1%3A-make-sure-your-data-is-all-synced-up tabindex=-1>Step 1: Make sure your data is all synced up</h3>
+<p>Before beginning the transition to Padloc 3, it's a good idea to make sure your
+Padlock Cloud account is up to date with your data. To do this, open the legacy
+app and navigate to the <strong>My Account</strong> page (the little cloud icon on the left).
+There, you will see you account's email address and the time of your last
+synchronization. Optimally, the latter should say "a few seconds ago". If it
+doesn't, just click the sync icon on the right to trigger a new sync.</p>
+<figure>
+    <img src=cloud-step1.png>
+    <figcaption>Make sure your Padloc Cloud account is up to date.</figcaption>
+</figure>
+<h3 id=step-2%3A-download%2Fstart-the-new-padloc-app tabindex=-1>Step 2: Download/Start the new Padloc app</h3>
+<p>To access the new version, you can either go to
+<a href=https://web.padloc.app>https://web.padloc.app</a> or download one of our native
+apps from our <a href=/downloads/ >downloads page</a>.</p>
+<figure>
+    <img src=cloud-step2.png>
+</figure>
+<h3 id=step-3%3A-log-in-with-your-email-and-password tabindex=-1>Step 3: Log in with your email and password</h3>
+<p>Once you've opened the app, you should be presented with a login page. To
+continue, simply enter your email address and master password and click
+<span class=button>Continue <i class=chevron-right></i></span></p>
+<blockquote>
+<p><strong><i class=exclamation-circle></i> Important</strong>: Please make sure you're
+using the same email and master password you used in the old app. You can
+check which email address you used previously by going to the <strong>My Account</strong>
+page in the old app (see the screenshot from the previous step). After you've
+confirmed your email address (you'll be sent a confirmation code) you should
+see the following dialog:</p>
+</blockquote>
+<figure>
+    <img src=cloud-step3.png>
+</figure>
+<p>Upon clicking <span class="button blue highlighted">Migrate</span>, you'll be
+asked for your master password. Simply enter the same password you used to login
+in to the old app.</p>
+<h3 id=step-4%3A-delete-your-padlock-cloud-account-(or-not) tabindex=-1>Step 4: Delete your Padlock Cloud account (or not)</h3>
+<p>Once your account migration has been completed successfully, you'll be asked if
+you want to delete your old account. We recommend that you do this, but you can
+also keep it around for now if want. If you select "No", you can delete your old
+account later by going to <a href=https://cloud.padlock.io>https://cloud.padlock.io</a>
+and logging in with your email address (you'll find the option to delete your
+account under "Advanced Options").</p>
+<h3 id=step-5%3A-make-sure-you-have-the-latest-version-installed-on-all-your-devices tabindex=-1>Step 5: Make sure you have the latest version installed on all your devices</h3>
+<p>While the legacy apps will be available for a while longer, it is important to
+understand that <strong>you won't be able to synchronize with your Padloc 4 account
+with older versions of the app</strong> (v2.7 or older. you'll notice the difference in
+the name - the legacy app still has the "k" in the name). So please make sure
+you have the latest version of the app installed on all your devices. You'll
+find download links for all platforms on our <a href=/downloads/ >downloads page</a>. Once
+you've verified that all your data has been successfully transferred to the new
+app, you may also want to delete any instances of the legacy apps from your
+system to avoid mixing the two up (your data will remain available in the old
+app until you delete it so it's easy to get confused).</p>
+<h3 id=step-6.-enjoy-using-padloc-4 tabindex=-1>Step 6. Enjoy Using Padloc 4</h3>
+<p>That's it! 🎉 We hope you'll enjoy using Padloc 4. If you have any questions,
+please don't hesitate to contact us at
+<a href=mailto:support@padloc.app>support@padloc.app</a>!</p>
+<h2 id=through-export%2Fimport tabindex=-1>Through Export/Import</h2>
+<p>If you've only used Padlock offline so far, you can use the export/import
+feature to migrate your data. (If you do have an existing Padlock Cloud account
+that you used to backup/synchronize your data, we recommend that you use the
+<a href=#via-padlock-cloud>method described above</a>.)</p>
+<h3 id=step-1%3A-export-your-data tabindex=-1>Step 1: Export Your Data</h3>
+<p>Let's start by exporting your existing data from the old app. To do this, start
+the app and go to the settings screen. There, click <strong>"Export..."</strong> and select
+the option to export your data as an encrypted file. Choose a password and save
+the file to your device.</p>
+<figure>
+    <img src=export-legacy.png>
+    <figcaption>Export your data</figcaption>
+</figure>
+<h3 id=step-2%3A-download%2Fstart-padloc-4 tabindex=-1>Step 2: Download/Start Padloc 4</h3>
+<p>To access the new version, you can either go to
+<a href=https://web.padloc.app>https://web.padloc.app</a> or download the native app from
+our <a href=/downloads/ >downloads page</a>.</p>
+<h3 id=step-3%3A-create-a-padloc-4-account tabindex=-1>Step 3: Create A Padloc 4 Account</h3>
+<p>If you don't have a Padloc 4 account yet, go ahead and
+<a href=../../manual/create_account>create one now</a>.</p>
+<h3 id=step-4%3A-import-your-data tabindex=-1>Step 4: Import Your Data</h3>
+<p>Now you're ready to import your data into your Padloc 4 account! Instructions on
+how to do this can be found <a href=../../manual/settings/#importing-data>here</a>.</p>
+<h3 id=step-5%3A-make-sure-you-have-the-latest-version-installed-on-all-your-devices-1 tabindex=-1>Step 5: Make sure you have the latest version installed on all your devices</h3>
+<p>While the legacy apps will be available for a while longer, it is important to
+understand that <strong>you wont be able to synchronize with your Padloc 4 account
+with older versions of the app</strong> (v2.7 or older. you'll notice the difference in
+the name - the legacy app still has the "k" in the name). So please make sure
+you have the latest version of the app installed on all your devices. You'll
+find download links for all platforms on our <a href=/downloads/ >downloads page</a>. Once
+you've verified that all your data has been successfully transferred to the new
+app, you may also want to delete any instances of the legacy apps from your
+systems to avoid mixing the two up (your data will remain available in the old
+app until you delete it so it's easy to get confused).</p>
+<h3 id=step-6.-enjoy-using-padloc-4-1 tabindex=-1>Step 6. Enjoy Using Padloc 4</h3>
+<p>That's it! 🎉 We hope you'll enjoy using Padloc 3. If you have any questions,
+please don't hesitate to contact us at
+<a href=mailto:support@padloc.app>support@padloc.app</a>!</p>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

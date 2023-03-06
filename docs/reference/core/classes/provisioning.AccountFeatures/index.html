@@ -1,0 +1,2919 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Class: AccountFeatures</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Docs and Resources for the Padloc password manager." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img alt="Padloc Logo" src=/assets/img/logo-light.svg style=height:2.5em />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="horizontally-margined search"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            Reference
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            @padloc/core
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Classes
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/account.Account/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Account
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/account.AccountSecrets/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountSecrets
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.API/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: API
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.AuthInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteAuthRequestParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteAuthRequestParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteAuthRequestResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteAuthRequestResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteCreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteCreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteRegisterMFAuthenticatorParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteRegisterMFAuthenticatorResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CreateAccountParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateAccountParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CreateKeyStoreEntryParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateKeyStoreEntryParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.DeleteAttachmentParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DeleteAttachmentParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetAttachmentParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetAttachmentParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetInviteParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetInviteParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetKeyStoreEntryParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetKeyStoreEntryParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetLegacyDataParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetLegacyDataParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.RecoverAccountParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RecoverAccountParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartAuthRequestParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartAuthRequestParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartAuthRequestResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartAuthRequestResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartCreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartCreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartCreateSessionResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartCreateSessionResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartRegisterAuthenticatorParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartRegisterAuthenticatorParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartRegisterAuthenticatorResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartRegisterAuthenticatorResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.UpdateAuthParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: UpdateAuthParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.App/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: App
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.AppState/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AppState
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Index/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Index
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Settings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Settings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Stats/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Stats
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.StoredMasterKey/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StoredMasterKey
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.Attachment/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Attachment
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.AttachmentInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AttachmentInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.MemoryAttachmentStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MemoryAttachmentStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.Auth/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Auth
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.AuthRequest/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthRequest&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.Authenticator/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Authenticator&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.AuthenticatorInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthenticatorInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_email.EmailAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EmailAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthChallenge/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthChallenge
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthClient/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthClient
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthClientData/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthClientData
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_totp.TotpAuthConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: TotpAuthConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_totp.TotpAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: TotpAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/client.Client/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Client
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/collection.VaultItemCollection/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VaultItemCollection
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/config.Config/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Config
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.Accessor/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Accessor
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.BaseContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BaseContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.PBES2Container/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PBES2Container
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.SharedContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SharedContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.SimpleContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SimpleContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.AESEncryptionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AESEncryptionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.AESKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AESKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HMACKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HMACKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HMACParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HMACParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HashParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HashParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.PBKDF2Params/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PBKDF2Params
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSAEncryptionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSAEncryptionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSAKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSAKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSASigningParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSASigningParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/directory.DirectorySync/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DirectorySync
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/encoding.Serializable/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Serializable
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/error.Err/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Err
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/event_target.EventEmitter/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EventEmitter
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/invite.Invite/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Invite
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/item.Field/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Field
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/item.VaultItem/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VaultItem
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/key_store.KeyStoreEntry/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: KeyStoreEntry
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/key_store.KeyStoreEntryInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: KeyStoreEntryInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.LogEvent/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: LogEvent
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.MultiLogger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MultiLogger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.VoidLogger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VoidLogger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ConfirmMembershipInviteMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ConfirmMembershipInviteMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ConsoleMessenger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ConsoleMessenger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.EmailAuthMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EmailAuthMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ErrorMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ErrorMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteAcceptedMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteAcceptedMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteCompletedMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteCompletedMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.Message/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Message&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.StubMessenger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubMessenger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.Group/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Group
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.Org/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Org
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgDirectorySettings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgDirectorySettings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgMember/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgMember
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgSecrets/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgSecrets
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.ScimSettings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ScimSettings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.DeviceInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DeviceInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.StubBiometricKeyStore/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubBiometricKeyStore
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.StubPlatform/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubPlatform
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountFeatures/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=code></i>
+        <span>
+            Class: AccountFeatures
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#hierarchy class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Hierarchy</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#constructors class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Constructors</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#properties class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Properties</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#accessors class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Accessors</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#methods class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Methods</span>
+    </a>
+</li>
+            
+        </ol></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.BasicProvisioner/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BasicProvisioner
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.BasicProvisionerConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BasicProvisionerConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.DefaultAccountProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DefaultAccountProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.Feature/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Feature
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgFeature/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgFeature
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgFeatures/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgFeatures
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.Provisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Provisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.StubProvisioner/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubProvisioner
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/quota.AccountQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/quota.OrgQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.Controller/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Controller
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.Server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.ServerConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ServerConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/session.Session/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Session
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/session.SessionInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SessionInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Client/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Client
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Core
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.SRPSession/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SRPSession
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.MemoryStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MemoryStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.Storable/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Storable
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.VoidStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VoidStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/stub_crypto_provider.StubCryptoProvider/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubCryptoProvider
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.DirectSender/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DirectSender
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.Request/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Request
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.RequestAuthentication/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestAuthentication
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.RequestProgress/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestProgress
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.Response/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Response
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.CreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.InitAuthParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: InitAuthParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.InitAuthResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: InitAuthResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RequestMFACodeParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestMFACodeParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RetrieveMFATokenParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RetrieveMFATokenParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RetrieveMFATokenResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RetrieveMFATokenResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/vault.Vault/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Vault
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumerations
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/interfaces/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Interfaces
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Modules
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=server></i>
+        <span>
+            Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/apps/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=laptop-mobile></i>
+        <span>
+            Web & Desktop & Mobile Apps
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/development/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=person-digging></i>
+        <span>
+            Development
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/security/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=lock></i>
+        <span>
+            Security Whitepaper
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/ ><i class=code></i> Technical Docs</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/ ><i class=book></i> Reference</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/ ><i class=code></i> @padloc/core</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/classes/ ><i class=code></i> Classes</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=code> </i>
+                Class: AccountFeatures
+            </h1>
+            <p><a href=../../modules/provisioning>provisioning</a>.AccountFeatures</p>
+<h2 id=hierarchy tabindex=-1>Hierarchy</h2>
+<ul>
+<li>
+<p><a href=../encoding.Serializable><code>Serializable</code></a></p>
+<p>↳ <strong><code>AccountFeatures</code></strong></p>
+</li>
+</ul>
+<h2 id=constructors tabindex=-1>Constructors</h2>
+<h3 id=constructor tabindex=-1>constructor</h3>
+<p>• <strong>new AccountFeatures</strong>(<code>vals?</code>)</p>
+<h4 id=parameters tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vals</code></td>
+<td style=text-align:left><code>Partial</code>&lt;<a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id=overrides tabindex=-1>Overrides</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#constructor>constructor</a></p>
+<h4 id=defined-in tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L62>core/src/provisioning.ts:62</a></p>
+<h2 id=properties tabindex=-1>Properties</h2>
+<h3 id=_propertyserializationoptions tabindex=-1>_propertySerializationOptions</h3>
+<p>• <strong>_propertySerializationOptions</strong>:
+<a href=../../interfaces/encoding.SerializationOptions><code>SerializationOptions</code></a>[]</p>
+<h4 id=inherited-from tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#_propertyserializationoptions>_propertySerializationOptions</a></p>
+<h4 id=defined-in-1 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L163>core/src/encoding.ts:163</a></p>
+<hr>
+<h3 id=attachments tabindex=-1>attachments</h3>
+<p>• <strong>attachments</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-2 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L83>core/src/provisioning.ts:83</a></p>
+<hr>
+<h3 id=billing tabindex=-1>billing</h3>
+<p>• <strong>billing</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-3 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L89>core/src/provisioning.ts:89</a></p>
+<hr>
+<h3 id=createorg tabindex=-1>createOrg</h3>
+<p>• <strong>createOrg</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-4 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L68>core/src/provisioning.ts:68</a></p>
+<hr>
+<h3 id=manageauthenticators tabindex=-1>manageAuthenticators</h3>
+<p>• <strong>manageAuthenticators</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-5 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L74>core/src/provisioning.ts:74</a></p>
+<hr>
+<h3 id=managedevices tabindex=-1>manageDevices</h3>
+<p>• <strong>manageDevices</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-6 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L80>core/src/provisioning.ts:80</a></p>
+<hr>
+<h3 id=managesessions tabindex=-1>manageSessions</h3>
+<p>• <strong>manageSessions</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-7 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L77>core/src/provisioning.ts:77</a></p>
+<hr>
+<h3 id=quickunlock tabindex=-1>quickUnlock</h3>
+<p>• <strong>quickUnlock</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-8 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L71>core/src/provisioning.ts:71</a></p>
+<hr>
+<h3 id=securityreport tabindex=-1>securityReport</h3>
+<p>• <strong>securityReport</strong>: <a href=../provisioning.Feature><code>Feature</code></a></p>
+<h4 id=defined-in-9 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/provisioning.ts#L86>core/src/provisioning.ts:86</a></p>
+<h2 id=accessors tabindex=-1>Accessors</h2>
+<h3 id=kind tabindex=-1>kind</h3>
+<p>• <code>get</code> <strong>kind</strong>(): <code>string</code></p>
+<p>A string representing the objects "type", useful for segmenting storage, among
+other things. Defaults to the lowercase class name, but can be overwritten by
+subclasses</p>
+<h4 id=returns tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=inherited-from-1 tabindex=-1>Inherited from</h4>
+<p>Serializable.kind</p>
+<h4 id=defined-in-10 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L159>core/src/encoding.ts:159</a></p>
+<h2 id=methods tabindex=-1>Methods</h2>
+<h3 id=_fromraw tabindex=-1>_fromRaw</h3>
+<p>▸ <code>Protected</code> <strong>_fromRaw</strong>(<code>raw</code>): <code>void</code></p>
+<p>Restore values from a raw object. The default implementation simply copies over
+all iterable properties from the base object. Overwrite this method for
+properties that require special treatment</p>
+<h4 id=parameters-1 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>raw</code></td>
+<td style=text-align:left><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-1 tabindex=-1>Returns</h4>
+<p><code>void</code></p>
+<h4 id=inherited-from-2 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#_fromraw>_fromRaw</a></p>
+<h4 id=defined-in-11 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L286>core/src/encoding.ts:286</a></p>
+<hr>
+<h3 id=_toraw tabindex=-1>_toRaw</h3>
+<p>▸ <code>Protected</code> <strong>_toRaw</strong>(<code>version</code>): <code>any</code></p>
+<p>Transform this object into a raw javascript object used for serialization. The
+default implementation simply copies all iterable properties not included in the
+[[exlude]] array and calls <a href=../provisioning.AccountFeatures#toraw>toRaw</a> on any
+properties that are themselfes instances of
+<a href=../encoding.Serializable>Serializable</a>. This method should be overwritten by
+subclasses if certain properties require special treatment.</p>
+<h4 id=parameters-2 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>version</code></td>
+<td style=text-align:left><code>undefined</code> | <code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-2 tabindex=-1>Returns</h4>
+<p><code>any</code></p>
+<h4 id=inherited-from-3 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#_toraw>_toRaw</a></p>
+<h4 id=defined-in-12 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L257>core/src/encoding.ts:257</a></p>
+<hr>
+<h3 id=clone tabindex=-1>clone</h3>
+<p>▸ <strong>clone</strong>(): <a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<p>Creates a deep clone of the object</p>
+<h4 id=returns-3 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<h4 id=inherited-from-4 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#clone>clone</a></p>
+<h4 id=defined-in-13 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L244>core/src/encoding.ts:244</a></p>
+<hr>
+<h3 id=frombytes tabindex=-1>fromBytes</h3>
+<p>▸ <strong>fromBytes</strong>(<code>bytes</code>): <a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<p>Deserializes the object from a byte array</p>
+<h4 id=parameters-3 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>bytes</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-4 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<h4 id=inherited-from-5 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#frombytes>fromBytes</a></p>
+<h4 id=defined-in-14 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L237>core/src/encoding.ts:237</a></p>
+<hr>
+<h3 id=fromjson tabindex=-1>fromJSON</h3>
+<p>▸ <strong>fromJSON</strong>(<code>json</code>): <a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<p>Deserializes the object from a JSON string</p>
+<h4 id=parameters-4 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>json</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-5 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<h4 id=inherited-from-6 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#fromjson>fromJSON</a></p>
+<h4 id=defined-in-15 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L223>core/src/encoding.ts:223</a></p>
+<hr>
+<h3 id=fromraw tabindex=-1>fromRaw</h3>
+<p>▸ <strong>fromRaw</strong>(<code>raw</code>): <a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<p>Restores propertiers from a raw object of the same form generated by
+<a href=../provisioning.AccountFeatures#toraw>toRaw</a>. The base implementation blindly
+copies over values from the raw object via <code>Object.assign</code> so subclasses should
+explictly process any propertyies that need special treatment.</p>
+<p>Also takes are of validation and "upgrading" in case the raw object has an old
+version. Use the protected <a href=../provisioning.AccountFeatures#_fromraw>_fromRaw</a>
+method to implement subclass-specific behavior.</p>
+<h4 id=parameters-5 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>raw</code></td>
+<td style=text-align:left><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-6 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<h4 id=inherited-from-7 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#fromraw>fromRaw</a></p>
+<h4 id=defined-in-16 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L196>core/src/encoding.ts:196</a></p>
+<hr>
+<h3 id=tobytes tabindex=-1>toBytes</h3>
+<p>▸ <strong>toBytes</strong>(): <code>Uint8Array</code></p>
+<p>Returns a serialization of the object in form of a byte array</p>
+<h4 id=returns-7 tabindex=-1>Returns</h4>
+<p><code>Uint8Array</code></p>
+<h4 id=inherited-from-8 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#tobytes>toBytes</a></p>
+<h4 id=defined-in-17 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L230>core/src/encoding.ts:230</a></p>
+<hr>
+<h3 id=tojson tabindex=-1>toJSON</h3>
+<p>▸ <strong>toJSON</strong>(): <code>string</code></p>
+<p>Returns a JSON serialization of the object</p>
+<h4 id=returns-8 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=inherited-from-9 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#tojson>toJSON</a></p>
+<h4 id=defined-in-18 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L216>core/src/encoding.ts:216</a></p>
+<hr>
+<h3 id=toraw tabindex=-1>toRaw</h3>
+<p>▸ <strong>toRaw</strong>(<code>version?</code>): <code>any</code></p>
+<p>Creates a raw javascript object representation of the class, which can be used
+for storage or data transmission. Also handles "downgrading" to previous
+versions. Use <a href=../provisioning.AccountFeatures#_toraw>_toRaw</a> for
+subclass-specific behavior.</p>
+<h4 id=parameters-6 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>version?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-9 tabindex=-1>Returns</h4>
+<p><code>any</code></p>
+<h4 id=inherited-from-10 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#toraw>toRaw</a></p>
+<h4 id=defined-in-19 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L179>core/src/encoding.ts:179</a></p>
+<hr>
+<h3 id=validate tabindex=-1>validate</h3>
+<p>▸ <strong>validate</strong>(): <code>boolean</code></p>
+<p>This is called during deserialization and should verify that all properties have
+been populated with values of the correct type. Subclasses should implement this
+method based on their class structure.</p>
+<h4 id=returns-10 tabindex=-1>Returns</h4>
+<p><code>boolean</code></p>
+<h4 id=inherited-from-11 tabindex=-1>Inherited from</h4>
+<p><a href=../encoding.Serializable>Serializable</a>.<a href=../encoding.Serializable#validate>validate</a></p>
+<h4 id=defined-in-20 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L170>core/src/encoding.ts:170</a></p>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

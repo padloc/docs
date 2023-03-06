@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Vaults & Vault Items</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Everything you need to know about Vaults and Vault Items" name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img src=/assets/img/logo-light.svg alt="Padloc Logo" style=height:2.5em />
+        <span class="small subtle semibold">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="search horizontally-margined"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/manual/introduction/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=scroll></i>
+        <span>
+            Introduction
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/create_account/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=baby></i>
+        <span>
+            Creating An Account
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/vaults/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=cubes></i>
+        <span>
+            Vaults & Vault Items
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#creating-vault-items class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Creating Vault Items</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#editing-vault-items class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Editing Vault Items</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#adding-fields class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Adding Fields</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#deleting-fields class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Deleting Fields</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#reordering-fields class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Reordering Fields</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#generating-passwords class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Generating Passwords</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#deleting-items class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Deleting Items</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#deleting-multiple-items class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Deleting Multiple Items</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+            
+<li>
+    <a href=#moving-items-between-vaults class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Moving Items Between Vaults</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#tags class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Tags</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#favorites class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Favorites</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#expiration-period class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Expiration Period</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#item-history class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Item History</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#attachments class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Attachments</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#creating-new-vaults class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Creating New Vaults</span>
+    </a>
+</li>
+            
+        </ol></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/orgs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=users></i>
+        <span>
+            Organizations & Shared Vaults
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/search/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=search></i>
+        <span>
+            Searching & Filtering
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/settings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=cog></i>
+        <span>
+            Settings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/locking-and-unlocking/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=lock></i>
+        <span>
+            Locking and Unlocking
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/extensions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=browser></i>
+        <span>
+            Browser Extensions
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/manual/ ><i class=book></i> User Manual</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=cubes> </i>
+                Vaults & Vault Items
+            </h1>
+            <p>After <a href=../create_account/ >creating your Padloc account</a> and opening Padloc, the
+first thing you'll be greeted with is the message <strong><em>You don't have any [vault]
+items yet.</em></strong></p>
+<figure>
+    <img src=create_item_1_desktop.png>
+    <figcaption>Looks pretty empty, huh? Don't worry, you'll fill it up in no time!"</figcaption>
+</figure>
+<p>This is not surprising, since we haven't done anything yet! But what are vault
+items, you might ask, and what do I do with them?</p>
+<p><strong>Vault Items (or simply "Items") are individual data entries that can hold all
+kinds of information, from secret notes and WIFI passwords, to credit card
+numbers, bank details and even encrypted files!</strong> Most of these items will
+likely contain usernames and passwords for websites and apps (it's called a
+"password manager" after all), but Padloc gives you absolute freedom in what
+kind of information you'd like to store in your Vault Items (more about that
+below).</p>
+<p>As you might have guessed, Vaults are where your Vault Items are stored. You can
+imagine them as secure folders that are protected by your master password and
+can hold any number of Items. You'll start off with a single Vault called "My
+Vault". This vault is meant only for you and is where you'll to store all your
+personal data. For a lot of users, one Vault will be more than enough, as it can
+hold an arbitrary number or items and there are plenty of ways to organize and
+discover items within it (you can read more about that in the
+<a href=../search>Searching & Filtering</a> section). If you want to learn about how to
+create new Vaults and share them with other Padloc users, check out
+<a href=../orgs>Organizations & Shared Vaults</a>.</p>
+<blockquote>
+<p><strong><i class=lock></i> Vaults are protected by strong, state of the art
+encryption</strong> and can only accessed by you (and other Padloc users you
+explicitly give access). Not even we can read what's inside, even if we wanted
+to!</p>
+</blockquote>
+<h2 id=creating-vault-items tabindex=-1>Creating Vault Items</h2>
+<p>Ok, enough theory. Now that we know what Vaults and Vault Items are, let's go
+ahead and <strong>create your first Vault Item</strong>! To get started, click on the little
+<span class=button><i class=plus></i></span> icon on the top!</p>
+<figure>
+    <img src=create_item_2_desktop.png>
+    <figcaption>You can choose between a number of predefined item types.</figcaption>
+</figure>
+<p>Look at all those options! We didn't lie when we said that Padloc can store all
+kinds of information. In fact, you have absolute freedom in deciding what kind
+of data your vault items should hold. The options presented here are merely
+predefined templates provided for your convenience and you can always add and
+remove data as the mood strikes you (more about how that works in a moment).
+Notice that you can also choose which Vault to save the item to. We only have
+one Vault at this point so that one will have to do (to learn how to create new
+Vaults and share them with others, check out
+<a href=../orgs>Organizations & Shared Vaults</a>). Let's select <strong>Website / App</strong> and
+see where that get's us. Click <span class="button highlighted">Create</span> to
+continue.</p>
+<figure>
+    <img src=create_item_3_desktop.png>
+    <figcaption>Picking "Website / App" gives you three predefined fields.</figcaption>
+</figure>
+<p>Now we're getting somewhere! Since we chose the <strong>Website / App</strong> template,
+Padloc has added the fields <strong>Username</strong>, <strong>Password</strong> and <strong>URL</strong> for us.
+Again, these are just the default fields for this template. You can add and
+remove fields and edit field names at any time. For now, let's just fill this
+out and click <span class="button highlighted"><i class=check></i>
+Save</span>. Don't forget to add an item name by filling out the field in the
+top!</p>
+<blockquote>
+<p><i class=info-circle></i> Nobody likes typing, so whenever you click into a
+field, Padloc will suggest values for you based on the field type. For
+example, when you click into the password field, Padloc will automatically
+generate a number of random passwords for you! Simply click on one of the
+suggestions to apply them.</p>
+</blockquote>
+<figure>
+    <img src=create_item_4_desktop.png>
+    <figcaption>And there it is - your first Vault Item! <i class=face-party></i></figcaption>
+</figure>
+<p>And there it is - your first Vault Item! But if you think we're done here you
+couldn't be more wrong! We've only scratched the surface...</p>
+<h2 id=editing-vault-items tabindex=-1>Editing Vault Items</h2>
+<p>To edit an item, simply select it from the list and then click the little
+<span class=button><i class=pencil-alt></i></span> bottom in the top right.
+The item will be opened in "edit mode" and you can now make all the desired
+changes.</p>
+
+<p>Once you're done, simply hit the
+<span class="button highlighted"><i class=check></i> Save</span> button again
+to save your changes. Or you can always hit
+<span class=button><i class=times></i> Cancel</span> to discard your changes
+of course!</p>
+<h3 id=adding-fields tabindex=-1>Adding Fields</h3>
+<p>As mentioned before, Padloc gives you absolute control over what kind of
+information you want to store in your items. A username and password and maybe a
+url might be sufficient for most items, but you never know what other kind of
+information you may want to store alongside them. For example, a website may ask
+you to enter a security question and answer, or maybe you simply want to add
+some notes and comments.</p>
+<p>Adding new fields to an Item is easy - in <a href=#editing-vault-items>edit mode</a>,
+click the <span class=button><i class=plus></i></span> button in the top
+right corner. You'll be presented with a few different field types to choose
+from. Simply pick the one that fits the kind of data you want to store and then
+fill out the field. Don't forget to hit
+<span class="button highlighted"><i class=check></i> Save</span> to save your
+changes!</p>
+<figure>
+    <img src=add_field_1_desktop.png>
+    <figcaption>Hit the <span class=button><i class=plus></i></span> button in the top right corner to add a new field.</figcaption>
+</figure>
+<h3 id=deleting-fields tabindex=-1>Deleting Fields</h3>
+<p>To delete a field, first enter <a href=#editing-vault-items>edit mode</a> and then click
+the the <span class=button><i class=trash></i></span> button next to the
+field you want to remove. Confirm the action by clicking
+<span class="button highlighted red">Remove</span>, and then save your changes
+using the <span class="button highlighted"><i class=check></i> Save</span>
+button.</p>
+<h3 id=reordering-fields tabindex=-1>Reordering Fields</h3>
+<p>Apart from adding, editing and removing fields, you can also <strong>reorder</strong> them by
+using the <span class=button><i class=caret-down></i></span> and
+<span class=button><i class=caret-up></i></span> buttons on the right side
+when id <a href=#editing-vault-items>edit mode</a>. Don't forget to hit
+<span class="button highlighted"><i class=check></i> Save</span> to save your
+changes!</p>
+<h2 id=generating-passwords tabindex=-1>Generating Passwords</h2>
+<p>Now that Padloc is remembering all your passwords for you, there is no more
+excuse to use pet names or birthdays for them! <strong>A good password should be
+completely random, sufficiently long and extremely hard to guess.</strong> Coming up
+with truly random passwords is hard though, so you'll likely need some help.
+Luckily, Padloc has a build in password generator! Let's see how that works -
+see the little <span class=button><i class=dice></i></span> icon next to the
+password field? Clicking it will bring up the <strong>password generator</strong>.</p>
+<figure>
+    <img src=generate_password_1_desktop.png>
+    <figcaption>Hit the <span class=button><i class=dice></i></span> button next to the password field to open the password generator.</figcaption>
+</figure>
+<p>You can choose between a random passphrase similar to the one suggested to you
+during the
+<a href=../create_account#step-3-choose-your-master-password%22>signup process</a> or a
+string of random characters. A passphrase will be easier to copy manually in
+cases where you don't have the option to copy & paste but some websites have
+very specific password requirements you might have to go with the <strong>random
+string</strong> option where you can choose what kind of characters you be used in the
+password. If for some reason the generated password doesn't work for you you can
+regenerate it by clicking <span class=button><i class=refresh></i>
+Regenerate</span>.</p>
+<p>Once you're happy with the result, click
+<span class="button highlighted">Use</span> and the generated password will be
+automatically copied into the appropriate field. Or you choose
+<span class=button>Discard</span> and leave your password as-is.</p>
+<blockquote>
+<p><strong><i class=lightbulb-on></i> Did you know?</strong> If you click into an empty
+password field, Padloc will automatically generate a few random password
+suggestions for you, which will show up right underneath your cursor. Simply
+click one of them to use it!</p>
+</blockquote>
+<h2 id=deleting-items tabindex=-1>Deleting Items</h2>
+<p>To delete an item, first enter <a href=#editing-vault-items>edit mode</a>, then click the
+<span class=button><i class=ellipsis-h></i></span> button in the top right
+corner. This will open a popup menu with a couple of options. Select
+<span class=button><i class=trash></i> Delete Item</span> and then
+<span class="button highlighted red">Delete</span> to confirm.</p>
+<blockquote class=red>
+    <i class=warning-triangle></i> <strong>Warning</strong>: Deleting Items is permanent! So
+    please check twice before deleting anything.
+</blockquote>
+<h3 id=deleting-multiple-items tabindex=-1>Deleting Multiple Items</h3>
+<p>Sometimes you just need to clean house, and deleting one Item at a time simply
+won't cut it. To delete multiple items at once, start by clicking the
+<span class=button><i class=square-check></i></span> button in the header on
+the top of the list view. Now select any items you want to delete by clicking on
+them and then click the <span class=button><i class=trash></i></span> button
+in the top right corner. You'll have to confirm you choice by clicking the
+<span class="button highlighted red">Delete [x] Items</span> button.</p>
+<figure>
+    <img src=multi_select_1_desktop.png>
+    <figcaption>You can delete multiple items at once using the <span class=button><i class=square-check></i></span> in the list view.</figcaption>
+</figure>
+<h2 id=moving-items-between-vaults tabindex=-1>Moving Items Between Vaults</h2>
+<p>Once you have more than one vault, you may occasionally want to move an item
+from one vault to a different one. To do this, simply enter
+<a href=#editing-vault-items>edit mode</a> and select the <span class=button><i class=share></i> Move</span> option from the
+<span class=button><i class=ellipsis-h></i></span> menu.</p>
+<blockquote>
+<p><strong><i class=lightbulb-on></i> Tip:</strong> Same as with
+<a href=#deleting-multiple-items>deleting multiple items</a>, you can move multiple
+items at once via the multi-select mode in the list view.</p>
+</blockquote>
+<h2 id=tags tabindex=-1>Tags</h2>
+<p>Tags are a simple but powerful way to organize items by type, areas of use or
+any other criteria you can come up with. This not only provides additional
+context but also makes item more discoverable (even across multiple vaults). To
+add a tag to an item, enter <a href=#editing-vault-items>edit mode</a> and click on the
+<span class="button ghost"><i class=plus></i> Add Tag</span> input and start
+typing. Hit enter or click on one of the suggested tags to add it.</p>
+<figure>
+    <img src=tags_1_desktop.png />
+    <figcaption>Tags are a simple but powerful way to organize your items.</figcaption>
+</figure>
+<p>You can add as many tags to an item as you want. Once a tag has been added to
+any item, it will show up in the menu under "Tags". For more info on how to
+filter items by tags an other criteria, check out the
+<a href=../search>Searching & Filtering</a> section of the manual.</p>
+<h2 id=favorites tabindex=-1>Favorites</h2>
+<p>To add an item to your favorites, simply click the
+<span class=button><i class=star></i></span> button next to the item name
+(you don't have to go into edit mode for this). Once favorited, an item will
+show up under <strong>Favorites</strong> in the main menu and will be highlighted in the list
+view. To remove an item from your favorites, simply click the
+<span class=button><i class=star></i></span> button again.</p>
+<h2 id=expiration-period tabindex=-1>Expiration Period</h2>
+<p>Many services and companies require a password to be changed in regular
+intervals. But even if it's not a requirement, rotating your passwords regularly
+is generally not a bad idea! By adding an <strong>expiration period</strong> to your vault
+item, you can let Padloc remind you when it's time to update it!</p>
+<p>To <strong>add an expiration period</strong>, simply click
+<span class=button><i class=plus></i> Add Expiration</span> inside the
+section titled <strong><i class=hourglass-clock></i> Expiration</strong>. You
+can then enter the number of days after which the item should expire. Click
+<span class="button highlighted">Save</span> to complete the process.</p>
+<p>Once you've added an expiration period, Padloc will monitor the number of days
+since the item has been updated. If the defined number of days is exceeded, your
+item will show up in the Security Report under "Expired Items" until you update
+it or remove the expiration period.</p>
+<p><strong>Removing an expiration period</strong> is as simple as adding one, simply enter
+<a href=#editing-vault-items>edit mode</a> and then click
+<span class=button><i class=circle-minus></i> Remove Expiration</span>
+inside the section titled <strong><i class=hourglass-clock></i>
+Expiration</strong>. Click <span class="button highlighted">Save</span> to
+complete the process.</p>
+<h2 id=item-history tabindex=-1>Item History</h2>
+<p>Whenever you update a vault item, Padloc will automatically keep a record of the
+previous version for you. This can be a life saver in some situations, like when
+you've accidentally edited the wrong item, or when you've already updated a
+password in Padloc and then the website asks your for the old password before
+entering the new one 😅.</p>
+<p>Padloc's <strong>vault item history</strong> feature allows you to view those older versions
+of your item, and even allows you to restore your vault item to that version!</p>
+<p>You can find a list of history entries under the section titled
+<strong><i class=rectangle-history></i> History</strong>. To display a history entry,
+simply select it by clicking on it. This will bring up a dialog where you can
+see the items contents as they were at the indicated time.</p>
+<blockquote>
+<p><i class="info-circle bold"></i> Padloc stores a <strong>maximum of 10 history
+entries</strong> for each item. Once that number is reached, older history entries
+will be discarded as new ones are created.</p>
+</blockquote>
+<p>To <strong>restore a vault item to a specific version</strong>, simply select it from the
+list and click <span class="button highlighted">Restore</span>.</p>
+<figure>
+    <img src=item_history_1_desktop.png alt="Screenshot of item history feature."/>
+    <figcaption>With the item history feature, you can view and restore previous versions of a vault item.</figcaption>
+</figure>
+<h2 id=attachments tabindex=-1>Attachments</h2>
+<p>Fields allow you store all kinds of text-based information within your vault
+items - but sometimes that just isn't enough. After all, a lot of sensitive
+information is stored within <strong>pdf documents</strong>, <strong>spreadsheets</strong>, <strong>photos</strong> and
+all kinds of other files. Attachments allow you to securely store those
+documents alongside your vault items.</p>
+<blockquote>
+<p><i class="info-circle bold"></i> Adding Attachments is one of the advanced
+features only available in the <strong>Premium</strong>, <strong>Family</strong>, <strong>Team</strong> or
+<strong>Business</strong> plans.</p>
+</blockquote>
+<p>To attach a file to a vault item, simply click the area below
+<i class=paperclip></i> <strong>Attachments</strong> and the select the file you which to
+attach to the item. Once you've picked the file, you'll be take to the upload
+dialog where you can change the attachment name. Click
+<span class="button highlighted">Upload</span> to complete the process.</p>
+<blockquote>
+<p><i class="info-circle bold"></i> You can store any kind of file within Padloc
+as long as it is within the <strong>5 MB</strong> size limit and you can add as many as
+many attachments as you want!</p>
+</blockquote>
+<figure>
+    <img src=attachments_1_desktop.png>
+    <figcaption>Use attachments to store PDFs, spread sheets and other documents alongside your items!"</figcaption>
+</figure>
+<h2 id=creating-new-vaults tabindex=-1>Creating New Vaults</h2>
+<p><a href=#tags>Tags</a> and <a href=#favorites>Favorites</a> should me more than enough to organize
+your vault items within your private vault. Creating additional vaults is meant
+primarily for the purpose of organizing and sharing items among multiple Padloc
+users. To create more vaults, you'll first have to create an organization to
+attach them to. To learn more about how this works, check out the
+<a href=../orgs>Organizations & Shared Vaults</a> section of the manual.</p>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+                <a href=/manual/create_account/ class="unstyled fill">
+                    <div class="small subtle bottom-margined horizontally-padded text-left-aligning">
+                        <i class=arrow-left></i> Previous Article
+                    </div>
+                    <h2><i class=baby></i> Creating An Account</h2>
+                    <div class="small description top-margined">Creating a Padloc account is simple and takes only a few moments...</div>
+                </a>
+                
+            </div>
+            <div>
+                
+                <a href=/manual/orgs/ class="unstyled fill">
+                    <div class="small subtle bottom-margined horizontally-padded text-right-aligning">
+                        Next Article <i class=arrow-right></i>
+                    </div>
+                    <h2><i class=users></i> Organizations & Shared Vaults</h2>
+                    <div class="small description top-margined">How to create and manage organizations and share data via shared vaults.</div>
+                </a>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

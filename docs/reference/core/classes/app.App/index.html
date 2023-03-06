@@ -1,0 +1,5571 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Class: App</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Docs and Resources for the Padloc password manager." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img alt="Padloc Logo" src=/assets/img/logo-light.svg style=height:2.5em />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="horizontally-margined search"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            Reference
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            @padloc/core
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Classes
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/account.Account/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Account
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/account.AccountSecrets/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountSecrets
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.API/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: API
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.AuthInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteAuthRequestParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteAuthRequestParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteAuthRequestResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteAuthRequestResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteCreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteCreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteRegisterMFAuthenticatorParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteRegisterMFAuthenticatorResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CreateAccountParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateAccountParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CreateKeyStoreEntryParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateKeyStoreEntryParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.DeleteAttachmentParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DeleteAttachmentParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetAttachmentParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetAttachmentParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetInviteParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetInviteParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetKeyStoreEntryParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetKeyStoreEntryParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetLegacyDataParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetLegacyDataParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.RecoverAccountParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RecoverAccountParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartAuthRequestParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartAuthRequestParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartAuthRequestResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartAuthRequestResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartCreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartCreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartCreateSessionResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartCreateSessionResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartRegisterAuthenticatorParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartRegisterAuthenticatorParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartRegisterAuthenticatorResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartRegisterAuthenticatorResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.UpdateAuthParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: UpdateAuthParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.App/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=code></i>
+        <span>
+            Class: App
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#encryption class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Encryption</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#platform-api class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Platform API</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#persistent-storage class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Persistent Storage</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#data-transport class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Data Transport</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#initialization-example class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Initialization Example</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#constructors class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Constructors</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#constructor class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> constructor</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#properties class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Properties</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_activesyncpromises class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _activeSyncPromises</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_cachedstartcreatesessionresponses class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _cachedStartCreateSessionResponses</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_queuedsyncpromises class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _queuedSyncPromises</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_resolveload class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _resolveLoad</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_subscriptions class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _subscriptions</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#api class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> api</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#loaded class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> loaded</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#publish class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> publish</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#state class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> state</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#version class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> version</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#accessors class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Accessors</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#account class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> account</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#auditeditems class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> auditedItems</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#authinfo class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> authInfo</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#count class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> count</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#mainvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> mainVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#offline class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> offline</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#orgs class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> orgs</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#remembersmasterkey class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> remembersMasterKey</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#session class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> session</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#settings class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> settings</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#storage class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> storage</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#synccomplete class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> syncComplete</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#vaults class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> vaults</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#methods class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Methods</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_logout class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _logout</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_migratefavorites class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _migrateFavorites</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_queuesync class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _queueSync</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_syncvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _syncVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#_unlocked class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> _unlocked</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#acceptinvite class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> acceptInvite</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#additems class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> addItems</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#autohandleinvites class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> autoHandleInvites</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#changepassword class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> changePassword</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#confirminvite class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> confirmInvite</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#createattachment class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> createAttachment</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#creategroup class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> createGroup</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#createinvites class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> createInvites</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#createitem class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> createItem</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#createorg class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> createOrg</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#createvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> createVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#deleteaccount class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> deleteAccount</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#deleteattachment class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> deleteAttachment</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#deleteinvite class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> deleteInvite</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#deleteitems class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> deleteItems</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#deleteorg class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> deleteOrg</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#deletevault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> deleteVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#downloadattachment class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> downloadAttachment</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#fetchaccount class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> fetchAccount</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#fetchauthinfo class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> fetchAuthInfo</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#fetchorg class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> fetchOrg</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#fetchorgs class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> fetchOrgs</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#fetchvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> fetchVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#forgetmasterkey class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> forgetMasterKey</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getaccountfeatures class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getAccountFeatures</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getaccountprovisioning class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getAccountProvisioning</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getinvite class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getInvite</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getitem class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getItem</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getitemsforhost class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getItemsForHost</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getitemsforurl class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getItemsForUrl</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getorg class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getOrg</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getorgfeatures class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getOrgFeatures</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getorgprovisioning class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getOrgProvisioning</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#getvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> getVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#haswritepermissions class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> hasWritePermissions</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#iseditable class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> isEditable</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#ismainvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> isMainVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#load class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> load</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#lock class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> lock</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#login class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> login</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#logout class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> logout</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#moveitems class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> moveItems</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#putorg class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> putOrg</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#putvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> putVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#recoveraccount class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> recoverAccount</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#reload class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> reload</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#remembermasterkey class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> rememberMasterKey</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#removemember class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> removeMember</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#revokesession class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> revokeSession</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#rotateorgkeys class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> rotateOrgKeys</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#save class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> save</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#savevault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> saveVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#setsettings class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> setSettings</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#setstate class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> setState</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#setstats class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> setStats</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#signup class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> signup</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#subscribe class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> subscribe</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#syncvault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> syncVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#syncvaults class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> syncVaults</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#synchronize class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> synchronize</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#togglefavorite class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> toggleFavorite</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#transferownership class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> transferOwnership</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#unlock class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> unlock</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#unlockwithmasterkey class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> unlockWithMasterKey</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#unlockwithrememberedmasterkey class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> unlockWithRememberedMasterKey</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#unsubscribe class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> unsubscribe</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updateaccount class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateAccount</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updategroup class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateGroup</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updateitem class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateItem</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updatelastused class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateLastUsed</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updatemember class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateMember</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updateorg class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateOrg</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updatevault class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateVault</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#updatevaultaccess class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> updateVaultAccess</span>
+    </a>
+</li>
+            
+        </ol></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.AppState/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AppState
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Index/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Index
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Settings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Settings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Stats/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Stats
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.StoredMasterKey/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StoredMasterKey
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.Attachment/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Attachment
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.AttachmentInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AttachmentInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.MemoryAttachmentStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MemoryAttachmentStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.Auth/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Auth
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.AuthRequest/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthRequest&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.Authenticator/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Authenticator&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.AuthenticatorInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthenticatorInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_email.EmailAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EmailAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthChallenge/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthChallenge
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthClient/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthClient
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthClientData/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthClientData
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_totp.TotpAuthConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: TotpAuthConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_totp.TotpAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: TotpAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/client.Client/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Client
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/collection.VaultItemCollection/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VaultItemCollection
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/config.Config/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Config
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.Accessor/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Accessor
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.BaseContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BaseContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.PBES2Container/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PBES2Container
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.SharedContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SharedContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.SimpleContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SimpleContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.AESEncryptionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AESEncryptionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.AESKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AESKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HMACKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HMACKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HMACParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HMACParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HashParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HashParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.PBKDF2Params/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PBKDF2Params
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSAEncryptionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSAEncryptionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSAKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSAKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSASigningParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSASigningParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/directory.DirectorySync/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DirectorySync
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/encoding.Serializable/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Serializable
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/error.Err/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Err
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/event_target.EventEmitter/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EventEmitter
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/invite.Invite/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Invite
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/item.Field/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Field
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/item.VaultItem/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VaultItem
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/key_store.KeyStoreEntry/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: KeyStoreEntry
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/key_store.KeyStoreEntryInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: KeyStoreEntryInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.LogEvent/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: LogEvent
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.MultiLogger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MultiLogger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.VoidLogger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VoidLogger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ConfirmMembershipInviteMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ConfirmMembershipInviteMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ConsoleMessenger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ConsoleMessenger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.EmailAuthMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EmailAuthMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ErrorMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ErrorMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteAcceptedMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteAcceptedMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteCompletedMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteCompletedMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.Message/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Message&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.StubMessenger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubMessenger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.Group/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Group
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.Org/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Org
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgDirectorySettings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgDirectorySettings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgMember/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgMember
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgSecrets/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgSecrets
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.ScimSettings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ScimSettings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.DeviceInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DeviceInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.StubBiometricKeyStore/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubBiometricKeyStore
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.StubPlatform/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubPlatform
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountFeatures/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountFeatures
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.BasicProvisioner/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BasicProvisioner
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.BasicProvisionerConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BasicProvisionerConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.DefaultAccountProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DefaultAccountProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.Feature/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Feature
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgFeature/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgFeature
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgFeatures/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgFeatures
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.Provisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Provisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.StubProvisioner/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubProvisioner
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/quota.AccountQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/quota.OrgQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.Controller/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Controller
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.Server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.ServerConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ServerConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/session.Session/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Session
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/session.SessionInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SessionInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Client/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Client
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Core
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.SRPSession/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SRPSession
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.MemoryStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MemoryStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.Storable/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Storable
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.VoidStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VoidStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/stub_crypto_provider.StubCryptoProvider/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubCryptoProvider
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.DirectSender/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DirectSender
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.Request/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Request
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.RequestAuthentication/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestAuthentication
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.RequestProgress/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestProgress
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.Response/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Response
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.CreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.InitAuthParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: InitAuthParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.InitAuthResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: InitAuthResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RequestMFACodeParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestMFACodeParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RetrieveMFATokenParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RetrieveMFATokenParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RetrieveMFATokenResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RetrieveMFATokenResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/vault.Vault/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Vault
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumerations
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/interfaces/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Interfaces
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Modules
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=server></i>
+        <span>
+            Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/apps/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=laptop-mobile></i>
+        <span>
+            Web & Desktop & Mobile Apps
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/development/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=person-digging></i>
+        <span>
+            Development
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/security/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=lock></i>
+        <span>
+            Security Whitepaper
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/ ><i class=code></i> Technical Docs</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/ ><i class=book></i> Reference</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/ ><i class=code></i> @padloc/core</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/classes/ ><i class=code></i> Classes</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=code> </i>
+                Class: App
+            </h1>
+            <p><a href=../../modules/app>app</a>.App</p>
+<p>The <code>App</code> class is <em>the</em> user-facing top level component encapsulating all
+functionality of the Padloc client app. It is responsible for managing state,
+client-side persistence and synchronization with the <a href=../server.Server>Server</a>
+and exposes methods for manipulating a users <a href=../account.Account>Account</a>,
+<a href=../org.Org>Org</a>anizations and <a href=../vault.Vault>Vault</a>s.</p>
+<p><a href=../app.App>App</a> is completely platform-agnostic and can be used in any
+environment capable of running JavaScript. It does however rely on
+platform-specific providers for a number of features like storage and encryption
+which can be "plugged in" as needed.</p>
+<h3 id=encryption tabindex=-1>Encryption</h3>
+<p>The <code>@padloc/core</code> module does not provide or depend on any specific
+implementation of cryptographic primitives but instead relies on the
+<a href=../../interfaces/crypto.CryptoProvider>CryptoProvider</a> interface to provide
+those.</p>
+<p>Users of the <a href=../app.App>App</a> class (and of the <code>@padloc/core</code> package in
+general) are responsible for ensuring that a secure implemenation of the
+<a href=../../interfaces/crypto.CryptoProvider>CryptoProvider</a> interface is available
+before using any methods that require cryptographic functionality. This is done
+through the <code>crypto.setProvider</code> function (see example below).</p>
+<h3 id=platform-api tabindex=-1>Platform API</h3>
+<p>Certain functionality requires access to some platform APIs. For this, an
+implementation of the <a href=../../interfaces/platform.Platform>Platform</a> interface
+can be provided via <code>platform.setPlatform</code>.</p>
+<h3 id=persistent-storage tabindex=-1>Persistent Storage</h3>
+<p>Persistent storage is provided by an implementation of the
+<a href=../../interfaces/storage.Storage>Storage</a> interface.</p>
+<h3 id=data-transport tabindex=-1>Data Transport</h3>
+<p>The <a href=../../interfaces/transport.Sender>Sender</a> interface handles
+communication with the <a href=../server.Server>Server</a> instance through a RPC
+<a href=../transport.Request>Request</a>-<a href=../transport.Response>Response</a> cycle. The
+implementation provided should match the
+<a href=../../interfaces/transport.Receiver>Receiver</a> implementation used in the
+<a href=../server.Server>Server</a> instance.</p>
+<h3 id=initialization-example tabindex=-1>Initialization Example</h3>
+<pre><code class=language-ts>@import { setProvider } from "@padloc/core/src/crypto";
+@import { setPlatform } from "@padloc/core/src/platform";
+
+setProvider(new NodeCryptoProvider());
+setPlatform(new NodePlatform());
+
+const app = new App(new LevelDBStorage(), new HTTPSender());
+
+app.loaded.then(() => console.log("app ready!");
+</code></pre>
+<h2 id=constructors tabindex=-1>Constructors</h2>
+<h3 id=constructor tabindex=-1>constructor</h3>
+<p>• <strong>new App</strong>(<code>sender</code>)</p>
+<h4 id=parameters tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>sender</code></td>
+<td style=text-align:left><a href=../../interfaces/transport.Sender><code>Sender</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=defined-in tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L314>core/src/app.ts:314</a></p>
+<h2 id=properties tabindex=-1>Properties</h2>
+<h3 id=_activesyncpromises tabindex=-1>_activeSyncPromises</h3>
+<p>• <code>Private</code> <strong>_activeSyncPromises</strong>: <code>Map</code>&lt;<code>string</code>, <code>Promise</code>&lt;<code>void</code>>></p>
+<h4 id=defined-in-1 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L425>core/src/app.ts:425</a></p>
+<hr>
+<h3 id=_cachedstartcreatesessionresponses tabindex=-1>_cachedStartCreateSessionResponses</h3>
+<p>• <code>Private</code> <strong>_cachedStartCreateSessionResponses</strong>: <code>Map</code>&lt;<code>string</code>,
+<a href=../api.StartCreateSessionResponse><code>StartCreateSessionResponse</code></a>></p>
+<h4 id=defined-in-2 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L429>core/src/app.ts:429</a></p>
+<hr>
+<h3 id=_queuedsyncpromises tabindex=-1>_queuedSyncPromises</h3>
+<p>• <code>Private</code> <strong>_queuedSyncPromises</strong>: <code>Map</code>&lt;<code>string</code>, <code>Promise</code>&lt;<code>void</code>>></p>
+<h4 id=defined-in-3 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L424>core/src/app.ts:424</a></p>
+<hr>
+<h3 id=_resolveload tabindex=-1>_resolveLoad</h3>
+<p>• <code>Private</code> <strong>_resolveLoad</strong>: () => <code>void</code></p>
+<h4 id=type-declaration tabindex=-1>Type declaration</h4>
+<p>▸ (): <code>void</code></p>
+<h5 id=returns tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-4 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L309>core/src/app.ts:309</a></p>
+<hr>
+<h3 id=_subscriptions tabindex=-1>_subscriptions</h3>
+<p>• <code>Private</code> <strong>_subscriptions</strong>: (<code>state</code>: <a href=../app.AppState><code>AppState</code></a>) =>
+<code>void</code>[] = <code>[]</code></p>
+<h4 id=defined-in-5 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L427>core/src/app.ts:427</a></p>
+<hr>
+<h3 id=api tabindex=-1>api</h3>
+<p>• <strong>api</strong>: <a href=../api.API><code>API</code></a></p>
+<p>API client for RPC calls</p>
+<h4 id=defined-in-6 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L304>core/src/app.ts:304</a></p>
+<hr>
+<h3 id=loaded tabindex=-1>loaded</h3>
+<p>• <strong>loaded</strong>: <code>Promise</code>&lt;<code>void</code>></p>
+<p>Promise that is resolved when the app has been fully loaded</p>
+<h4 id=defined-in-7 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L312>core/src/app.ts:312</a></p>
+<hr>
+<h3 id=publish tabindex=-1>publish</h3>
+<p>• <strong>publish</strong>: (...<code>args</code>: <code>any</code>[]) => <code>void</code></p>
+<h4 id=type-declaration-1 tabindex=-1>Type declaration</h4>
+<p>▸ (...<code>args</code>): <code>void</code></p>
+<p>Notifies all subscribers of a <a href=../app.App#state>state</a> change</p>
+<h5 id=parameters-1 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>...args</code></td>
+<td style=text-align:left><code>any</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-1 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-8 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L545>core/src/app.ts:545</a></p>
+<hr>
+<h3 id=state tabindex=-1>state</h3>
+<p>• <strong>state</strong>: <a href=../app.AppState><code>AppState</code></a></p>
+<p>Application state</p>
+<h4 id=defined-in-9 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L307>core/src/app.ts:307</a></p>
+<hr>
+<h3 id=version tabindex=-1>version</h3>
+<p>• <strong>version</strong>: <code>string</code> = <code>"3.0"</code></p>
+<p>App version</p>
+<h4 id=defined-in-10 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L301>core/src/app.ts:301</a></p>
+<h2 id=accessors tabindex=-1>Accessors</h2>
+<h3 id=account tabindex=-1>account</h3>
+<p>• <code>get</code> <strong>account</strong>(): <code>null</code> | <a href=../account.Account><code>Account</code></a></p>
+<p>Current account</p>
+<h4 id=returns-2 tabindex=-1>Returns</h4>
+<p><code>null</code> | <a href=../account.Account><code>Account</code></a></p>
+<h4 id=defined-in-11 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L336>core/src/app.ts:336</a></p>
+<hr>
+<h3 id=auditeditems tabindex=-1>auditedItems</h3>
+<p>• <code>get</code> <strong>auditedItems</strong>(): { <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ;
+<code>vault</code>: <a href=../vault.Vault><code>Vault</code></a> }[]</p>
+<h4 id=returns-3 tabindex=-1>Returns</h4>
+<p>{ <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ; <code>vault</code>: <a href=../vault.Vault><code>Vault</code></a>
+}[]</p>
+<h4 id=defined-in-12 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L378>core/src/app.ts:378</a></p>
+<hr>
+<h3 id=authinfo tabindex=-1>authInfo</h3>
+<p>• <code>get</code> <strong>authInfo</strong>(): <code>null</code> | <a href=../api.AuthInfo><code>AuthInfo</code></a></p>
+<p>Authentication Information, such as active sessions, trusted devices etc.</p>
+<h4 id=returns-4 tabindex=-1>Returns</h4>
+<p><code>null</code> | <a href=../api.AuthInfo><code>AuthInfo</code></a></p>
+<h4 id=defined-in-13 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L341>core/src/app.ts:341</a></p>
+<hr>
+<h3 id=count tabindex=-1>count</h3>
+<p>• <code>get</code> <strong>count</strong>(): <code>Object</code></p>
+<h4 id=returns-5 tabindex=-1>Returns</h4>
+<p><code>Object</code></p>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>attachments</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>currentHost</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>favorites</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>recent</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>report</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>total</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=defined-in-14 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L390>core/src/app.ts:390</a></p>
+<hr>
+<h3 id=mainvault tabindex=-1>mainVault</h3>
+<p>• <code>get</code> <strong>mainVault</strong>(): <code>null</code> | <a href=../vault.Vault><code>Vault</code></a></p>
+<p>The current users main, or "private" <a href=../vault.Vault>Vault</a></p>
+<h4 id=returns-6 tabindex=-1>Returns</h4>
+<p><code>null</code> | <a href=../vault.Vault><code>Vault</code></a></p>
+<h4 id=defined-in-15 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L366>core/src/app.ts:366</a></p>
+<hr>
+<h3 id=offline tabindex=-1>offline</h3>
+<p>• <code>get</code> <strong>offline</strong>(): <code>boolean</code></p>
+<h4 id=returns-7 tabindex=-1>Returns</h4>
+<p><code>boolean</code></p>
+<h4 id=defined-in-16 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L370>core/src/app.ts:370</a></p>
+<hr>
+<h3 id=orgs tabindex=-1>orgs</h3>
+<p>• <code>get</code> <strong>orgs</strong>(): <a href=../org.Org><code>Org</code></a>[]</p>
+<p>The current accounts organizations</p>
+<h4 id=returns-8 tabindex=-1>Returns</h4>
+<p><a href=../org.Org><code>Org</code></a>[]</p>
+<h4 id=defined-in-17 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L351>core/src/app.ts:351</a></p>
+<hr>
+<h3 id=remembersmasterkey tabindex=-1>remembersMasterKey</h3>
+<p>• <code>get</code> <strong>remembersMasterKey</strong>(): <code>boolean</code></p>
+<h4 id=returns-9 tabindex=-1>Returns</h4>
+<p><code>boolean</code></p>
+<h4 id=defined-in-18 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L374>core/src/app.ts:374</a></p>
+<hr>
+<h3 id=session tabindex=-1>session</h3>
+<p>• <code>get</code> <strong>session</strong>(): <code>null</code> | <a href=../session.Session><code>Session</code></a></p>
+<p>Current session</p>
+<h4 id=returns-10 tabindex=-1>Returns</h4>
+<p><code>null</code> | <a href=../session.Session><code>Session</code></a></p>
+<h4 id=defined-in-19 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L346>core/src/app.ts:346</a></p>
+<hr>
+<h3 id=settings tabindex=-1>settings</h3>
+<p>• <code>get</code> <strong>settings</strong>(): <a href=../app.Settings><code>Settings</code></a></p>
+<p>Application settings</p>
+<h4 id=returns-11 tabindex=-1>Returns</h4>
+<p><a href=../app.Settings><code>Settings</code></a></p>
+<h4 id=defined-in-20 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L361>core/src/app.ts:361</a></p>
+<hr>
+<h3 id=storage tabindex=-1>storage</h3>
+<p>• <code>get</code> <strong>storage</strong>(): <a href=../../interfaces/storage.Storage><code>Storage</code></a></p>
+<h4 id=returns-12 tabindex=-1>Returns</h4>
+<p><a href=../../interfaces/storage.Storage><code>Storage</code></a></p>
+<h4 id=defined-in-21 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L326>core/src/app.ts:326</a></p>
+<hr>
+<h3 id=synccomplete tabindex=-1>syncComplete</h3>
+<p>• <code>get</code> <strong>syncComplete</strong>(): <code>Promise</code>&lt;<code>void</code>[]></p>
+<p>Promise that resolves once all current synchronization processes are complete</p>
+<h4 id=returns-13 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>[]></p>
+<h4 id=defined-in-22 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L331>core/src/app.ts:331</a></p>
+<hr>
+<h3 id=vaults tabindex=-1>vaults</h3>
+<p>• <code>get</code> <strong>vaults</strong>(): <a href=../vault.Vault><code>Vault</code></a>[]</p>
+<p>The current accounts vaults</p>
+<h4 id=returns-14 tabindex=-1>Returns</h4>
+<p><a href=../vault.Vault><code>Vault</code></a>[]</p>
+<h4 id=defined-in-23 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L356>core/src/app.ts:356</a></p>
+<h2 id=methods tabindex=-1>Methods</h2>
+<h3 id=_logout tabindex=-1>_logout</h3>
+<p>▸ <code>Private</code> <strong>_logout</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=returns-15 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-24 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L689>core/src/app.ts:689</a></p>
+<hr>
+<h3 id=_migratefavorites tabindex=-1>_migrateFavorites</h3>
+<p>▸ <code>Private</code> <strong>_migrateFavorites</strong>(<code>vault</code>): <code>void</code></p>
+<p>Migrate favorites from "old" favoriting mechanism</p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id=parameters-2 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-16 tabindex=-1>Returns</h4>
+<p><code>void</code></p>
+<h4 id=defined-in-25 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1209>core/src/app.ts:1209</a></p>
+<hr>
+<h3 id=_queuesync tabindex=-1>_queueSync</h3>
+<p>▸ <code>Private</code> <strong>_queueSync</strong>(<code>obj</code>, <code>fn</code>): <code>Promise</code>&lt;<code>any</code>></p>
+<p>================ HELPER METHODS ================</p>
+<h4 id=parameters-3 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>obj</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>obj.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>fn</code></td>
+<td style=text-align:left>(<code>obj</code>: { <code>id</code>: <code>string</code> }) => <code>Promise</code>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-17 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id=defined-in-26 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L2009>core/src/app.ts:2009</a></p>
+<hr>
+<h3 id=_syncvault tabindex=-1>_syncVault</h3>
+<p>▸ <code>Private</code> <strong>_syncVault</strong>(<code>vault</code>): <code>Promise</code>&lt;<code>null</code> |
+<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=parameters-4 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>vault.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>vault.revision?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-18 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>null</code> | <a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=defined-in-27 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1402>core/src/app.ts:1402</a></p>
+<hr>
+<h3 id=_unlocked tabindex=-1>_unlocked</h3>
+<p>▸ <code>Private</code> <strong>_unlocked</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=returns-19 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-28 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L2049>core/src/app.ts:2049</a></p>
+<hr>
+<h3 id=acceptinvite tabindex=-1>acceptInvite</h3>
+<p>▸ <strong>acceptInvite</strong>(<code>invite</code>, <code>secret</code>): <code>Promise</code>&lt;<code>boolean</code>></p>
+<p>Accept an <a href=../invite.Invite>Invite</a></p>
+<h4 id=parameters-5 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>invite</code></td>
+<td style=text-align:left><a href=../invite.Invite><code>Invite</code></a></td>
+<td style=text-align:left>-</td>
+</tr>
+<tr>
+<td style=text-align:left><code>secret</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left>The secret confirmation code, provided to the user by the organization owner</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-20 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>></p>
+<h4 id=defined-in-29 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1852>core/src/app.ts:1852</a></p>
+<hr>
+<h3 id=additems tabindex=-1>addItems</h3>
+<p>▸ <strong>addItems</strong>(<code>items</code>, <code>__namedParameters</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Adds a number of <code>items</code> to the given <code>vault</code></p>
+<h4 id=parameters-6 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>items</code></td>
+<td style=text-align:left><a href=../item.VaultItem><code>VaultItem</code></a>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-21 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-30 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1426>core/src/app.ts:1426</a></p>
+<hr>
+<h3 id=autohandleinvites tabindex=-1>autoHandleInvites</h3>
+<p>▸ <strong>autoHandleInvites</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=returns-22 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-31 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1901>core/src/app.ts:1901</a></p>
+<hr>
+<h3 id=changepassword tabindex=-1>changePassword</h3>
+<p>▸ <strong>changePassword</strong>(<code>password</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Updates the users master password</p>
+<h4 id=parameters-7 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>password</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-23 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-32 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L713>core/src/app.ts:713</a></p>
+<hr>
+<h3 id=confirminvite tabindex=-1>confirmInvite</h3>
+<p>▸ <strong>confirmInvite</strong>(<code>invite</code>): <code>Promise</code>&lt;<a href=../org.OrgMember><code>OrgMember</code></a>></p>
+<p>Confirm an <a href=../invite.Invite>Invite</a> after it has been accepted by the invitee.
+This will verify the invitees information and then add them to the organization.</p>
+<h4 id=parameters-8 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>invite</code></td>
+<td style=text-align:left><a href=../invite.Invite><code>Invite</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-24 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.OrgMember><code>OrgMember</code></a>></p>
+<p>The newly created member object.</p>
+<h4 id=defined-in-33 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1867>core/src/app.ts:1867</a></p>
+<hr>
+<h3 id=createattachment tabindex=-1>createAttachment</h3>
+<p>▸ <strong>createAttachment</strong>(<code>itemId</code>, <code>file</code>, <code>name?</code>):
+<code>Promise</code>&lt;<a href=../attachment.Attachment><code>Attachment</code></a>></p>
+<p>============= ATTACHMENTS =============</p>
+<h4 id=parameters-9 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>itemId</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>file</code></td>
+<td style=text-align:left><code>File</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>name?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-25 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../attachment.Attachment><code>Attachment</code></a>></p>
+<h4 id=defined-in-34 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1930>core/src/app.ts:1930</a></p>
+<hr>
+<h3 id=creategroup tabindex=-1>createGroup</h3>
+<p>▸ <strong>createGroup</strong>(<code>org</code>, <code>name</code>, <code>members</code>, <code>vaults</code>):
+<code>Promise</code>&lt;<a href=../org.Group><code>Group</code></a>></p>
+<p>Creates a new <a href=../org.Group>Group</a> in the given <code>org</code></p>
+<h4 id=parameters-10 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>name</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>members</code></td>
+<td style=text-align:left>{ <code>email</code>: <code>string</code> }[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>vaults</code></td>
+<td style=text-align:left>{ <code>id</code>: <code>string</code> ; <code>readonly</code>: <code>boolean</code> }[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-26 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.Group><code>Group</code></a>></p>
+<h4 id=defined-in-35 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1672>core/src/app.ts:1672</a></p>
+<hr>
+<h3 id=createinvites tabindex=-1>createInvites</h3>
+<p>▸ <strong>createInvites</strong>(<code>__namedParameters</code>, <code>emails</code>, <code>purpose?</code>):
+<code>Promise</code>&lt;<a href=../invite.Invite><code>Invite</code></a>[]></p>
+<p>Create a new <a href=../invite.Invite>Invite</a></p>
+<h4 id=parameters-11 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>emails</code></td>
+<td style=text-align:left><code>string</code>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>purpose?</code></td>
+<td style=text-align:left><a href=../modules/invite#invitepurpose><code>InvitePurpose</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-27 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../invite.Invite><code>Invite</code></a>[]></p>
+<h4 id=defined-in-36 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1818>core/src/app.ts:1818</a></p>
+<hr>
+<h3 id=createitem tabindex=-1>createItem</h3>
+<p>▸ <strong>createItem</strong>(<code>__namedParameters</code>):
+<code>Promise</code>&lt;<a href=../item.VaultItem><code>VaultItem</code></a>></p>
+<p>Creates a new <a href=../item.VaultItem>VaultItem</a></p>
+<h4 id=parameters-12 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.fields?</code></td>
+<td style=text-align:left><a href=../item.Field><code>Field</code></a>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.icon?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.name</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.tags?</code></td>
+<td style=text-align:left><code>string</code>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.vault</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.vault.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-28 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../item.VaultItem><code>VaultItem</code></a>></p>
+<h4 id=defined-in-37 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1434>core/src/app.ts:1434</a></p>
+<hr>
+<h3 id=createorg tabindex=-1>createOrg</h3>
+<p>▸ <strong>createOrg</strong>(<code>name</code>): <code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<p>Create a new <a href=../org.Org>Org</a>ganization</p>
+<h4 id=parameters-13 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>name</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-29 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=defined-in-38 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1587>core/src/app.ts:1587</a></p>
+<hr>
+<h3 id=createvault tabindex=-1>createVault</h3>
+<p>▸ <strong>createVault</strong>(<code>name</code>, <code>org</code>, <code>members?</code>, <code>groups?</code>):
+<code>Promise</code>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<p>Create a new <a href=../vault.Vault>Vault</a></p>
+<h4 id=parameters-14 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>name</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>members</code></td>
+<td style=text-align:left>{ <code>accountId?</code>: <code>string</code> ; <code>email</code>: <code>string</code> ; <code>readonly</code>: <code>boolean</code> }[]</td>
+<td style=text-align:left><code>[]</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>groups</code></td>
+<td style=text-align:left>{ <code>name</code>: <code>string</code> ; <code>readonly</code>: <code>boolean</code> }[]</td>
+<td style=text-align:left><code>[]</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-30 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=defined-in-39 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L986>core/src/app.ts:986</a></p>
+<hr>
+<h3 id=deleteaccount tabindex=-1>deleteAccount</h3>
+<p>▸ <strong>deleteAccount</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=returns-31 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-40 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L684>core/src/app.ts:684</a></p>
+<hr>
+<h3 id=deleteattachment tabindex=-1>deleteAttachment</h3>
+<p>▸ <strong>deleteAttachment</strong>(<code>itemId</code>, <code>att</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-15 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>itemId</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>att</code></td>
+<td style=text-align:left><a href=../attachment.Attachment><code>Attachment</code></a> | <a href=../attachment.AttachmentInfo><code>AttachmentInfo</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-32 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-41 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1969>core/src/app.ts:1969</a></p>
+<hr>
+<h3 id=deleteinvite tabindex=-1>deleteInvite</h3>
+<p>▸ <strong>deleteInvite</strong>(<code>invite</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Deletes an <a href=../invite.Invite>Invite</a></p>
+<h4 id=parameters-16 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>invite</code></td>
+<td style=text-align:left><a href=../invite.Invite><code>Invite</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-33 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-42 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1894>core/src/app.ts:1894</a></p>
+<hr>
+<h3 id=deleteitems tabindex=-1>deleteItems</h3>
+<p>▸ <strong>deleteItems</strong>(<code>items</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Delete a number of <code>items</code></p>
+<h4 id=parameters-17 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>items</code></td>
+<td style=text-align:left><a href=../item.VaultItem><code>VaultItem</code></a>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-34 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-43 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1485>core/src/app.ts:1485</a></p>
+<hr>
+<h3 id=deleteorg tabindex=-1>deleteOrg</h3>
+<p>▸ <strong>deleteOrg</strong>(<code>id</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-18 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-35 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-44 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1666>core/src/app.ts:1666</a></p>
+<hr>
+<h3 id=deletevault tabindex=-1>deleteVault</h3>
+<p>▸ <strong>deleteVault</strong>(<code>id</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Delete <a href=../vault.Vault>Vault</a></p>
+<h4 id=parameters-19 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-36 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-45 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1086>core/src/app.ts:1086</a></p>
+<hr>
+<h3 id=downloadattachment tabindex=-1>downloadAttachment</h3>
+<p>▸ <strong>downloadAttachment</strong>(<code>att</code>):
+<code>Promise</code>&lt;<a href=../attachment.Attachment><code>Attachment</code></a>></p>
+<h4 id=parameters-20 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>att</code></td>
+<td style=text-align:left><a href=../attachment.AttachmentInfo><code>AttachmentInfo</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-37 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../attachment.Attachment><code>Attachment</code></a>></p>
+<h4 id=defined-in-46 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1952>core/src/app.ts:1952</a></p>
+<hr>
+<h3 id=fetchaccount tabindex=-1>fetchAccount</h3>
+<p>▸ <strong>fetchAccount</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Fetches the users <a href=../account.Account>Account</a> info from the
+<a href=../server.Server>Server</a></p>
+<h4 id=returns-38 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-47 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L741>core/src/app.ts:741</a></p>
+<hr>
+<h3 id=fetchauthinfo tabindex=-1>fetchAuthInfo</h3>
+<p>▸ <strong>fetchAuthInfo</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Fetches the users <a href=../account.Account>Account</a> info from the
+<a href=../server.Server>Server</a></p>
+<h4 id=returns-39 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-48 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L758>core/src/app.ts:758</a></p>
+<hr>
+<h3 id=fetchorg tabindex=-1>fetchOrg</h3>
+<p>▸ <strong>fetchOrg</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<p>Fetch the <a href=../org.Org>Org</a>anization object with the given <code>id</code></p>
+<h4 id=parameters-21 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.revision?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-40 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=defined-in-49 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1610>core/src/app.ts:1610</a></p>
+<hr>
+<h3 id=fetchorgs tabindex=-1>fetchOrgs</h3>
+<p>▸ <strong>fetchOrgs</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Fetch all organizations the current account is a member of</p>
+<h4 id=returns-41 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-50 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1596>core/src/app.ts:1596</a></p>
+<hr>
+<h3 id=fetchvault tabindex=-1>fetchVault</h3>
+<p>▸ <strong>fetchVault</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>null</code> |
+<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=parameters-22 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.revision?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-42 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>null</code> | <a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=defined-in-51 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1132>core/src/app.ts:1132</a></p>
+<hr>
+<h3 id=forgetmasterkey tabindex=-1>forgetMasterKey</h3>
+<p>▸ <strong>forgetMasterKey</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=returns-43 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-52 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L932>core/src/app.ts:932</a></p>
+<hr>
+<h3 id=getaccountfeatures tabindex=-1>getAccountFeatures</h3>
+<p>▸ <strong>getAccountFeatures</strong>(): <a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<h4 id=returns-44 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.AccountFeatures><code>AccountFeatures</code></a></p>
+<h4 id=defined-in-53 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1995>core/src/app.ts:1995</a></p>
+<hr>
+<h3 id=getaccountprovisioning tabindex=-1>getAccountProvisioning</h3>
+<p>▸ <strong>getAccountProvisioning</strong>():
+<a href=../provisioning.AccountProvisioning><code>AccountProvisioning</code></a></p>
+<p>========= PROVISIONING =========</p>
+<h4 id=returns-45 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.AccountProvisioning><code>AccountProvisioning</code></a></p>
+<h4 id=defined-in-54 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1987>core/src/app.ts:1987</a></p>
+<hr>
+<h3 id=getinvite tabindex=-1>getInvite</h3>
+<p>▸ <strong>getInvite</strong>(<code>orgId</code>, <code>id</code>): <code>Promise</code>&lt;<code>null</code> |
+<a href=../invite.Invite><code>Invite</code></a>></p>
+<p>Get an <a href=../invite.Invite>Invite</a> based on the organization id and invite id.</p>
+<h4 id=parameters-23 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>orgId</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-46 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>null</code> | <a href=../invite.Invite><code>Invite</code></a>></p>
+<h4 id=defined-in-55 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1839>core/src/app.ts:1839</a></p>
+<hr>
+<h3 id=getitem tabindex=-1>getItem</h3>
+<p>▸ <strong>getItem</strong>(<code>id</code>): <code>null</code> | { <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ;
+<code>vault</code>: <a href=../vault.Vault><code>Vault</code></a> }</p>
+<p>Get the <a href=../item.VaultItem>VaultItem</a> and <a href=../vault.Vault>Vault</a> for the given
+item <code>id</code></p>
+<h4 id=parameters-24 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-47 tabindex=-1>Returns</h4>
+<p><code>null</code> | { <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ; <code>vault</code>:
+<a href=../vault.Vault><code>Vault</code></a> }</p>
+<h4 id=defined-in-56 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1414>core/src/app.ts:1414</a></p>
+<hr>
+<h3 id=getitemsforhost tabindex=-1>getItemsForHost</h3>
+<p>▸ <strong>getItemsForHost</strong>(<code>host</code>): { <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ;
+<code>vault</code>: <a href=../vault.Vault><code>Vault</code></a> }[]</p>
+<h4 id=parameters-25 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>host</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-48 tabindex=-1>Returns</h4>
+<p>{ <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ; <code>vault</code>: <a href=../vault.Vault><code>Vault</code></a>
+}[]</p>
+<h4 id=defined-in-57 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1531>core/src/app.ts:1531</a></p>
+<hr>
+<h3 id=getitemsforurl tabindex=-1>getItemsForUrl</h3>
+<p>▸ <strong>getItemsForUrl</strong>(<code>url</code>): { <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ;
+<code>vault</code>: <a href=../vault.Vault><code>Vault</code></a> }[]</p>
+<h4 id=parameters-26 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>url</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-49 tabindex=-1>Returns</h4>
+<p>{ <code>item</code>: <a href=../item.VaultItem><code>VaultItem</code></a> ; <code>vault</code>: <a href=../vault.Vault><code>Vault</code></a>
+}[]</p>
+<h4 id=defined-in-58 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1559>core/src/app.ts:1559</a></p>
+<hr>
+<h3 id=getorg tabindex=-1>getOrg</h3>
+<p>▸ <strong>getOrg</strong>(<code>id</code>): <code>undefined</code> | <a href=../org.Org><code>Org</code></a></p>
+<p>Get the organization with the given <code>id</code></p>
+<h4 id=parameters-27 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-50 tabindex=-1>Returns</h4>
+<p><code>undefined</code> | <a href=../org.Org><code>Org</code></a></p>
+<h4 id=defined-in-59 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1575>core/src/app.ts:1575</a></p>
+<hr>
+<h3 id=getorgfeatures tabindex=-1>getOrgFeatures</h3>
+<p>▸ <strong>getOrgFeatures</strong>(<code>org</code>): <a href=../provisioning.OrgFeatures><code>OrgFeatures</code></a></p>
+<h4 id=parameters-28 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../../interfaces/org.OrgInfo><code>OrgInfo</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-51 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.OrgFeatures><code>OrgFeatures</code></a></p>
+<h4 id=defined-in-60 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1999>core/src/app.ts:1999</a></p>
+<hr>
+<h3 id=getorgprovisioning tabindex=-1>getOrgProvisioning</h3>
+<p>▸ <strong>getOrgProvisioning</strong>(<code>__namedParameters</code>):
+<a href=../provisioning.OrgProvisioning><code>OrgProvisioning</code></a></p>
+<h4 id=parameters-29 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-52 tabindex=-1>Returns</h4>
+<p><a href=../provisioning.OrgProvisioning><code>OrgProvisioning</code></a></p>
+<h4 id=defined-in-61 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1991>core/src/app.ts:1991</a></p>
+<hr>
+<h3 id=getvault tabindex=-1>getVault</h3>
+<p>▸ <strong>getVault</strong>(<code>id</code>): <code>undefined</code> | <a href=../vault.Vault><code>Vault</code></a></p>
+<p>Get the <a href=../vault.Vault>Vault</a> with the given <code>id</code></p>
+<h4 id=parameters-30 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-53 tabindex=-1>Returns</h4>
+<p><code>undefined</code> | <a href=../vault.Vault><code>Vault</code></a></p>
+<h4 id=defined-in-62 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L970>core/src/app.ts:970</a></p>
+<hr>
+<h3 id=haswritepermissions tabindex=-1>hasWritePermissions</h3>
+<p>▸ <strong>hasWritePermissions</strong>(<code>vault</code>): <code>undefined</code> | <code>boolean</code></p>
+<p>Whether the current user has write permissions to the given <code>vault</code>.</p>
+<h4 id=parameters-31 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-54 tabindex=-1>Returns</h4>
+<p><code>undefined</code> | <code>boolean</code></p>
+<h4 id=defined-in-63 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1387>core/src/app.ts:1387</a></p>
+<hr>
+<h3 id=iseditable tabindex=-1>isEditable</h3>
+<p>▸ <strong>isEditable</strong>(<code>vault</code>): <code>undefined</code> | <code>boolean</code></p>
+<h4 id=parameters-32 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-55 tabindex=-1>Returns</h4>
+<p><code>undefined</code> | <code>boolean</code></p>
+<h4 id=defined-in-64 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1397>core/src/app.ts:1397</a></p>
+<hr>
+<h3 id=ismainvault tabindex=-1>isMainVault</h3>
+<p>▸ <strong>isMainVault</strong>(<code>vault</code>): <code>null</code> | <code>boolean</code></p>
+<h4 id=parameters-33 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-56 tabindex=-1>Returns</h4>
+<p><code>null</code> | <code>boolean</code></p>
+<h4 id=defined-in-65 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L981>core/src/app.ts:981</a></p>
+<hr>
+<h3 id=load tabindex=-1>load</h3>
+<p>▸ <strong>load</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Load application state from persistent storage</p>
+<h4 id=returns-57 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-66 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L444>core/src/app.ts:444</a></p>
+<hr>
+<h3 id=lock tabindex=-1>lock</h3>
+<p>▸ <strong>lock</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Locks the app and wipes all sensitive information from memory.</p>
+<h4 id=returns-58 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-67 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L503>core/src/app.ts:503</a></p>
+<hr>
+<h3 id=login tabindex=-1>login</h3>
+<p>▸ <strong>login</strong>(<code>email</code>, <code>password</code>, <code>verify?</code>, <code>addTrustedDevice?</code>):
+<code>Promise</code>&lt;<code>void</code>></p>
+<p>Log in user, creating a new <a href=../session.Session>Session</a>, loading
+<a href=../account.Account>Account</a> info and fetching all of the users
+<a href=../org.Org>Org</a>anizations and <a href=../vault.Vault>Vault</a>s.</p>
+<h4 id=parameters-34 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>email</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>password</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>verify?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>addTrustedDevice?</code></td>
+<td style=text-align:left><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-59 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-68 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L633>core/src/app.ts:633</a></p>
+<hr>
+<h3 id=logout tabindex=-1>logout</h3>
+<p>▸ <strong>logout</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Logs out user and clears all sensitive information</p>
+<h4 id=returns-60 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-69 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L679>core/src/app.ts:679</a></p>
+<hr>
+<h3 id=moveitems tabindex=-1>moveItems</h3>
+<p>▸ <strong>moveItems</strong>(<code>items</code>, <code>target</code>):
+<code>Promise</code>&lt;<a href=../item.VaultItem><code>VaultItem</code></a>[]></p>
+<p>Move <code>items</code> from their current vault to the <code>target</code> vault</p>
+<h4 id=parameters-35 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>items</code></td>
+<td style=text-align:left><a href=../item.VaultItem><code>VaultItem</code></a>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>target</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-61 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../item.VaultItem><code>VaultItem</code></a>[]></p>
+<h4 id=defined-in-70 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1521>core/src/app.ts:1521</a></p>
+<hr>
+<h3 id=putorg tabindex=-1>putOrg</h3>
+<p>▸ <strong>putOrg</strong>(<code>org</code>): <code>void</code></p>
+<p>Update the given organization locally</p>
+<h4 id=parameters-36 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-62 tabindex=-1>Returns</h4>
+<p><code>void</code></p>
+<h4 id=defined-in-71 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1580>core/src/app.ts:1580</a></p>
+<hr>
+<h3 id=putvault tabindex=-1>putVault</h3>
+<p>▸ <strong>putVault</strong>(<code>vault</code>): <code>void</code></p>
+<p>Locally update the given <code>vault</code> object</p>
+<h4 id=parameters-37 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-63 tabindex=-1>Returns</h4>
+<p><code>void</code></p>
+<h4 id=defined-in-72 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L975>core/src/app.ts:975</a></p>
+<hr>
+<h3 id=recoveraccount tabindex=-1>recoverAccount</h3>
+<p>▸ <strong>recoverAccount</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Initiates account recovery allowing a user to regain control of their account in
+case they forget their master password. This results in the following:</p>
+<ul>
+<li>All of the accounts cryptographic keys are rotated.</li>
+<li>The accounts sensitive data is encrypted with the new master password.</li>
+<li>The accounts authentication info is updated to reflect the password change.</li>
+<li>The accounts private vault is reset (and the data within it lost).</li>
+<li>The cryptographic keys of all <a href=../org.Org>Org</a>anizations owned by the
+account will be rotated and all members suspended until reconfirmed.</li>
+<li>The accounts memberships to any <a href=../org.Org>Org</a>ganizations not owned by it
+will be suspended until reconfirmed.</li>
+</ul>
+<p>The user will automatically get logged in during this process so a separate
+login is not necessary.</p>
+<h4 id=parameters-38 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.email</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.password</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.verify</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-64 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-73 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L830>core/src/app.ts:830</a></p>
+<hr>
+<h3 id=reload tabindex=-1>reload</h3>
+<p>▸ <strong>reload</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=returns-65 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-74 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L478>core/src/app.ts:478</a></p>
+<hr>
+<h3 id=remembermasterkey tabindex=-1>rememberMasterKey</h3>
+<p>▸ <strong>rememberMasterKey</strong>(<code>authenticatorId</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-39 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>authenticatorId</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-66 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-75 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L911>core/src/app.ts:911</a></p>
+<hr>
+<h3 id=removemember tabindex=-1>removeMember</h3>
+<p>▸ <strong>removeMember</strong>(<code>org</code>, <code>member</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Removes a member from the given <code>org</code></p>
+<h4 id=parameters-40 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>member</code></td>
+<td style=text-align:left><a href=../org.OrgMember><code>OrgMember</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-67 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-76 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1786>core/src/app.ts:1786</a></p>
+<hr>
+<h3 id=revokesession tabindex=-1>revokeSession</h3>
+<p>▸ <strong>revokeSession</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Revokes the given <a href=../session.Session>Session</a></p>
+<h4 id=parameters-41 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-68 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-77 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L808>core/src/app.ts:808</a></p>
+<hr>
+<h3 id=rotateorgkeys tabindex=-1>rotateOrgKeys</h3>
+<p>▸ <strong>rotateOrgKeys</strong>(<code>org</code>): <code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=parameters-42 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-69 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=defined-in-78 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L878>core/src/app.ts:878</a></p>
+<hr>
+<h3 id=save tabindex=-1>save</h3>
+<p>▸ <strong>save</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Save application state to persistent storage</p>
+<h4 id=returns-70 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-79 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L432>core/src/app.ts:432</a></p>
+<hr>
+<h3 id=savevault tabindex=-1>saveVault</h3>
+<p>▸ <strong>saveVault</strong>(<code>vault</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Commit changes to vault object and save locally</p>
+<h4 id=parameters-43 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-71 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-80 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1079>core/src/app.ts:1079</a></p>
+<hr>
+<h3 id=setsettings tabindex=-1>setSettings</h3>
+<p>▸ <strong>setSettings</strong>(<code>obj</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Update application settings</p>
+<h4 id=parameters-44 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>obj</code></td>
+<td style=text-align:left><code>Partial</code>&lt;<a href=../app.Settings><code>Settings</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-72 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-81 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L567>core/src/app.ts:567</a></p>
+<hr>
+<h3 id=setstate tabindex=-1>setState</h3>
+<p>▸ <strong>setState</strong>(<code>state</code>): <code>void</code></p>
+<p>Updates the app <a href=../app.App#state>state</a></p>
+<h4 id=parameters-45 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>state</code></td>
+<td style=text-align:left><code>Partial</code>&lt;<a href=../app.AppState><code>AppState</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-73 tabindex=-1>Returns</h4>
+<p><code>void</code></p>
+<h4 id=defined-in-82 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L554>core/src/app.ts:554</a></p>
+<hr>
+<h3 id=setstats tabindex=-1>setStats</h3>
+<p>▸ <strong>setStats</strong>(<code>obj</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Update usage data</p>
+<h4 id=parameters-46 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>obj</code></td>
+<td style=text-align:left><code>Partial</code>&lt;<a href=../app.Stats><code>Stats</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-74 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-83 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L560>core/src/app.ts:560</a></p>
+<hr>
+<h3 id=signup tabindex=-1>signup</h3>
+<p>▸ <strong>signup</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Creates a new Padloc <a href=../account.Account>Account</a> and signs in the user.</p>
+<h4 id=parameters-47 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.authToken</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.email</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.invite?</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.invite.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.invite.org</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.name</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.password</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-75 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-84 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L582>core/src/app.ts:582</a></p>
+<hr>
+<h3 id=subscribe tabindex=-1>subscribe</h3>
+<p>▸ <strong>subscribe</strong>(<code>fn</code>): () => <code>void</code></p>
+<p>Notifies of changes to the app <a href=../app.App#state>state</a> via the provided
+function</p>
+<h4 id=parameters-48 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>fn</code></td>
+<td style=text-align:left>(<code>state</code>: <a href=../app.AppState><code>AppState</code></a>) => <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-76 tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>A unsubscribe function</p>
+<p>▸ (): <code>void</code></p>
+<h5 id=returns-77 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-85 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L530>core/src/app.ts:530</a></p>
+<hr>
+<h3 id=syncvault tabindex=-1>syncVault</h3>
+<p>▸ <strong>syncVault</strong>(<code>vault</code>): <code>Promise</code>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<p>Synchronize the given <a href=../vault.Vault>Vault</a></p>
+<h4 id=parameters-49 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>vault</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>vault.id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>vault.name?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>vault.revision?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-78 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=defined-in-86 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1092>core/src/app.ts:1092</a></p>
+<hr>
+<h3 id=syncvaults tabindex=-1>syncVaults</h3>
+<p>▸ <strong>syncVaults</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Synchronize all vaults the current user has access to.</p>
+<h4 id=returns-79 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-87 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1097>core/src/app.ts:1097</a></p>
+<hr>
+<h3 id=synchronize tabindex=-1>synchronize</h3>
+<p>▸ <strong>synchronize</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Synchronizes the current account and all of the accounts organizations and
+vaults</p>
+<h4 id=returns-80 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-88 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L512>core/src/app.ts:512</a></p>
+<hr>
+<h3 id=togglefavorite tabindex=-1>toggleFavorite</h3>
+<p>▸ <strong>toggleFavorite</strong>(<code>id</code>, <code>favorite</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-50 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>favorite</code></td>
+<td style=text-align:left><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-81 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-89 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1475>core/src/app.ts:1475</a></p>
+<hr>
+<h3 id=transferownership tabindex=-1>transferOwnership</h3>
+<p>▸ <strong>transferOwnership</strong>(<code>org</code>, <code>member</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Transfers an organizations ownership to a different member</p>
+<h4 id=parameters-51 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>member</code></td>
+<td style=text-align:left><a href=../org.OrgMember><code>OrgMember</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-82 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-90 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1799>core/src/app.ts:1799</a></p>
+<hr>
+<h3 id=unlock tabindex=-1>unlock</h3>
+<p>▸ <strong>unlock</strong>(<code>password</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Unlocks the current <a href=../account.Account>Account</a> and all available [[Vaults]].</p>
+<h4 id=parameters-52 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>password</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-83 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-91 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L489>core/src/app.ts:489</a></p>
+<hr>
+<h3 id=unlockwithmasterkey tabindex=-1>unlockWithMasterKey</h3>
+<p>▸ <strong>unlockWithMasterKey</strong>(<code>key</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-53 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>key</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-84 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-92 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L958>core/src/app.ts:958</a></p>
+<hr>
+<h3 id=unlockwithrememberedmasterkey tabindex=-1>unlockWithRememberedMasterKey</h3>
+<p>▸ <strong>unlockWithRememberedMasterKey</strong>(<code>authToken</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-54 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>authToken</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-85 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-93 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L944>core/src/app.ts:944</a></p>
+<hr>
+<h3 id=unsubscribe tabindex=-1>unsubscribe</h3>
+<p>▸ <strong>unsubscribe</strong>(<code>fn</code>): <code>void</code></p>
+<p>Unsubscribes a function previously subscribed through
+<a href=../app.App#subscribe>subscribe</a>.</p>
+<h4 id=parameters-55 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>fn</code></td>
+<td style=text-align:left>(<code>state</code>: <a href=../app.AppState><code>AppState</code></a>) => <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-86 tabindex=-1>Returns</h4>
+<p><code>void</code></p>
+<h4 id=defined-in-94 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L538>core/src/app.ts:538</a></p>
+<hr>
+<h3 id=updateaccount tabindex=-1>updateAccount</h3>
+<p>▸ <strong>updateAccount</strong>(<code>transform</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Updates the users <a href=../account.Account>Account</a> information</p>
+<h4 id=parameters-56 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>transform</code></td>
+<td style=text-align:left>(<code>account</code>: <a href=../account.Account><code>Account</code></a>) => <code>Promise</code>&lt;<code>any</code>></td>
+<td style=text-align:left>A function applying the changes to the account</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-87 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-95 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L770>core/src/app.ts:770</a></p>
+<hr>
+<h3 id=updategroup tabindex=-1>updateGroup</h3>
+<p>▸ <strong>updateGroup</strong>(<code>org</code>, <code>__namedParameters</code>, <code>__namedParameters</code>):
+<code>Promise</code>&lt;<a href=../org.Group><code>Group</code></a>></p>
+<p>Updates a <a href=../org.Group>Group</a>s name and members</p>
+<h4 id=parameters-57 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.name</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.members?</code></td>
+<td style=text-align:left>{ <code>email</code>: <code>string</code> }[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.name?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.vaults?</code></td>
+<td style=text-align:left>{ <code>id</code>: <code>string</code> ; <code>readonly</code>: <code>boolean</code> }[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-88 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.Group><code>Group</code></a>></p>
+<h4 id=defined-in-96 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1698>core/src/app.ts:1698</a></p>
+<hr>
+<h3 id=updateitem tabindex=-1>updateItem</h3>
+<p>▸ <strong>updateItem</strong>(<code>item</code>, <code>upd</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<p>Update a given <a href=../item.VaultItem>VaultItem</a>s name, fields, tags and
+attachments</p>
+<h4 id=parameters-58 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>item</code></td>
+<td style=text-align:left><a href=../item.VaultItem><code>VaultItem</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>upd</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>upd.attachments?</code></td>
+<td style=text-align:left><a href=../attachment.AttachmentInfo><code>AttachmentInfo</code></a>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>upd.auditResults?</code></td>
+<td style=text-align:left><a href=../../interfaces/item.AuditResult><code>AuditResult</code></a>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>upd.fields?</code></td>
+<td style=text-align:left><a href=../item.Field><code>Field</code></a>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>upd.lastAudited?</code></td>
+<td style=text-align:left><code>Date</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>upd.name?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>upd.tags?</code></td>
+<td style=text-align:left><code>string</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-89 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-97 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1458>core/src/app.ts:1458</a></p>
+<hr>
+<h3 id=updatelastused tabindex=-1>updateLastUsed</h3>
+<p>▸ <strong>updateLastUsed</strong>(<code>item</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-59 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>item</code></td>
+<td style=text-align:left><a href=../item.VaultItem><code>VaultItem</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-90 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-98 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1479>core/src/app.ts:1479</a></p>
+<hr>
+<h3 id=updatemember tabindex=-1>updateMember</h3>
+<p>▸ <strong>updateMember</strong>(<code>org</code>, <code>__namedParameters</code>, <code>__namedParameters</code>):
+<code>Promise</code>&lt;<a href=../org.OrgMember><code>OrgMember</code></a>></p>
+<p>Update a members assigned <a href=../vault.Vault>Vault</a>s, <a href=../org.Group>Group</a>s
+and <a href=../enums/org.OrgRole>OrgRole</a>.</p>
+<h4 id=parameters-60 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><a href=../org.OrgMember><code>OrgMember</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.groups?</code></td>
+<td style=text-align:left><code>string</code>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.role?</code></td>
+<td style=text-align:left><a href=../../enums/org.OrgRole><code>OrgRole</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.status?</code></td>
+<td style=text-align:left><a href=../../enums/org.OrgMemberStatus><code>OrgMemberStatus</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.vaults?</code></td>
+<td style=text-align:left>{ <code>id</code>: <code>string</code> ; <code>readonly</code>: <code>boolean</code> }[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-91 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.OrgMember><code>OrgMember</code></a>></p>
+<h4 id=defined-in-99 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1733>core/src/app.ts:1733</a></p>
+<hr>
+<h3 id=updateorg tabindex=-1>updateOrg</h3>
+<p>▸ <strong>updateOrg</strong>(<code>id</code>, <code>transform</code>): <code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<p>Update the organization with the given <code>id</code>.</p>
+<h4 id=parameters-61 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left>-</td>
+</tr>
+<tr>
+<td style=text-align:left><code>transform</code></td>
+<td style=text-align:left>(<code>org</code>: <a href=../org.Org><code>Org</code></a>) => <code>Promise</code>&lt;<code>any</code>></td>
+<td style=text-align:left>Function applying the changes</td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-92 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=defined-in-100 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1640>core/src/app.ts:1640</a></p>
+<hr>
+<h3 id=updatevault tabindex=-1>updateVault</h3>
+<p>▸ <strong>updateVault</strong>(<code>__namedParameters</code>, <code>tries?</code>): <code>Promise</code>&lt;<code>null</code> |
+<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=parameters-62 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>__namedParameters</code></td>
+<td style=text-align:left><code>Object</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>__namedParameters.id</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>tries</code></td>
+<td style=text-align:left><code>number</code></td>
+<td style=text-align:left><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-93 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>null</code> | <a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=defined-in-101 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1222>core/src/app.ts:1222</a></p>
+<hr>
+<h3 id=updatevaultaccess tabindex=-1>updateVaultAccess</h3>
+<p>▸ <strong>updateVaultAccess</strong>(<code>orgId</code>, <code>id</code>, <code>name</code>, <code>members?</code>, <code>groups?</code>):
+<code>Promise</code>&lt;<code>void</code>></p>
+<p>Update <a href=../vault.Vault>Vault</a> name and access (not the vaults contents)</p>
+<h4 id=parameters-63 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>orgId</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>id</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>name</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>members</code></td>
+<td style=text-align:left>{ <code>email</code>: <code>string</code> ; <code>id?</code>: <code>string</code> ; <code>readonly</code>: <code>boolean</code> }[]</td>
+<td style=text-align:left><code>[]</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>groups</code></td>
+<td style=text-align:left>{ <code>name</code>: <code>string</code> ; <code>readonly</code>: <code>boolean</code> }[]</td>
+<td style=text-align:left><code>[]</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-94 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=defined-in-102 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/app.ts#L1031>core/src/app.ts:1031</a></p>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

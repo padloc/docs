@@ -1,0 +1,3557 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Class: Client</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Docs and Resources for the Padloc password manager." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img alt="Padloc Logo" src=/assets/img/logo-light.svg style=height:2.5em />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="horizontally-margined search"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            Reference
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            @padloc/core
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Classes
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/account.Account/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Account
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/account.AccountSecrets/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountSecrets
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.API/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: API
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.AuthInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteAuthRequestParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteAuthRequestParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteAuthRequestResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteAuthRequestResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteCreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteCreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteRegisterMFAuthenticatorParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CompleteRegisterMFAuthenticatorResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CreateAccountParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateAccountParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.CreateKeyStoreEntryParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateKeyStoreEntryParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.DeleteAttachmentParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DeleteAttachmentParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetAttachmentParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetAttachmentParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetInviteParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetInviteParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetKeyStoreEntryParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetKeyStoreEntryParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.GetLegacyDataParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: GetLegacyDataParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.RecoverAccountParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RecoverAccountParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartAuthRequestParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartAuthRequestParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartAuthRequestResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartAuthRequestResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartCreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartCreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartCreateSessionResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartCreateSessionResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartRegisterAuthenticatorParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartRegisterAuthenticatorParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.StartRegisterAuthenticatorResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StartRegisterAuthenticatorResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/api.UpdateAuthParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: UpdateAuthParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.App/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: App
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.AppState/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AppState
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Index/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Index
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Settings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Settings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.Stats/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Stats
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/app.StoredMasterKey/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StoredMasterKey
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.Attachment/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Attachment
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.AttachmentInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AttachmentInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/attachment.MemoryAttachmentStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MemoryAttachmentStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.Auth/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Auth
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.AuthRequest/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthRequest&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.Authenticator/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Authenticator&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth.AuthenticatorInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AuthenticatorInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_email.EmailAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EmailAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthChallenge/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthChallenge
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthClient/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthClient
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthClientData/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthClientData
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_public_key.PublicKeyAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PublicKeyAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_totp.TotpAuthConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: TotpAuthConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/auth_totp.TotpAuthServer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: TotpAuthServer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/client.Client/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=code></i>
+        <span>
+            Class: Client
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#hierarchy class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Hierarchy</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#constructors class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Constructors</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#properties class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Properties</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#accessors class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Accessors</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#methods class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Methods</span>
+    </a>
+</li>
+            
+        </ol></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/collection.VaultItemCollection/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VaultItemCollection
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/config.Config/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Config
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.Accessor/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Accessor
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.BaseContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BaseContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.PBES2Container/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PBES2Container
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.SharedContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SharedContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/container.SimpleContainer/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SimpleContainer
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.AESEncryptionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AESEncryptionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.AESKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AESKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HMACKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HMACKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HMACParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HMACParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.HashParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: HashParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.PBKDF2Params/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: PBKDF2Params
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSAEncryptionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSAEncryptionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSAKeyParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSAKeyParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/crypto.RSASigningParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RSASigningParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/directory.DirectorySync/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DirectorySync
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/encoding.Serializable/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Serializable
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/error.Err/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Err
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/event_target.EventEmitter/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EventEmitter
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/invite.Invite/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Invite
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/item.Field/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Field
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/item.VaultItem/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VaultItem
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/key_store.KeyStoreEntry/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: KeyStoreEntry
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/key_store.KeyStoreEntryInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: KeyStoreEntryInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.LogEvent/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: LogEvent
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.MultiLogger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MultiLogger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/logging.VoidLogger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VoidLogger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ConfirmMembershipInviteMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ConfirmMembershipInviteMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ConsoleMessenger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ConsoleMessenger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.EmailAuthMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: EmailAuthMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.ErrorMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ErrorMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteAcceptedMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteAcceptedMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteCompletedMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteCompletedMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.JoinOrgInviteMessage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: JoinOrgInviteMessage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.Message/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Message&lt;T>
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/messenger.StubMessenger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubMessenger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.Group/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Group
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.Org/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Org
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgDirectorySettings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgDirectorySettings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgMember/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgMember
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.OrgSecrets/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgSecrets
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/org.ScimSettings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ScimSettings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.DeviceInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DeviceInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.StubBiometricKeyStore/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubBiometricKeyStore
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/platform.StubPlatform/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubPlatform
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountFeatures/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountFeatures
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.AccountQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.BasicProvisioner/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BasicProvisioner
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.BasicProvisionerConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: BasicProvisionerConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.DefaultAccountProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DefaultAccountProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.Feature/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Feature
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgFeature/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgFeature
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgFeatures/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgFeatures
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgProvisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgProvisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.OrgQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.Provisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Provisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/provisioning.StubProvisioner/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubProvisioner
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/quota.AccountQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: AccountQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/quota.OrgQuota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: OrgQuota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.Controller/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Controller
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.Server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/server.ServerConfig/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: ServerConfig
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/session.Session/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Session
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/session.SessionInfo/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SessionInfo
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Client/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Client
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Core
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.SRPSession/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: SRPSession
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/srp.Server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.MemoryStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: MemoryStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.Storable/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Storable
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/storage.VoidStorage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: VoidStorage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/stub_crypto_provider.StubCryptoProvider/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: StubCryptoProvider
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.DirectSender/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: DirectSender
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.Request/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Request
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.RequestAuthentication/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestAuthentication
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.RequestProgress/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestProgress
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/transport.Response/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Response
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.CreateSessionParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: CreateSessionParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.InitAuthParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: InitAuthParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.InitAuthResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: InitAuthResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RequestMFACodeParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RequestMFACodeParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RetrieveMFATokenParams/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RetrieveMFATokenParams
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/v3_compat.RetrieveMFATokenResponse/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: RetrieveMFATokenResponse
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/vault.Vault/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Class: Vault
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumerations
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/interfaces/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Interfaces
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Modules
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=server></i>
+        <span>
+            Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/apps/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=laptop-mobile></i>
+        <span>
+            Web & Desktop & Mobile Apps
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/development/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=person-digging></i>
+        <span>
+            Development
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/security/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=lock></i>
+        <span>
+            Security Whitepaper
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/ ><i class=code></i> Technical Docs</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/ ><i class=book></i> Reference</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/ ><i class=code></i> @padloc/core</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/classes/ ><i class=code></i> Classes</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=code> </i>
+                Class: Client
+            </h1>
+            <p><a href=../../modules/client>client</a>.Client</p>
+<p>Client-side interface for Client-Server communication. Manages serialization,
+authentication and some state like current session and account.</p>
+<h2 id=hierarchy tabindex=-1>Hierarchy</h2>
+<ul>
+<li>
+<p><a href=../api.API><code>API</code></a></p>
+<p>↳ <strong><code>Client</code></strong></p>
+</li>
+</ul>
+<h2 id=constructors tabindex=-1>Constructors</h2>
+<h3 id=constructor tabindex=-1>constructor</h3>
+<p>• <strong>new Client</strong>(<code>state</code>, <code>sender</code>, <code>hook?</code>)</p>
+<h4 id=parameters tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>state</code></td>
+<td style=text-align:left><a href=../../interfaces/client.ClientState><code>ClientState</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>sender</code></td>
+<td style=text-align:left><a href=../../interfaces/transport.Sender><code>Sender</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>hook?</code></td>
+<td style=text-align:left>(<code>req</code>: <a href=../transport.Request><code>Request</code></a>, <code>res</code>: <code>null</code> | <a href=../transport.Response><code>Response</code></a>, <code>err</code>: <code>null</code> | <a href=../error.Err><code>Err</code></a>) => <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=overrides tabindex=-1>Overrides</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#constructor>constructor</a></p>
+<h4 id=defined-in tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/client.ts#L28>core/src/client.ts:28</a></p>
+<h2 id=properties tabindex=-1>Properties</h2>
+<h3 id=handlerdefinitions tabindex=-1>handlerDefinitions</h3>
+<p>• <strong>handlerDefinitions</strong>: <code>HandlerDefinition</code>[]</p>
+<h4 id=inherited-from tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#handlerdefinitions>handlerDefinitions</a></p>
+<h4 id=defined-in-1 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L428>core/src/api.ts:428</a></p>
+<hr>
+<h3 id=online tabindex=-1>online</h3>
+<p>• <strong>online</strong>: <code>boolean</code> = <code>true</code></p>
+<h4 id=defined-in-2 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/client.ts#L26>core/src/client.ts:26</a></p>
+<hr>
+<h3 id=state tabindex=-1>state</h3>
+<p>• <strong>state</strong>: <a href=../../interfaces/client.ClientState><code>ClientState</code></a></p>
+<h2 id=accessors tabindex=-1>Accessors</h2>
+<h3 id=session tabindex=-1>session</h3>
+<p>• <code>get</code> <strong>session</strong>(): <code>null</code> | <a href=../session.Session><code>Session</code></a></p>
+<p>The current session</p>
+<h4 id=returns tabindex=-1>Returns</h4>
+<p><code>null</code> | <a href=../session.Session><code>Session</code></a></p>
+<h4 id=defined-in-3 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/client.ts#L58>core/src/client.ts:58</a></p>
+<h2 id=methods tabindex=-1>Methods</h2>
+<h3 id=acceptinvite tabindex=-1>acceptInvite</h3>
+<p>▸ <strong>acceptInvite</strong>(<code>_invite</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<p>Accept an <a href=../invite.Invite>Invite</a></p>
+<p><strong><code>authentication_required</code></strong></p>
+<p>Requires the authenticated account to be the recipient of the invite.</p>
+<h4 id=parameters-1 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_invite</code></td>
+<td style=text-align:left><a href=../invite.Invite><code>Invite</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-1 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-1 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#acceptinvite>acceptInvite</a></p>
+<h4 id=defined-in-4 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L658>core/src/api.ts:658</a></p>
+<hr>
+<h3 id=call tabindex=-1>call</h3>
+<p>▸ <strong>call</strong>(<code>method</code>, <code>params?</code>, <code>progress?</code>):
+<code>Promise</code>&lt;<a href=../transport.Response><code>Response</code></a>></p>
+<p>Generic method for making an RPC call</p>
+<h4 id=parameters-2 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>method</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>params?</code></td>
+<td style=text-align:left><code>any</code>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>progress?</code></td>
+<td style=text-align:left><a href=../transport.RequestProgress><code>RequestProgress</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-2 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../transport.Response><code>Response</code></a>></p>
+<h4 id=defined-in-5 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/client.ts#L63>core/src/client.ts:63</a></p>
+<hr>
+<h3 id=completeauthrequest tabindex=-1>completeAuthRequest</h3>
+<p>▸ <strong>completeAuthRequest</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.CompleteAuthRequestResponse><code>CompleteAuthRequestResponse</code></a>></p>
+<h4 id=parameters-3 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.CompleteAuthRequestParams><code>CompleteAuthRequestParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-3 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.CompleteAuthRequestResponse><code>CompleteAuthRequestResponse</code></a>></p>
+<h4 id=inherited-from-2 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#completeauthrequest>completeAuthRequest</a></p>
+<h4 id=defined-in-6 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L455>core/src/api.ts:455</a></p>
+<hr>
+<h3 id=completecreatesession tabindex=-1>completeCreateSession</h3>
+<p>▸ <strong>completeCreateSession</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../session.Session><code>Session</code></a>></p>
+<p>Create new <a href=../session.Session>Session</a> which can be used to authenticate
+future request</p>
+<h4 id=parameters-4 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.CompleteCreateSessionParams><code>CompleteCreateSessionParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-4 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../session.Session><code>Session</code></a>></p>
+<h4 id=inherited-from-3 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#completecreatesession>completeCreateSession</a></p>
+<h4 id=defined-in-7 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L481>core/src/api.ts:481</a></p>
+<hr>
+<h3 id=completeregisterauthenticator tabindex=-1>completeRegisterAuthenticator</h3>
+<p>▸ <strong>completeRegisterAuthenticator</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.CompleteRegisterMFAuthenticatorResponse><code>CompleteRegisterMFAuthenticatorResponse</code></a>></p>
+<h4 id=parameters-5 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.CompleteRegisterMFAuthenticatorParams><code>CompleteRegisterMFAuthenticatorParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-5 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.CompleteRegisterMFAuthenticatorResponse><code>CompleteRegisterMFAuthenticatorResponse</code></a>></p>
+<h4 id=inherited-from-4 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#completeregisterauthenticator>completeRegisterAuthenticator</a></p>
+<h4 id=defined-in-8 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L438>core/src/api.ts:438</a></p>
+<hr>
+<h3 id=createaccount tabindex=-1>createAccount</h3>
+<p>▸ <strong>createAccount</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<p>Create a new <a href=../account.Account>Account</a></p>
+<h4 id=parameters-6 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.CreateAccountParams><code>CreateAccountParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-6 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<h4 id=inherited-from-5 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#createaccount>createAccount</a></p>
+<h4 id=defined-in-9 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L497>core/src/api.ts:497</a></p>
+<hr>
+<h3 id=createattachment tabindex=-1>createAttachment</h3>
+<p>▸ <strong>createAttachment</strong>(<code>_attachment</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>string</code>></p>
+<h4 id=parameters-7 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_attachment</code></td>
+<td style=text-align:left><a href=../attachment.Attachment><code>Attachment</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-7 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>string</code>></p>
+<h4 id=inherited-from-6 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#createattachment>createAttachment</a></p>
+<h4 id=defined-in-10 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L663>core/src/api.ts:663</a></p>
+<hr>
+<h3 id=createkeystoreentry tabindex=-1>createKeyStoreEntry</h3>
+<p>▸ <strong>createKeyStoreEntry</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../key_store.KeyStoreEntry><code>KeyStoreEntry</code></a>></p>
+<h4 id=parameters-8 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.CreateKeyStoreEntryParams><code>CreateKeyStoreEntryParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-8 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../key_store.KeyStoreEntry><code>KeyStoreEntry</code></a>></p>
+<h4 id=inherited-from-7 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#createkeystoreentry>createKeyStoreEntry</a></p>
+<h4 id=defined-in-11 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L688>core/src/api.ts:688</a></p>
+<hr>
+<h3 id=createorg tabindex=-1>createOrg</h3>
+<p>▸ <strong>createOrg</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<p>Create a new <a href=../org.Org>Org</a></p>
+<p><strong><code>authentication_required</code></strong></p>
+<h4 id=parameters-9 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-9 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=inherited-from-8 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#createorg>createOrg</a></p>
+<h4 id=defined-in-12 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L549>core/src/api.ts:549</a></p>
+<hr>
+<h3 id=createvault tabindex=-1>createVault</h3>
+<p>▸ <strong>createVault</strong>(<code>_vault</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<p>Create a new vault</p>
+<p><strong><code>authentication_required</code></strong></p>
+<p>Requires the <a href=../enums/org.OrgRole#admin>OrgRole.Admin</a> role on the
+associated organization</p>
+<h4 id=parameters-10 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-10 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=inherited-from-9 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#createvault>createVault</a></p>
+<h4 id=defined-in-13 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L591>core/src/api.ts:591</a></p>
+<hr>
+<h3 id=deleteaccount tabindex=-1>deleteAccount</h3>
+<p>▸ <strong>deleteAccount</strong>():
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<p>Delete current account</p>
+<h4 id=returns-11 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-10 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#deleteaccount>deleteAccount</a></p>
+<h4 id=defined-in-14 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L539>core/src/api.ts:539</a></p>
+<hr>
+<h3 id=deleteattachment tabindex=-1>deleteAttachment</h3>
+<p>▸ <strong>deleteAttachment</strong>(<code>_attachment</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=parameters-11 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_attachment</code></td>
+<td style=text-align:left><a href=../api.DeleteAttachmentParams><code>DeleteAttachmentParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-12 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-11 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#deleteattachment>deleteAttachment</a></p>
+<h4 id=defined-in-15 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L673>core/src/api.ts:673</a></p>
+<hr>
+<h3 id=deleteauthenticator tabindex=-1>deleteAuthenticator</h3>
+<p>▸ <strong>deleteAuthenticator</strong>(<code>_id</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=parameters-12 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-13 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-12 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#deleteauthenticator>deleteAuthenticator</a></p>
+<h4 id=defined-in-16 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L445>core/src/api.ts:445</a></p>
+<hr>
+<h3 id=deletekeystoreentry tabindex=-1>deleteKeyStoreEntry</h3>
+<p>▸ <strong>deleteKeyStoreEntry</strong>(<code>_params</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=parameters-13 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-14 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id=inherited-from-13 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#deletekeystoreentry>deleteKeyStoreEntry</a></p>
+<h4 id=defined-in-17 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L698>core/src/api.ts:698</a></p>
+<hr>
+<h3 id=deletelegacyaccount tabindex=-1>deleteLegacyAccount</h3>
+<p>▸ <strong>deleteLegacyAccount</strong>():
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=returns-15 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-14 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#deletelegacyaccount>deleteLegacyAccount</a></p>
+<h4 id=defined-in-18 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L683>core/src/api.ts:683</a></p>
+<hr>
+<h3 id=deleteorg tabindex=-1>deleteOrg</h3>
+<p>▸ <strong>deleteOrg</strong>(<code>_id</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=parameters-14 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-16 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-15 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#deleteorg>deleteOrg</a></p>
+<h4 id=defined-in-19 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L579>core/src/api.ts:579</a></p>
+<hr>
+<h3 id=deletevault tabindex=-1>deleteVault</h3>
+<p>▸ <strong>deleteVault</strong>(<code>_id</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<p>Delete the <a href=../vault.Vault>Vault</a> with the given <code>id</code></p>
+<p><strong><code>authentication_required</code></strong></p>
+<p>Requires at least the <a href=../enums/org.OrgRole#admin>OrgRole.Admin</a> role on the
+organization the vault belongs to. Private vaults cannot be deleted.</p>
+<h4 id=parameters-15 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-17 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-16 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#deletevault>deleteVault</a></p>
+<h4 id=defined-in-20 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L633>core/src/api.ts:633</a></p>
+<hr>
+<h3 id=getaccount tabindex=-1>getAccount</h3>
+<p>▸ <strong>getAccount</strong>():
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<p>Get the <a href=../account.Account>Account</a> associated with the current session</p>
+<p><strong><code>authentication_required</code></strong></p>
+<h4 id=returns-18 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<h4 id=inherited-from-17 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getaccount>getAccount</a></p>
+<h4 id=defined-in-21 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L507>core/src/api.ts:507</a></p>
+<hr>
+<h3 id=getattachment tabindex=-1>getAttachment</h3>
+<p>▸ <strong>getAttachment</strong>(<code>_attachment</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../attachment.Attachment><code>Attachment</code></a>></p>
+<h4 id=parameters-16 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_attachment</code></td>
+<td style=text-align:left><a href=../api.GetAttachmentParams><code>GetAttachmentParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-19 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../attachment.Attachment><code>Attachment</code></a>></p>
+<h4 id=inherited-from-18 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getattachment>getAttachment</a></p>
+<h4 id=defined-in-22 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L668>core/src/api.ts:668</a></p>
+<hr>
+<h3 id=getauthinfo tabindex=-1>getAuthInfo</h3>
+<p>▸ <strong>getAuthInfo</strong>(): <code>Promise</code>&lt;<a href=../api.AuthInfo><code>AuthInfo</code></a>></p>
+<p>Get the <a href=../api.AuthInfo>AuthInfo</a> for the current account</p>
+<h4 id=returns-20 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../api.AuthInfo><code>AuthInfo</code></a>></p>
+<h4 id=inherited-from-19 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getauthinfo>getAuthInfo</a></p>
+<h4 id=defined-in-23 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L513>core/src/api.ts:513</a></p>
+<hr>
+<h3 id=getinvite tabindex=-1>getInvite</h3>
+<p>▸ <strong>getInvite</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../invite.Invite><code>Invite</code></a>></p>
+<p>Get an <a href=../invite.Invite>Invite</a>.</p>
+<p><strong><code>authentication_required</code></strong></p>
+<p>Requires the authenticated account to either be an
+<a href=../enums/org.OrgRole#owner>OrgRole.Owner</a> of the associated organization or
+the recipient of the invite.</p>
+<h4 id=parameters-17 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.GetInviteParams><code>GetInviteParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-21 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../invite.Invite><code>Invite</code></a>></p>
+<h4 id=inherited-from-20 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getinvite>getInvite</a></p>
+<h4 id=defined-in-24 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L646>core/src/api.ts:646</a></p>
+<hr>
+<h3 id=getkeystoreentry tabindex=-1>getKeyStoreEntry</h3>
+<p>▸ <strong>getKeyStoreEntry</strong>(<code>_params</code>):
+<code>Promise</code>&lt;<a href=../key_store.KeyStoreEntry><code>KeyStoreEntry</code></a>></p>
+<h4 id=parameters-18 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.GetKeyStoreEntryParams><code>GetKeyStoreEntryParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-22 tabindex=-1>Returns</h4>
+<p><code>Promise</code>&lt;<a href=../key_store.KeyStoreEntry><code>KeyStoreEntry</code></a>></p>
+<h4 id=inherited-from-21 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getkeystoreentry>getKeyStoreEntry</a></p>
+<h4 id=defined-in-25 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L693>core/src/api.ts:693</a></p>
+<hr>
+<h3 id=getlegacydata tabindex=-1>getLegacyData</h3>
+<p>▸ <strong>getLegacyData</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../container.PBES2Container><code>PBES2Container</code></a>></p>
+<h4 id=parameters-19 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.GetLegacyDataParams><code>GetLegacyDataParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-23 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../container.PBES2Container><code>PBES2Container</code></a>></p>
+<h4 id=inherited-from-22 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getlegacydata>getLegacyData</a></p>
+<h4 id=defined-in-26 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L678>core/src/api.ts:678</a></p>
+<hr>
+<h3 id=getorg tabindex=-1>getOrg</h3>
+<p>▸ <strong>getOrg</strong>(<code>_id</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<p>Get the <a href=../org.Org>Org</a> for a given <code>id</code>.</p>
+<p><strong><code>authentication_required</code></strong></p>
+<p>Requires the authenticated account to be a member of the given organization</p>
+<h4 id=parameters-20 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-24 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=inherited-from-23 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getorg>getOrg</a></p>
+<h4 id=defined-in-27 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L561>core/src/api.ts:561</a></p>
+<hr>
+<h3 id=getvault tabindex=-1>getVault</h3>
+<p>▸ <strong>getVault</strong>(<code>_id</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<p>Get the <a href=../vault.Vault>Vault</a> with the given <code>id</code></p>
+<p><strong><code>authentiation_required</code></strong></p>
+<p>If the vault belongs to an organization, the authenticated account needs to be
+assigned to the given vault either directly or through a <a href=../org.Group>Group</a>.
+Otherwise, only access to the accounts private vault is allowed.</p>
+<h4 id=parameters-21 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-25 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=inherited-from-24 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#getvault>getVault</a></p>
+<h4 id=defined-in-28 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L605>core/src/api.ts:605</a></p>
+<hr>
+<h3 id=recoveraccount tabindex=-1>recoverAccount</h3>
+<p>▸ <strong>recoverAccount</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<p>Initiate account recovery</p>
+<h4 id=parameters-22 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.RecoverAccountParams><code>RecoverAccountParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-26 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<h4 id=inherited-from-25 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#recoveraccount>recoverAccount</a></p>
+<h4 id=defined-in-29 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L531>core/src/api.ts:531</a></p>
+<hr>
+<h3 id=removetrusteddevice tabindex=-1>removeTrustedDevice</h3>
+<p>▸ <strong>removeTrustedDevice</strong>(<code>_id</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=parameters-23 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-27 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-26 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#removetrusteddevice>removeTrustedDevice</a></p>
+<h4 id=defined-in-30 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L708>core/src/api.ts:708</a></p>
+<hr>
+<h3 id=revokesession tabindex=-1>revokeSession</h3>
+<p>▸ <strong>revokeSession</strong>(<code>_id</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<p>Revoke a <a href=../session.Session>Session</a>, effectively logging out any client
+authenticated with it</p>
+<h4 id=parameters-24 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_id</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-28 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-27 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#revokesession>revokeSession</a></p>
+<h4 id=defined-in-31 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L489>core/src/api.ts:489</a></p>
+<hr>
+<h3 id=startauthrequest tabindex=-1>startAuthRequest</h3>
+<p>▸ <strong>startAuthRequest</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.StartAuthRequestResponse><code>StartAuthRequestResponse</code></a>></p>
+<h4 id=parameters-25 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.StartAuthRequestParams><code>StartAuthRequestParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-29 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.StartAuthRequestResponse><code>StartAuthRequestResponse</code></a>></p>
+<h4 id=inherited-from-28 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#startauthrequest>startAuthRequest</a></p>
+<h4 id=defined-in-32 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L450>core/src/api.ts:450</a></p>
+<hr>
+<h3 id=startcreatesession tabindex=-1>startCreateSession</h3>
+<p>▸ <strong>startCreateSession</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.StartCreateSessionResponse><code>StartCreateSessionResponse</code></a>></p>
+<p>Initiate the login procedure for a given account by requesting the
+authentication params which are required for proceeding with [[createSession]].</p>
+<h4 id=parameters-26 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.StartCreateSessionParams><code>StartCreateSessionParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-30 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.StartCreateSessionResponse><code>StartCreateSessionResponse</code></a>></p>
+<h4 id=inherited-from-29 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#startcreatesession>startCreateSession</a></p>
+<h4 id=defined-in-33 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L464>core/src/api.ts:464</a></p>
+<hr>
+<h3 id=startregisterauthenticator tabindex=-1>startRegisterAuthenticator</h3>
+<p>▸ <strong>startRegisterAuthenticator</strong>(<code>_params</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.StartRegisterAuthenticatorResponse><code>StartRegisterAuthenticatorResponse</code></a>></p>
+<h4 id=parameters-27 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.StartRegisterAuthenticatorParams><code>StartRegisterAuthenticatorParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-31 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../api.StartRegisterAuthenticatorResponse><code>StartRegisterAuthenticatorResponse</code></a>></p>
+<h4 id=inherited-from-30 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#startregisterauthenticator>startRegisterAuthenticator</a></p>
+<h4 id=defined-in-34 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L431>core/src/api.ts:431</a></p>
+<hr>
+<h3 id=updateaccount tabindex=-1>updateAccount</h3>
+<p>▸ <strong>updateAccount</strong>(<code>_account</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<p>Update the <a href=../account.Account>Account</a> associated with the current session.</p>
+<p><strong><code>authentication_required</code></strong></p>
+<h4 id=parameters-28 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_account</code></td>
+<td style=text-align:left><a href=../account.Account><code>Account</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-32 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../account.Account><code>Account</code></a>></p>
+<h4 id=inherited-from-31 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#updateaccount>updateAccount</a></p>
+<h4 id=defined-in-35 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L523>core/src/api.ts:523</a></p>
+<hr>
+<h3 id=updateauth tabindex=-1>updateAuth</h3>
+<p>▸ <strong>updateAuth</strong>(<code>_params</code>):
+<a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<p>Update the authentication params stored on the server. This is usually used in
+case a users master password has changed.</p>
+<h4 id=parameters-29 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_params</code></td>
+<td style=text-align:left><a href=../api.UpdateAuthParams><code>UpdateAuthParams</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-33 tabindex=-1>Returns</h4>
+<p><a href=../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<code>void</code>></p>
+<h4 id=inherited-from-32 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#updateauth>updateAuth</a></p>
+<h4 id=defined-in-36 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L473>core/src/api.ts:473</a></p>
+<hr>
+<h3 id=updateorg tabindex=-1>updateOrg</h3>
+<p>▸ <strong>updateOrg</strong>(<code>_org</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<p>Updates a given <a href=../org.Org>Org</a></p>
+<p><strong><code>authentication_required</code></strong></p>
+<p>Updating members, organization name or pubic/private keys requires the
+<a href=../enums/org.OrgRole#owner>OrgRole.Owner</a> role, while any other changes
+require the <a href=../enums/org.OrgRole#admin>OrgRole.Admin</a> role.</p>
+<h4 id=parameters-30 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_org</code></td>
+<td style=text-align:left><a href=../org.Org><code>Org</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-34 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../org.Org><code>Org</code></a>></p>
+<h4 id=inherited-from-33 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#updateorg>updateOrg</a></p>
+<h4 id=defined-in-37 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L574>core/src/api.ts:574</a></p>
+<hr>
+<h3 id=updatevault tabindex=-1>updateVault</h3>
+<p>▸ <strong>updateVault</strong>(<code>_vault</code>):
+<a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<p>Update the given <a href=../vault.Vault>Vault</a></p>
+<p><strong><code>authentiation_required</code></strong></p>
+<p>If vault belongs to an organization, the authenticated account needs to be be
+assigned to the given vault either directly or through a <a href=../org.Group>Group</a>
+and have explicit write access. Otherwise, only access to the accounts private
+vault is allowed.</p>
+<h4 id=parameters-31 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>_vault</code></td>
+<td style=text-align:left><a href=../vault.Vault><code>Vault</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-35 tabindex=-1>Returns</h4>
+<p><a href=../../modules/api#promisewithprogress><code>PromiseWithProgress</code></a>&lt;<a href=../vault.Vault><code>Vault</code></a>></p>
+<h4 id=inherited-from-34 tabindex=-1>Inherited from</h4>
+<p><a href=../api.API>API</a>.<a href=../api.API#updatevault>updateVault</a></p>
+<h4 id=defined-in-38 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/api.ts#L620>core/src/api.ts:620</a></p>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

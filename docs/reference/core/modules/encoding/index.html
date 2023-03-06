@@ -1,0 +1,2019 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Module: encoding</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Docs and Resources for the Padloc password manager." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img alt="Padloc Logo" src=/assets/img/logo-light.svg style=height:2.5em />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="horizontally-margined search"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            Reference
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            @padloc/core
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Classes
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumerations
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/interfaces/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Interfaces
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Modules
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/account/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: account
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/api/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: api
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/app/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: app
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/attachment/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: attachment
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/auth/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: auth
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/auth_email/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: auth/email
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/auth_public_key/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: auth/public-key
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/auth_totp/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: auth/totp
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/base32/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: base32
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/base64/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: base64
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/client/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: client
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/collection/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: collection
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/config/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: config
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/container/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: container
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/crypto/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: crypto
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/diceware/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: diceware
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/directory/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: directory
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/encoding/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=code></i>
+        <span>
+            Module: encoding
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#classes class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Classes</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#interfaces class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Interfaces</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#references class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> References</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#type-aliases class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Type Aliases</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#functions class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Functions</span>
+    </a>
+</li>
+            
+        </ol></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/error/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: error
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/event_target/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: event-target
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/invite/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: invite
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/item/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: item
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/key_store/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: key-store
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/legacy/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: legacy
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/logging/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: logging
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/messenger/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: messenger
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/migrations/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: migrations
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/org/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: org
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/otp/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: otp
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/platform/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: platform
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/provisioning/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: provisioning
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/quota/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: quota
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/randomart/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: randomart
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/session/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: session
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/sjcl/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: sjcl
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/spec_crypto/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: spec/crypto
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/spec_spec/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: spec/spec
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/srp/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: srp
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/storage/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: storage
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/stub_crypto_provider/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: stub-crypto-provider
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/transport/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: transport
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/util/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: util
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/v3_compat/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: v3-compat
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/vault/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Module: vault
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=server></i>
+        <span>
+            Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/apps/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=laptop-mobile></i>
+        <span>
+            Web & Desktop & Mobile Apps
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/development/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=person-digging></i>
+        <span>
+            Development
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/security/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=lock></i>
+        <span>
+            Security Whitepaper
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/ ><i class=code></i> Technical Docs</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/ ><i class=book></i> Reference</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/ ><i class=code></i> @padloc/core</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/modules/ ><i class=code></i> Modules</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=code> </i>
+                Module: encoding
+            </h1>
+            <h2 id=classes tabindex=-1>Classes</h2>
+<ul>
+<li><a href=../../classes/encoding.Serializable>Serializable</a></li>
+</ul>
+<h2 id=interfaces tabindex=-1>Interfaces</h2>
+<ul>
+<li><a href=../../interfaces/encoding.SerializationOptions>SerializationOptions</a></li>
+</ul>
+<h2 id=references tabindex=-1>References</h2>
+<h3 id=base32tobytes tabindex=-1>base32ToBytes</h3>
+<p>Re-exports <a href=base32#base32tobytes>base32ToBytes</a></p>
+<hr>
+<h3 id=bytestobase32 tabindex=-1>bytesToBase32</h3>
+<p>Re-exports <a href=base32#bytestobase32>bytesToBase32</a></p>
+<hr>
+<h3 id=isbase64 tabindex=-1>isBase64</h3>
+<p>Re-exports <a href=base64#isbase64>isBase64</a></p>
+<h2 id=type-aliases tabindex=-1>Type Aliases</h2>
+<h3 id=serializableconstructor tabindex=-1>SerializableConstructor</h3>
+<p>Ƭ <strong>SerializableConstructor</strong>: (...<code>args</code>: <code>any</code>[]) =>
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a></p>
+<h4 id=type-declaration tabindex=-1>Type declaration</h4>
+<p>• (...<code>args</code>)</p>
+<p>Generic type representing the constructor of a class extending
+<a href=../../classes/encoding.Serializable>Serializable</a></p>
+<h5 id=parameters tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>...args</code></td>
+<td style=text-align:left><code>any</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id=defined-in tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L317>core/src/encoding.ts:317</a></p>
+<h2 id=functions tabindex=-1>Functions</h2>
+<h3 id=asbiginteger tabindex=-1>AsBigInteger</h3>
+<p>▸ <strong>AsBigInteger</strong>(<code>toProperty?</code>): (<code>proto</code>:
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a>, <code>prop</code>: <code>string</code>) =>
+<code>void</code></p>
+<p>Decorator for defining request handler methods</p>
+<h4 id=parameters-1 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>toProperty?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>proto</code>, <code>prop</code>): <code>void</code></p>
+<h5 id=parameters-2 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>proto</code></td>
+<td style=text-align:left><a href=../../classes/encoding.Serializable><code>Serializable</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>prop</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-1 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-1 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L43>core/src/encoding.ts:43</a></p>
+<hr>
+<h3 id=asbytes tabindex=-1>AsBytes</h3>
+<p>▸ <strong>AsBytes</strong>(<code>toProperty?</code>): (<code>proto</code>:
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a>, <code>prop</code>: <code>string</code>) =>
+<code>void</code></p>
+<h4 id=parameters-3 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>toProperty?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-2 tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>proto</code>, <code>prop</code>): <code>void</code></p>
+<h5 id=parameters-4 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>proto</code></td>
+<td style=text-align:left><a href=../../classes/encoding.Serializable><code>Serializable</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>prop</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-3 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-2 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L64>core/src/encoding.ts:64</a></p>
+<hr>
+<h3 id=asdate tabindex=-1>AsDate</h3>
+<p>▸ <strong>AsDate</strong>(<code>toProperty?</code>): (<code>proto</code>:
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a>, <code>prop</code>: <code>string</code>) =>
+<code>void</code></p>
+<h4 id=parameters-5 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>toProperty?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-4 tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>proto</code>, <code>prop</code>): <code>void</code></p>
+<h5 id=parameters-6 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>proto</code></td>
+<td style=text-align:left><a href=../../classes/encoding.Serializable><code>Serializable</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>prop</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-5 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-3 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L83>core/src/encoding.ts:83</a></p>
+<hr>
+<h3 id=asserializable tabindex=-1>AsSerializable</h3>
+<p>▸ <strong>AsSerializable</strong>(<code>cls</code>, <code>toProperty?</code>): (<code>proto</code>:
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a>, <code>prop</code>: <code>string</code>) =>
+<code>void</code></p>
+<p>Decorator for defining request handler methods</p>
+<h4 id=parameters-7 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>cls</code></td>
+<td style=text-align:left><a href=../encoding#serializableconstructor><code>SerializableConstructor</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>toProperty?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-6 tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>proto</code>, <code>prop</code>): <code>void</code></p>
+<h5 id=parameters-8 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>proto</code></td>
+<td style=text-align:left><a href=../../classes/encoding.Serializable><code>Serializable</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>prop</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-7 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-4 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L55>core/src/encoding.ts:55</a></p>
+<hr>
+<h3 id=asset tabindex=-1>AsSet</h3>
+<p>▸ <strong>AsSet</strong>(<code>toProperty?</code>): (<code>proto</code>:
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a>, <code>prop</code>: <code>string</code>) =>
+<code>void</code></p>
+<h4 id=parameters-9 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>toProperty?</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-8 tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>proto</code>, <code>prop</code>): <code>void</code></p>
+<h5 id=parameters-10 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>proto</code></td>
+<td style=text-align:left><a href=../../classes/encoding.Serializable><code>Serializable</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>prop</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-9 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-5 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L73>core/src/encoding.ts:73</a></p>
+<hr>
+<h3 id=exclude tabindex=-1>Exclude</h3>
+<p>▸ <strong>Exclude</strong>(): (<code>proto</code>:
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a>, <code>prop</code>: <code>string</code>) =>
+<code>void</code></p>
+<h4 id=returns-10 tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>proto</code>, <code>prop</code>): <code>void</code></p>
+<h5 id=parameters-11 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>proto</code></td>
+<td style=text-align:left><a href=../../classes/encoding.Serializable><code>Serializable</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>prop</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-11 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-6 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L98>core/src/encoding.ts:98</a></p>
+<hr>
+<h3 id=serialize tabindex=-1>Serialize</h3>
+<p>▸ <strong>Serialize</strong>(<code>opts</code>): (<code>proto</code>:
+<a href=../../classes/encoding.Serializable><code>Serializable</code></a>, <code>prop</code>: <code>string</code>) =>
+<code>void</code></p>
+<h4 id=parameters-12 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>opts</code></td>
+<td style=text-align:left><code>Partial</code>&lt;<a href=../../interfaces/encoding.SerializationOptions><code>SerializationOptions</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-12 tabindex=-1>Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>proto</code>, <code>prop</code>): <code>void</code></p>
+<h5 id=parameters-13 tabindex=-1>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>proto</code></td>
+<td style=text-align:left><a href=../../classes/encoding.Serializable><code>Serializable</code></a></td>
+</tr>
+<tr>
+<td style=text-align:left><code>prop</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id=returns-13 tabindex=-1>Returns</h5>
+<p><code>void</code></p>
+<h4 id=defined-in-7 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L105>core/src/encoding.ts:105</a></p>
+<hr>
+<h3 id=base64bytelength tabindex=-1>base64ByteLength</h3>
+<p>▸ <strong>base64ByteLength</strong>(<code>inp</code>): <code>number</code></p>
+<p>Returns the byte length of a base64 string</p>
+<h4 id=parameters-14 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>inp</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-14 tabindex=-1>Returns</h4>
+<p><code>number</code></p>
+<h4 id=defined-in-8 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L406>core/src/encoding.ts:406</a></p>
+<hr>
+<h3 id=base64tobytes tabindex=-1>base64ToBytes</h3>
+<p>▸ <strong>base64ToBytes</strong>(<code>inp</code>): <code>Uint8Array</code></p>
+<p>Converts a base64 string to a byte array</p>
+<h4 id=parameters-15 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>inp</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-15 tabindex=-1>Returns</h4>
+<p><code>Uint8Array</code></p>
+<h4 id=defined-in-9 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L357>core/src/encoding.ts:357</a></p>
+<hr>
+<h3 id=base64tohex tabindex=-1>base64ToHex</h3>
+<p>▸ <strong>base64ToHex</strong>(<code>b64</code>): <code>string</code></p>
+<p>Converts a base64 string to its hexadecimal representation</p>
+<h4 id=parameters-16 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>b64</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-16 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-10 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L444>core/src/encoding.ts:444</a></p>
+<hr>
+<h3 id=base64tostring tabindex=-1>base64ToString</h3>
+<p>▸ <strong>base64ToString</strong>(<code>inp</code>): <code>string</code></p>
+<p>Converts the base64 representation of a utf-a string to it's original
+representation</p>
+<h4 id=parameters-17 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>inp</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-17 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-11 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L398>core/src/encoding.ts:398</a></p>
+<hr>
+<h3 id=bytestobase64 tabindex=-1>bytesToBase64</h3>
+<p>▸ <strong>bytesToBase64</strong>(<code>inp</code>, <code>urlSafe?</code>): <code>string</code></p>
+<p>Converts a byte array to a base64 string</p>
+<h4 id=parameters-18 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>inp</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>urlSafe</code></td>
+<td style=text-align:left><code>boolean</code></td>
+<td style=text-align:left><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-18 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-12 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L346>core/src/encoding.ts:346</a></p>
+<hr>
+<h3 id=bytestohex tabindex=-1>bytesToHex</h3>
+<p>▸ <strong>bytesToHex</strong>(<code>bytes</code>): <code>string</code></p>
+<p>Converts a byte array to its hexadecimal representation</p>
+<h4 id=parameters-19 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>bytes</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-19 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-13 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L428>core/src/encoding.ts:428</a></p>
+<hr>
+<h3 id=bytestonum tabindex=-1>bytesToNum</h3>
+<p>▸ <strong>bytesToNum</strong>(<code>bytes</code>): <code>number</code></p>
+<h4 id=parameters-20 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>bytes</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-20 tabindex=-1>Returns</h4>
+<p><code>number</code></p>
+<h4 id=defined-in-14 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L459>core/src/encoding.ts:459</a></p>
+<hr>
+<h3 id=bytestostring tabindex=-1>bytesToString</h3>
+<p>▸ <strong>bytesToString</strong>(<code>bytes</code>, <code>encoding?</code>): <code>string</code></p>
+<p>Converts a byte array to an utf-8 string</p>
+<h4 id=parameters-21 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>bytes</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>encoding</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left><code>"utf-8"</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-21 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-15 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L379>core/src/encoding.ts:379</a></p>
+<hr>
+<h3 id=concatbytes tabindex=-1>concatBytes</h3>
+<p>▸ <strong>concatBytes</strong>(<code>arrs</code>, <code>delimiter?</code>): <code>Uint8Array</code></p>
+<p>Concatenates a number of Uint8Arrays to a single array</p>
+<h4 id=parameters-22 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>arrs</code></td>
+<td style=text-align:left><code>Uint8Array</code>[]</td>
+</tr>
+<tr>
+<td style=text-align:left><code>delimiter?</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-22 tabindex=-1>Returns</h4>
+<p><code>Uint8Array</code></p>
+<h4 id=defined-in-16 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L466>core/src/encoding.ts:466</a></p>
+<hr>
+<h3 id=equalbytes tabindex=-1>equalBytes</h3>
+<p>▸ <strong>equalBytes</strong>(<code>a</code>, <code>b</code>): <code>boolean</code></p>
+<p>Checks two byte arrays for equality</p>
+<h4 id=parameters-23 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>a</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>b</code></td>
+<td style=text-align:left><code>Uint8Array</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-23 tabindex=-1>Returns</h4>
+<p><code>boolean</code></p>
+<h4 id=defined-in-17 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L489>core/src/encoding.ts:489</a></p>
+<hr>
+<h3 id=hextobase64 tabindex=-1>hexToBase64</h3>
+<p>▸ <strong>hexToBase64</strong>(<code>hex</code>): <code>string</code></p>
+<p>Converts a hex string to its base64 representation</p>
+<h4 id=parameters-24 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>hex</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-24 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-18 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L451>core/src/encoding.ts:451</a></p>
+<hr>
+<h3 id=hextobytes tabindex=-1>hexToBytes</h3>
+<p>▸ <strong>hexToBytes</strong>(<code>str</code>): <code>Uint8Array</code></p>
+<p>Converts a hex string to a byte array</p>
+<h4 id=parameters-25 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>str</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-25 tabindex=-1>Returns</h4>
+<p><code>Uint8Array</code></p>
+<h4 id=defined-in-19 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L413>core/src/encoding.ts:413</a></p>
+<hr>
+<h3 id=marshal tabindex=-1>marshal</h3>
+<p>▸ <strong>marshal</strong>(<code>obj</code>): <code>string</code></p>
+<p>Creates a string from a raw javascript object</p>
+<h4 id=parameters-26 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>obj</code></td>
+<td style=text-align:left><code>object</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-26 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-20 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L322>core/src/encoding.ts:322</a></p>
+<hr>
+<h3 id=numtobytes tabindex=-1>numToBytes</h3>
+<p>▸ <strong>numToBytes</strong>(<code>num</code>): <code>Uint8Array</code></p>
+<h4 id=parameters-27 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>num</code></td>
+<td style=text-align:left><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-27 tabindex=-1>Returns</h4>
+<p><code>Uint8Array</code></p>
+<h4 id=defined-in-21 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L455>core/src/encoding.ts:455</a></p>
+<hr>
+<h3 id=stringtobase64 tabindex=-1>stringToBase64</h3>
+<p>▸ <strong>stringToBase64</strong>(<code>str</code>, <code>urlSafe?</code>): <code>string</code></p>
+<p>Converts a utf-8 string to its base64 representation</p>
+<h4 id=parameters-28 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+<th style=text-align:left>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>str</code></td>
+<td style=text-align:left><code>string</code></td>
+<td style=text-align:left><code>undefined</code></td>
+</tr>
+<tr>
+<td style=text-align:left><code>urlSafe</code></td>
+<td style=text-align:left><code>boolean</code></td>
+<td style=text-align:left><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-28 tabindex=-1>Returns</h4>
+<p><code>string</code></p>
+<h4 id=defined-in-22 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L390>core/src/encoding.ts:390</a></p>
+<hr>
+<h3 id=stringtobytes tabindex=-1>stringToBytes</h3>
+<p>▸ <strong>stringToBytes</strong>(<code>str</code>): <code>Uint8Array</code></p>
+<p>Converts a utf-8 string to a byte array</p>
+<h4 id=parameters-29 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>str</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-29 tabindex=-1>Returns</h4>
+<p><code>Uint8Array</code></p>
+<h4 id=defined-in-23 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L368>core/src/encoding.ts:368</a></p>
+<hr>
+<h3 id=unmarshal tabindex=-1>unmarshal</h3>
+<p>▸ <strong>unmarshal</strong>(<code>str</code>): <code>any</code></p>
+<p>Creates a raw javascript object from a string</p>
+<h4 id=parameters-30 tabindex=-1>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th>
+<th style=text-align:left>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>str</code></td>
+<td style=text-align:left><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id=returns-30 tabindex=-1>Returns</h4>
+<p><code>any</code></p>
+<h4 id=defined-in-24 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/encoding.ts#L333>core/src/encoding.ts:333</a></p>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

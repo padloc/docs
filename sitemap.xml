@@ -1,0 +1,2052 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/apps/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/development/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/account.Account/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/account.AccountSecrets/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.API/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.AuthInfo/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.CompleteAuthRequestParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.CompleteAuthRequestResponse/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.CompleteCreateSessionParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.CompleteRegisterMFAuthenticatorResponse/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.CreateAccountParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.CreateKeyStoreEntryParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.DeleteAttachmentParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.GetAttachmentParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.GetInviteParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.GetKeyStoreEntryParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.GetLegacyDataParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.RecoverAccountParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.StartAuthRequestParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.StartAuthRequestResponse/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.StartCreateSessionParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.StartCreateSessionResponse/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.StartRegisterAuthenticatorParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.StartRegisterAuthenticatorResponse/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/api.UpdateAuthParams/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/app.App/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/app.AppState/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/app.Index/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/app.Settings/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/app.Stats/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/app.StoredMasterKey/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/attachment.Attachment/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/attachment.AttachmentInfo/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/attachment.MemoryAttachmentStorage/</loc>
+                <lastmod>2023-03-06T16:23:31.675Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth.Auth/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth.AuthRequest/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth.Authenticator/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth.AuthenticatorInfo/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth_email.EmailAuthServer/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth_public_key.PublicKeyAuthChallenge/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth_public_key.PublicKeyAuthClient/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth_public_key.PublicKeyAuthClientData/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth_public_key.PublicKeyAuthServer/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth_totp.TotpAuthConfig/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/auth_totp.TotpAuthServer/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/client.Client/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/collection.VaultItemCollection/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/config.Config/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/container.Accessor/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/container.BaseContainer/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/container.PBES2Container/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/container.SharedContainer/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/container.SimpleContainer/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.AESEncryptionParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.AESKeyParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.HMACKeyParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.HMACParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.HashParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.PBKDF2Params/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.RSAEncryptionParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.RSAKeyParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/crypto.RSASigningParams/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/directory.DirectorySync/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/encoding.Serializable/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/error.Err/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/event_target.EventEmitter/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/invite.Invite/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/item.Field/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/item.VaultItem/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/key_store.KeyStoreEntry/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/key_store.KeyStoreEntryInfo/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/logging.LogEvent/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/logging.MultiLogger/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/logging.VoidLogger/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.ConfirmMembershipInviteMessage/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.ConsoleMessenger/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.EmailAuthMessage/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.ErrorMessage/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.JoinOrgInviteAcceptedMessage/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.JoinOrgInviteCompletedMessage/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.JoinOrgInviteMessage/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.Message/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/messenger.StubMessenger/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/org.Group/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/org.Org/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/org.OrgDirectorySettings/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/org.OrgMember/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/org.OrgSecrets/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/org.ScimSettings/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/platform.DeviceInfo/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/platform.StubBiometricKeyStore/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/platform.StubPlatform/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.AccountFeatures/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.AccountProvisioning/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.AccountQuota/</loc>
+                <lastmod>2023-03-06T16:23:31.679Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.BasicProvisioner/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.BasicProvisionerConfig/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.DefaultAccountProvisioning/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.Feature/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.OrgFeature/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.OrgFeatures/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.OrgProvisioning/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.OrgQuota/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.Provisioning/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/provisioning.StubProvisioner/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/quota.AccountQuota/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/quota.OrgQuota/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/server.Controller/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/server.Server/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/server.ServerConfig/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/session.Session/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/session.SessionInfo/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/srp.Client/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/srp.Core/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/srp.SRPSession/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/srp.Server/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/storage.MemoryStorage/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/storage.Storable/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/storage.VoidStorage/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/stub_crypto_provider.StubCryptoProvider/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/transport.DirectSender/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/transport.Request/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/transport.RequestAuthentication/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/transport.RequestProgress/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/transport.Response/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/v3_compat.CreateSessionParams/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/v3_compat.InitAuthParams/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/v3_compat.InitAuthResponse/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/v3_compat.RequestMFACodeParams/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/v3_compat.RetrieveMFATokenParams/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/v3_compat.RetrieveMFATokenResponse/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/classes/vault.Vault/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/auth.AccountStatus/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/auth.AuthPurpose/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/auth.AuthRequestStatus/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/auth.AuthType/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/auth.AuthenticatorStatus/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/error.ErrorCode/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/item.AuditType/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/item.FieldType/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/org.OrgMemberStatus/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/org.OrgRole/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/enums/provisioning.ProvisioningStatus/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/account.UnlockedAccount/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/app.AppContext/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/app.HashedItem/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/attachment.AttachmentStorage/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/auth.AuthClient/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/auth.AuthServer/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/client.ClientState/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/crypto.CryptoProvider/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/directory.DirectoryGroup/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/directory.DirectoryProvider/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/directory.DirectorySubscriber/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/directory.DirectoryUser/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/encoding.SerializationOptions/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/error.ErrorOptions/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/event_target.Event/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/event_target.EventTarget/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/item.AuditResult/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/item.FieldDef/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/item.ItemTemplate/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/legacy.LegacyContainer/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/logging.Logger/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/messenger.Messenger/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/migrations.Migration/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/org.ActiveOrgMember/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/org.OrgInfo/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/org.UnlockedOrg/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/otp.HOTPOpts/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/otp.TOTPOpts/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/otp.TOTPValidationOpts/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/platform.BiometricKeyStore/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/platform.Platform/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/provisioning.Provisioner/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/randomart.Fingerprint/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/randomart.Options/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/server.Context/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/server.LegacyServer/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/storage.Storage/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/storage.StorageListOptions/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/transport.Error/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/transport.Receiver/</loc>
+                <lastmod>2023-03-06T16:23:31.683Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/interfaces/transport.Sender/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/account/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/api/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/app/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/attachment/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/auth/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/auth_email/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/auth_public_key/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/auth_totp/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/base32/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/base64/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/client/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/collection/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/config/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/container/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/crypto/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/diceware/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/directory/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/encoding/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/error/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/event_target/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/invite/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/item/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/key_store/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/legacy/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/logging/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/messenger/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/migrations/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/org/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/otp/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/platform/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/provisioning/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/quota/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/randomart/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/server/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/session/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/sjcl/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/spec_crypto/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/spec_spec/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/srp/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/storage/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/stub_crypto_provider/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/transport/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/util/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/v3_compat/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/core/modules/vault/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/reference/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/security/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/docs/server/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/downloads/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/guides/biometric-unlock-is-not-supported/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/guides/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/guides/self-host/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/guides/trouble-upgrading-to-v4/</loc>
+                <lastmod>2023-03-06T16:23:31.687Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/guides/upgrade_v2/</loc>
+                <lastmod>2023-03-06T16:23:31.691Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/</loc>
+                <lastmod>2023-03-06T16:23:31.691Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/create_account/</loc>
+                <lastmod>2023-03-06T16:23:31.691Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/extensions/</loc>
+                <lastmod>2023-03-06T16:23:31.731Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/</loc>
+                <lastmod>2023-03-06T16:23:31.731Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/introduction/</loc>
+                <lastmod>2023-03-06T16:23:31.731Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/locking-and-unlocking/</loc>
+                <lastmod>2023-03-06T16:23:31.731Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/orgs/</loc>
+                <lastmod>2023-03-06T16:23:31.739Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/search/</loc>
+                <lastmod>2023-03-06T16:23:31.755Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/settings/</loc>
+                <lastmod>2023-03-06T16:23:31.759Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/manual/vaults/</loc>
+                <lastmod>2023-03-06T16:23:31.779Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://docs.padloc.app/questions/</loc>
+                <lastmod>2023-03-06T16:23:31.851Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+</urlset>

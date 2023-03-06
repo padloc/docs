@@ -1,0 +1,4 @@
+Sitemap: https://docs.padloc.app/sitemap.xml
+
+User-agent: *
+Disallow:

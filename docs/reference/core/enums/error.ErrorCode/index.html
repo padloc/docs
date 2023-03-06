@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Enumeration: ErrorCode</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Docs and Resources for the Padloc password manager." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img alt="Padloc Logo" src=/assets/img/logo-light.svg style=height:2.5em />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="horizontally-margined search"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            Reference
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            @padloc/core
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/classes/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Classes
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumerations
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/auth.AccountStatus/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: AccountStatus
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/auth.AuthPurpose/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: AuthPurpose
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/auth.AuthRequestStatus/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: AuthRequestStatus
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/auth.AuthType/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: AuthType
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/auth.AuthenticatorStatus/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: AuthenticatorStatus
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/error.ErrorCode/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=code></i>
+        <span>
+            Enumeration: ErrorCode
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#enumeration-members class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Enumeration Members</span>
+    </a>
+</li>
+            
+        </ol></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/item.AuditType/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: AuditType
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/item.FieldType/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: FieldType
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/org.OrgMemberStatus/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: OrgMemberStatus
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/org.OrgRole/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: OrgRole
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/enums/provisioning.ProvisioningStatus/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Enumeration: ProvisioningStatus
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/interfaces/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Interfaces
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/reference/core/modules/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Modules
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/server/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=server></i>
+        <span>
+            Server
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/apps/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=laptop-mobile></i>
+        <span>
+            Web & Desktop & Mobile Apps
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/development/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=person-digging></i>
+        <span>
+            Development
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/docs/security/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=lock></i>
+        <span>
+            Security Whitepaper
+        </span>
+    </a>
+
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/ ><i class=code></i> Technical Docs</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/ ><i class=book></i> Reference</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/ ><i class=code></i> @padloc/core</a> /
+        </li>
+        
+        <li>
+            <a href=/docs/reference/core/enums/ ><i class=code></i> Enumerations</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=code> </i>
+                Enumeration: ErrorCode
+            </h1>
+            <p><a href=../../modules/error>error</a>.ErrorCode</p>
+<p>Error codes used within Padloc</p>
+<h2 id=enumeration-members tabindex=-1>Enumeration Members</h2>
+<h3 id=account_exists tabindex=-1>ACCOUNT_EXISTS</h3>
+<p>• <strong>ACCOUNT_EXISTS</strong></p>
+<h4 id=defined-in tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L23>core/src/error.ts:23</a></p>
+<hr>
+<h3 id=authentication_failed tabindex=-1>AUTHENTICATION_FAILED</h3>
+<p>• <strong>AUTHENTICATION_FAILED</strong></p>
+<h4 id=defined-in-1 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L59>core/src/error.ts:59</a></p>
+<hr>
+<h3 id=authentication_required tabindex=-1>AUTHENTICATION_REQUIRED</h3>
+<p>• <strong>AUTHENTICATION_REQUIRED</strong></p>
+<h4 id=defined-in-2 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L58>core/src/error.ts:58</a></p>
+<hr>
+<h3 id=authentication_tries_exceeded tabindex=-1>AUTHENTICATION_TRIES_EXCEEDED</h3>
+<p>• <strong>AUTHENTICATION_TRIES_EXCEEDED</strong></p>
+<h4 id=defined-in-3 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L60>core/src/error.ts:60</a></p>
+<hr>
+<h3 id=bad_request tabindex=-1>BAD_REQUEST</h3>
+<p>• <strong>BAD_REQUEST</strong></p>
+<h4 id=defined-in-4 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L18>core/src/error.ts:18</a></p>
+<hr>
+<h3 id=billing_error tabindex=-1>BILLING_ERROR</h3>
+<p>• <strong>BILLING_ERROR</strong></p>
+<h4 id=defined-in-5 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L55>core/src/error.ts:55</a></p>
+<hr>
+<h3 id=client_error tabindex=-1>CLIENT_ERROR</h3>
+<p>• <strong>CLIENT_ERROR</strong></p>
+<h4 id=defined-in-6 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L43>core/src/error.ts:43</a></p>
+<hr>
+<h3 id=decryption_failed tabindex=-1>DECRYPTION_FAILED</h3>
+<p>• <strong>DECRYPTION_FAILED</strong></p>
+<h4 id=defined-in-7 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L7>core/src/error.ts:7</a></p>
+<hr>
+<h3 id=encoding_error tabindex=-1>ENCODING_ERROR</h3>
+<p>• <strong>ENCODING_ERROR</strong></p>
+<h4 id=defined-in-8 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L48>core/src/error.ts:48</a></p>
+<hr>
+<h3 id=encryption_failed tabindex=-1>ENCRYPTION_FAILED</h3>
+<p>• <strong>ENCRYPTION_FAILED</strong></p>
+<h4 id=defined-in-9 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L8>core/src/error.ts:8</a></p>
+<hr>
+<h3 id=failed_connection tabindex=-1>FAILED_CONNECTION</h3>
+<p>• <strong>FAILED_CONNECTION</strong></p>
+<h4 id=defined-in-10 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L14>core/src/error.ts:14</a></p>
+<hr>
+<h3 id=insufficient_permissions tabindex=-1>INSUFFICIENT_PERMISSIONS</h3>
+<p>• <strong>INSUFFICIENT_PERMISSIONS</strong></p>
+<h4 id=defined-in-11 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L21>core/src/error.ts:21</a></p>
+<hr>
+<h3 id=invalid_1pux tabindex=-1>INVALID_1PUX</h3>
+<p>• <strong>INVALID_1PUX</strong></p>
+<h4 id=defined-in-12 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L53>core/src/error.ts:53</a></p>
+<hr>
+<h3 id=invalid_credentials tabindex=-1>INVALID_CREDENTIALS</h3>
+<p>• <strong>INVALID_CREDENTIALS</strong></p>
+<h4 id=defined-in-13 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L22>core/src/error.ts:22</a></p>
+<hr>
+<h3 id=invalid_csv tabindex=-1>INVALID_CSV</h3>
+<p>• <strong>INVALID_CSV</strong></p>
+<h4 id=defined-in-14 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L52>core/src/error.ts:52</a></p>
+<hr>
+<h3 id=invalid_encryption_params tabindex=-1>INVALID_ENCRYPTION_PARAMS</h3>
+<p>• <strong>INVALID_ENCRYPTION_PARAMS</strong></p>
+<h4 id=defined-in-15 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L6>core/src/error.ts:6</a></p>
+<hr>
+<h3 id=invalid_request tabindex=-1>INVALID_REQUEST</h3>
+<p>• <strong>INVALID_REQUEST</strong></p>
+<h4 id=defined-in-16 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L25>core/src/error.ts:25</a></p>
+<hr>
+<h3 id=invalid_response tabindex=-1>INVALID_RESPONSE</h3>
+<p>• <strong>INVALID_RESPONSE</strong></p>
+<h4 id=defined-in-17 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L24>core/src/error.ts:24</a></p>
+<hr>
+<h3 id=invalid_session tabindex=-1>INVALID_SESSION</h3>
+<p>• <strong>INVALID_SESSION</strong></p>
+<h4 id=defined-in-18 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L19>core/src/error.ts:19</a></p>
+<hr>
+<h3 id=max_request_age_exceeded tabindex=-1>MAX_REQUEST_AGE_EXCEEDED</h3>
+<p>• <strong>MAX_REQUEST_AGE_EXCEEDED</strong></p>
+<h4 id=defined-in-19 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L28>core/src/error.ts:28</a></p>
+<hr>
+<h3 id=max_request_size_exceeded tabindex=-1>MAX_REQUEST_SIZE_EXCEEDED</h3>
+<p>• <strong>MAX_REQUEST_SIZE_EXCEEDED</strong></p>
+<h4 id=defined-in-20 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L27>core/src/error.ts:27</a></p>
+<hr>
+<h3 id=missing_access tabindex=-1>MISSING_ACCESS</h3>
+<p>• <strong>MISSING_ACCESS</strong></p>
+<h4 id=defined-in-21 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L10>core/src/error.ts:10</a></p>
+<hr>
+<h3 id=not_found tabindex=-1>NOT_FOUND</h3>
+<p>• <strong>NOT_FOUND</strong></p>
+<h4 id=defined-in-22 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L51>core/src/error.ts:51</a></p>
+<hr>
+<h3 id=not_supported tabindex=-1>NOT_SUPPORTED</h3>
+<p>• <strong>NOT_SUPPORTED</strong></p>
+<h4 id=defined-in-23 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L9>core/src/error.ts:9</a></p>
+<hr>
+<h3 id=outdated_revision tabindex=-1>OUTDATED_REVISION</h3>
+<p>• <strong>OUTDATED_REVISION</strong></p>
+<h4 id=defined-in-24 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L26>core/src/error.ts:26</a></p>
+<hr>
+<h3 id=provisioning_not_allowed tabindex=-1>PROVISIONING_NOT_ALLOWED</h3>
+<p>• <strong>PROVISIONING_NOT_ALLOWED</strong></p>
+<h4 id=defined-in-25 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L40>core/src/error.ts:40</a></p>
+<hr>
+<h3 id=provisioning_quota_exceeded tabindex=-1>PROVISIONING_QUOTA_EXCEEDED</h3>
+<p>• <strong>PROVISIONING_QUOTA_EXCEEDED</strong></p>
+<h4 id=defined-in-26 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L39>core/src/error.ts:39</a></p>
+<hr>
+<h3 id=server_error tabindex=-1>SERVER_ERROR</h3>
+<p>• <strong>SERVER_ERROR</strong></p>
+<h4 id=defined-in-27 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L44>core/src/error.ts:44</a></p>
+<hr>
+<h3 id=session_expired tabindex=-1>SESSION_EXPIRED</h3>
+<p>• <strong>SESSION_EXPIRED</strong></p>
+<h4 id=defined-in-28 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L20>core/src/error.ts:20</a></p>
+<hr>
+<h3 id=unexpected_redirect tabindex=-1>UNEXPECTED_REDIRECT</h3>
+<p>• <strong>UNEXPECTED_REDIRECT</strong></p>
+<h4 id=defined-in-29 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L15>core/src/error.ts:15</a></p>
+<hr>
+<h3 id=unknown_error tabindex=-1>UNKNOWN_ERROR</h3>
+<p>• <strong>UNKNOWN_ERROR</strong></p>
+<h4 id=defined-in-30 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L45>core/src/error.ts:45</a></p>
+<hr>
+<h3 id=unsupported_version tabindex=-1>UNSUPPORTED_VERSION</h3>
+<p>• <strong>UNSUPPORTED_VERSION</strong></p>
+<h4 id=defined-in-31 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L49>core/src/error.ts:49</a></p>
+<hr>
+<h3 id=verification_error tabindex=-1>VERIFICATION_ERROR</h3>
+<p>• <strong>VERIFICATION_ERROR</strong></p>
+<h4 id=defined-in-32 tabindex=-1>Defined in</h4>
+<p><a href=https://github.com/padloc/padloc/blob/b00eb4fd/packages/core/src/error.ts#L11>core/src/error.ts:11</a></p>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>

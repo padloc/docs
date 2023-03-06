@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>Browser Extensions</title>
+        <meta content="width=device-width,initial-scale=1,minimum-scale=1" name=viewport />
+        <meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+        <meta content="Everything you need to know about the Padloc browser extensions." name=description />
+        <link href=/assets/img/favicon.png rel="shortcut icon" type=image/png />
+
+        <link href=https://padloc.app/rss.xml rel=alternate type=application/rss+xml />
+        <link href=https://padloc.app/atom.xml rel=alternate type=application/atom+xml />
+        <link href=https://padloc.app/feed.json rel=alternate type=application/feed+json />
+
+        <link href=/assets/css/config.css rel=stylesheet />
+        <link href=/assets/css/base.css rel=stylesheet />
+        <link href=/assets/css/layout.css rel=stylesheet />
+        <link href=/assets/css/fonts.css rel=stylesheet />
+        <link href=/assets/css/icons.css rel=stylesheet />
+        <link href=/assets/css/brands.css rel=stylesheet />
+        <link href=/assets/css/animation.css rel=stylesheet />
+        <link href=/assets/css/misc.css rel=stylesheet />
+        <link href=/assets/css/side-nav.css rel=stylesheet />
+        <link href=/assets/css/header.css rel=stylesheet />
+        <link href=/assets/css/home.css rel=stylesheet />
+        <link href=/assets/css/page.css rel=stylesheet />
+        <link href=/assets/css/sections.css rel=stylesheet />
+    </head>
+    <body>
+        
+<div class=main-layout>
+    <header class="center-aligning horizontal layout spacing double-padded top-header wrapping">
+    <a href=/ class="unstyled center-aligning horizontal layout spacing">
+        <img src=/assets/img/logo-light.svg alt="Padloc Logo" style=height:2.5em />
+        <span class="small semibold subtle">Docs & Resources</span>
+    </a>
+
+    <div class=stretch></div>
+
+    <div class=small><form action=https://google.com/search class="center-aligning horizontal layout search-wrapper">
+    <input name=q type=hidden value=site:https://docs.padloc.app />
+    
+    <i class="search horizontally-margined"></i>
+    <input name=q type=search autocomplete=off class="unstyled stretch" placeholder=Search... required/>
+    <button title=Submit type=submit><i class=arrow-right></i></button>
+</form>
+</div>
+</header>
+
+
+    
+
+
+
+
+
+
+<nav class="padded side-nav">
+    <ul class=unstyled>
+
+
+
+
+<li>
+    <a href=/manual/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=book></i>
+        <span>
+            User Manual
+        </span>
+    </a>
+
+    
+    <div role=none><ul class=unstyled>
+            
+
+
+
+
+<li>
+    <a href=/manual/introduction/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=scroll></i>
+        <span>
+            Introduction
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/create_account/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=baby></i>
+        <span>
+            Creating An Account
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/vaults/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=cubes></i>
+        <span>
+            Vaults & Vault Items
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/orgs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=users></i>
+        <span>
+            Organizations & Shared Vaults
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/search/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=search></i>
+        <span>
+            Searching & Filtering
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/settings/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=cog></i>
+        <span>
+            Settings
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/locking-and-unlocking/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=lock></i>
+        <span>
+            Locking and Unlocking
+        </span>
+    </a>
+
+    
+</li>
+            
+            
+
+
+
+
+<li>
+    <a href=/manual/extensions/ class="unstyled block hover-bg padded rounded" aria-current=page>
+        <i class=browser></i>
+        <span>
+            Browser Extensions
+        </span>
+    </a>
+
+    
+    <div role=none>
+        <ol class="unstyled table-of-contents">
+            
+            
+<li>
+    <a href=#getting-started class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Getting Started</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#browsing%2C-editing-%26-more class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Browsing, Editing & More</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#website-matching class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Website Matching</span>
+    </a>
+</li>
+            
+            
+<li>
+    <a href=#filling-form-elements class="unstyled block hover-bg padded rounded" data-level=2>
+        <span> Filling Form Elements</span>
+    </a><ol class=unstyled>
+<li>
+    <a href=#drag-%26-drop class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Drag & Drop</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#context-menu class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Context Menu</span>
+    </a>
+</li>
+        
+<li>
+    <a href=#copy-%26-paste class="unstyled block hover-bg padded rounded" data-level=3>
+        <span> Copy & Paste</span>
+    </a>
+</li>
+        </ol>
+    
+</li>
+            
+        </ol></div>
+    
+</li>
+            </ul></div>
+    
+</li>
+
+
+
+
+<li>
+    <a href=/docs/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=code></i>
+        <span>
+            Technical Docs
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/guides/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=signs-post></i>
+        <span>
+            Guides & Recipes
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/questions/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=comments-question></i>
+        <span>
+            Questions & Answers
+        </span>
+    </a>
+
+    
+</li>
+
+
+
+
+<li>
+    <a href=/downloads/ class="unstyled block hover-bg padded rounded" aria-current="">
+        <i class=download></i>
+        <span>
+            Downloads
+        </span>
+    </a>
+
+    
+</li></ul>
+</nav>
+
+<script>
+    window.addEventListener("load", () => {
+        const tocItems = [...document.querySelectorAll(".table-of-contents:not([hidden]) li a[href*='#']")];
+        const headings = document.querySelectorAll("h2[id], h3[id]");
+        // const container = document.querySelector(".section-menu");
+        // const allItems = [...document.querySelectorAll(".section-menu li")];
+        // const input = document.querySelector(".section-menu input");
+        // input.focus();
+        document.documentElement.style.scrollBehavior = "smooth";
+
+        let timeout;
+        function scrollTo(el) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                try {
+                    el.scrollIntoViewIfNeeded();
+                } catch (e) {
+                    el.scrollIntoView();
+                }
+            }, 500);
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    const items = tocItems.filter((item) => item.getAttribute("href").endsWith(`#${entry.target.id}`));
+                    items.forEach((item) => (item.dataset.headerVisible = entry.isIntersecting));
+                }
+
+                const firstVisibleH2Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "2" && item.dataset.headerVisible === "true"
+                );
+                const firstVisibleH3Index = tocItems.findIndex(
+                    (item) => item.dataset.level === "3" && item.dataset.headerVisible === "true"
+                );
+
+                const firstVisibleIndex = firstVisibleH3Index !== -1 ? firstVisibleH3Index : firstVisibleH2Index;
+
+                if (firstVisibleIndex === -1) {
+                    return;
+                }
+
+                const previousItem = tocItems[firstVisibleIndex - 1];
+                const firstVisibleItem = tocItems[firstVisibleIndex];
+
+                const currentItem =
+                    previousItem?.dataset.level === firstVisibleItem?.dataset.level ? previousItem : firstVisibleItem;
+
+                if (currentItem) {
+                    tocItems.forEach((item) => item.removeAttribute("aria-current"));
+                    currentItem.setAttribute("aria-current", "true");
+                    tocItems
+                        .filter((item) => !!item.parentElement?.querySelector("[aria-current]"))
+                        .forEach((item) => item.setAttribute("aria-current", "true"));
+                    scrollTo(currentItem);
+                }
+            },
+            { root: document, rootMargin: "-100px 0px 200px 0px", threshold: 1 }
+        );
+
+        headings.forEach((heading) => observer.observe(heading));
+    });
+</script>
+
+
+    <main class=animation-reveal-children>
+        
+
+<nav class=small>
+    <ul class="unstyled center-aligning horizontal layout spacing">
+        
+        <li>
+            <a href=/ ><i class=books></i> Docs & Resources</a> /
+        </li>
+        
+        <li>
+            <a href=/manual/ ><i class=book></i> User Manual</a> /
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <article>
+            <h1>
+                <i class=browser> </i>
+                Browser Extensions
+            </h1>
+            <p>The Padloc browser extension is a convenient and secure way to access your data
+right were you most often need it - in your web browser.</p>
+<h2 id=getting-started tabindex=-1>Getting Started</h2>
+<blockquote>
+<p>The Padloc extension is currently only available for <strong>Firefox</strong> and
+<strong>Chrome</strong>. Support for Safari, Edge and other browsers coming soon!</p>
+</blockquote>
+<p>To get started using the Padloc extension in your browser, simply download and
+install it from the extension store of your browser. You can find direct links
+for all browsers on our <a href=/downloads#browser-extensions>downloads page</a>.</p>
+<p>Once you've installed the extension, it'll appear as a greyed out icon in the
+top-right corner of your browser window (next to the url bar). Click it to bring
+up the extension popup, then log in with your username and password. Don't have
+an account yet? No problem! You can create one right from the extension. Simply
+enter your email address and follow the instructions on the screen. For a
+detailed walkthrough on how to create a Padloc account, check out the
+<a href=../create_account>Creating An Account</a> section of the manual.</p>
+<figure>
+   <img src=extensions_1.png>
+   <figcaption>The extension shows up as an icon next to the url bar.</figcaption>
+</figure>
+<h2 id=browsing%2C-editing-%26-more tabindex=-1>Browsing, Editing & More</h2>
+<p>Once you've logged in, you'll be able to browse your data, create and edit vault
+items and basically do everything you can also do in the native app or web
+interface! The extension is basically a full-featured password manager app right
+in your browser! To learn more about all the things you can do in Padloc check
+out our comprehensive <a href=/manual/ >User Manual</a>!</p>
+<h2 id=website-matching tabindex=-1>Website Matching</h2>
+<p>While you're browsing the Internet, Padloc will automatically match the site you
+are on with the appropriate items in your vaults. To make sure Padloc can find
+the right items for any given site, make sure to always fill out the
+<strong><i class=globe-americas></i> URL</strong> field in your vault items.</p>
+<p>Whenever you're on a site that matches the url of one of your vault items, you
+will see a little badge next to the Padloc icon. Clicking on the icon will bring
+your directly to a list of all matching items.</p>
+<figure>
+   <img src=extensions_2.png>
+   <figcaption>Padloc will automatically find any matching vault items for the site you're on.</figcaption>
+</figure>
+<h2 id=filling-form-elements tabindex=-1>Filling Form Elements</h2>
+<p>The best thing about having access to your data right inside your browser is
+that this makes filling out some forms incredibly convenient! There are three
+ways to fill form fields with data from your Padloc vaults:</p>
+<h3 id=drag-%26-drop tabindex=-1>Drag & Drop</h3>
+<p>Probably the most intuitive way to copy data from your vaults into form fields
+is through Padloc's <strong>Drag & Drop</strong> feature! It's just as easy as it sounds:</p>
+<ol>
+<li>Open the extension popup (unlocking the app if you have to) and find the item
+you're looking for.</li>
+<li><strong>Click and hold</strong> the field you'd like to copy (this works from both the
+list view and the detail view).</li>
+<li><strong>Drag</strong> the field over the form element you'd like to insert the value into
+(if the form field is covered by the popup, simply move the mouse outside of
+the popup to collapse it).</li>
+<li><strong>Drop</strong> the field into the form element by releasing the mouse.</li>
+</ol>
+<figure>
+   <img src=extensions_3.png>
+   <figcaption>Drag & Drop is a fun and convenient way to fill forms!</figcaption>
+</figure>
+<h3 id=context-menu tabindex=-1>Context Menu</h3>
+<p>Another way to fill out form elements is via the right-click context menu of
+your browser. Here is how it works:</p>
+<blockquote>
+<p><strong><i class=info-circle></i> Note</strong>: This only works for items that were
+<a href=#website-matching>matched</a> with the current site.</p>
+</blockquote>
+<ol>
+<li>Right-click on the form element you'd like to fill.</li>
+<li>Look for the matched vault item in the context menu, then hover over it with
+your mouse to reveal all the available fields (if the item is greyed out, you
+may have to unlock the extension first).</li>
+<li>Click the appropriate field to insert the value.</li>
+</ol>
+<figure>
+   <img src=extensions_4.png>
+   <figcaption>You can also fill form inputs by right-clicking on them and selecting the desired item and field from the context menu.</figcaption>
+</figure>
+<h3 id=copy-%26-paste tabindex=-1>Copy & Paste</h3>
+<p>Last but not least: If the options mentioned above don't work for you for some
+reason there is always the good old <strong>Copy & Paste</strong> feature!</p>
+<ol>
+<li>Open the extension popup (unlocking the app if you have to) and find the item
+you're looking for.</li>
+<li>Click on the desired field to copy its value to the clipboard (in the detail
+view, click the <span class=button><i class=copy></i> Copy</span>
+button).</li>
+<li>Right click on the target form field and click <strong>paste</strong>.</li>
+</ol>
+<figure>
+   <img src=extensions_5.png>
+   <figcaption>Simple copy & paste is always a reliable way to fill form elements.</figcaption>
+</figure>
+
+        </article>
+
+        <div class=spacer></div>
+
+        
+        
+
+        
+
+        
+
+        
+        <div class=spacer></div>
+
+        <div class="double-margined double-spacing grid prev-next">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="padded small">
+    <button onclick=changeTheme()>
+        <span class=subtle>Theme:</span> <i class=sun id=themeIcon></i> <strong id=themeLabel>auto</strong>
+    </button>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        const icon = document.getElementById("themeIcon");
+        const label = document.getElementById("themeLabel");
+        switch (theme) {
+            case "light":
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                icon.classList.remove("moon", "eclipse");
+                icon.classList.add("sun");
+                label.innerText = "light";
+                break;
+            case "dark":
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                icon.classList.remove("sun", "eclipse");
+                icon.classList.add("moon");
+                label.innerText = "dark";
+                break;
+            default:
+                body.classList.remove("theme-light");
+                body.classList.remove("theme-dark");
+                icon.classList.remove("moon", "sun");
+                icon.classList.add("eclipse");
+                label.innerText = "auto";
+                break;
+        }
+
+        localStorage.setItem("theme", theme);
+    }
+
+    function changeTheme() {
+        const isLight = document.body.classList.contains("theme-light");
+        const isDark = document.body.classList.contains("theme-dark");
+
+        if (isDark) {
+            setTheme("light");
+        } else if (isLight) {
+            setTheme("auto");
+        } else {
+            setTheme("dark");
+        }
+    }
+
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        setTheme(theme);
+    });
+</script>
+
+</div>
+
+    </body>
+</html>
