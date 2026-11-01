@@ -19,6 +19,28 @@ inactive for a few minutes, it will automatically lock.
     </figcaption>
 </figure>
 
+## Locking Manually
+
+Select **Lock** at the bottom of the main menu to lock the app immediately.
+Enter your master password on the unlock screen to open it again, or use
+[biometric unlock](../settings/#biometric-unlock) if you have set it up on a
+supported device. Locking keeps the account signed in; **Log Out** removes its
+locally stored data and requires a new login.
+
+## If You Forget Your Master Password
+
+On the unlock screen, open the **…** menu next to your email address and choose
+**Forgot Password**. After repeated unsuccessful login attempts, Padloc also
+offers **Recover Account**. Recovery requires email verification and a new
+master password, but it cannot decrypt the contents of your existing private
+vault. Those contents are permanently lost. Shared organization access is
+suspended until membership is confirmed again; if you own an organization, its
+members also need reconfirmation.
+
+Before recovering, check whether you still have an unlocked device or an
+[exported backup](../settings/#exporting-data) from which to preserve or restore
+your data. Keep the password for an encrypted backup available separately.
+
 ### Notes on security
 
 When the application becomes locked, all references to unencrypted data are
@@ -64,6 +86,6 @@ browser or webview process and using strings to extract known secrets,
 
 #### Solutions
 
-- Secure physical and remote access to your device
-- Make sure your swap space is encrypted
-- Prefer to use the apps that aren't based on Electron or Tauri
+-   Secure physical and remote access to your device
+-   Make sure your swap space is encrypted
+-   Prefer to use the apps that aren't based on Electron or Tauri
