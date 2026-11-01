@@ -166,7 +166,7 @@ password field? Clicking it will bring up the **password generator**.
 
 You can choose between a random passphrase similar to the one suggested to you
 during the
-[signup process](../create_account#step-3-choose-your-master-password") or a
+[signup process](../create_account/#step-3%3A-choose-your-master-password) or a
 string of random characters. A passphrase will be easier to copy manually in
 cases where you don't have the option to copy & paste but some websites have
 very specific password requirements you might have to go with the **random
@@ -184,6 +184,63 @@ automatically copied into the appropriate field. Or you choose
 > password field, Padloc will automatically generate a few random password
 > suggestions for you, which will show up right underneath your cursor. Simply
 > click one of them to use it!
+
+### Standalone Password Generator
+
+You can also open **Password Generator** from the main menu without editing an
+item. Choose **passphrase** or **random string**, adjust the options, then use
+**Regenerate** or **Copy**. Copying a password here does not save it to a vault
+item or change it on a website.
+
+For passphrases, choose the number of words, word separator, and language. For
+random strings, adjust the length and character groups to match the service's
+requirements.
+
+<figure>
+    <img src="generator_desktop.png" alt="Standalone password generator showing passphrase language, separator, and word count.">
+    <figcaption>Generate and copy a password directly from the main menu.</figcaption>
+</figure>
+
+## Using Fields
+
+Open an item and use **Copy** beside a field to copy its value. Passwords and
+other masked values follow your
+[Reveal On Hover preference](../settings/#reveal-masked-fields-on-hover).
+Changing a password stored in Padloc does not change the password at the service
+it belongs to; update the service too.
+
+### One-Time Passwords
+
+A **One-Time Password** field generates time-based verification codes for
+services that support TOTP authentication.
+
+1. Start authenticator setup in the service you want to protect.
+2. In Padloc, edit the corresponding item and choose **Add Field → One-Time
+   Password**.
+3. Enter the service's setup secret in **Enter Secret**, or use the QR code
+   button to scan its setup QR code on a supported device.
+4. Save the item. Padloc displays the current code with a countdown indicator;
+   use **Copy** to enter it in the service and finish setup there.
+
+Enter the setup secret, rather than a single six-digit verification code. If
+codes are rejected, check the secret and your device's clock. Keep any recovery
+codes supplied by the service somewhere safe.
+
+<figure>
+    <img src="one_time_password_desktop.png" alt="Imported demo authenticator item displaying a generated one-time code and Copy button.">
+    <figcaption>One-time password fields generate a fresh code from the saved secret.</figcaption>
+</figure>
+
+This is separate from setting up
+[MFA for your Padloc account](../settings/#multi-factor-authentication). Keep
+that account's authenticator accessible without unlocking Padloc.
+
+### Richtext / Markdown Notes
+
+Choose **Richtext / Markdown** when adding a field to write formatted notes. Use
+the note editor's formatting controls and expanded editing view for longer text,
+then save the item. Ordinary **Plain Text** fields are also available when you
+do not need formatting.
 
 ## Deleting Items
 
@@ -225,6 +282,9 @@ class="share"></i> Move</span> option from the
 > [deleting multiple items](#deleting-multiple-items), you can move multiple
 > items at once via the multi-select mode in the list view.
 
+Items with attachments cannot be moved between vaults. The app will ask you to
+resolve this before moving the item.
+
 ## Tags
 
 Tags are a simple but powerful way to organize items by type, areas of use or
@@ -244,6 +304,9 @@ any item, it will show up in the menu under "Tags". For more info on how to
 filter items by tags an other criteria, check out the
 [Searching & Filtering](../search) section of the manual.
 
+For account-wide renaming, colors, ordering, and hiding tags, see
+[Managing Tags](../settings/#tags).
+
 ## Favorites
 
 To add an item to your favorites, simply click the
@@ -256,9 +319,9 @@ view. To remove an item from your favorites, simply click the
 ## Expiration Period
 
 Many services and companies require a password to be changed in regular
-intervals. But even if it's not a requirement, rotating your passwords regularly
-is generally not a bad idea! By adding an **expiration period** to your vault
-item, you can let Padloc remind you when it's time to update it!
+intervals. But even if it's not a requirement, you may want reminders for
+credentials that have a known expiry date. By adding an **expiration period** to
+your vault item, you can let Padloc remind you when it's time to update it!
 
 To **add an expiration period**, simply click
 <span class="button"><i class="plus"></i> Add Expiration</span> inside the
@@ -268,8 +331,9 @@ can then enter the number of days after which the item should expire. Click
 
 Once you've added an expiration period, Padloc will monitor the number of days
 since the item has been updated. If the defined number of days is exceeded, your
-item will show up in the Security Report under "Expired Items" until you update
-it or remove the expiration period.
+item will show up in the Security Report under
+["Expired Items"](../security-report/) until you update it or remove the
+expiration period.
 
 **Removing an expiration period** is as simple as adding one, simply enter
 [edit mode](#editing-vault-items) and then click

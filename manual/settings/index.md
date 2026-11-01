@@ -11,7 +11,7 @@ subscription and billing info and various other things.
 ## <i class="user"></i> Account
 
 To get to the account settings, select <span class="button"><i class="cog"></i>
-Settings</span> the main menu, then <span class="button"><i class="user"></i>
+Settings</span> in the main menu, then <span class="button"><i class="user"></i>
 Account</span>. Here you can
 [update your display name](#change-your-display-name), [log out](#log-out) of
 your account or [delete](#deleting-your-account) it altogether.
@@ -19,7 +19,7 @@ your account or [delete](#deleting-your-account) it altogether.
 ### Change Your Display Name
 
 Your display name is what other Padloc users will see next to your email address
-if your are a member of any [organizations](../orgs). To change your display
+if you are a member of any [organizations](../orgs). To change your display
 name, simply enter the updated name, then click
 <span class="highlighted button">Save</span> to confirm the change.
 
@@ -28,12 +28,22 @@ name, simply enter the updated name, then click
     <figcaption>You can change your display name in the account settings.</figcaption>
 </figure>
 
+### Change Your Email Address
+
+In **Settings → Account**, replace the address in **Email** and click **Save**.
+Enter your master password when prompted and complete verification of the new
+address. Use the new email address for future logins.
+
+> **Important:** Changing your email address suspends your membership in
+> organizations you do not own. Ask the organization owner to unsuspend you to
+> restore access to their shared vaults.
+
 ### Log Out
 
 To log out of your Padloc account, go to the [account settings](#account), then
 click the button labeled <span
-class="button">Log Out</span>. This will delete
-all your locally stored data and bring you back to the login screen.
+class="button">Log Out</span>. This will delete all your locally stored data and
+bring you back to the login screen.
 
 ### Deleting Your Account
 
@@ -46,15 +56,14 @@ all your locally stored data and bring you back to the login screen.
 
 To delete your Padloc account, go to the [account settings](#account), then
 click the button labeled <span
-class="button">Delete Account</span>. You'll have
-to enter your master password, then confirm your choice by typing out the word
-"DELETE" and hitting
+class="button">Delete Account</span>. You'll have to enter your master password,
+then confirm your choice by typing out the word "DELETE" and hitting
 <span class="red highlighted button">Delete</span>.
 
 ## <i class="lock"></i> Security
 
 To get to the security settings, select <span class="button"><i class="cog"></i>
-Settings</span> the main menu, then <span class="button"><i class="lock"></i>
+Settings</span> in the main menu, then <span class="button"><i class="lock"></i>
 Security</span>. Here you can
 [change your master password](#changing-your-master-password), manage sessions
 and MFA methods, and more.
@@ -71,28 +80,86 @@ and MFA methods, and more.
 
 To change your master password, go to the [security settings](#security), then
 click the button labeled <span
-class="button">Change Master Password</span>.
-After entering your current password, enter your new password and confirm it by
-retyping it in the input below. To confirm the change, click
-<span class="highlighted button">OK</span>.
+class="button">Change Master Password</span>. After entering your current
+password, enter your new password and confirm it by retyping it in the input
+below. To confirm the change, click <span class="highlighted button">OK</span>.
 
 ### Auto Lock
 
-The **Auto Lock** feature allows you to configure whether you want to Padloc to
+The **Auto Lock** feature allows you to configure whether you want Padloc to
 automatically lock after a certain period of inactivity (no interaction with the
 app). To enable or disable the feature, simply toggle the button labeled
 <span class="button">Lock Automatically <i class="toggle-on"></i></span>. To
 adjust the duration after which the app should auto-lock, drag the slider right
 below the button.
 
-You can read more about
-[the security about locking and unlocking here](/manual/locking-and-unlocking/).
+You can read more
+[about locking and unlocking here](/manual/locking-and-unlocking/).
+
+### Biometric Unlock
+
+On a supported device, **Biometric Unlock** lets you unlock Padloc using your
+device's biometric authentication. Availability depends on the app and device;
+the security settings show **Not Supported** when it is unavailable. Set it up
+separately on each device and keep your master password available for logging in
+again.
+
+### Multi-Factor Authentication
+
+Multi-factor authentication (MFA) adds a verification step when logging in on a
+new or untrusted device. It does not replace your master password.
+
+1. Open **Settings → Security** and select **Add MFA Method**.
+2. Choose an available method: **TOTP** for an authenticator app, or **Hardware
+   Key** for a supported security key.
+3. Follow the setup prompts and complete the verification step to activate it.
+4. Use the method's options menu to **Test** it or **Remove** it later.
+
+<figure>
+    <img src="mfa_desktop.png" alt="MFA method selection offering a hardware key or TOTP authenticator.">
+    <figcaption>Choose an MFA method supported by your device and server.</figcaption>
+</figure>
+
+The authenticator for your Padloc account needs to be accessible while Padloc is
+locked. Storing codes for other services in
+[one-time password fields](../vaults/#one-time-passwords) is a separate feature.
+
+### Active Sessions and Trusted Devices
+
+**Active Sessions** lists browsers and devices logged into your account, with
+last activity and location information when available. Closing a tab or
+uninstalling an app does not automatically revoke its session. Use the trash
+button beside an old or unrecognized session and confirm **Revoke**. The current
+session cannot be revoked here; use [Log Out](#log-out) instead.
+
+**Trusted Devices** lists devices that can log in with your email address and
+master password without an MFA challenge. Remove a lost or unrecognized device
+using its trash button. Review both lists: removing trust and revoking a session
+serve different purposes.
+
+<figure>
+    <img src="security_desktop.png" alt="Security settings showing auto lock, biometric support, MFA, and active sessions.">
+    <figcaption>Review authentication methods and signed-in devices in the security settings.</figcaption>
+</figure>
+
+### Security Report Checks
+
+Under **Security Report**, choose which checks to enable: **Weak Passwords**,
+**Reused Passwords**, **Compromised Passwords**, and **Expiring or Expired
+Items**. Read [Security Report](../security-report/) for what the results mean
+and how to act on them.
+
+### Email Notifications
+
+Under **Email Notifications**, choose whether to receive messages about **Failed
+Login Attempts** and **New Logins (on new or untrusted devices)**. These options
+control notifications; they do not change your MFA methods.
 
 ## <i class="tv-retro"></i> Display
 
 The display settings allow you to make various adjustments to Padloc's
-appearance and user experience. To get to the security settings, select
-<span class="button"><i class="cog"></i> Settings</span> the main menu, then
+appearance and user experience. To get to the display settings, select
+<span class="button"><i class="cog"></i> Settings</span> in the main menu, then
 <span class="button"><i class="tv-retro"></i> Display</span>.
 
 <figure>
@@ -131,6 +198,29 @@ enabled, masked fields such as passwords or credit card numbers will be unmasked
 when you move your mouse over them. Disable this option if you would rather use
 an explicit button.
 
+## <i class="tags"></i> Tags
+
+Open **Settings → Tags**, or choose **Manage Tags** from the Tags menu in the
+sidebar, to organize tags across your account.
+
+-   Use **+** to create a tag before adding it to an item.
+-   Drag tags to change their order in the sidebar and suggestions.
+-   Use the color control beside a tag to give it a color.
+-   Open a tag's **…** menu to **Rename**, **Delete**, or **Unlist** it.
+
+Renaming a tag updates its name on items you can edit. Deleting a tag removes it
+from those items, but does not delete the items themselves. Tags on read-only
+items cannot be renamed or deleted through this screen.
+
+**Unlist** hides a tag from the main menu and suggestions while keeping it on
+its items. In the **Unlisted** section, choose **Remove From Unlisted** to show
+it again.
+
+<figure>
+    <img src="tags_desktop.png" alt="Tag settings with existing tags, color controls, and an Unlisted section.">
+    <figcaption>Manage tag order, colors, names, and visibility in one place.</figcaption>
+</figure>
+
 ## <i class="screwdriver-wrench"></i> Tools
 
 ### Importing Data
@@ -138,16 +228,22 @@ an explicit button.
 Padloc provides an easy way to import data from other applications. Supported
 formats are:
 
-- **Comma Separated Values
-  ([CSV](https://en.wikipedia.org/wiki/Comma-separated_values))** - Many
-  applications support exporting data in this format, and Padloc provides a
-  powerful import assistant that should allow you to import data from pretty
-  much anywhere that allows exporting to CSV.
+-   **Comma Separated Values
+    ([CSV](https://en.wikipedia.org/wiki/Comma-separated_values))** - Many
+    applications support exporting data in this format, and Padloc provides a
+    powerful import assistant that should allow you to import data from pretty
+    much anywhere that allows exporting to CSV.
 
-- **Encrypted Padloc Export** - Lastly, Padloc has its own, encrypted export
-  format which naturally is supported and recognized automatically. Encrypted
-  Padloc Exports are protected by a password which you'll have to provide during
-  the import process.
+-   **Other password managers** - The format selector also includes LastPass,
+    1Password (1pux), Bitwarden (JSON), Dashlane (CSV), KeePass (CSV), NordPass
+    (CSV), iCloud (CSV), Chrome (CSV), Firefox (CSV), and Padlock (v2). Export
+    in the matching format from the source application, then select that format
+    in Padloc if automatic detection picks a different one.
+
+-   **Encrypted Padloc Export** - Padloc has its own, encrypted export format
+    which naturally is supported and recognized automatically. Encrypted Padloc
+    Exports are protected by a password which you'll have to provide during the
+    import process.
 
 Here is how to import data into Padloc:
 
@@ -176,11 +272,11 @@ Padloc needs some additional info from you.
     <figcaption>Padloc's powerful CSV import allows you to import data from all kinds of sources.</figcaption>
 </figure>
 
-#### 1. Does the first column contain field names?
+#### 1. Does the first row contain field names?
 
 The first line in a CSV file is commonly used to label the columns in the file.
 If present, this information is helpful for Padloc to determine the
-[name and tags columns](#picking-the-name-and-tags-columns), as well as properly
+[name and tags columns](#2.-pick-the-name-and-tags-columns), as well as properly
 naming fields. If the first line in your CSV file does **not** contain field
 names but actual data, you can disable this option via the
 <span class="button">First row contains field names
@@ -197,10 +293,9 @@ The **name column** is where the item name is stored. This is usually the first
 column. This is the only column that is required for a successful import.
 
 The **tags column** determines which column should be used for
-[tags](http://localhost:9090/manual/vaults/#tags). This column should contain a
-comma-separated list of tag names. If the application your importing from
-doesn't not have a suitable equivalent for Padloc's tags, you can set this to
-**None**.
+[tags](../vaults/#tags). This column should contain a comma-separated list of
+tag names. If the application you're importing from doesn't have a suitable
+equivalent for Padloc's tags, you can set this to **None**.
 
 > **<i class="info-circle"></i> Note:** Other applications may have a similar
 > concept to tags, but under a different name like "categories" or "folders".
@@ -211,10 +306,21 @@ doesn't not have a suitable equivalent for Padloc's tags, you can set this to
 
 Based on the structure of the CSV file and the information you provided in the
 previous steps, Padloc will detect and extract all additional columns and
-interpret them as fields for your vault items. Again, Padloc will do it's best
-to automatically determine the correct name and type for each field, but we
+interpret them as fields for your vault items. Again, Padloc will do its best to
+automatically determine the correct name and type for each field, but we
 recommend still checking these so you can make adjustments in case we got
 something wrong.
+
+Check **Field Type** as well as the field name: a column named "One-Time
+Password" may initially be detected as **Password**. Change it to **One-Time
+Password** to generate codes from its secret. Choose **Richtext / Markdown** for
+formatted notes, or **Ignore/skip this column** for data you do not want to
+import. The item name column and a regular field called "Name" can be different
+columns; check the column numbers when labels repeat.
+
+After importing, open a few items to check names, tags, fields, and generated
+codes before removing the original export. Importing a CSV does not restore
+attachments or item history.
 
 ### Exporting Data
 
@@ -232,7 +338,7 @@ Here is how you export your data from Padloc:
 5. The <span class="highlighted button">Export [x] Items</span> button at the
    bottom of the dialog will indicate how many items will be exported. Click it
    to continue.
-6. If you chose the **Encrypted Container** option, you'll know have to enter a
+6. If you chose the **Encrypted Container** option, you'll now have to enter a
    password to protect your data. This does not have to be the same as your
    master password but should be sufficiently strong. The app will warn you if
    you choose a password that is considered too weak.

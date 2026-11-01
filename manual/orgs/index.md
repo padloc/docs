@@ -151,8 +151,7 @@ Add Member</span>.
 
 You've successfully added a new member to your organization, but they won't have
 access to any vaults yet. You can now add them to [Groups](#groups), give them
-permissions to access certain [Vaults](#shared-vaults) or adjust their
-[role](#member-roles).
+permissions to access certain [Vaults](#vaults) or adjust their [role](#roles).
 
 ### Deleting Members
 
@@ -451,3 +450,19 @@ choice.
     erase all the organization's data from Padloc, including all shared vaults owned
     by it. **This action is not reversible!**
 </blockquote>
+
+## Directory Sync
+
+When available for your organization, **Settings → Directory Sync** connects a
+SCIM-compatible identity provider to Padloc to synchronize members and groups.
+This is an organization setting, separate from your personal account settings.
+
+The organization owner can select **Enable Directory Sync** and confirm the
+prompt. Padloc then displays a **Tenant URL** and **Secret Token**. Click either
+value to copy it and use it in your identity provider's SCIM provisioning
+configuration. Treat the token as a credential and keep it private.
+
+Directory sync requires support and configuration on the Padloc server as well
+as in the identity provider. Feature availability can vary by plan or hosting
+setup. Disabling it stops automatic synchronization and provisioning of members;
+it does not replace the vault access permissions described above.

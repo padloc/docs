@@ -5,7 +5,7 @@ icon: search
 description: Tips & Tricks on how to quickly find what you're looking for.
 ---
 
-Searching and filtering is is easily one of the most overlooked aspects of a
+Searching and filtering is easily one of the most overlooked aspects of a
 password manager. Over time a lot of data will be accumulating in your vaults
 and being able to quickly and easily find the data you need at any given moment
 is essential for a productive workflow and will save you a lot of time in the
@@ -43,18 +43,17 @@ You can learn more about how to create and manage tags in the
 ## Favorites
 
 Your favorites are vault items that you use a lot or are especially important to
-you form some other reason. [favorites](../vaults#favorites). To list all you
-favorite vault items simply select the <span class="button"><i class="star"></i>
-Favorites</span> option from the main menu. Want to know how to add a vault item
-to your favorites? Check out the [Vaults & Vault Items](../vaults#favorites)
-section of the manual!
+you for some other reason. To list all your favorite vault items simply select
+the <span class="button"><i class="star"></i> Favorites</span> option from the
+main menu. Want to know how to add a vault item to your favorites? Check out the
+[Vaults & Vault Items](../vaults#favorites) section of the manual!
 
 ## Recently Used Items
 
-For most users, it is non uncommon to only have a handful of password that are
+For most users, it is not uncommon to only have a handful of passwords that are
 actually needed day-to-day. Wouldn't it be great to have a convenient way of
-listing these items with a single click? Why yes of course, and Padloc let's you
-do just that. To list all you favorite vault items simply select the
+listing these items with a single click? Why yes of course, and Padloc lets you
+do just that. To list your recently used vault items, select the
 <span class="button"><i class="clock"></i> Recently Used</span> option from the
 main menu, or pick it from the dropdown in the header of the list view.
 
@@ -91,3 +90,15 @@ looking for!
 > shortcuts: You can also use <span class="key">⌘</span> +
 > <span class="key">F</span> to jump straight into the search input! Press
 > <span class="key">Esc</span> to cancel the search.
+
+Search matches item names, tags, field names, and field values. Matching is
+case-insensitive, and every space-separated search term must occur somewhere in
+the item. For example, `alex work` can match a username containing "alex" and a
+"work" tag on the same item. Search does not inspect the contents of attached
+files.
+
+## Finding Items With Security Warnings
+
+Use [Security Report](../security-report/) to find weak, reused, compromised, or
+expired credentials. Select a finding to open its item and review the value that
+needs attention.
